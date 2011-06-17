@@ -10,7 +10,7 @@ Tags: minimalism
 General comments (optional).
 */
 body  { }
-a,a:link { } 
+a,a:link { color: #d0e5a7; opacity: 1 !important; } 
 div#header a,div#header a:link { }
 div.hfeed a,div.hfeed a:link,div.entry-content ul.xoxo li.hentry span a,div.entry-content ul.xoxo li.hentry span a:link { }
 div.hfeed .entry-title a,div.hfeed .entry-title a:link,div.hfeed div.entry-meta a,div.hfeed div.entry-meta a:link { }
@@ -109,7 +109,7 @@ div.formcontainer div.form-textarea-label { }
 div.formcontainer textarea#comment { }
 div.formcontainer,p#mustlogin { }
 div.hentry div.archive-meta { }
-div.hentry div.entry-meta { }
+div.hentry div.entry-meta { } /* todo */
 div.hentry div.entry-meta span.meta-sep { }
 div.hentry div.entry-meta span.meta-sep:nth-of-type(5), div.hentry div.entry-meta span.meta-sep:nth-of-type(7)  { }
 div.hfeed .entry-title { }
@@ -246,13 +246,13 @@ p#mustlogin  { }
 .menu-jininmi-container  { }
 .menu-jininmi-container ul  { }
 .menu-jininmi-container li  { }
-.menu-jininmi-container a  { }
+.menu-jininmi-container a  { color: #222; text-decoration: none; }
 .menu-jininmi-container a:hover  { }
 
 .admin-meta  { }
 .admin-meta li  { }
-.admin-meta a  { }
-.admin-meta a:hover  { }
+.admin-meta a  { color: #222; text-decoration: none; }
+.admin-meta a:hover  { background-color: #fcf7f4; }
 
 #searchform  { }
 #searchform label  { }
@@ -278,6 +278,24 @@ h1,h2,h3,h4,h5,h6,body { color: #222; }
 
 body { background: #f7f7f7; font-family: "Philosopher", Georgia, serif; }
 
+.site-name .drop-shadow { background: #f5fbe9; }
+#site-description .drop-shadow { background: #f5fbe9; }
+
+ul { opacity: .3; }
+ul.not-this { opacity: .4; }
+ul.near-this { opacity: .8; }
+ul.this { opacity: 1; }
+
+ol { opacity: .3; }
+ol.not-this { opacity: .4; }
+ol.near-this { opacity: .8; }
+ol.this { opacity: 1; }
+
+p { opacity: .3; }
+p.not-this { opacity: .4; }
+p.near-this { opacity: .8; }
+p.this { opacity: 1; }
+
 #content { margin-bottom: 3em; }
 
 .form-textarea-label { margin: 0 0 1em 0; }
@@ -298,12 +316,13 @@ textarea { border: 1px #ccc solid; width: 100%; font: 1.3em/1.3 "Philosopher", G
 #site-access { position: absolute; left: -9999px; }
 #site-header { margin: 0 0 1.5em 0; }
 #site-header .site-name { font-family: "Philosopher", Georgia, serif; }
-#site-header .site-name a { height: 57px; display: block; }
+#site-header .site-name a { height: 57px; display: block; color: #222; }
 #site-header .site-description { font-family: "Philosopher", Georgia, serif; }
 #site-navigation { clear: left; }
 #site-navigation ul { display: inline-block; margin: 0; }
 #site-navigation li { display: inline-block; }
-#site-navigation a { opacity: .5; text-align: center; }
+#site-navigation a { opacity: .5; text-align: center; color: #222; }
+#site-navigation a:visited { color: #222; }
 #site-navigation a.drop-shadow:hover { background: #f6fcea; }
 #site-navigation a:hover { opacity: 1; }
 #menu-item-2218 { text-indent: -0.15em; }
@@ -362,7 +381,7 @@ html.search .navigation { clear: left; }
     width: 80px; }
 .site-name .author-tag a { display: inline !important; height: auto; }
 
-.site-description .drop-shadow { background: #f6fcea; }
+.site-description .drop-shadow { background-color: #fcf7f4; }
 #latest { height: 57px; }
 #latest header { display: inline-block; }
 #latest h1 a,
@@ -377,7 +396,7 @@ html.search .navigation { clear: left; }
 h1, h2, h3 { font-family: "Philosopher", Georgia, serif; }
 #home { margin-bottom: 2em; }
 #home h1 { display: none; }
-#home h2 { font-size: 1.5em; margin-bottom: .5em; color: #e0d0e0; }
+#home h2 { font-size: 1.5em; margin-bottom: .5em; color: #d0e5a7; }
 #home h3 { font-size: 1.2em; margin-bottom: .5em; }
 #home .grid_4 img { width: 220px; }
 #home article { margin: 1em 0 1.5em 0; }
@@ -430,11 +449,13 @@ html.single textarea:after,
  * Single
  */
 
-body.single div.post,
-body.page div.page {
+body.page div.page h1 { text-align: center; font-size: 4em; }
+
+body.single div.post .entry-content,
+body.page div.page .entry-content {
     font-size: 16px;
     -webkit-column-count: 2;
-    -webkit-column-gap: 20px;
+    -webkit-column-gap: 40px;
     -webkit-column-rule: 1px dotted #bbb;
     -moz-column-count: 2;
     -moz-column-gap: 20px;
