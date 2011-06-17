@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EmLogis GENERATOR&trade; &ndash; Licenses &amp; Certifications</title>
+<script>
+function addLicenseRow(id,rowId) {
+	var a=document.getElementById(id);
+	var checkForRows = a.getElementsByTagName("tr");
+	if (checkForRows[0] == undefined) {
+		alert('SUPAAAA Undefineduu!!!!');
+	} else {
+		alert('get lastChild element\' ID and then add to it to set the new id');
+	}
+	var newRow = document.createElement("tr");
+	//check table id for row mode either new id if no rows (clean) or id based on last row (dirty)
+	//check table id 
+	
+	newRow.setAttribute("id","newIdToBeSet");
+	
+	var newRowName = document.createElement("td");
+	var newRowNameText = document.createTextNode("Value");
+	newRowName.appendChild(newRowNameText);
+	
+	var newRowEffDate = document.createElement("td");
+	//var newRowEffDateText = document.createTextNode("<input type='text' />");
+	newRowEffDate.innerHTML = "<input class='enterData' type='text' />";
+	//newRowEffDate.appendChild(newRowEffDateText);
+	
+	
+	var newRowExpDate = document.createElement("td");
+	var newRowExpDateText = document.createTextNode("Value");
+	newRowExpDate.appendChild(newRowExpDateText);
+	
+	var newRowNumber = document.createElement("td");
+	var newRowNumberText = document.createTextNode("Value");
+	newRowNumber.appendChild(newRowNumberText);
+	
+	newRow.appendChild(newRowName);
+	newRow.appendChild(newRowEffDate);
+	newRow.appendChild(newRowExpDate);
+	newRow.appendChild(newRowNumber);
+	
+	a.appendChild(newRow);
+	//disable after select
+	//inheritfunction oop
+}
+
+function removeLicenseRow(id,rowId) {
+	var a=document.getElementById(id);
+	var b=document.getElementById("five").innerHTML;
+	alert(b);
+	//remove it!
+}
+</script>
+
+<style>
+.adminLicensesCertificationsPage {
+	font: 12px Tahoma;
+	}
+.adminLicensesCertificationsPage h1 {
+	font-size: 1.5em;
+	}
+.adminLicensesCertifications {
+	font-size: 12px Tahoma;
+	margin-bottom: 5em;
+	width: 700px;
+	}
+.adminLicensesCertifications table,.adminLicensesCertifications tr,.adminLicensesCertifications td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+.adminLicensesCertifications table {
+	border-bottom: 1px #000 solid;
+	}
+.form-button {
+	text-align: right;
+	margin-top: 0.5em;
+	}
+.form-button input {
+	cursor: pointer;
+	}
+.selectBox {
+	width: 100%;
+	cursor: pointer;
+	font: 12px Tahoma;
+	}
+.enterData {
+	width: 7em;
+	font: 12px Tahoma;
+	}
+.adminLicensesCertifications input {
+	}
+.adminLicensesCertifications td.title {
+	text-align: left;
+	width: 300px;
+	}
+.adminLicensesCertifications td.cert {
+	text-align: left;
+	width: 430px;
+	}
+.adminLicensesCertifications thead tr td {
+	font-size: 14px;
+	font-weight: bold;
+	width: 130px;
+	}
+.adminLicensesCertifications tbody tr td {
+	text-align: center;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	}
+</style>
+</head>
+
+<body class="adminLicensesCertificationsPage">
+	<div>
+  	<h1>Bob Dylan</h1>
+    <h1>Licenses &amp; Certifictions</h1>
+  </div>
+  <div class="adminLicensesCertifications">
+  <table>
+  	<thead>
+      <tr>
+        <td class="title">Licenses</td>
+        <td>Effective Date</td>
+        <td>Expiration Date</td>
+        <td>Number</td>
+      </tr>
+    </thead>
+    <tbody id="adminLicenses">
+      <tr>
+        <td class="title">
+        	<select class="selectBox">
+          	<option value="none">Select License Title...</option>
+          </select>
+        </td>
+        <td>
+        	<input class="enterData" type="text" />
+        </td>
+        <td>
+        	<input class="enterData" type="text" />
+        </td>
+        <td>
+        	<input class="enterData" type="text" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-button">
+  	<input type="button" value="Cancel" onclick="removeLicenseRow('adminLicenses');" />
+  	<input type="button" value="Add New" onclick="addLicenseRow('adminLicenses');" />
+  </div>
+  </div>
+  
+  <div class="adminLicensesCertifications">
+  <table>
+  	<thead>
+      <tr>
+        <td class="title cert">Professional Certifications</td>
+        <td>Effective Date</td>
+        <td>Expiration Date</td>
+      </tr>
+    </thead>
+    <tbody id="adminProfessionalCerts">
+      <tr>
+        <td class="title">Text</td>
+        <td>11110</td>
+        <td>11110</td>
+      </tr>
+      <tr>
+        <td class="title">
+        	<select class="selectBox">
+          	<option value="name">name</option>
+          </select>
+        </td>
+        <td>
+        	<input class="enterData" type="text" />
+        </td>
+        <td>
+        	<input class="enterData" type="text" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-button">
+  	<input type="button" value="Add New" onclick="addRow('adminProfessionalCerts');" />
+  </div>
+  </div>
+  
+  <div class="adminLicensesCertifications">
+  <table>
+  	<thead>
+      <tr>
+        <td class="title cert">Technical Certifications</td>
+        <td>Effective Date</td>
+        <td>Expiration Date</td>
+      </tr>
+    </thead>
+    <tbody id="adminTechnicalCerts">
+      <tr>
+        <td class="title">Text</td>
+        <td>11110</td>
+        <td>11110</td>
+      </tr>
+      <tr>
+        <td class="title">
+        	<select class="selectBox">
+          	<option value="name">name</option>
+          </select>
+        </td>
+        <td>
+        	<input class="enterData" type="text" />
+        </td>
+        <td>
+        	<input class="enterData" type="text" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-button">
+  	<input type="button" value="Add New" onclick="addRow('adminTechnicalCerts');" />
+  </div>
+  </div>
+  
+</body>
+</html>

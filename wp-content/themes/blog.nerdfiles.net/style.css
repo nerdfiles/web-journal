@@ -1,0 +1,445 @@
+/*
+Theme Name: blog.nerdfiles.net
+Theme URI: http://blog.nerdfiles.net/
+Description: ...
+Author: nerdfiles
+Author URI: http://nerdfiles.net/
+Version: 1.0
+Tags: minimalism
+
+General comments (optional).
+*/
+body  { }
+a,a:link { } 
+div#header a,div#header a:link { }
+div.hfeed a,div.hfeed a:link,div.entry-content ul.xoxo li.hentry span a,div.entry-content ul.xoxo li.hentry span a:link { }
+div.hfeed .entry-title a,div.hfeed .entry-title a:link,div.hfeed div.entry-meta a,div.hfeed div.entry-meta a:link { }
+div.sidebar a,div.sidebar a:link { }
+div#footer a,div#footer a:link { }
+div.hfeed a:visited,div.entry-content ul.xoxo li.hentry span a:visited { }
+div.hfeed .entry-title a:visited { }
+div#header a:hover { }
+div#footer a:hover { }
+div.hfeed a:hover,div.hfeed .entry-title a:hover,div.hfeed div.entry-meta a:hover,div.sidebar a:hover,div.entry-content ul.xoxo li.hentry span a:hover { }
+div.hfeed a:active,div.sidebar a:active { }
+body  { }
+body abbr.published,body abbr.comment-published { }
+body img { }
+body input#s { }
+body.author div.hfeed div.archive-meta p { }
+body.single div.navigation { }
+div#footer { }
+div#globalnav,div.access,div#footer span#theme-link span.additional-name,div#footer span#theme-link span.family-name { }
+div#header a { }
+div#header div#blog-description,div#header div.archive-description { }
+div#header div#blog-description  { }
+div#header h1#blog-title { }
+div#wrapper .important { }
+div#wrapper div.entry-content .download { }
+div#wrapper div.entry-content .html { }
+div#wrapper div.entry-content .html,div#wrapper div.entry-content .download,div#wrapper div.entry-content .pdf,div#wrapper div.entry-content .zip { }
+div#wrapper div.entry-content .pdf { }
+div#wrapper div.entry-content .zip { }
+div.comments h3 { }
+div.comments h3.comment-header span.comment-count { }
+div.comments ol#comments { }
+div.comments ol#comments li { }
+div.comments ol#comments li img.photo  { }
+div.comments ol#pingbacks { }
+div.comments ol#pingbacks li { }
+div.comments ol#pingbacks p { }
+div.comments ol.commentlist li .fn,div.sidebar ul li#blogtxt-recent-comments .fn { }
+div.comments ol.commentlist p { }
+div.comments ol.commentlist span.comment-meta,div.comments p#loggedin { }
+div.comments span.req-field { }
+div.entry-content .alignleft { }
+div.entry-content .alignright { }
+div.entry-content .center,div.entry-content .aligncenter { }
+div.entry-content .clearer,div.entry-content .entry-edit { }
+div.entry-content .content-column { }
+div.entry-content .more-link { }
+div.entry-content a:hover img.center,div.entry-content a:hover img.aligncenter,div.entry-content a:hover img.alignright,div.entry-content a:hover img.alignleft { }
+div.entry-content blockquote blockquote,div.comments ol.commentlist blockquote blockquote { }
+div.entry-content blockquote,div.comments ol.commentlist blockquote { }
+div.entry-content code,div.entry-content pre,div.comments ol.commentlist code,div.comments ol.commentlist pre { }
+div.entry-content del,div.comments ol.commentlist del { }
+div.entry-content div.page-link { }
+div.entry-content h2,div.entry-content h3 { }
+div.entry-content h2,div.entry-content h3,div.entry-content h4,div.entry-content h5,div.entry-content h6 { }
+div.entry-content h4 { }
+div.entry-content h5 { }
+div.entry-content h6 { }
+div.entry-content img.center,div.entry-content img.alignright,div.entry-content img.alignleft { }
+div.entry-content ins,div.comments ol.commentlist ins { }
+div.entry-content ol ol { }
+div.entry-content p,div.formcontainer p { }
+body.attachment h3.entry-title { }
+div.entry-content div.entry-attachment { }
+div.entry-content div.entry-caption { }
+body.attachment h3.entry-title,div.entry-content div.entry-attachment,div.entry-content div.entry-caption { }
+div.entry-content .wp-caption-text { }
+div.entry-content div.gallery { }
+div.entry-content div.gallery dl { }
+div.entry-content div.gallery dl.gallery-columns-2 { }
+div.entry-content div.gallery dl.gallery-columns-3 { }
+div.entry-content div.gallery dl.gallery-columns-4 { }
+div.entry-content div.gallery dl.gallery-columns-5 { }
+div.entry-content div.gallery dd { }
+div.entry-content div.gallery * { }
+div.entry-content div.entry-attachment img,div.entry-content div#nav-images div img { }
+body.attachment div#wrapper div#content div#nav-images { }
+body.attachment div#nav-images div { }
+body.attachment div#nav-images div.nav-previous { }
+body.attachment div#nav-images div.nav-next { }
+body.attachment div.entry-meta,body.attachment div.comments { }
+div.entry-content div.entry-caption,div.entry-content q,div.comments ol.commentlist q { }
+div.entry-content ul li ul { }
+div.entry-content ul.xoxo,div.entry-content ul.xoxo li { }
+div.entry-content ul.xoxo li h3 { }
+div.entry-content ul.xoxo li ul { }
+div.entry-content ul.xoxo li ul li { }
+div.entry-content ul.xoxo li.hentry span.entry-title { }
+div.entry-content ul.xoxo li.hentry span.entry-date { }
+div.entry-content ul.xoxo li ul li p { }
+div.formcontainer form#commentform,div.sidebar ul,div.sidebar ul li#blogtxt-recent-comments blockquote.comment-summary,div.sidebar ul li#blogtxt-recent-comments blockquote.comment-summary p { }
+div.formcontainer div.form-input { }
+div.formcontainer div.form-input input { }
+div.formcontainer div.form-input input,div.formcontainer div.form-textarea textarea { }
+div.formcontainer div.form-textarea-label { }
+div.formcontainer textarea#comment { }
+div.formcontainer,p#mustlogin { }
+div.hentry div.archive-meta { }
+div.hentry div.entry-meta { }
+div.hentry div.entry-meta span.meta-sep { }
+div.hentry div.entry-meta span.meta-sep:nth-of-type(5), div.hentry div.entry-meta span.meta-sep:nth-of-type(7)  { }
+div.hfeed .entry-title { }
+div.hfeed .page-title { }
+div.hfeed .page-title span.page-subtitle { }
+div.hfeed div#post-0 input#s { }
+div.hfeed div.p1 { }
+div.nav-next { }
+div.nav-previous { }
+div.navigation { }
+div.navigation div { }
+div.sidebar { }
+div.sidebar ul li { }
+div.sidebar ul li h3 { }
+div.sidebar ul li ul li { }
+div.sidebar ul li ul li ul { }
+div.sidebar ul li ul li ul li { }
+div.sidebar ul li#blogtxt-recent-comments span.comment-entry-title { }
+div.sidebar ul li#blogtxt-recent-comments ul li { }
+div.sidebar ul li#tag-cloud { }
+div.sidebar ul li#tag-cloud h3 { }
+div.sidebar ul li#calendar div#calendar_wrap { }
+div.sidebar ul li#calendar table#wp-calendar { }
+div.sidebar ul li#calendar table#wp-calendar tbody a { }
+div.sidebar ul li#google-search div form#gsearch,div.sidebar ul li#calendar table#wp-calendar caption { }
+div.sidebar ul li#rss_links ul li a,div.sidebar ul li#rss-links ul li a { }
+div.sidebar ul li#search form#searchform { }
+div.sidebar ul li#search input#s { }
+div.sidebar ul li.entry-interact ul li.comment-link a { }
+div.sidebar ul li.entry-interact ul li.trackback-link a { }
+div.sidebar ul li.widget_text div.textwidget p { }
+#respond  { }
+
+abbr,
+acronym  { }
+
+body  { }
+
+h1,h2,h3,h4,h5,h6  { }
+
+.entry-title,
+h1.entry-title,
+body.home h2.entry-title  { } /* !!header */
+body.category h1.page-title,
+body.search h1.page-title  { }
+div.hfeed p  { }
+h2  { }
+h3  { } /* wp editor h3 starts here */
+div.comments h3  { }
+div.comments h3.comment-header  { }
+h4  { }
+h5  { }
+h1 a:hover  { }
+h1,.entry-title  { }
+h1,.entry-title a  { }
+h1,.entry-title a:visited  { }
+h1,.entry-title a:hover  { }
+.entry-comments  { }
+#quote  { }
+.post  { }
+body.home h2.entry-title  { }
+
+div.comments  { }
+
+div.comments p#loggedin  { }
+div.comments p#loggedin:hover  { }
+div.formcontainer  { }
+div.formcontainer div.form-input input, 
+div.formcontainer div.form-textarea textarea  { }
+div.formcontainer div.form-input input:focus, 
+div.formcontainer div.form-textarea textarea:focus  { }
+
+.form-textarea-label  { }
+.form-textarea-label label  { }
+
+div.formcontainer div.focus  { }
+
+.form-textarea-label label.focus  { }
+
+div.form-submit  { }
+div.form-submit input[type="submit"]  { }
+div.form-submit input[type="submit"]:hover  { }
+div.form-submit input[type="submit"]:focus  { }
+div.form-submit input[type="submit"]:active  { }
+
+div.comments ol#comments  { }
+div.comments ol#comments li  { }
+div.comments ol.commentlist span.comment-author  { }
+div.comments ol.commentlist span.comment-author a  { }
+div.comments ol.commentlist span.comment-author a:hover  { }
+div.comments ol.commentlist span.comment-author img  { }
+
+div.comments ol.commentlist span.comment-meta  { }
+div.comments ol.commentlist span.comment-meta a  { }
+div.comments ol.commentlist span.comment-meta a:hover  { }
+
+div.comments ol#comments li p  { }
+
+div#header { }
+div.site-header a  { }
+div.site-header a:hover  { }
+div.site-header  { }
+body div#wrapper  { }
+
+div.hfeed  { }
+
+div.hfeed div.post,
+div.hfeed div.page  { }
+
+div.hfeed div.post  { }
+div.hfeed div.page  { }
+
+div#container  { }
+
+.mini-nav  { }
+.mini-nav a  { }
+.mini-nav li  { }
+.mini-nav .sep  { }
+h3#respond  { }
+.loggedin h3#respond  { }
+p#mustlogin  { }
+#nav-below  { }
+
+#primary-search  { }
+#primary-search fieldset  { }
+#primary-search input  { }
+#primary-search input.text  { }
+#primary-search input:focus  { }
+#primary-search input.submit  { }
+#primary-search input.submit:focus,
+#primary-search input.submit:hover  { }
+.search-container  { }
+
+.menu-jininmi-container  { }
+.menu-jininmi-container ul  { }
+.menu-jininmi-container li  { }
+.menu-jininmi-container a  { }
+.menu-jininmi-container a:hover  { }
+
+.admin-meta  { }
+.admin-meta li  { }
+.admin-meta a  { }
+.admin-meta a:hover  { }
+
+#searchform  { }
+#searchform label  { }
+#searchform input  { }
+#searchform input#s  { }
+#searchform #searchsubmit  { }
+#searchform #searchsubmit:hover  { }
+
+body.search div.hfeed div.page  { }
+
+div.hentry div.entry-meta  { }
+
+/**
+ * JavaScript
+ */
+ 
+html.no-js { }
+html.js-enabled { } /* hide stuff if enabled */
+html.no-js body { }
+html.js-enabled body { }
+
+h1,h2,h3,h4,h5,h6,body { color: #222; }
+
+body { background: #f7f7f7; font-family: "Philosopher", Georgia, serif; }
+
+#content { margin-bottom: 3em; }
+
+.form-textarea-label { margin: 0 0 1em 0; }
+.form-textarea { margin: 0 0 1em; }
+.form-submit { }
+.comments { }
+.comments h1 { margin: 0 0 .2em 0; }
+.comments p { margin: .7em 0; }
+.comments ol { list-style: none; margin: 0 0 .5em 0; padding: 0; }
+.comments li.c1 { border-top: none; }
+.comments li { margin: 0; padding: 0; border-top: 1px #ccc solid; padding: 1em 0; }
+.comments label { font: 2em/1 "Philosopher", Georgia, serif; }
+.comments input[type="submit"] { border: none; font-size: 3em; font-family: "Philosopher", Georgia, serif; background: #fff; }
+
+textarea { border: 1px #ccc solid; width: 100%; font: 1.3em/1.3 "Philosopher", Georgia, serif; padding: .5em !important; }
+
+#header { margin: 1em 0; }
+#site-access { position: absolute; left: -9999px; }
+#site-header { margin: 0 0 1.5em 0; }
+#site-header .site-name { font-family: "Philosopher", Georgia, serif; }
+#site-header .site-name a { height: 57px; display: block; }
+#site-header .site-description { font-family: "Philosopher", Georgia, serif; }
+#site-navigation { clear: left; }
+#site-navigation ul { display: inline-block; margin: 0; }
+#site-navigation li { display: inline-block; }
+#site-navigation a { opacity: .5; text-align: center; }
+#site-navigation a.drop-shadow:hover { background: #f6fcea; }
+#site-navigation a:hover { opacity: 1; }
+#menu-item-2218 { text-indent: -0.15em; }
+#menu-item-2219 { text-indent: -0.35em; }
+.menu-jininmi { display: block; }
+#site-admin { }
+#site-admin ul { display: inline-block; margin: 0; }
+#site-admin li { display: inline-block; }
+#site-admin a { opacity: .5; text-align: center; }
+#site-admin a:hover { opacity: 1; }
+
+#site-search { clear: left; margin: 1em 0; text-align: center; }
+#site-search label { font-family: "Philosopher", Georgia, serif; cursor: help; width: 80px; display: inline-block; text-align:  center; none; vertical-align: middle; line-height: 1.5; }
+#site-search input { font-family: "Philosopher", Georgia, serif; cursor: pointer; }
+#site-search input[type="text"] { font-style: italic; color: #777; padding: .3em .5em !important; font-size: 1.7em; border: none; border: 1px #ccc solid; width: 700px; display: inline-block !important; vertical-align: middle; }
+#site-search input[type="submit"] { font-size: 1.4em; border: none; background: none; vertical-align: middle; line-height: 1; position: relative; top: -0.1em; }
+
+section { display: block; }
+div.hfeed { clear: left; }
+div.entry-meta { clear: left; margin: 0 0 1.5em; }
+html.page .entry-title,
+html.single .entry-title { font-size: 2em; clear: left; }
+html.page .entry-title a,
+html.single .entry-title a { color: #222; text-decoration: none; }
+html.page .entry-content,
+html.single .entry-content { font-size: 1em; }
+
+html.search .entry-title { font-size: 1em; }
+html.search .entry-title a { color: #222; text-decoration: none; }
+html.search .hentry,
+html.search .hentry { width: 220px; float: left; margin: 0 10px; }
+html.search .hentry:nth-child(4n) { margin-right: 0; }
+html.search .hentry:nth-child(4n+1) { clear: left; margin-left: 0; }
+html.search .results-none { width: 100%; }
+html.search .p1 { margin-left: 0; }
+html.search .entry-meta { font-size: .8em; color: #999; }
+html.search .entry-content { margin-bottom: 1em; }
+html.search .navigation { clear: left; }
+.pagenavi-container { padding-bottom: 2em; }
+.footer-pagenavi { padding-bottom: 3em; }
+
+.site-name { position: relative; }
+.site-name span { font-size: 1.5em; letter-spacing: .2em; }
+.site-name a { text-decoration: none; }
+.a { display: inline; }
+.weedy { display: inline; }
+.florilegium { display: block; }
+.site-name .author-tag { 
+    display: block; 
+    position: absolute; 
+    color: #999; 
+    top: 1.5em; 
+    right: 1em; 
+    font-size: .8em; 
+    text-align: right;
+    width: 80px; }
+.site-name .author-tag a { display: inline !important; height: auto; }
+
+.site-description .drop-shadow { background: #f6fcea; }
+#latest { height: 57px; }
+#latest header { display: inline-block; }
+#latest h1 a,
+#latest h2 a { color: #222; text-decoration: none; }
+#latest h1 { font-size: 1em; margin: 0; display: inline-block; }
+#latest h2 { font-size: 1.4em; margin: 0; display: inline-block; }
+
+/**
+ * Home
+ */
+ 
+h1, h2, h3 { font-family: "Philosopher", Georgia, serif; }
+#home { margin-bottom: 2em; }
+#home h1 { display: none; }
+#home h2 { font-size: 1.5em; margin-bottom: .5em; color: #e0d0e0; }
+#home h3 { font-size: 1.2em; margin-bottom: .5em; }
+#home .grid_4 img { width: 220px; }
+#home article { margin: 1em 0 1.5em 0; }
+#home article p { margin: 1em 0 .7em; }
+#home .more { }
+#home .more a { display: block; padding: .5em 0; }
+#home .time { margin: .5em 0; font-size: .9em; color: #777; }
+#home time { border-bottom: 1px #ccc solid; }
+/*#home article:hover {
+    background: #f8f9e8;
+    top: -.2em;
+    left: .2em;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}*/
+
+.raised {
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Shared styles */
+
+html.single textarea,
+#site-search input[type="text"],
+.drop-shadow {
+    display: block; /* Shouldn't this be the case by default? */
+    position: relative;
+    padding: 1em;  
+    background: #fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+html.single textarea:before,
+html.single textarea:after,
+#site-search input[type="text"]:before,
+#site-search input[type="text"]:after,
+.drop-shadow:before,
+.drop-shadow:after {
+    content:"";
+    position:absolute; 
+    z-index:-2;
+}
+
+/**
+ * Single
+ */
+
+body.single div.post,
+body.page div.page {
+    font-size: 16px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    -webkit-column-rule: 1px dotted #bbb;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -moz-column-rule: 1px dotted #bbb;
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 1px dotted #bbb;
+}

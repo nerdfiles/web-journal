@@ -1,0 +1,93 @@
+/* BLOG.TXT TWO-COLUMN (RIGHT) LAYOUT */
+div#container{float:left;margin:0 0 0 -20em;width:100%; line-height: 2; }
+div#container{float:none;margin:0 auto;width:60%;}
+div#content{margin:0 0 0 20em; }
+div#content{margin:0; }
+div#footer{clear:both;width:100%;}
+div#header{margin:0 0 0 -0.9em;padding:1em 0 0 0;}
+div#header div#blog-description,div#header div.archive-description{margin:0.2em 0 0 0.9em;}
+div#header h1#blog-title{padding:0 0 0 0.2em;}
+div#primary{margin-top:1em;padding-top:1em;}
+div#secondary{clear:right;}
+div#wrapper{margin: 0 auto !important;margin:5em 0 0 0;}
+div.hfeed{margin:0 3em 0 0;}
+div.sidebar{border-left:0.1em solid #ccd0d6;overflow:hidden;padding-left:2.4em;width:17.5em;}
+a { }
+a:visited { }
+a:hover { border: none !important; }
+
+.admin { 
+    position: fixed; 
+    bottom: -1em; 
+    padding: 0; 
+    right: 1em; 
+    list-style: none; 
+    float: left; 
+    background: #efefef; 
+    border: 1px #dfdfdf solid; 
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+.admin li { float: left; margin: 0; display: none; }
+.admin li:last-child { float: left; margin: 0; border-left: none; }
+.admin a { color: #888; display: block; padding: 0.2em 1em 0.2em 1em; }
+.admin a:hover { color: #000; text-decoration: underline; }
+.admin .loading { 
+    background: url(../_assets/_img-ui/ajax-loader-3.gif) center right no-repeat; 
+    padding-right: 20px; 
+    margin-right: 4px; }
+
+.category-philosophy { }
+.category-philosophy .entry-content {  }
+.category-philosophy .entry-content p { position: relative; }
+.category-philosophy .entry-content p:before { content: "¶"; line-height: 1; position: absolute; left: -1em; font-size: 2em; top: 0.2em; color: #efefef; }
+.category-philosophy .entry-content blockquote p:before { content: ""; }
+
+#ajaxyForm {
+    position: fixed; 
+    bottom: 2.5em; 
+    right: 1em; 
+    border: 5px #e1e1e1 double;
+    -webkit-box-shadow: 0 0 5px #e1e1e1 inset;
+    -moz-box-shadow: 0 0 5px #e1e1e1 inset;
+    box-shadow: 0 0 5px #e1e1e1 inset;
+    padding: 10px;    
+    display: none; 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+#ajaxyForm.loading { background: url(../_assets/_img-ui/ajax-loader-1.gif) center center no-repeat; }
+#ajaxyForm.loading div { opacity: .3; }
+#ajaxyForm .form-inner { }
+#ajaxyForm .btn { 
+    padding: 2px 5px;
+    margin: 0;
+    border: none; 
+    background: #efefef; 
+    cursor: pointer;
+    font: .8em/1.5 Georgia, serif; 
+    font-style: italic;
+    color: #777;
+    border: 1px #dfdfdf solid; 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+#ajaxyForm .btn:hover {
+    color: #222; }
+#ajaxyForm .btn:focus,
+#ajaxyForm .btn:active { color: #96b083; }
+#ajaxyForm .cancel:active { color: #c30; }
+#ajaxyForm .cancel { }
+#ajaxyForm .reset { }
+#ajaxyForm .submit { }
+#ajaxyForm label { display: block; font-size: .8em; color: #777; }
+#ajaxyForm input { padding: 5px 5px 5px 5px; font: .8em/1.5 Georgia, serif; font-style: italic; border: 1px #ccc solid; }
+#ajaxyForm input:focus { outline: none; }
+#ajaxyForm input.text { }
+#ajaxyForm input.password { }
+#ajaxyForm .text-block { }
+#ajaxyForm .password-block { }
+#ajaxyForm .submit-block { margin: .5em 0 0 0; border-top: 3px #ccc double; padding: .5em 0 0 0; }
