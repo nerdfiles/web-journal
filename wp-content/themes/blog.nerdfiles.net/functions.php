@@ -187,9 +187,9 @@ function blogtxt_commenter_link() {
 	}
 	$email = get_comment_author_email();
 	$avatar_size = get_option('blogtxt_avatarsize');
-	if ( empty($avatar_size) ) $avatar_size = '16';
+	if ( empty($avatar_size) ) $avatar_size = '64';
 	$avatar = str_replace( "class='avatar", "class='photo avatar", get_avatar( "$email", "$avatar_size" ) );
-	echo $avatar . ' <span class="fn n">' . $commenter . '</span>';
+	echo '<div class="avatar">' . $avatar . '</div><span class="fn n">' . $commenter . '</span>';
 }
 
 // Function to filter the default gallery shortcode
@@ -845,5 +845,11 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 // Readies for translation.
-load_theme_textdomain('blogtxt')
+load_theme_textdomain('blogtxt');
+
+if (!is_admin() && !current_user_can('add_users')){
+    wp_deregister_script( 'admin-bar' );
+    wp_deregister_style( 'admin-bar' );
+    remove_action('wp_footer','wp_admin_bar_render',1000);
+}
 ?>

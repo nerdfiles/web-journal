@@ -1,3 +1,10 @@
+<?php
+if (!current_user_can('add_users')){
+ wp_deregister_script( 'admin-bar' );
+ wp_deregister_style( 'admin-bar' );
+ remove_action('wp_footer','wp_admin_bar_render',1000);
+}
+?>
 <!DOCTYPE HTML>
 <html lang="en" class="no-js <?php blogtxt_body_class() ?>">
 <head>
@@ -21,26 +28,30 @@
 		<?php bloginfo('name') ?>
 	</title>
 
-    <?php wp_head() // Do not remove; helps plugins work ?>
-
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Philosopher" type="text/css" /> 
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/text.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/960.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
-    <link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo('template_directory'); ?>/print.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Philosopher" type="text/css" /> 
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/text.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/960.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
+  <link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo('template_directory'); ?>/print.css" />
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/_assets/_js/mew.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/_assets/_js-lib/script.js/dist/script.min.js"></script>
+  <script>
+    $script('//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'jquery');
+    $script('<?php bloginfo('template_directory'); ?>/_assets/_js/mew.js', 'mew');
+  </script>
+  
+  <?php wp_head() // Do not remove; helps plugins work ?>
 
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php bloginfo('name') ?> <?php _e('RSS feed', 'blogtxt' ) ?>" />
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php bloginfo('name') ?> <?php _e( 'comments RSS feed', 'blogtxt' ) ?>" />
 	
+	<link rel="me" type="text/html" href="http://www.google.com/profiles/nerdfiles"/>
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 
 </head>
 
-<body class="<?php blogtxt_body_class() ?>">
+<body <?php body_class(); ?>>
 
 <div id="wrapper">
 	<div id="container" class="container_16 clearfix">
@@ -117,7 +128,8 @@
     				<ul class="admin-meta">
                     <?php if ( is_user_logged_in() ) { ?>
                         <li class="grid_2 alpha"><a class="drop-shadow" href="http://blog.nerdfiles.net/wp-admin/">proliferate</a></li>
-                        <li class="grid_2 omega"><a class="drop-shadow" href="http://blog.nerdfiles.net/wp-login.php?action=logout&#038;_wpnonce=2d602251a8">an exodus</a></li> 
+                        <li class="grid_2 omega"><a class="drop-shadow" onclick="google.friendconnect.requestSignOut()" href="#signout">an exodus</a></li> 
+                        <!-- http://blog.nerdfiles.net/wp-login.php?action=logout&#038;_wpnonce=2d602251a8 -->
                     <?php } else { ?>
                         <li class="grid_4 alpha omega"><a class="drop-shadow" href="http://blog.nerdfiles.net/wp-login.php">transpierce</a></li>
                     <?php }; ?>

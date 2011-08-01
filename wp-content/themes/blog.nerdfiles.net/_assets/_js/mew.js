@@ -16,11 +16,12 @@ $(document).ready(function() {
     $Lin.text("transpierce");
     */
     
-    $('p,ul,ol').hover(function() {
+    /*
+    $('#content p, #content ul, #content ol').hover(function() {
     
         var $self = $(this);
         
-        console.log($self);
+        //console.log($self);
         
         $self.closest('div').find('p,ul,ol').delay(700).addClass('not-this');
         
@@ -40,5 +41,6 @@ $(document).ready(function() {
         $self.closest('div').find('p,ul,ol').delay(2000).removeClass('not-this').removeClass('this');
     
     });
+    */
 
 });

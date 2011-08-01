@@ -1,5 +1,6 @@
 
 <section class="comments">
+
 <?php
 	$req = get_settings('require_name_email'); // Checks if fields are required
 	if ( 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']) )
@@ -24,14 +25,14 @@ foreach ( $comments as $comment )
 <?php if ( $comment_count ) : ?>
 <?php $blogtxt_comment_alt = 0 // Resets comment count for .alt classes ?>
 
-	<h1 class="comment-header" id="numcomments"><?php printf(__($comment_count > 1 ? 'Comments <span class="comment-count">%d</span>' : 'Comments <span class="comment-count">1</span>'), $comment_count) ?></h1>
+	<h1 class="comment-header" id="numcomments"><?php printf(__($comment_count > 1 ? 'Comments <span class="comment-count">%d</span>' : 'Responses [<span class="comment-count">1</span>]'), $comment_count) ?></h1>
 	<ol id="comments" class="commentlist">
 <?php foreach ($comments as $comment) : ?>
 <?php if ( get_comment_type() == "comment" ) : ?>
-		<li id="comment-<?php comment_ID() ?>" class="<?php blogtxt_comment_class() ?>">
-			<span class="comment-author vcard"><?php blogtxt_commenter_link() ?> <?php _e('wrote:', 'blogtxt') ?></span>
+		<li id="comment-<?php comment_ID() ?>" class="clear-fix <?php blogtxt_comment_class() ?>">
+			<span class="comment-author vcard"><?php blogtxt_commenter_link() ?> <?php _e('', 'blogtxt') ?></span>
 			<?php if ($comment->comment_approved == '0') : ?><span class="unapproved"><?php _e('Your comment is awaiting moderation.', 'blogtxt') ?></span><?php endif; ?>
-<?php comment_text() ?>
+            <div class="comment-entry"><?php comment_text() ?></div>
 			<span class="comment-meta"><?php printf(__('Posted <abbr class="comment-published" title="%1$s">%2$s at %3$s</abbr> <a class="comment-permalink" href="%4$s" title="Permalink to this comment">&para;</a>', 'blogtxt'),
 				get_the_time('Y-m-d\TH:i:sO'),
 				get_comment_date('d M Y'),
@@ -54,7 +55,7 @@ foreach ( $comments as $comment )
 
 <?php foreach ( $comments as $comment ) : ?>
 <?php if ( get_comment_type() != "comment" ) : ?>
-		<li id="comment-<?php comment_ID() ?>" class="<?php blogtxt_comment_class() ?>">
+		<li id="comment-<?php comment_ID() ?>" class="clear-fix <?php blogtxt_comment_class() ?>">
 			<span class="pingback-meta vcard"><?php printf(__('From <span class="fn n url org">%1$s</span> on <abbr class="comment-published" title="%2$s">%3$s at %4$s</abbr> <a class="pingback-permalink" href="%5$s" title="Permalink to this pingback">&para;</a>', 'blogtxt'),
 				get_comment_author_link(),
 				get_the_time('Y-m-d\TH:i:sO'),
@@ -62,7 +63,7 @@ foreach ( $comments as $comment )
 				get_comment_time(),
 				'#comment-' . get_comment_ID() ); ?> <?php edit_comment_link(__('Edit', 'blogtxt'), "<span class=\"comment-edit\"> &equiv; ", "</span>"); ?></span>
 			<?php if ($comment->comment_approved == '0') : ?><span class="unapproved"><?php _e('Your comment is awaiting moderation.', 'blogtxt') ?></span><?php endif; ?>
-<?php comment_text() ?>
+            <div class="comment-entry"><?php comment_text() ?></div>
 		</li>
 
 <?php endif ?>
@@ -76,9 +77,12 @@ foreach ( $comments as $comment )
 <?php if ( 'open' == $post->comment_status ) : ?>
 
 	<h2 id="respond"><?php _e('Leave a response', 'blogtxt') ?></h2>
+
+    <?php if (function_exists('gfc_profile')) { gfc_profile(); } ?>
+
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-	<p id="mustlogin"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'blogtxt'),
-			get_option('siteurl') . '/wp-login.php?redirect_to=' . get_permalink() ) ?></p>
+	<!--p id="mustlogin"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'blogtxt'),
+			get_option('siteurl') . '/wp-login.php?redirect_to=' . get_permalink() ) ?></p-->
 
 <?php else : ?>
 
@@ -87,10 +91,10 @@ foreach ( $comments as $comment )
 		<form id="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
 <?php if ( $user_ID ) : ?>
 
-			<p id="loggedin"><?php printf(__('Logged in as <a href="%1$s" title="View your profile" class="fn">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'blogtxt'),
+			<!--p id="loggedin"><?php printf(__('Logged in as <a href="%1$s" title="View your profile" class="fn">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'blogtxt'),
 					get_option('siteurl') . '/wp-admin/profile.php',
 					wp_specialchars($user_identity, true),
-					get_option('siteurl') . '/wp-login.php?action=logout&amp;redirect_to=' . get_permalink() ) ?></p>
+					get_option('siteurl') . '/wp-login.php?action=logout&amp;redirect_to=' . get_permalink() ) ?></p-->
 
 <?php else : ?>
 

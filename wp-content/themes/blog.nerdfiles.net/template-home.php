@@ -85,7 +85,9 @@ get_header() ?>
 </section>
 </div>
 
+</div><!-- .hfeed -->
+</div><!-- #content -->
+</div><!-- #container -->
+
 <?php get_sidebar() ?>
 <?php get_footer() ?>
-
-</div><!-- .hfeed -->
