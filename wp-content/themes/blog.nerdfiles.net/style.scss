@@ -43,7 +43,7 @@ div {
   &#header {
     a {}
     div {
-      &#blog-description, &.archive-description, &#blog-description {} }
+      &#blog-description, &.archive-description, &#blog-description { display: none; } }
     h1#blog-title {} }
   &#wrapper {
     .important {}
@@ -271,9 +271,10 @@ p.this { opacity: 1; }
 .form-submit {}
 
 .comments {
-  margin: 5em 0 0 0;
-  h1 {
-    margin: 0 0 .2em 0; }
+  margin: 3em 0 0 0;
+  padding-top: 2em;
+  border-top: 3px #ccc double;
+  
   .comment-author {
     text-align: center;
     padding: 0 0 0 20px;
@@ -281,13 +282,13 @@ p.this { opacity: 1; }
     float: left;
     display: block;
     width: 110px;
-    height: 200px;
+    height: 150px;
     img {} }
   div.avatar {
     display: inline-block;
     float: left;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
-    margin: 0 0 .4em 0; }
+    margin: 0 0 .6em 0; }
   li .fn {
     margin: 0 0 0 -20px;
     text-align: center;
@@ -310,12 +311,15 @@ p.this { opacity: 1; }
   .comment-entry {
     width: 600px;
     margin: 0 20px 0 0;
-    float: left; }
+    float: left; 
+    & ul { margin-left: 20px; }
+    & li { border-top: none; padding: 0; } }
   ol {
+    border-bottom: 3px #ccc double;
     font-size: 1.5em;
     list-style: none;
-    margin: 0 0 .5em 0;
-    padding: 0; }
+    margin: 0 0 2em;
+    padding: 0 0 1em; }
   li {
     &.c1 {
       border-top: none; }
@@ -337,7 +341,11 @@ p.this { opacity: 1; }
   padding: 5px 10px 2px;
   margin: 0 0 .5em 0; }
 
+#numcomments { 
+  margin: 0 0 .5em; }
+  
 #respond {
+  margin: 0 0 1em;
   clear: left; }
 
 textarea {
@@ -624,9 +632,14 @@ html.single textarea {
 
 body {
   &.page div.page h1 {
+    margin-top: .5em;
     text-align: center;
-    font-size: 4em; }
-  &.single div.post .entry-content, &.page div.page .entry-content {
+    font-size: 4em;
+    text-shadow: -.5em -.5em .1em rgba(200,200,200,.3); }
+  &.single div.post .entry-content {
+    font-size: 16px;
+  }
+  &.page div.page .entry-content {
     font-size: 16px;
     -webkit-column-count: 2;
     -webkit-column-gap: 40px;
@@ -651,12 +664,18 @@ body {
 /* (hasLayout trigger) */
 
 #footer {
-  padding: 1px 10px; }
+  padding: 20px 10px; 
+  background: #fff;
+  border-top: 3px #e0e0e0 double;
+  -moz-box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
+  -webkit-box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
+  box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
+  p { margin: 0; } }
 
 #gfc_profile {
-  margin: 0;
+  margin: -20px 0 0 !important;
   padding: 0;
-  border: none;
+  border: none !important;
   position: relative;
   top: -15px;
   font-size: 1em;
@@ -687,3 +706,49 @@ body.page-template-template-single-column-php div {
     column-count: 1;
     column-gap: 20px;
     column-rule: 1px dotted #BBB; } }
+    
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi {
+	clear: both;
+  border-top: 1px #BFBFBF solid;
+  border-bottom: 1px #BFBFBF solid;
+  padding: .5em 0;
+  text-align: center;
+  
+  & a, & span {
+	text-decoration: none;
+	padding: 3px 5px;
+	margin: 2px; } 
+
+  & a:hover, & span.current { border-color: #000; } 
+
+  & span.current { font-weight: bold; } }
+
+#site-social { position: relative; }
+.addthis_default_style { position: absolute; right: -1em; top: 240px; }
+body.home .addthis_default_style { }
+
+img.alignleft { float: left; margin: 0 1em 1em 0; line-height: 1; }
+
+body.single div.post .entry-content, 
+body.page div.page .entry-content { margin-bottom: 3em; }
+
+.byline { 
+  margin: 0 0 1em 0; 
+  color: #999;
+  
+  em { display: block; } }
+  
+.poem { 
+  margin: 0 0 1em;
+  
+  h2 { }
+  
+  pre { }
+  
+  cite { } }

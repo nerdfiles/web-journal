@@ -1,8 +1,65 @@
+$script.ready('jquery', function() {
+    
 $(document).ready(function() {
 
     $('#site-search label').attr('title', 'Search for anything you can dream of!');
     
-    $('html').removeClass('no-js').addClass('js-enabled');
+    $('html').removeClass('no-js').addClass('js-enabled js');
+    
+    $('.site-name').hover(function(e) {
+        $('.call-access-menu').animate({
+            opacity: 1
+        }, 500);
+    }, function(e) {
+        $('.call-access-menu').animate({
+            opacity: .4
+        }, 500);
+    });
+    
+    $(window).bind('keydown', function(e) {
+        
+        var code = (e.keyCode ? e.keyCode : e.which ? e.which : e.charCode),
+            $siteAccess = $('#site-access');
+        
+        // escape key
+        
+        if ( code == 27 ) { 
+            
+            if ( $siteAccess.data('oldstate') != 'hide' ) {
+                
+                // animate
+                
+                $siteAccess.css({
+                    'left': 0,
+                    'position': 'relative'
+                }).hide().slideDown();
+                
+                // set state when done
+                
+                $siteAccess.data('oldstate', 'hide');
+                
+            } else {
+                
+                // animate
+                
+                $siteAccess.slideUp('slow', function() {
+                    
+                    $(this).css({
+                        'left': '-9999px',
+                        'position': 'absolute'
+                    })
+                    
+                });
+                
+                // set state when done
+                
+                $siteAccess.data('oldstate', 'show');
+            }
+            
+        }
+    
+    });
+    
     /*
     var $Dashboard = $(".admin-meta li a:contains('Site Admin')"),
         $Lout = $(".admin-meta li a:contains('Log out')"),
@@ -42,5 +99,7 @@ $(document).ready(function() {
     
     });
     */
+
+});
 
 });

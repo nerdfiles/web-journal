@@ -1,4 +1,145 @@
 <?php
+
+add_action('wp', 'clear_fe', 1);
+
+function clear_fe() {
+    global $comments;
+    global $post;
+    
+    if (!is_admin()) {
+    remove_action('wp_head', 'GA_Filterspool_analytics', 2);
+    remove_action('wp_head', 'wp_generator', 10);
+    remove_action('wp_head', 'wp_print_styles', 8);
+    //remove_action('wp_head', 'wp_print_head_scripts', 9);
+    //remove_action('wp_head', 'rel_canonical');
+    //remove_action('wp_head', 'wp_shortlink_wp_head');
+    remove_action('wp_head', 'gfc_wp_head', 10);
+    remove_action('wp_head', 'gfci_header', 10);
+    
+    //add_action('wp_footer', 'gfc_wp_head');
+    add_action('wp_footer', 'g_analytics', 2);
+    if ( !is_front_page() && 'open' == $post->comment_status ) {
+      add_action('wp_footer', 'friendconnect', 1);
+    }
+    
+    wp_deregister_script('l10n');
+    wp_deregister_script('jquery');
+    }
+}
+
+function friendconnect() {
+?>
+<style type="text/css">
+
+    #gfc_profile {
+        font-size: 11px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin: 20px 40px;
+        padding: 15px;
+    }
+
+    #gfc_profile img {
+        border: 2px solid grey;
+        margin-top: 15px;
+        margin-right: 10px;     
+    }
+
+    #gfc_profile ul {
+        list-style-type:none;
+    }
+
+    #gfc_profile ul li {
+        list-style-type:none;
+    } 
+</style>
+
+<!-- Load the Google AJAX API Loader -->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<!-- Load the Google Friend Connect javascript library. -->
+
+<script type="text/javascript">
+google.load('friendconnect', '0.8');
+</script>
+
+<!-- Initialize the Google Friend Connect OpenSocial API. -->
+<script type="text/javascript">
+var SITE_ID = "12148896585969289050"
+google.friendconnect.container.setParentUrl('http://blog.nerdfiles.net/' /* location of rpc_relay.html and canvas.html */);
+google.friendconnect.container.initOpenSocialApi({
+    site: SITE_ID,
+    onload: function(securityToken) { 
+        if (!window.timesloaded) {
+            window.timesloaded = 1;
+        } else {
+            window.timesloaded++;
+        }
+        initAllData(window.timesloaded); 
+    }
+});
+</script>
+<script type="text/javascript">
+
+// Send request to GFC if needed
+
+function initAllData(gfc_loaded) {
+
+    if ( gfc_loaded > 1 ) {
+        //Page is loded twice or more
+        //Sign In or Sign out happened -> reload page
+        window.location.reload();
+    } else {
+        google.friendconnect.renderSignInButton({ 'id': 'gfc_profile','style':'standard','text': 'Sign In'});
+    }
+};   
+</script>
+<script type="text/javascript" src="http://www.google.com/friendconnect/script/friendconnect.js"></script>
+<?php
+}
+
+function g_analytics() {
+?>
+<script>
+//<![CDATA[
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount','UA-1343124-3']);
+_gaq.push(['_trackPageview'],['_trackPageLoadTime']);
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//]]>
+</script>
+<?php
+}
+
+function list_hooked_functions($tag=false){
+ global $wp_filter;
+ if ($tag) {
+  $hook[$tag]=$wp_filter[$tag];
+  if (!is_array($hook[$tag])) {
+  trigger_error("Nothing found for '$tag' hook", E_USER_WARNING);
+  return;
+  }
+ }
+ else {
+  $hook=$wp_filter;
+  ksort($hook);
+ }
+ echo '<pre>';
+ foreach($hook as $tag => $priority){
+  echo "<br />&gt;&gt;&gt;&gt;&gt;\t<strong>$tag</strong><br />";
+  ksort($priority);
+  foreach($priority as $priority => $function){
+  echo $priority;
+  foreach($function as $name => $properties) echo "\t$name<br />";
+  }
+ }
+ echo '</pre>';
+ return;
+}
+
 // Produces links for every page just below the header
 function blogtxt_globalnav() {
 	echo "\t\t\t<div id=\"globalnav\"><ul id=\"menu\">";
@@ -524,6 +665,7 @@ function blogtxt_add_admin() {
 }
 
 function blogtxt_donate() { 
+/*
 	$form = '<form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 		<div id="donate">
 			<input type="hidden" name="cmd" value="_s-xclick" />
@@ -533,6 +675,8 @@ function blogtxt_donate() {
 		</div>
 	</form>' . "\n\t";
 	echo $form;
+*/
+  echo "";
 }
 
 function blogtxt_admin_head() {
@@ -612,7 +756,7 @@ function blogtxt_admin() { // Theme options menu
 					<input id="bt_blogtitlefontArial" name="bt_blogtitlefontfamily" type="radio" class="radio" value="arial,helvetica,sans-serif" <?php if ( get_option('blogtxt_blogtitlefontfamily') == "arial,helvetica,sans-serif" ) { echo 'checked="checked"'; } ?> tabindex="20" /> <label for="bt_blogtitlefontArial" class="arial">Arial</label><br />
 					<input id="bt_blogtitlefontCourier" name="bt_blogtitlefontfamily" type="radio" class="radio" value="'courier new',courier,monospace" <?php if ( get_option('blogtxt_blogtitlefontfamily') == "'courier new',courier,monospace" ) { echo 'checked="checked"'; } ?> tabindex="21" /> <label for="bt_blogtitlefontCourier" class="courier">Courier</label><br />
 					<input id="bt_blogtitlefontGeorgia" name="bt_blogtitlefontfamily" type="radio" class="radio" value="georgia,times,serif" <?php if ( get_option('blogtxt_blogtitlefontfamily') == "georgia,times,serif" ) { echo 'checked="checked"'; } ?> tabindex="22" /> <label for="bt_blogtitlefontGeorgia" class="georgia">Georgia</label><br />
-					<input id="bt_blogtitlefontLucidaConsole" name="bt_blogtitlefontfamily" type="radio" class="radio" value="'lucida console',monaco,monospace" <?php if ( get_option('blogtxt_blogtitlefontfamily') == "'lucida console',monaco,monospace" ) { echo 'checked="checked"'; } ?> tabindex="23" /> <label for="bt_blogtitlefontLucidaConsole" class="lucida-console">Lucida Console</label><br />
+					<in©put id="bt_blogtitlefontLucidaConsole" name="bt_blogtitlefontfamily" type="radio" class="radio" value="'lucida console',monaco,monospace" <?php if ( get_option('blogtxt_blogtitlefontfamily') == "'lucida console',monaco,monospace" ) { echo 'checked="checked"'; } ?> tabindex="23" /> <label for="bt_blogtitlefontLucidaConsole" class="lucida-console">Lucida Console</label><br />
 					<input id="bt_blogtitlefontLucidaUnicode" name="bt_blogtitlefontfamily" type="radio" class="radio" value="'lucida sans unicode','lucida grande',sans-serif" <?php if ( get_option('blogtxt_blogtitlefontfamily') == "'lucida sans unicode','lucida grande',sans-serif" ) { echo 'checked="checked"'; } ?> tabindex="24" /> <label for="bt_blogtitlefontLucidaUnicode" class="lucida-unicode">Lucida Sans Unicode</label><br />
 					<input id="bt_blogtitlefontTahoma" name="bt_blogtitlefontfamily" type="radio" class="radio" value="tahoma,geneva,sans-serif" <?php if ( get_option('blogtxt_blogtitlefontfamily') == "tahoma,geneva,sans-serif" ) { echo 'checked="checked"'; } ?> tabindex="25" /> <label for="bt_blogtitlefontTahoma" class="tahoma">Tahoma</label><br />
 					<input id="bt_blogtitlefontTimes" name="bt_blogtitlefontfamily" type="radio" class="radio" value="'times new roman',times,serif" <?php if ( ( get_option('blogtxt_blogtitlefontfamily') == "") || ( get_option('blogtxt_blogtitlefontfamily') == "'times new roman',times,serif") ) { echo 'checked="checked"'; } ?> tabindex="26" /> <label for="bt_blogtitlefontTimes" class="times">Times</label><br />
@@ -848,8 +992,8 @@ add_filter('excerpt_more', 'new_excerpt_more');
 load_theme_textdomain('blogtxt');
 
 if (!is_admin() && !current_user_can('add_users')){
-    wp_deregister_script( 'admin-bar' );
-    wp_deregister_style( 'admin-bar' );
-    remove_action('wp_footer','wp_admin_bar_render',1000);
+    //wp_deregister_script( 'admin-bar' );
+    //wp_deregister_style( 'admin-bar' );
+    //remove_action('wp_footer','wp_admin_bar_render',1000);
 }
 ?>

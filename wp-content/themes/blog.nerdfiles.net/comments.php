@@ -1,3 +1,4 @@
+<?php if ( !is_front_page() && 'open' == $post->comment_status ) { ?>
 
 <section class="comments">
 
@@ -25,7 +26,7 @@ foreach ( $comments as $comment )
 <?php if ( $comment_count ) : ?>
 <?php $blogtxt_comment_alt = 0 // Resets comment count for .alt classes ?>
 
-	<h1 class="comment-header" id="numcomments"><?php printf(__($comment_count > 1 ? 'Comments <span class="comment-count">%d</span>' : 'Responses [<span class="comment-count">1</span>]'), $comment_count) ?></h1>
+	<h2 class="comment-header" id="numcomments"><?php printf(__($comment_count > 1 ? 'Responses, <span class="comment-count">%d</span>' : 'Response, <span class="comment-count">1</span>'), $comment_count) ?></h2>
 	<ol id="comments" class="commentlist">
 <?php foreach ($comments as $comment) : ?>
 <?php if ( get_comment_type() == "comment" ) : ?>
@@ -119,3 +120,5 @@ foreach ( $comments as $comment )
 <?php endif ?>
 <?php endif ?>
 </section><!-- .comments -->
+
+<?php } ?>

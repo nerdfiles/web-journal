@@ -9,45 +9,96 @@ if (!current_user_can('add_users')){
 <html lang="en" class="no-js <?php blogtxt_body_class() ?>">
 <head>
 
-    <meta charset="utf-8" />
-	<title>
-		<?php if ( is_404() ) : ?>
-			<?php _e('Page not found', 'blogtxt') ?>
-		<?php elseif ( is_home() ) : ?>
-			<?php echo "Home"; ?>
-		<?php elseif ( is_category() ) : ?>
-			<?php echo single_cat_title(); ?>
-		<?php elseif ( is_date() ) : ?>
-			<?php _e('Blog archives', 'blogtxt') ?>
-		<?php elseif ( is_search() ) : ?>
-			<?php _e('Search results', 'blogtxt') ?>
-		<?php else : ?>
-			<?php the_title() ?>
-		<?php endif ?>
-		&sect;
-		<?php bloginfo('name') ?>
-	</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+<meta name="viewport" content="width=device-width, initial-scale=0.33">  
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Philosopher" type="text/css" /> 
-  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/reset.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/text.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/960.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
-  <link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo('template_directory'); ?>/print.css" />
-    
-  <script src="<?php bloginfo('template_directory'); ?>/_assets/_js-lib/script.js/dist/script.min.js"></script>
-  <script>
-    $script('//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'jquery');
-    $script('<?php bloginfo('template_directory'); ?>/_assets/_js/mew.js', 'mew');
-  </script>
+<title>
+<?php if ( is_404() ) : ?>
+    <?php _e('Page not found', 'blogtxt') ?>
+<?php elseif ( is_home() ) : ?>
+    <?php echo "Home"; ?>
+<?php elseif ( is_category() ) : ?>
+    <?php echo single_cat_title(); ?>
+<?php elseif ( is_date() ) : ?>
+    <?php _e('Blog archives', 'blogtxt') ?>
+<?php elseif ( is_search() ) : ?>
+    <?php _e('Search results', 'blogtxt') ?>
+<?php else : ?>
+    <?php the_title() ?>
+<?php endif ?>
+ &sect; <?php bloginfo('name') ?>
+</title>
+
+<!-- Stylesheets -->
+
+<link 
+  rel="stylesheet" 
+  href="http://fonts.googleapis.com/css?family=Philosopher"
+  media="all" /> 
   
-  <?php wp_head() // Do not remove; helps plugins work ?>
+<link 
+  rel="stylesheet"
+  media="all" 
+  href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/reset.css" />
+  
+<link 
+  rel="stylesheet" 
+  media="all" 
+  href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/text.css" />
+  
+<link 
+  rel="stylesheet" 
+  media="all" 
+  href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/960.css" />
+  
+<link 
+  rel="stylesheet" 
+  media="all" 
+  href="<?php bloginfo('stylesheet_url'); ?>" />
+  
+<link 
+  rel="stylesheet" 
+  media="print" 
+  href="<?php bloginfo('template_directory'); ?>/print.css" />
+    
+<!-- Scripts -->
 
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php bloginfo('name') ?> <?php _e('RSS feed', 'blogtxt' ) ?>" />
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php bloginfo('name') ?> <?php _e( 'comments RSS feed', 'blogtxt' ) ?>" />
-	
-	<link rel="me" type="text/html" href="http://www.google.com/profiles/nerdfiles"/>
-	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
+<script src="<?php bloginfo('template_directory'); ?>/_assets/_js-lib/script.js/dist/script.min.js"></script>
+
+<script>
+  $script('//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'jquery');
+  $script('/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js', 'mew');
+  $script('/wp-includes/js/l10n.js?ver=20101110', 'l10n');
+</script>
+
+<!-- wp_head -->  
+<?php wp_head() // Do not remove; helps plugins work ?>
+<!-- End wp_head -->
+
+<!-- RDF Feed -->
+  
+<link 
+  rel="alternate" 
+  type="application/rdf+xml" 
+  href="<?php bloginfo('rdf_url') ?>" 
+  title="<?php bloginfo('name') ?> <?php _e('RDF feed', 'blogtxt' ) ?>" />
+
+<!-- Comments Feed -->
+
+<link 
+  rel="alternate" 
+  type="application/rss+xml" 
+  href="<?php bloginfo('comments_rss2_url') ?>" 
+  title="<?php bloginfo('name') ?> <?php _e( 'comments RSS feed', 'blogtxt' ) ?>" />
+
+<!-- Trace and Pinkbacks -->
+
+<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
+
+<!-- Misc -->
+
+<link rel="me" type="text/html" href="http://www.google.com/profiles/nerdfiles"/>
 
 </head>
 
@@ -60,14 +111,25 @@ if (!current_user_can('add_users')){
             <div id="header" class="clearfix">
             
                 <div id="site-access">
-                    <small>Note: 8 site access controls</small>
                     <ul>
-                        <li><span class="content-access"><a href="#content" title="<?php _e('Skip to content', 'blogtxt'); ?>"><?php _e('Skip to content', 'blogtxt'); ?></a></span></li>
+                        <?php
+                        $content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
+                        $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
+                        ?>
+                        <li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
+                        <?php
+                        global $post; 
+                        if ('open' == $post->comment_status && !is_front_page()) {
+                        ?>
+                        <li><span class="content-access"><a href="#respond" title="Respond to this post">Respond to this post</a></span></li>
+                        <?php } ?>
                         <li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'blogtxt'); ?>"><?php _e('Skip to #latest post', 'blogtxt'); ?></a></span></li>
+                        <?php if(is_front_page()) { ?>
                         <li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art posts', 'blogtxt'); ?>"><?php _e('Skip to #art related posts', 'blogtxt'); ?></a></span></li>
                         <li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'blogtxt'); ?>"><?php _e('Skip to #philosophy related posts', 'blogtxt'); ?></a></span></li>
                         <li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life posts', 'blogtxt'); ?>"><?php _e('Skip to #life related posts', 'blogtxt'); ?></a></span></li>
                         <li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'blogtxt'); ?>"><?php _e('Skip to #web related posts', 'blogtxt'); ?></a></span></li>
+                        <?php } ?>
                         <li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to navigation', 'blogtxt'); ?>"><?php _e('Skip to navigation', 'blogtxt'); ?></a></span></li>
                         <li><span class="content-access"><a href="#site-search" title="<?php _e('Skip to search', 'blogtxt'); ?>"><?php _e('Skip to search', 'blogtxt'); ?></a></span></li>
                         <li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to administrator\'s section', 'blogtxt'); ?>"><?php _e('Skip to administrator\'s section', 'blogtxt'); ?></a></span></li>
@@ -77,6 +139,18 @@ if (!current_user_can('add_users')){
 				<div id="site-header" class="grid_16 alpha">
     				<div class="grid_4 alpha site-name">
     				    <div class="drop-shadow">
+    				        <span class="call-access-menu">&uarr; escape</span>
+                            <style>
+                                .call-access-menu { 
+                                    position: absolute; 
+                                    font-size: 9px !important; 
+                                    color: #999;
+                                    font-weight: 400; 
+                                    margin-top: -10px; 
+                                    margin-left: 4px;
+                                    opacity: .4;
+                                    text-shadow: 0 0 1px rgba(30,30,30,.5); }
+                            </style>
     				        <a href="<?php echo get_settings('home') ?>/" title="A weedy florilegium">
     				            <span class="a">A</span>
     				            <span class="weedy">weedy</span>
@@ -128,8 +202,11 @@ if (!current_user_can('add_users')){
     				<ul class="admin-meta">
                     <?php if ( is_user_logged_in() ) { ?>
                         <li class="grid_2 alpha"><a class="drop-shadow" href="http://blog.nerdfiles.net/wp-admin/">proliferate</a></li>
-                        <li class="grid_2 omega"><a class="drop-shadow" onclick="google.friendconnect.requestSignOut()" href="#signout">an exodus</a></li> 
-                        <!-- http://blog.nerdfiles.net/wp-login.php?action=logout&#038;_wpnonce=2d602251a8 -->
+                        <?php if (!current_user_can('administrator')) { ?>
+                        <li class="grid_2 omega"><a class="drop-shadow" onclick="google.friendconnect.requestSignOut()" href="#signout">an exodus</a></li>
+                        <?php } else { ?> 
+                        <li class="grid_2 omega"><a class="drop-shadow" href="http://blog.nerdfiles.net/wp-login.php?action=logout&#038;_wpnonce=2d602251a8">an exodus</a></li>
+                        <?php } ?>
                     <?php } else { ?>
                         <li class="grid_4 alpha omega"><a class="drop-shadow" href="http://blog.nerdfiles.net/wp-login.php">transpierce</a></li>
                     <?php }; ?>
@@ -138,7 +215,19 @@ if (!current_user_can('add_users')){
 
 				<div id="site-search" class="grid_16 alpha">
                     <?php get_search_form(); ?>
-                </div>
+        </div>
+        
+    <div id="site-social">
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+<!-- AddThis Button BEGIN -->
+    <a class="addthis_button_google_plusone"></a>
+    <!--a class="addthis_counter addthis_pill_style"></a-->
+    </div>
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e2f186100316162"></script>
+    <!-- AddThis Button END -->
+    </div>
 				
 <?php the_post() ?>
 
