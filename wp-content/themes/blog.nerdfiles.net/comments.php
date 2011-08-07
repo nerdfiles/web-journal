@@ -38,7 +38,11 @@ foreach ( $comments as $comment )
 				get_the_time('Y-m-d\TH:i:sO'),
 				get_comment_date('d M Y'),
 				get_comment_time(),
-				'#comment-' . get_comment_ID() ); ?> <?php edit_comment_link(__('Edit', 'blogtxt'), "<span class=\"comment-edit\"> &equiv; ", "</span>"); ?></span>
+				'#comment-' . get_comment_ID() ); ?> 
+				<?php if (is_user_logged_in()) { ?>
+				[<a href="http://blog.nerdfiles.net/wp-admin/comment.php?action=editcomment&c=<?php echo get_comment_ID(); ?>">Edit</a>]
+				<?php } ?>
+				</span>
 		</li>
 
 <?php endif; ?>
@@ -110,7 +114,7 @@ foreach ( $comments as $comment )
 <?php endif ?>
 
 			<div class="form-textarea-label"><label for="comment"><?php _e('Your response', 'blogtxt') ?></label></div>
-			<div class="form-textarea"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="6"></textarea></div>
+			<div class="form-textarea"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="6" class="drop-shadow"></textarea></div>
 			<div class="form-submit"><input id="submit" name="submit" type="submit" value="<?php _e('Post', 'blogtxt') ?>" tabindex="7" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></div>
 
 <?php do_action('comment_form', $post->ID); ?>

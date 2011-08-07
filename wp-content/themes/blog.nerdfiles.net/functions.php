@@ -992,8 +992,11 @@ add_filter('excerpt_more', 'new_excerpt_more');
 load_theme_textdomain('blogtxt');
 
 if (!is_admin() && !current_user_can('add_users')){
-    //wp_deregister_script( 'admin-bar' );
-    //wp_deregister_style( 'admin-bar' );
-    //remove_action('wp_footer','wp_admin_bar_render',1000);
+    wp_deregister_script( 'admin-bar' );
+    wp_deregister_style( 'admin-bar' );
+    remove_action('wp_footer','wp_admin_bar_render',1000);
 }
+
+add_filter( 'show_admin_bar', '__return_false' );
+
 ?>

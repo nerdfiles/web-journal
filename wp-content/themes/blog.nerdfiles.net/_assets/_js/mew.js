@@ -16,6 +16,10 @@ $(document).ready(function() {
         }, 500);
     });
     
+    $('a[href="#s"],a[href="#site-search"]').bind('click', function(e) {
+      $('#s').focus();
+    });
+    
     $(window).bind('keydown', function(e) {
         
         var code = (e.keyCode ? e.keyCode : e.which ? e.which : e.charCode),

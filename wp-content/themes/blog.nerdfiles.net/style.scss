@@ -350,7 +350,7 @@ p.this { opacity: 1; }
 
 textarea {
   border: 1px #ccc solid;
-  width: 100%;
+  width: 97.5%;
   font: 1.3em / 1.3 "Philosopher", Georgia, serif;
   padding: .5em !important; }
 
@@ -730,7 +730,7 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   & span.current { font-weight: bold; } }
 
 #site-social { position: relative; }
-.addthis_default_style { position: absolute; right: -1em; top: 240px; }
+.addthis_default_style { position: absolute; right: -1em; top: 268px; }
 body.home .addthis_default_style { }
 
 img.alignleft { float: left; margin: 0 1em 1em 0; line-height: 1; }
@@ -752,3 +752,4 @@ body.page div.page .entry-content { margin-bottom: 3em; }
   pre { }
   
   cite { } }
+  

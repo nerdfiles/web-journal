@@ -153,7 +153,7 @@ p.this { opacity: 1; }
 
 textarea {
   border: 1px #ccc solid;
-  width: 100%;
+  width: 97.5%;
   font: 1.3em/1.3 "Philosopher", Georgia, serif;
   padding: .5em !important; }
 
@@ -520,7 +520,7 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 .addthis_default_style {
   position: absolute;
   right: -1em;
-  top: 240px; }
+  top: 268px; }
 
 img.alignleft {
   float: left;
