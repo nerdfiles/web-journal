@@ -753,3 +753,6 @@ body.page div.page .entry-content { margin-bottom: 3em; }
   
   cite { } }
   
+blockquote { margin: 1em 0 0; }
+blockquote cite { display: block; text-align: right; font-sty1le: italic; font-size: 1.3em; opacity: .7; }
+blockquote em { display: inline; }

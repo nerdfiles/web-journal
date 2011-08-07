@@ -1007,11 +1007,23 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Readies for translation.
 load_theme_textdomain('blogtxt');
 
+/*
+add_action('wp', 'adminbar');
+
+function adminbar() {
+  add_action( 'wp_head', 'wp_admin_bar_header' );
+  wp_enqueue_script( 'admin-bar' );
+  wp_enqueue_style( 'admin-bar' );
+  do_action( 'admin_bar_init' ); 
+  add_action('wp_footer','wp_admin_bar_render',1000);
+}
+
 if (!is_admin() && !current_user_can('add_users')){
     wp_deregister_script( 'admin-bar' );
     wp_deregister_style( 'admin-bar' );
     remove_action('wp_footer','wp_admin_bar_render',1000);
 }
+*/
 
 add_filter( 'show_admin_bar', '__return_false' );
 

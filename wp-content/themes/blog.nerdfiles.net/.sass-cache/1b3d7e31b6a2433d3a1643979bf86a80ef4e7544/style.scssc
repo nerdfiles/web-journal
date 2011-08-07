@@ -1,8 +1,8 @@
 3.1.5 (Brainy Betty)
-a757757bc346139e3d6910c428b3d25cba605b33
+15e0094c6f239c5635c6930ca0c2a9f75da9496a
 o:Sass::Tree::RootNode
 :
-@linei:@template"…B/*
+@linei:@template"3C/*
 Theme Name: blog.nerdfiles.net
 Theme URI: http://blog.nerdfiles.net/
 Description: ...
@@ -756,7 +756,10 @@ body.page div.page .entry-content { margin-bottom: 3em; }
   pre { }
   
   cite { } }
-  :@options{ :@has_childrenT:@children[eo:Sass::Tree::CommentNode;i:@silent0;@:@lines[ ;
+  
+blockquote { margin: 1em 0 0; }
+blockquote cite { display: block; text-align: right; font-sty1le: italic; font-size: 1.3em; opacity: .7; }
+blockquote em { display: inline; }:@options{ :@has_childrenT:@children[ho:Sass::Tree::CommentNode;i:@silent0;@:@lines[ ;
 [ :
 @loud0:@value"Ë/*
 Theme Name: blog.nerdfiles.net
@@ -1799,4 +1802,18 @@ block;["em;o;;ié;[o;;[o;;ié;[o;	;ié;["em;0;" ;@
 [ ;["h2;o;;iî;[o;;[o;;iî;[o;	;iî;["h2;0;" ;@b%;@b%o;;ið;@;	T;i ;
 [ ;["pre;o;;ið;[o;;[o;;ið;[o;	;ið;["pre;0;" ;@p%;@p%o;;iò;@;	T;i ;
 [ ;["	cite;o;;iò;[o;;[o;;iò;[o;	;iò;["	cite;0;" ;@~%;@~%;["
-.poem;o;;ië;[o;;[o;;ië;[o;';ië;["	poem;" ;@Š%;@Š%
+.poem;o;;ië;[o;;[o;;ië;[o;';ië;["	poem;" ;@Š%;@Š%o;;iô;@;	T;i ;
+[o;;iô;;;@;i ;
+[ ;["margin;o;; ;!;@;"1em 0 0;["blockquote;o;;iô;[o;;[o;;iô;[o;	;iô;["blockquote;0;" ;@ž%;@ž%o;;iõ;@;	T;i ;
+[
+o;;iõ;;;@;i ;
+[ ;["display;o;; ;!;@;"
+blocko;;iõ;;;@;i ;
+[ ;["text-align;o;; ;!;@;"
+righto;;iõ;;;@;i ;
+[ ;["font-sty1le;o;; ;!;@;"italico;;iõ;;;@;i ;
+[ ;["font-size;o;; ;!;@;"
+1.3emo;;iõ;;;@;i ;
+[ ;["opacity;o;; ;!;@;".7;["blockquote cite;o;;iõ;[o;;[o;;iõ;[o;	;iõ;["blockquote;0;" ;@Ê%o;;iõ;[o;	;iõ;["	cite;0;@Ê%;@Ê%;@Ê%o;;iö;@;	T;i ;
+[o;;iö;;;@;i ;
+[ ;["display;o;; ;!;@;"inline;["blockquote em;o;;iö;[o;;[o;;iö;[o;	;iö;["blockquote;0;" ;@ã%o;;iö;[o;	;iö;["em;0;@ã%;@ã%;@ã%

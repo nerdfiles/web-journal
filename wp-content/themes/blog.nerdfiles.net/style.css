@@ -12,9 +12,9 @@ General comments (optional).
 a {
   color: #acbf87;
   opacity: 1 !important; }
-a:link {
-  color: #acbf87;
-  opacity: 1 !important; }
+  a:link {
+    color: #acbf87;
+    opacity: 1 !important; }
 
 div#header div#blog-description, div#header div.archive-description, div#header div#blog-description {
   display: none; }
@@ -29,8 +29,8 @@ div#header div#blog-description, div#header div.archive-description, div#header 
 .admin-meta a {
   color: #222;
   text-decoration: none; }
-.admin-meta a:hover {
-  background-color: #fcf7f4; }
+  .admin-meta a:hover {
+    background-color: #fcf7f4; }
 
 /**
  * JavaScript
@@ -76,67 +76,67 @@ p.this { opacity: 1; }
   margin: 3em 0 0 0;
   padding-top: 2em;
   border-top: 3px #ccc double; }
-.comments .comment-author {
-  text-align: center;
-  padding: 0 0 0 20px;
-  margin: 1em 0 0 0;
-  float: left;
-  display: block;
-  width: 110px;
-  height: 150px; }
-.comments div.avatar {
-  display: inline-block;
-  float: left;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
-  margin: 0 0 .6em 0; }
-.comments li .fn {
-  margin: 0 0 0 -20px;
-  text-align: center;
-  display: block;
-  width: 100%;
-  clear: left;
-  float: left; }
-.comments .comment-meta {
-  margin: 1em 0 0 0;
-  float: left;
-  font-size: 11px;
-  width: 190px;
-  opacity: .6;
-  display: block; }
-.comments li {
-  margin: 0 auto;
-  clear: left; }
-.comments li:hover .comment-meta {
-  opacity: 1; }
-.comments .comment-entry {
-  width: 600px;
-  margin: 0 20px 0 0;
-  float: left; }
-.comments .comment-entry ul {
-  margin-left: 20px; }
-.comments .comment-entry li {
-  border-top: none;
-  padding: 0; }
-.comments ol {
-  border-bottom: 3px #ccc double;
-  font-size: 1.5em;
-  list-style: none;
-  margin: 0 0 2em;
-  padding: 0 0 1em; }
-.comments li {
-  margin: 0;
-  padding: 0;
-  border-top: 1px #ccc solid;
-  padding: 1em 0; }
-.comments li.c1 {
-  border-top: none; }
-.comments label {
-  font: 2em/1 "Philosopher", Georgia, serif; }
-.comments input[type="submit"] {
-  border: none;
-  font-size: 3em;
-  font-family: "Philosopher", Georgia, serif;
-  background: transparent; }
+  .comments .comment-author {
+    text-align: center;
+    padding: 0 0 0 20px;
+    margin: 1em 0 0 0;
+    float: left;
+    display: block;
+    width: 110px;
+    height: 150px; }
+  .comments div.avatar {
+    display: inline-block;
+    float: left;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    margin: 0 0 .6em 0; }
+  .comments li .fn {
+    margin: 0 0 0 -20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    clear: left;
+    float: left; }
+  .comments .comment-meta {
+    margin: 1em 0 0 0;
+    float: left;
+    font-size: 11px;
+    width: 190px;
+    opacity: .6;
+    display: block; }
+  .comments li {
+    margin: 0 auto;
+    clear: left; }
+    .comments li:hover .comment-meta {
+      opacity: 1; }
+  .comments .comment-entry {
+    width: 600px;
+    margin: 0 20px 0 0;
+    float: left; }
+    .comments .comment-entry ul {
+      margin-left: 20px; }
+    .comments .comment-entry li {
+      border-top: none;
+      padding: 0; }
+  .comments ol {
+    border-bottom: 3px #ccc double;
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0 0 2em;
+    padding: 0 0 1em; }
+  .comments li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px #ccc solid;
+    padding: 1em 0; }
+    .comments li.c1 {
+      border-top: none; }
+  .comments label {
+    font: 2em/1 "Philosopher", Georgia, serif; }
+  .comments input[type="submit"] {
+    border: none;
+    font-size: 3em;
+    font-family: "Philosopher", Georgia, serif;
+    background: transparent; }
 
 .unapproved {
   background: #ffdd77;
@@ -166,32 +166,32 @@ textarea {
 
 #site-header {
   margin: 0 0 1.5em 0; }
-#site-header .site-name {
-  font-family: "Philosopher", Georgia, serif; }
-#site-header .site-name a {
-  height: 57px;
-  display: block;
-  color: #222; }
-#site-header .site-description {
-  font-family: "Philosopher", Georgia, serif; }
+  #site-header .site-name {
+    font-family: "Philosopher", Georgia, serif; }
+    #site-header .site-name a {
+      height: 57px;
+      display: block;
+      color: #222; }
+  #site-header .site-description {
+    font-family: "Philosopher", Georgia, serif; }
 
 #site-navigation {
   clear: left; }
-#site-navigation ul {
-  display: inline-block;
-  margin: 0; }
-#site-navigation li {
-  display: inline-block; }
-#site-navigation a {
-  opacity: .5;
-  text-align: center;
-  color: #222; }
-#site-navigation a:visited {
-  color: #222; }
-#site-navigation a.drop-shadow:hover {
-  background: #f6fcea; }
-#site-navigation a:hover {
-  opacity: 1; }
+  #site-navigation ul {
+    display: inline-block;
+    margin: 0; }
+  #site-navigation li {
+    display: inline-block; }
+  #site-navigation a {
+    opacity: .5;
+    text-align: center;
+    color: #222; }
+    #site-navigation a:visited {
+      color: #222; }
+    #site-navigation a.drop-shadow:hover {
+      background: #f6fcea; }
+    #site-navigation a:hover {
+      opacity: 1; }
 
 #menu-item-2218 {
   text-indent: -0.15em; }
@@ -210,45 +210,45 @@ textarea {
 #site-admin a {
   opacity: .5;
   text-align: center; }
-#site-admin a:hover {
-  opacity: 1; }
+  #site-admin a:hover {
+    opacity: 1; }
 
 #site-search {
   opacity: .4;
   clear: left;
   margin: 1em 0;
   text-align: center; }
-#site-search:hover {
-  opacity: 7; }
-#site-search label {
-  font-family: "Philosopher", Georgia, serif;
-  cursor: help;
-  width: 80px;
-  display: inline;
-  text-align: center;
-  line-height: 1;
-  position: relative;
-  right: 10px; }
-#site-search input {
-  font-family: "Philosopher", Georgia, serif;
-  cursor: pointer; }
-#site-search input[type="text"] {
-  font-style: italic;
-  color: #777;
-  padding: .3em .5em !important;
-  font-size: 1.7em;
-  border: none;
-  border: 1px #ccc solid;
-  width: 700px;
-  display: inline !important; }
-#site-search input[type="submit"] {
-  font-size: 1.4em;
-  border: none;
-  display: inline;
-  background: none;
-  line-height: 1;
-  position: relative;
-  vertical-align: middle; }
+  #site-search:hover {
+    opacity: 7; }
+  #site-search label {
+    font-family: "Philosopher", Georgia, serif;
+    cursor: help;
+    width: 80px;
+    display: inline;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    right: 10px; }
+  #site-search input {
+    font-family: "Philosopher", Georgia, serif;
+    cursor: pointer; }
+    #site-search input[type="text"] {
+      font-style: italic;
+      color: #777;
+      padding: .3em .5em !important;
+      font-size: 1.7em;
+      border: none;
+      border: 1px #ccc solid;
+      width: 700px;
+      display: inline !important; }
+  #site-search input[type="submit"] {
+    font-size: 1.4em;
+    border: none;
+    display: inline;
+    background: none;
+    line-height: 1;
+    position: relative;
+    vertical-align: middle; }
 
 section {
   display: block; }
@@ -269,18 +269,18 @@ html.page .entry-content, html.single .entry-content {
   font-size: 1em; }
 html.search .entry-title {
   font-size: 1em; }
-html.search .entry-title a {
-  color: #222;
-  text-decoration: none; }
+  html.search .entry-title a {
+    color: #222;
+    text-decoration: none; }
 html.search .hentry {
   width: 220px;
   float: left;
   margin: 0 10px; }
-html.search .hentry:nth-child(4n) {
-  margin-right: 0; }
-html.search .hentry:nth-child(4n+1) {
-  clear: left;
-  margin-left: 0; }
+  html.search .hentry:nth-child(4n) {
+    margin-right: 0; }
+  html.search .hentry:nth-child(4n+1) {
+    clear: left;
+    margin-left: 0; }
 html.search .results-none {
   width: 100%; }
 html.search .p1 {
@@ -301,11 +301,11 @@ html.search .navigation {
 
 .site-name {
   position: relative; }
-.site-name span {
-  font-size: 1.5em;
-  letter-spacing: .2em; }
-.site-name a {
-  text-decoration: none; }
+  .site-name span {
+    font-size: 1.5em;
+    letter-spacing: .2em; }
+  .site-name a {
+    text-decoration: none; }
 
 .a, .weedy {
   display: inline; }
@@ -322,28 +322,28 @@ html.search .navigation {
   font-size: .8em;
   text-align: right;
   width: 80px; }
-.site-name .author-tag a {
-  display: inline !important;
-  height: auto; }
+  .site-name .author-tag a {
+    display: inline !important;
+    height: auto; }
 
 .site-description .drop-shadow {
   background-color: #fcf7f4; }
 
 #latest {
   height: 57px; }
-#latest header {
-  display: inline-block; }
-#latest h1 a, #latest h2 a {
-  color: #222;
-  text-decoration: none; }
-#latest h1 {
-  font-size: 1em;
-  margin: 0;
-  display: inline-block; }
-#latest h2 {
-  font-size: 1.4em;
-  margin: 0;
-  display: inline-block; }
+  #latest header {
+    display: inline-block; }
+  #latest h1 a, #latest h2 a {
+    color: #222;
+    text-decoration: none; }
+  #latest h1 {
+    font-size: 1em;
+    margin: 0;
+    display: inline-block; }
+  #latest h2 {
+    font-size: 1.4em;
+    margin: 0;
+    display: inline-block; }
 
 /**
  * Home
@@ -353,30 +353,30 @@ h1, h2, h3 {
 
 #home {
   margin-bottom: 2em; }
-#home h1 {
-  display: none; }
-#home h2 {
-  font-size: 1.5em;
-  margin-bottom: .5em;
-  color: #acbf87; }
-#home h3 {
-  font-size: 1.2em;
-  margin-bottom: .5em; }
-#home .grid_4 img {
-  width: 220px; }
-#home article {
-  margin: 1em 0 1.5em 0; }
-#home article p {
-  margin: 1em 0 .7em; }
-#home .more a {
-  display: block;
-  padding: .5em 0; }
-#home .time {
-  margin: .5em 0;
-  font-size: .9em;
-  color: #777; }
-#home time {
-  border-bottom: 1px #ccc solid; }
+  #home h1 {
+    display: none; }
+  #home h2 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    color: #acbf87; }
+  #home h3 {
+    font-size: 1.2em;
+    margin-bottom: .5em; }
+  #home .grid_4 img {
+    width: 220px; }
+  #home article {
+    margin: 1em 0 1.5em 0; }
+    #home article p {
+      margin: 1em 0 .7em; }
+  #home .more a {
+    display: block;
+    padding: .5em 0; }
+  #home .time {
+    margin: .5em 0;
+    font-size: .9em;
+    color: #777; }
+  #home time {
+    border-bottom: 1px #ccc solid; }
 
 /*#home article:hover {
     background: #f8f9e8;
@@ -441,13 +441,13 @@ body.page div.page .entry-content {
 
 .clear-fix {
   zoom: 1; }
-.clear-fix:before {
-  content: "";
-  display: table; }
-.clear-fix:after {
-  content: "";
-  display: table;
-  clear: both; }
+  .clear-fix:before {
+    content: "";
+    display: table; }
+  .clear-fix:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /* (hasLayout trigger) */
 #footer {
@@ -457,8 +457,8 @@ body.page div.page .entry-content {
   -moz-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
   -webkit-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
   box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset; }
-#footer p {
-  margin: 0; }
+  #footer p {
+    margin: 0; }
 
 #gfc_profile {
   margin: -20px 0 0 !important;
@@ -467,21 +467,21 @@ body.page div.page .entry-content {
   position: relative;
   top: -15px;
   font-size: 1em; }
-#gfc_profile ul {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0px;
-  left: 75px; }
-#gfc_profile li {
-  margin: 0;
-  padding: 0;
-  display: inline;
-  border: none; }
-#gfc_profile img {
-  margin: 0;
-  padding: 0;
-  float: none !important; }
+  #gfc_profile ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    left: 75px; }
+  #gfc_profile li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    border: none; }
+  #gfc_profile img {
+    margin: 0;
+    padding: 0;
+    float: none !important; }
 
 body.page-template-template-single-column-php div.post .entry-content, body.page-template-template-single-column-php div.page .entry-content {
   -webkit-column-count: 1;
@@ -505,14 +505,14 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   border-bottom: 1px #BFBFBF solid;
   padding: .5em 0;
   text-align: center; }
-.wp-pagenavi a, .wp-pagenavi span {
-  text-decoration: none;
-  padding: 3px 5px;
-  margin: 2px; }
-.wp-pagenavi a:hover, .wp-pagenavi span.current {
-  border-color: #000; }
-.wp-pagenavi span.current {
-  font-weight: bold; }
+  .wp-pagenavi a, .wp-pagenavi span {
+    text-decoration: none;
+    padding: 3px 5px;
+    margin: 2px; }
+  .wp-pagenavi a:hover, .wp-pagenavi span.current {
+    border-color: #000; }
+  .wp-pagenavi span.current {
+    font-weight: bold; }
 
 #site-social {
   position: relative; }
@@ -527,14 +527,28 @@ img.alignleft {
   margin: 0 1em 1em 0;
   line-height: 1; }
 
-body.single div.post .entry-content, body.page div.page .entry-content {
+body.single div.post .entry-content,
+body.page div.page .entry-content {
   margin-bottom: 3em; }
 
 .byline {
   margin: 0 0 1em 0;
   color: #999; }
-.byline em {
-  display: block; }
+  .byline em {
+    display: block; }
 
 .poem {
   margin: 0 0 1em; }
+
+blockquote {
+  margin: 1em 0 0; }
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-sty1le: italic;
+  font-size: 1.3em;
+  opacity: .7; }
+
+blockquote em {
+  display: inline; }
