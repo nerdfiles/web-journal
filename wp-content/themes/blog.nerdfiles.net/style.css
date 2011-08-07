@@ -458,7 +458,19 @@ body.page div.page .entry-content {
   -webkit-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
   box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset; }
   #footer p {
-    margin: 0; }
+    margin: 0;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline; }
+  #footer .twitter {
+    position: relative;
+    top: .5em;
+    display: inline;
+    *zoom: 1;
+    *display: inline;
+    margin: 0 0 0 1em; }
+  #footer .twitter iframe {
+    display: inline; }
 
 #gfc_profile {
   margin: -20px 0 0 !important;

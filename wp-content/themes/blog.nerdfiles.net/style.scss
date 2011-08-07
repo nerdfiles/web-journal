@@ -670,7 +670,10 @@ body {
   -moz-box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
   -webkit-box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
   box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
-  p { margin: 0; } }
+  
+  p { margin: 0; display: inline-block; *zoom: 1; *display: inline; }
+  .twitter { position: relative; top: .5em; display: inline; *zoom: 1; *display: inline; margin: 0 0 0 1em; }  
+  .twitter iframe { display: inline; } }
 
 #gfc_profile {
   margin: -20px 0 0 !important;

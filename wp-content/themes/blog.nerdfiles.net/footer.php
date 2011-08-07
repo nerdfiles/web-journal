@@ -6,6 +6,8 @@
 
 <div id="footer">
 <p>Copyright &copy; 2003-2011. Rights &c. <a href="http://nerdfiles.net">nerdfiles.net</a></p>
+<div class="twitter"><a href="http://twitter.com/filesofnerds" class="twitter-follow-button">Follow @filesofnerds</a></div>
+<script src="http://platform.twitter.com/widgets.js"></script>
 </div><!-- #footer -->
 
 </div><!-- #wrapper -->
