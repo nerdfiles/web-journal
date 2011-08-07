@@ -217,13 +217,17 @@ text-shadow: 0 0 1px rgba(30,30,30,.5); }
 <?php get_search_form(); ?>
 </div><!-- End #site-search -->
 
-<div id="site-social">
-<div class="addthis_toolbox addthis_default_style">
-<a class="addthis_button_google_plusone"></a>
+<div id="site-social" class="clear-fix">
+<div class="section-inner">
+<script src="http://apis.google.com/js/plusone.js"></script>
+<g:plusone></g:plusone>
 </div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e2f186100316162"></script>
 </div><!-- End #site-social -->
+
+<style>
+#site-social { clear: left; }
+.section-inner { position: absolute; right: -3em; }
+</style>
 
 <?php the_post() ?><!-- the_post() -->
 
