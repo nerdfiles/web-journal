@@ -3,7 +3,6 @@
 add_action('wp', 'clear_fe', 1);
 
 function clear_fe() {
-    global $comments;
     global $post;
     
     if (!is_admin()) {
@@ -24,11 +23,28 @@ function clear_fe() {
     
     wp_deregister_script('l10n');
     wp_deregister_script('jquery');
+    
+    add_action('wp_footer', 'javascript_res', 11);
     }
+}
+
+function javascript_res() {
+?>
+<!-- Scripts -->
+
+<script src="<?php bloginfo('template_directory'); ?>/_assets/_js-lib/script.js/dist/script.min.js"></script>
+
+<script>
+  $script('//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'jquery');
+  $script('/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js', 'mew');
+  $script('/wp-includes/js/l10n.js?ver=20101110', 'l10n');
+</script>
+<?php
 }
 
 function friendconnect() {
 ?>
+
 <style type="text/css">
 
     #gfc_profile {

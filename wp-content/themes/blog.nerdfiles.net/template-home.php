@@ -13,7 +13,8 @@ get_header() ?>
 <section>
 <header><h2>Art</h2></header>
 <?php $my_query = new WP_Query('category_name=music,music-review,music-download,photo,poetry&posts_per_page=5&orderby=date&order=DESC'); ?>
-<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+<?php while ($my_query->have_posts()) : $my_query->the_post(); 
+$do_not_duplicate = $post->ID; ?>
 <article class="~drop-shadow">
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -32,7 +33,9 @@ get_header() ?>
 <section>
 <header><h2>Philosophy</h2></header>
 <?php $my_query = new WP_Query('category_name=philosophy,fair-trade,freethought,global,politics,wittgenstein,history,science,spinoza,theology,atheism,religion,readings,anarchism&posts_per_page=5&orderby=date&order=DESC'); ?>
-<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+<?php while ($my_query->have_posts()) : $my_query->the_post(); 
+if( $post->ID == $do_not_duplicate ) continue; 
+$do_not_duplicate = $post->ID; ?>
 <article class="~drop-shadow">
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -51,7 +54,9 @@ get_header() ?>
 <section>
 <header><h2>Life</h2></header>
 <?php $my_query = new WP_Query('category_name=uncategorized,none,podcasts,links,school,life,humor,news,school,foodstuffs&posts_per_page=5&orderby=date&order=DESC'); ?>
-<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+<?php while ($my_query->have_posts()) : $my_query->the_post(); 
+if( $post->ID == $do_not_duplicate ) continue; 
+$do_not_duplicate = $post->ID; ?>
 <article class="~drop-shadow">
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -70,7 +75,9 @@ get_header() ?>
 <section>
 <header><h2>Web</h2></header>
 <?php $my_query = new WP_Query('category_name=work,webdesign,webdev&posts_per_page=5&orderby=date&order=DESC'); ?>
-<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+<?php while ($my_query->have_posts()) : $my_query->the_post(); 
+if( $post->ID == $do_not_duplicate ) continue; 
+$do_not_duplicate = $post->ID; ?>
 <article class="~drop-shadow">
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>

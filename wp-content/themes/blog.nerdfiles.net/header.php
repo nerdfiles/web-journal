@@ -54,16 +54,6 @@
   rel="stylesheet" 
   media="print" 
   href="<?php bloginfo('template_directory'); ?>/print.css" />
-    
-<!-- Scripts -->
-
-<script src="<?php bloginfo('template_directory'); ?>/_assets/_js-lib/script.js/dist/script.min.js"></script>
-
-<script>
-  $script('//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'jquery');
-  $script('/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js', 'mew');
-  $script('/wp-includes/js/l10n.js?ver=20101110', 'l10n');
-</script>
 
 <!-- wp_head -->  
 <?php wp_head() // Do not remove; helps plugins work ?>
