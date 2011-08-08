@@ -1,9 +1,45 @@
 <?php
 
+function list_hooked_functions($tag=false){
+ global $wp_filter;
+ if ($tag) {
+  $hook[$tag]=$wp_filter[$tag];
+  if (!is_array($hook[$tag])) {
+  trigger_error("Nothing found for '$tag' hook", E_USER_WARNING);
+  return;
+  }
+ }
+ else {
+  $hook=$wp_filter;
+  ksort($hook);
+ }
+ echo '<pre>';
+ foreach($hook as $tag => $priority){
+  echo "<br />&gt;&gt;&gt;&gt;&gt;\t<strong>$tag</strong><br />";
+  ksort($priority);
+  foreach($priority as $priority => $function){
+  echo $priority;
+  foreach($function as $name => $properties) echo "\t$name<br />";
+  }
+ }
+ echo '</pre>';
+ return;
+}
+
+//list_hooked_functions('wp_head');
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+
+function remove_generator() {
+	return '';
+}
+
+add_filter('the_generator', 'remove_generator');
+
 add_action('wp', 'clear_fe', 1);
 
 function clear_fe() {
-    //global $post;
+    global $post;
     
     if (!is_admin()) {
     remove_action('wp_head', 'GA_Filterspool_analytics', 2);
@@ -18,13 +54,13 @@ function clear_fe() {
     //add_action('wp_footer', 'gfc_wp_head');
     add_action('wp_footer', 'g_analytics', 2);
     if ( !is_front_page() && 'open' == $post->comment_status ) {
-      add_action('wp_head', 'friendconnect', 1);
+      add_action('wp_head', 'friendconnect', 11);
     }
     
     wp_deregister_script('l10n');
     wp_deregister_script('jquery');
     
-    add_action('wp_head', 'javascript_res', 11);
+    add_action('wp_head', 'javascript_res', 9);
     }
 }
 
@@ -130,32 +166,6 @@ _gaq.push(['_trackPageview'],['_trackPageLoadTime']);
 //]]>
 </script>
 <?php
-}
-
-function list_hooked_functions($tag=false){
- global $wp_filter;
- if ($tag) {
-  $hook[$tag]=$wp_filter[$tag];
-  if (!is_array($hook[$tag])) {
-  trigger_error("Nothing found for '$tag' hook", E_USER_WARNING);
-  return;
-  }
- }
- else {
-  $hook=$wp_filter;
-  ksort($hook);
- }
- echo '<pre>';
- foreach($hook as $tag => $priority){
-  echo "<br />&gt;&gt;&gt;&gt;&gt;\t<strong>$tag</strong><br />";
-  ksort($priority);
-  foreach($priority as $priority => $function){
-  echo $priority;
-  foreach($function as $name => $properties) echo "\t$name<br />";
-  }
- }
- echo '</pre>';
- return;
 }
 
 // Produces links for every page just below the header

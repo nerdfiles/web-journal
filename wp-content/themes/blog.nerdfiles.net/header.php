@@ -27,36 +27,21 @@
 </title>
 
 <!-- Stylesheets -->
-
+  
 <link 
   rel="stylesheet" 
-  href="http://fonts.googleapis.com/css?family=Philosopher"
+  href="//fonts.googleapis.com/css?family=Philosopher"
   media="all" /> 
   
 <link 
-  rel="stylesheet"
-  media="all" 
-  href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/reset.css" />
-  
-<link 
   rel="stylesheet" 
   media="all" 
-  href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/text.css" />
-  
-<link 
-  rel="stylesheet" 
-  media="all" 
-  href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/960.css" />
+  href="<?php bloginfo('template_directory'); ?>/_assets/_css-lib/960.gs/css/min/combined.css" />
   
 <link 
   rel="stylesheet" 
   media="all" 
   href="<?php bloginfo('stylesheet_url'); ?>" />
-  
-<link 
-  rel="stylesheet" 
-  media="print" 
-  href="<?php bloginfo('template_directory'); ?>/print.css" />
 
 <?php wp_head() // Do not remove; helps plugins work ?>
 <!-- End wp_head -->
@@ -83,7 +68,7 @@
 
 <!-- Misc -->
 
-<link rel="me" type="text/html" href="//gplus.to/nerdfiles"/>
+<link rel="me" type="text/html" href="//gplus.to/nerdfiles" />
 
 </head>
 
@@ -107,14 +92,14 @@ $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
 global $post; 
 if ('open' == $post->comment_status && !is_front_page()) {
 ?>
-<li><span class="content-access"><a href="#respond" title="Respond to this post">Respond to this post</a></span></li>
+<li><span class="content-access"><a href="#respond" title="Respond to post">Respond to post</a></span></li>
 <?php } ?>
-<li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'blogtxt'); ?>"><?php _e('Skip to #latest post', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'blogtxt'); ?>"><?php _e('Skip to #latest', 'blogtxt'); ?></a></span></li>
 <?php if(is_front_page()) { ?>
-<li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art posts', 'blogtxt'); ?>"><?php _e('Skip to #art related posts', 'blogtxt'); ?></a></span></li>
-<li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'blogtxt'); ?>"><?php _e('Skip to #philosophy related posts', 'blogtxt'); ?></a></span></li>
-<li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life posts', 'blogtxt'); ?>"><?php _e('Skip to #life related posts', 'blogtxt'); ?></a></span></li>
-<li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'blogtxt'); ?>"><?php _e('Skip to #web related posts', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'blogtxt'); ?>"><?php _e('Skip to #art posts', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'blogtxt'); ?>"><?php _e('Skip to #philosophy posts', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'blogtxt'); ?>"><?php _e('Skip to #life posts', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'blogtxt'); ?>"><?php _e('Skip to #web posts', 'blogtxt'); ?></a></span></li>
 <?php } ?>
 <li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to navigation', 'blogtxt'); ?>"><?php _e('Skip to navigation', 'blogtxt'); ?></a></span></li>
 <li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'blogtxt'); ?>"><?php _e('Skip to search', 'blogtxt'); ?></a></span></li>
