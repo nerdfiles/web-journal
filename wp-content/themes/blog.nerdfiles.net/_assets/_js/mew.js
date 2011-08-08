@@ -23,8 +23,9 @@ $(document).ready(function() {
   	$.waypoints.settings.scrollThrottle = 30;
     
     $('#site-search').waypoint(function(event, direction) {
-      $(this).toggleClass('sticky', direction === "down");
-      $('#site-access').toggleClass('sticky', direction === "down");
+      $('.hfeed').toggleClass('sticky');
+      $(this).toggleClass('sticky');
+      $('#site-access').toggleClass('sticky');
       event.stopPropagation();
     });
     

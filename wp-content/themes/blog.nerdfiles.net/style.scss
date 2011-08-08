@@ -475,6 +475,7 @@ section {
 div {
   &.hfeed {
     clear: left; }
+  &.hfeed.sticky { padding-top: 3em; }
   &.entry-meta {
     clear: left;
     margin: 0 0 1.5em; } }
