@@ -166,9 +166,12 @@ textarea {
   #site-access.sticky {
     display: block !important;
     position: fixed !important;
-    top: 100px !important;
-    opacity: 0;
-    left: 0 !important; }
+    bottom: 20px !important;
+    opacity: .4; }
+  #site-access.sticky ul {
+    width: 300px;
+    margin-top: -10em !important;
+    position: absolute; }
 
 #site-header {
   margin: 0 0 1.5em 0; }

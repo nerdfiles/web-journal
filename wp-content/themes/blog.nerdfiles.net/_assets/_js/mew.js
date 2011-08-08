@@ -60,7 +60,7 @@ $(document).ready(function() {
                     $(this).css({
                         'left': '-9999px',
                         'position': 'absolute',
-                        'opacity': 0
+                        'opacity': .4
                     });
                     
                 });

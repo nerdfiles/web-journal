@@ -117,7 +117,7 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'blogtxt'); ?>"><?php _e('Skip to search', 'blogtxt'); ?></a></span></li>
 <!--li><span class="content-access"><a href="#site-social">Skip to g+</a></li-->
 <li><span class="content-access"><a href="#footer">Skip to #footer</a></li>
-<li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to administrator\'s section', 'blogtxt'); ?>"><?php _e('Skip to administrator\'s section', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to #meta', 'blogtxt'); ?>"><?php _e('Skip to #meta', 'blogtxt'); ?></a></span></li>
 </ul>
 </div><!-- End #site-access -->
                 
