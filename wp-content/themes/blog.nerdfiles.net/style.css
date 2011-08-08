@@ -163,6 +163,12 @@ textarea {
 #site-access {
   position: absolute;
   left: -9999px; }
+  #site-access.sticky {
+    display: block !important;
+    position: fixed !important;
+    top: 100px !important;
+    opacity: 0;
+    left: 0 !important; }
 
 #site-header {
   margin: 0 0 1.5em 0; }
@@ -216,8 +222,17 @@ textarea {
 #site-search {
   opacity: .4;
   clear: left;
-  margin: 1em 0;
+  padding: 1em 0;
   text-align: center; }
+  #site-search.sticky {
+    background: #F7F7F7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 0 1em #ccc;
+    -moz-box-shadow: 0 0 1em #ccc;
+    box-shadow: 0 0 1em #ccc; }
   #site-search:hover {
     opacity: 7; }
   #site-search label {
@@ -454,6 +469,7 @@ body.page div.page .entry-content {
   padding: 20px 10px;
   background: #fff;
   border-top: 3px #e0e0e0 double;
+  border-bottom: 1px #e0e0e0 solid;
   -moz-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
   -webkit-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
   box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset; }
@@ -470,7 +486,15 @@ body.page div.page .entry-content {
     *display: inline;
     margin: 0 0 0 1em; }
   #footer .twitter iframe {
-    display: inline; }
+    display: inline;
+    width: auto !important; }
+  #footer .googleplus {
+    position: relative;
+    top: .65em;
+    display: inline;
+    *zoom: 1;
+    *display: inline;
+    margin: 0 0 0 1em; }
 
 #gfc_profile {
   margin: -20px 0 0 !important;

@@ -115,6 +115,8 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <?php } ?>
 <li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to navigation', 'blogtxt'); ?>"><?php _e('Skip to navigation', 'blogtxt'); ?></a></span></li>
 <li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'blogtxt'); ?>"><?php _e('Skip to search', 'blogtxt'); ?></a></span></li>
+<!--li><span class="content-access"><a href="#site-social">Skip to g+</a></li-->
+<li><span class="content-access"><a href="#footer">Skip to #footer</a></li>
 <li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to administrator\'s section', 'blogtxt'); ?>"><?php _e('Skip to administrator\'s section', 'blogtxt'); ?></a></span></li>
 </ul>
 </div><!-- End #site-access -->
@@ -216,18 +218,6 @@ text-shadow: 0 0 1px rgba(30,30,30,.5); }
 <div id="site-search" class="grid_16 alpha">
 <?php get_search_form(); ?>
 </div><!-- End #site-search -->
-
-<div id="site-social" class="clear-fix">
-<div class="section-inner">
-<script src="http://apis.google.com/js/plusone.js"></script>
-<g:plusone></g:plusone>
-</div>
-</div><!-- End #site-social -->
-
-<style>
-#site-social { clear: left; }
-.section-inner { position: absolute; right: -3em; }
-</style>
 
 <?php the_post() ?><!-- the_post() -->
 

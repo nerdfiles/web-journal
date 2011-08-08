@@ -20,6 +20,14 @@ $(document).ready(function() {
       $('#s').focus();
     });
     
+  	$.waypoints.settings.scrollThrottle = 30;
+    
+    $('#site-search').waypoint(function(event, direction) {
+      $(this).toggleClass('sticky', direction === "down");
+      $('#site-access').toggleClass('sticky', direction === "down");
+      event.stopPropagation();
+    });
+    
     $(window).bind('keydown', function(e) {
         
         var code = (e.keyCode ? e.keyCode : e.which ? e.which : e.charCode),
@@ -35,7 +43,8 @@ $(document).ready(function() {
                 
                 $siteAccess.css({
                     'left': 0,
-                    'position': 'relative'
+                    'position': 'relative',
+                    'opacity': 1
                 }).hide().slideDown();
                 
                 // set state when done
@@ -50,8 +59,9 @@ $(document).ready(function() {
                     
                     $(this).css({
                         'left': '-9999px',
-                        'position': 'absolute'
-                    })
+                        'position': 'absolute',
+                        'opacity': 0
+                    });
                     
                 });
                 

@@ -359,7 +359,14 @@ textarea {
 
 #site-access {
   position: absolute;
-  left: -9999px; }
+  left: -9999px; 
+  
+  &.sticky { 
+    display: block !important;
+    position: fixed !important;
+    top: 100px !important;
+    opacity: 0;
+    left: 0 !important; } }
 
 #site-header {
   margin: 0 0 1.5em 0;
@@ -414,8 +421,19 @@ textarea {
 #site-search {
   opacity: .4;
   clear: left;
-  margin: 1em 0;
+  padding: 1em 0;
   text-align: center;
+  
+  &.sticky { 
+    background: #F7F7F7;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 0 1em #ccc;
+    -moz-box-shadow: 0 0 1em #ccc;
+    box-shadow: 0 0 1em #ccc; }
+  
   &:hover {
     opacity: 7; }
   label {
@@ -667,13 +685,15 @@ body {
   padding: 20px 10px; 
   background: #fff;
   border-top: 3px #e0e0e0 double;
+  border-bottom: 1px #e0e0e0 solid;
   -moz-box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
   -webkit-box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
   box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
   
   p { margin: 0; display: inline-block; *zoom: 1; *display: inline; }
   .twitter { position: relative; top: .5em; display: inline; *zoom: 1; *display: inline; margin: 0 0 0 1em; }  
-  .twitter iframe { display: inline; } }
+  .twitter iframe { display: inline; width: auto !important; } 
+  .googleplus { position: relative; top: .65em; display: inline; *zoom: 1; *display: inline; margin: 0 0 0 1em; } }
 
 #gfc_profile {
   margin: -20px 0 0 !important;
