@@ -24,8 +24,8 @@ $(document).ready(function() {
     
     $('#site-search').waypoint(function(event, direction) {
       $('.hfeed').toggleClass('sticky');
-      $(this).toggleClass('sticky');
-      $('#site-access').toggleClass('sticky');
+      $(this).toggleClass('sticky', direction === 'down');
+      $('#site-access').toggleClass('sticky', direction === 'down');
       event.stopPropagation();
     });
     

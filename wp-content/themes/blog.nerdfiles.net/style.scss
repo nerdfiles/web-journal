@@ -364,7 +364,7 @@ textarea {
   &.sticky { 
     display: block !important;
     position: fixed !important;
-    bottom: 20px !important;
+    bottom: 10em !important;
     opacity: .4; } 
   &.sticky ul { width: 300px; margin-top: -10em !important; position: absolute; }
   &.sticky li { } }

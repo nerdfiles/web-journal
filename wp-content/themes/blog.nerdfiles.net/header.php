@@ -97,6 +97,7 @@
       
 <div id="site-access">
 <ul>
+<li><span class="content-access">Back to <a href="#">top</a></span></li>
 <?php
 $content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
 $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';

@@ -166,7 +166,7 @@ textarea {
   #site-access.sticky {
     display: block !important;
     position: fixed !important;
-    bottom: 20px !important;
+    bottom: 10em !important;
     opacity: .4; }
   #site-access.sticky ul {
     width: 300px;

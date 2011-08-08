@@ -1,5 +1,5 @@
 3.1.5 (Brainy Betty)
-66198bfeeb70d79581e80bf8b810ffa455e4fa23
+49780c8310cd79e48058503fabaf33705f98eed4
 o:Sass::Tree::RootNode
 :
 @linei:@template"“F/*
@@ -368,7 +368,7 @@ textarea {
   &.sticky { 
     display: block !important;
     position: fixed !important;
-    bottom: 20px !important;
+    bottom: 10em !important;
     opacity: .4; } 
   &.sticky ul { width: 300px; margin-top: -10em !important; position: absolute; }
   &.sticky li { } }
@@ -1333,7 +1333,7 @@ o;;ii;;;@;i ;
 [	o;;im;;;@;i ;
 [ ;["display;o;; ;!;@;"block !importanto;;in;;;@;i ;
 [ ;["position;o;; ;!;@;"fixed !importanto;;io;;;@;i ;
-[ ;["bottom;o;; ;!;@;"20px !importanto;;ip;;;@;i ;
+[ ;["bottom;o;; ;!;@;"10em !importanto;;ip;;;@;i ;
 [ ;["opacity;o;; ;!;@;".4;["&.sticky;o;;il;[o;;[o;;il;[o;";il;" o;';il;["sticky;@V;@V;@Vo;;iq;@;	T;i ;
 [o;;iq;;;@;i ;
 [ ;["
