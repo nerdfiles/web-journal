@@ -362,6 +362,7 @@ textarea {
   left: -9999px; 
   
   &.sticky { 
+    z-index: 9001;
     display: block !important;
     position: fixed !important;
     bottom: 10em !important;
@@ -425,7 +426,8 @@ textarea {
   padding: 1em 0;
   text-align: center;
   
-  &.sticky { 
+  &.sticky {
+    z-index: 9001; 
     background: #F7F7F7;
     position: fixed; 
     top: 0;
