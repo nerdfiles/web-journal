@@ -3,7 +3,7 @@
 add_action('wp', 'clear_fe', 1);
 
 function clear_fe() {
-    global $post;
+    //global $post;
     
     if (!is_admin()) {
     remove_action('wp_head', 'GA_Filterspool_analytics', 2);
@@ -18,7 +18,7 @@ function clear_fe() {
     //add_action('wp_footer', 'gfc_wp_head');
     add_action('wp_footer', 'g_analytics', 2);
     if ( !is_front_page() && 'open' == $post->comment_status ) {
-      add_action('wp_footer', 'friendconnect', 1);
+      add_action('wp_head', 'friendconnect', 1);
     }
     
     wp_deregister_script('l10n');
@@ -35,11 +35,11 @@ function javascript_res() {
 <script src="<?php bloginfo('template_directory'); ?>/_assets/_js-lib/script.js/dist/script.min.js"></script>
 
 <script>
+  $script('/wp-includes/js/l10n.js?ver=20101110', 'l10n');
   $script('//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'jquery', function() {
     $script('/wp-content/themes/blog.nerdfiles.net/_assets/_js-lib/jquery.waypoints/waypoints.min.js', 'waypoints-min');
     $script('/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js', 'mew');
   });
-  $script('/wp-includes/js/l10n.js?ver=20101110', 'l10n');
 </script>
 <?php
 }

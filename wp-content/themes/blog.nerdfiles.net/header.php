@@ -1,12 +1,15 @@
-<!DOCTYPE HTML>
-<html lang="en" class="no-js <?php blogtxt_body_class() ?>">
+<!doctype html public "✰">
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6 <?php blogtxt_body_class() ?>"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7 <?php blogtxt_body_class() ?>"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8 <?php blogtxt_body_class() ?>"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js <?php blogtxt_body_class() ?>"> <!--<![endif]-->
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
-<meta name="viewport" content="width=device-width, initial-scale=0.33">  
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=0.33" />  
 
-<title>
+<title dir="ltr">
 <?php if ( is_404() ) : ?>
     <?php _e('Page not found', 'blogtxt') ?>
 <?php elseif ( is_home() ) : ?>
@@ -55,7 +58,6 @@
   media="print" 
   href="<?php bloginfo('template_directory'); ?>/print.css" />
 
-<!-- wp_head -->  
 <?php wp_head() // Do not remove; helps plugins work ?>
 <!-- End wp_head -->
 
@@ -81,13 +83,13 @@
 
 <!-- Misc -->
 
-<link rel="me" type="text/html" href="http://www.google.com/profiles/nerdfiles"/>
+<link rel="me" type="text/html" href="//gplus.to/nerdfiles"/>
 
 </head>
 
 <body <?php body_class(); ?>>
 
-<div id="wrapper">
+<div id="wrapper" dir="ltr">
 <div id="container" class="container_16 clearfix">
 <div id="content" class="grid_16">
 
