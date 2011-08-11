@@ -92,6 +92,10 @@ $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
 <?php if ( current_user_can('administrator') ) { ?>
 <li><a href="http://blog.nerdfiles.net/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
 <?php } ?>
+<?php 
+if ( $post->comment_count != 0 ) { ?>
+<li><span class="content-access"><a href="#comments" title="Read post comments">Read comments</a></span></li>
+<?php } ?>
 <?php
 if ('open' == $post->comment_status && !is_front_page()) {
 ?>

@@ -14,8 +14,10 @@ $(document).ready(function() {
       		padding = 15,
       		ifContent = 100;
   		
-  		if ( $self.filter('[href^="#post"]').length && $('#site-access').hasClass('sticky') ) {
+  		if ( $self.filter('a[href^="#post"]').length && $('#site-access').hasClass('sticky') ) {
   		  ifContent = 0;
+  		} else if ( $self.filter('a[href^="#comments"]').length ) {
+  		  ifContent = 330;
   		}
   		
   		$('html, body').stop().animate({
