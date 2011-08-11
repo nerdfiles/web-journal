@@ -73,7 +73,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+<div id="top"></div>
 <div id="wrapper" dir="ltr">
 <div id="container" class="container_16 clearfix">
 <div id="content" class="grid_16">
@@ -82,14 +82,17 @@
       
 <div id="site-access">
 <ul>
-<li><span class="content-access">Back to <a href="#">top</a></span></li>
+<li><span class="content-access">Back to <a href="#top">top</a></span></li>
 <?php
+global $post; 
 $content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
 $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
 ?>
 <li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
+<?php if ( current_user_can('administrator') ) { ?>
+<li><a href="http://blog.nerdfiles.net/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
+<?php } ?>
 <?php
-global $post; 
 if ('open' == $post->comment_status && !is_front_page()) {
 ?>
 <li><span class="content-access"><a href="#respond" title="Respond to post">Respond to post</a></span></li>
@@ -101,10 +104,10 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'blogtxt'); ?>"><?php _e('Skip to #life posts', 'blogtxt'); ?></a></span></li>
 <li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'blogtxt'); ?>"><?php _e('Skip to #web posts', 'blogtxt'); ?></a></span></li>
 <?php } ?>
-<li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to navigation', 'blogtxt'); ?>"><?php _e('Skip to navigation', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to nav', 'blogtxt'); ?>"><?php _e('Skip to nav', 'blogtxt'); ?></a></span></li>
 <li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'blogtxt'); ?>"><?php _e('Skip to search', 'blogtxt'); ?></a></span></li>
 <!--li><span class="content-access"><a href="#site-social">Skip to g+</a></li-->
-<li><span class="content-access"><a href="#footer">Skip to #footer</a></li>
+<noscript><li><span class="content-access"><a href="#footer">Skip to #footer</a></li></noscript>
 <li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to #meta', 'blogtxt'); ?>"><?php _e('Skip to #meta', 'blogtxt'); ?></a></span></li>
 </ul>
 </div><!-- End #site-access -->
@@ -112,19 +115,8 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <div id="site-header" class="grid_16 alpha">
 <div class="grid_4 alpha site-name">
 <div class="drop-shadow">
-<span class="call-access-menu">&uarr; esc</span>
-<style>
-.call-access-menu { 
-position: absolute; 
-font-size: 9px !important; 
-color: #999;
-font-weight: 400; 
-margin-top: -10px; 
-margin-left: 4px;
-opacity: .4;
-text-shadow: 0 0 1px rgba(30,30,30,.5); }
-</style>
-<a href="<?php echo get_settings('home') ?>/" title="A weedy florilegium">
+<span class="call-access-menu drop-shadow">&uarr; esc</span>
+<a href="<?php echo get_settings('home') ?>/" title="A weedy florilegium" class="logo">
 <span class="a">A</span>
 <span class="weedy">weedy</span>
 <span class="florilegium">florilegium</span>

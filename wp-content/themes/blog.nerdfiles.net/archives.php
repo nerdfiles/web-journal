@@ -21,13 +21,13 @@ Template Name: Archives Page
 						<li>
 							<h3><?php _e('Archives by Category', 'blogtxt') ?></h3>
 							<ul>
-								<?php wp_list_categories('title_li=&sort_column=name&optioncount=1&feed=RSS&show_count=1') ?> 
+								<?php wp_list_categories('title_li=&sort_column=name&optioncount=1&feed=rdf&feed_type=rdf&feed_image=http://svn.apache.org/repos/asf/incubator/stanbol/branches/http-endpoint-refactoring/kres/ontologymanager/web/src/main/resources/META-INF/static/images/rdf.png&show_count=0') ?> 
 							</ul>
 						</li>
 						<li>
 							<h3><?php _e('Archives by Month', 'blogtxt') ?></h3>
 							<ul>
-								<?php wp_get_archives('type=monthly&show_post_count=1') ?>
+								<?php wp_get_archives('type=monthly&show_post_count=0') ?>
 							</ul>
 						</li>
 					</ul>

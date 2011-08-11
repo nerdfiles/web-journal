@@ -1,52 +1,99 @@
 $script.ready('jquery', function() {
     
 $(document).ready(function() {
-
+  	
     $('#site-search label').attr('title', 'Search for anything you can dream of!');
     
     $('html').removeClass('no-js').addClass('js-enabled js');
     
+  	$("a[href^='#']").click(function(e) {
+  		
+  		var $self = $(this),
+      		target = this.hash,
+      		$target = $(target),
+      		padding = 15,
+      		ifContent = 100;
+  		
+  		if ( $self.filter('[href^="#post"]').length && $('#site-access').hasClass('sticky') ) {
+  		  ifContent = 0;
+  		}
+  		
+  		$('html, body').stop().animate({
+  			'scrollTop': ($target.offset().top-(padding+ifContent))
+  		}, 750, 'swing', function() {
+  			window.location.hash = target;
+  		});
+  		
+  		e.preventDefault();
+  		
+  	});
+    
     $('.site-name').hover(function(e) {
+      var t = setTimeout(function() {
         $('.call-access-menu').animate({
             opacity: 1
         }, 500);
+      }, 200);
+      $(this).data('timeout', t);
     }, function(e) {
+      clearTimeout($(this).data('timeout'));
+      var t = setTimeout(function() {
         $('.call-access-menu').animate({
             opacity: .4
         }, 500);
+      }, 200);
+    });
+    
+    $('#s').bind('focus blur', function(e) {
+      var $self = $(this);
+      
+      $('#site-search').animate({ opacity: 1 }, 300);
+      if (e.type === 'blur') {
+        $('#site-search').animate({ opacity: .4 }, 300, function() {
+          $('#site-search').attr('style', '');
+        });
+      }
     });
     
     $('a[href="#s"],a[href="#site-search"]').bind('click', function(e) {
+      var target = this.hash;
       $('#s').focus();
+      window.location.hash = target;
+      e.preventDefault();
     });
     
-  	$.waypoints.settings.scrollThrottle = 30;
+    if(!(navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+    	$.waypoints.settings.scrollThrottle = 30;
+      
+      $('#site-search').waypoint(function(event, direction) {
+        $('.hfeed').toggleClass('sticky');
+        $(this).toggleClass('sticky', direction === 'down');
+        $('#site-access').toggleClass('sticky', direction === 'down');
+        event.stopPropagation();
+      });
+    }
     
-    $('#site-search').waypoint(function(event, direction) {
-      $('.hfeed').toggleClass('sticky');
-      $(this).toggleClass('sticky', direction === 'down');
-      $('#site-access').toggleClass('sticky', direction === 'down');
-      event.stopPropagation();
+    $('.call-access-menu').bind('click', function(e) {
+      $(window).trigger('keydown.toggleAccessibility');
     });
     
-    $(window).bind('keydown', function(e) {
+    $(window).bind('keydown.toggleAccessibility', function(e) {
         
         var code = (e.keyCode ? e.keyCode : e.which ? e.which : e.charCode),
-            $siteAccess = $('#site-access');
+            $siteAccess = $('#site-access'),
+            $siteAccessUl = $siteAccess.find('ul'),
+            sticky = $siteAccess.hasClass('sticky'),
+            positionValue = (sticky) ? (($siteAccess.data('oldstate') != 'hide') ? ('fixed') : ('relative')) : (($siteAccess.data('oldstate') == 'hide') ? ('absolute') : ('relative'));
         
         // escape key
         
-        if ( code == 27 ) { 
+        if ( code == 27 || code === undefined) { 
             
             if ( $siteAccess.data('oldstate') != 'hide' ) {
                 
                 // animate
                 
-                $siteAccess.css({
-                    'left': 0,
-                    'position': 'relative',
-                    'opacity': 1
-                }).hide().slideDown();
+                $siteAccess.removeClass('hide').addClass('show').slideDown();
                 
                 // set state when done
                 
@@ -58,11 +105,7 @@ $(document).ready(function() {
                 
                 $siteAccess.slideUp('slow', function() {
                     
-                    $(this).css({
-                        'left': '-9999px',
-                        'position': 'absolute',
-                        'opacity': .4
-                    });
+                    $(this).removeClass('show').addClass('hide');
                     
                 });
                 

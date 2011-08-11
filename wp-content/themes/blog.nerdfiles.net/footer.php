@@ -5,6 +5,7 @@
 </div>
 
 <div id="footer">
+<div class="footer-inner">
 <p>Copyright &copy; 2003-2011. Rights &c. <a href="http://nerdfiles.net">nerdfiles.net</a> | Back to <a href="#">top</a></p>
 <div class="googleplus">
 <script src="http://apis.google.com/js/plusone.js"></script>
@@ -14,6 +15,7 @@
 <a href="http://twitter.com/filesofnerds" class="twitter-follow-button">Follow @filesofnerds</a>
 </div>
 <script src="http://platform.twitter.com/widgets.js"></script>
+</div>
 </div><!-- #footer -->
 
 </div><!-- #wrapper -->

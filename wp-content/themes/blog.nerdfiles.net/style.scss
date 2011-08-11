@@ -19,6 +19,7 @@ a {
     color: #acbf87;
     opacity: 1 !important; } }
 
+:focus { outline: none; } 
  
 div#header a {}
 
@@ -144,7 +145,9 @@ div {
       div#calendar_wrap, table#wp-calendar tbody a {} }
     &#google-search div form#gsearch, &#calendar table#wp-calendar caption, &#rss_links ul li a, &#rss-links ul li a {}
     &#search {
-      form#searchform, input#s {} }
+      form#searchform, input#s {
+        &:focus { opacity: 1; }
+        &:active { opacity: 1; } } }
     &.entry-interact ul li {
       &.comment-link a, &.trackback-link a {} }
     &.widget_text div.textwidget p {} } }
@@ -357,23 +360,39 @@ textarea {
 #header {
   margin: 1em 0; }
 
+html.js #site-access { display: none; }
+
 #site-access {
   position: absolute;
   left: -9999px; 
-  
-  &.sticky { 
-    z-index: 9001;
-    display: block !important;
-    position: fixed !important;
-    bottom: 10em !important;
-    opacity: .4; } 
-  &.sticky ul { width: 300px; margin-top: -10em !important; position: absolute; }
-  &.sticky li { } }
+  &.show { position: relative; left: 0; }
+  &.hide { }  
+  &.sticky { position: fixed; width: 150px; left: inherit !important; right: 0 !important; }
+  &.sticky.hide { }
+  &.sticky.show { }
+  &.sticky ul { list-style: none; position: absolute; right: 20px; top: 75px; } 
+  &.sticky li { 
+    -webkit-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    -moz-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    display: block;
+    list-style: none outside none;
+    margin: 0 0 1px;
+    padding: 5px 10px;
+    text-align: right; } 
+  &.sticky li:hover { 
+    -webkit-box-shadow: 0 0 0.5em rgba(210, 210, 210, 1);
+    -moz-box-shadow: 0 0 0.5em rgba(210, 210, 210, 1);
+    box-shadow: 0 0 0.5em rgba(210, 210, 210, 1); }
+  &.sticky a { } }
 
 #site-header {
   margin: 0 0 1.5em 0;
   .site-name {
     font-family: "Philosopher", Georgia, serif;
+    
+    .logo { position: relative; top: 5px; }
+    
     a {
       height: 57px;
       display: block;
@@ -432,9 +451,10 @@ textarea {
     position: fixed; 
     top: 0;
     left: 0;
+    border-bottom: 3px #ccc double;
     width: 100%;
-    -webkit-box-shadow: 0 0 1em #ccc;
     -moz-box-shadow: 0 0 1em #ccc;
+    -webkit-box-shadow: 0 0 1em #ccc;
     box-shadow: 0 0 1em #ccc; }
   
   &:hover {
@@ -686,17 +706,31 @@ body {
 /* (hasLayout trigger) */
 
 #footer {
-  padding: 20px 10px; 
+  padding: 5px 10px 15px; 
   background: #fff;
   border-top: 3px #e0e0e0 double;
   border-bottom: 1px #e0e0e0 solid;
   -moz-box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
   -webkit-box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
   box-shadow: 0 .5em 1em rgba(200,200,200,.5) inset;
+  z-index: 9001;
+  display: block !important;
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+  opacity: .6;
+  width: 100%;
+  
+  .footer-inner { width: 960px; margin: 0 auto; }
+  
+  &:hover { opacity: 1; }
   
   p { margin: 0; display: inline-block; *zoom: 1; *display: inline; }
+  
   .twitter { position: relative; top: .5em; display: inline; *zoom: 1; *display: inline; margin: 0 0 0 1em; }  
+  
   .twitter iframe { display: inline; width: auto !important; } 
+  
   .googleplus { position: relative; top: .65em; display: inline; *zoom: 1; *display: inline; margin: 0 0 0 1em; } }
 
 #gfc_profile {
@@ -733,6 +767,14 @@ body.page-template-template-single-column-php div {
     column-count: 1;
     column-gap: 20px;
     column-rule: 1px dotted #BBB; } }
+    
+body.page-template-archives-php ul.xoxo { 
+  h3 { }
+  img { float: left; margin: 2px 10px 0 0; }
+  ul { margin: 0; list-style: none; }
+  li { margin: 0; list-style: none; float: left; width: 225px; } 
+  li li { float: none; width: auto; padding: 5px 0; }
+  li ul { } }
     
 /*
 Default style for WP-PageNavi plugin
@@ -780,9 +822,33 @@ body.page div.page .entry-content { margin-bottom: 3em; }
   
   cite { } }
   
-blockquote { margin: 1em 0 0; }
+blockquote { margin: 1.5em 0; }
 blockquote cite { display: block; text-align: right; font-sty1le: italic; font-size: 1.3em; opacity: .7; }
 blockquote em { display: inline; }
+
+.call-access-menu { 
+  background: #F7F7F7 !important;
+  padding: 3px 6px 1px;
+  position: absolute; 
+  font-size: 9px !important; 
+  color: #999;
+  font-weight: 400; 
+  margin-top: -15px; 
+  margin-left: 4px;
+  opacity: .4;
+  text-shadow: 0 0 1px rgba(30,30,30,.5); 
+  cursor: pointer; }
+
+@media screen and (max-device-width: 480px) {
+  /* iphone only */
+  #footer {
+    position: relative;
+    bottom: 0; 
+    left: 0;
+    opacity: 1;
+    width: 100%;
+  }
+}
 
 @media print {
 
