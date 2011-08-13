@@ -9,6 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=0.33" />  
 
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//google.com/jsapi" />
+
 <title dir="ltr">
 <?php if ( is_404() ) : ?>
     <?php _e('Page not found', 'blogtxt') ?>
