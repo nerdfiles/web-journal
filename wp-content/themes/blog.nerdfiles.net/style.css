@@ -177,6 +177,15 @@ html.js #site-access {
 #site-access {
   position: absolute;
   left: -9999px; }
+  #site-access li {
+    -webkit-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    -moz-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    display: block;
+    list-style: none;
+    margin: 0 0 15px;
+    padding: 5px 10px;
+    text-align: left; }
   #site-access.show {
     position: relative;
     left: 0; }
@@ -196,7 +205,7 @@ html.js #site-access {
     box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
     display: block;
     list-style: none outside none;
-    margin: 0 0 1px;
+    margin: 0 0 15px;
     padding: 5px 10px;
     text-align: right; }
   #site-access.sticky li:hover {
