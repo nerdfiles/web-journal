@@ -1,7 +1,7 @@
 <!DOCTYPE 
     html 
     public "♥"
-    address="http://nerdfiles.net/">
+    address="//nerdfiles.net/">
 <!--[if lt IE 7]> <html lang="en-us" class="no-js ie6 <?php blogtxt_body_class() ?>"> <![endif]-->
 <!--[if IE 7]>    <html lang="en-us" class="no-js ie7 <?php blogtxt_body_class() ?>"> <![endif]-->
 <!--[if IE 8]>    <html lang="en-us" class="no-js ie8 <?php blogtxt_body_class() ?>"> <![endif]-->
