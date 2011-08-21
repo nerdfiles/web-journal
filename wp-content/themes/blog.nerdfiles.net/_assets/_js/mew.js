@@ -1,5 +1,3 @@
-$script.ready('jquery', function() {
-    
 $(document).ready(function() {
   	
     $('#site-search label').attr('title', 'Search for anything you can dream of!');
@@ -159,7 +157,5 @@ $(document).ready(function() {
     
     });
     */
-
-});
 
 });

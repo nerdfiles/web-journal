@@ -68,15 +68,27 @@ function javascript_res() {
 ?>
 <!-- Scripts -->
 
-<script src="<?php bloginfo('template_directory'); ?>/_assets/_js-lib/script.js/dist/script.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+    <script>
+        Modernizr.load([
+            {
+                load: '//code.jquery.com/jquery.min.js',
+                complete: function () {
+                    
+                    if ( !window.jQuery ) {
+                        // We're fucked!
+                    }
+                    
+                    Modernizr.load('/wp-includes/js/l10n.js?ver=20101110');
+                    Modernizr.load('//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+                    Modernizr.load('/wp-content/themes/blog.nerdfiles.net/_assets/_js-lib/jquery.waypoints/waypoints.min.js');
+                    Modernizr.load('/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js');
+                    
+                }
+            }
+        ]);
+    </script>
 
-<script>
-  $script('/wp-includes/js/l10n.js?ver=20101110', 'l10n');
-  $script('//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'jquery', function() {
-    $script('/wp-content/themes/blog.nerdfiles.net/_assets/_js-lib/jquery.waypoints/waypoints.min.js', 'waypoints-min');
-    $script('/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js', 'mew');
-  });
-</script>
 <?php
 }
 

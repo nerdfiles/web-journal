@@ -1,4 +1,7 @@
-<!doctype html public "✰">
+<!DOCTYPE 
+    html 
+    public "♥"
+    address="http://nerdfiles.net/">
 <!--[if lt IE 7]> <html lang="en-us" class="no-js ie6 <?php blogtxt_body_class() ?>"> <![endif]-->
 <!--[if IE 7]>    <html lang="en-us" class="no-js ie7 <?php blogtxt_body_class() ?>"> <![endif]-->
 <!--[if IE 8]>    <html lang="en-us" class="no-js ie8 <?php blogtxt_body_class() ?>"> <![endif]-->
@@ -6,12 +9,18 @@
 <head>
 
 <meta charset="utf-8" />
+
 <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+
 <meta name="viewport" content="width=device-width, initial-scale=0.33" />  
 
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com/" />
+<link rel="dns-prefetch" href="//code.jquery.com/" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com/" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com/" />
 <link rel="dns-prefetch" href="//google.com/jsapi" />
+<link rel="dns-prefetch" href="//apis.google.com/" />
+<link rel="dns-prefetch" href="//platform.twitter.com/" />
 
 <title dir="ltr">
 <?php if ( is_404() ) : ?>
