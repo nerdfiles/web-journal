@@ -131,7 +131,7 @@ google.load('friendconnect', '0.8');
 <!-- Initialize the Google Friend Connect OpenSocial API. -->
 <script type="text/javascript">
 var SITE_ID = "12148896585969289050"
-google.friendconnect.container.setParentUrl('http://blog.nerdfiles.net/' /* location of rpc_relay.html and canvas.html */);
+google.friendconnect.container.setParentUrl('http://webjournal.nerdfiles.net/' /* location of rpc_relay.html and canvas.html */);
 google.friendconnect.container.initOpenSocialApi({
     site: SITE_ID,
     onload: function(securityToken) { 
