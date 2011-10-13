@@ -47,7 +47,7 @@ div {
       &#pingbacks {
         li, p {} }
       &.commentlist li .fn {} } }
-  &.sidebar ul li#blogtxt-recent-comments .fn {}
+  &.sidebar ul li#webjournal-recent-comments .fn {}
   &.comments {
     ol.commentlist {
       p, span.comment-meta {} }
@@ -108,7 +108,7 @@ div {
       &.hentry span {
         &.entry-title, &.entry-date {} }
       ul li p {} } }
-  &.formcontainer form#commentform, &.sidebar ul li#blogtxt-recent-comments blockquote.comment-summary p {}
+  &.formcontainer form#commentform, &.sidebar ul li#webjournal-recent-comments blockquote.comment-summary p {}
   &.formcontainer {
     div {
       &.form-input input, &.form-textarea textarea, &.form-textarea-label {} }
@@ -132,7 +132,7 @@ div {
   &.nav-next, &.nav-previous, &.navigation div {}
   &.sidebar ul li {
     h3, ul li ul li {}
-    &#blogtxt-recent-comments {
+    &#webjournal-recent-comments {
       span.comment-entry-title, ul li {} }
     &#tag-cloud h3 {}
     &#calendar {
