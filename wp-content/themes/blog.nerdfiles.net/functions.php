@@ -60,7 +60,7 @@ function clear_fe() {
     wp_deregister_script('l10n');
     wp_deregister_script('jquery');
     
-    add_action('wp_head', 'javascript_res', 9);
+    add_action('wp_footer', 'javascript_res', 1);
     }
 }
 

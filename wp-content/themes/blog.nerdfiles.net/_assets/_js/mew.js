@@ -1,15 +1,17 @@
 $(document).ready(function() {
+
+    // anything!
   	
     $('#site-search label').attr('title', 'Search for anything you can dream of!');
     
-    $('html').removeClass('no-js').addClass('js-enabled js');
+    // wierd scroll-y links
     
-  	$("a[href^='#']").click(function(e) {
+  	$("#site-access a[href^='#'], #footer a[href^='#']").click(function(e) {
   		
   		var $self = $(this),
       		target = this.hash,
       		$target = $(target),
-      		padding = 15,
+      		padding = 10,
       		ifContent = 100;
   		
   		if ( $self.filter('a[href^="#post"]').length && $('#site-access').hasClass('sticky') ) {
@@ -18,48 +20,80 @@ $(document).ready(function() {
   		  ifContent = 330;
   		}
   		
-  		$('html, body').stop().animate({
-  			'scrollTop': ($target.offset().top-(padding+ifContent))
+      if ( $self.filter('a[href="#s"],a[href="#site-search"]').length ) {
+        
+        $('#s').focus();
+        //return false;
+        
+      }
+  		
+  		$('html, body').animate({
+  			'scrollTop': ($target.offset().top)
   		}, 750, 'swing', function() {
-  			window.location.hash = target;
+  		
+  		  if ("onhashchange" in window) {
+  		    
+  		    //$target.prop('id', '');
+  		    //window.location.hash = target;
+  		    //$target.prop('id', target.replace('#', ''));
+  		    
+  		  } else {
+  		    //window.location.hash = target;
+        }
+        
   		});
   		
-  		e.preventDefault();
+  		//e.preventDefault();
   		
   	});
     
+    // hover thing-y
+    
     $('.site-name').hover(function(e) {
+    
       var t = setTimeout(function() {
+      
         $('.call-access-menu').animate({
             opacity: 1
         }, 500);
+        
       }, 200);
+      
       $(this).data('timeout', t);
+      
     }, function(e) {
+    
       clearTimeout($(this).data('timeout'));
+      
       var t = setTimeout(function() {
+      
         $('.call-access-menu').animate({
             opacity: .4
         }, 500);
+        
       }, 200);
+      
     });
+    
+    // search~
     
     $('#s').bind('focus blur', function(e) {
-      var $self = $(this);
-      
-      $('#site-search').animate({ opacity: 1 }, 300);
-      if (e.type === 'blur') {
-        $('#site-search').animate({ opacity: .4 }, 300, function() {
-          $('#site-search').attr('style', '');
-        });
-      }
-    });
     
-    $('a[href="#s"],a[href="#site-search"]').bind('click', function(e) {
-      var target = this.hash;
-      $('#s').focus();
-      window.location.hash = target;
-      e.preventDefault();
+      var $self = $(this),
+          $siteSearch = $('#site-search');
+      
+      $siteSearch.animate({ opacity: 1 }, 300);
+      
+      if (e.type === 'blur') {
+      
+        $siteSearch.animate({ opacity: .4 }, 300, function() {
+        
+          $siteSearch.attr('style', '');
+          
+        });
+        
+      }
+      
     });
     
     if(!(navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {

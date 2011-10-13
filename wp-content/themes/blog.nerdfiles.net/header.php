@@ -53,8 +53,8 @@
 <link 
   rel="stylesheet" 
   media="all" 
-  href="<?php bloginfo('stylesheet_url'); ?>" />
-
+  href="<?php bloginfo('template_directory'); ?>/global.css" />
+  
 <?php wp_head() // Do not remove; helps plugins work ?>
 <!-- End wp_head -->
 
@@ -167,7 +167,7 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <li id="menu-item-2218" class="grid_1 alpha menu-item menu-item-type-post_type menu-item-object-page menu-item-2218"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/the-semantic-web/">sw</a></li>
 <li id="menu-item-2219" class="grid_1 menu-item menu-item-type-post_type menu-item-object-page menu-item-2219"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/content-is-king/">cok</a></li>
 <li id="menu-item-2220" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/recipes/">recipes</a></li>
-<li id="menu-item-2221" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2221"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/poetry/">poetry</a></li>
+<li id="menu-item-2221" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2221"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/poems/">poems</a></li>
 <li id="menu-item-2222" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2222"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/claims/">claims</a></li>
 <li id="menu-item-2223" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2223"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/quotes/">quotes</a></li>
 <li id="menu-item-2224" class="grid_2 omega menu-item menu-item-type-post_type menu-item-object-page menu-item-2224"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/about/">about</a></li>

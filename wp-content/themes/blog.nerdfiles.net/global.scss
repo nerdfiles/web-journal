@@ -1,14 +1,4 @@
-/*
-Theme Name: blog.nerdfiles.net
-Theme URI: http://blog.nerdfiles.net/
-Description: ...
-Author: nerdfiles
-Author URI: http://nerdfiles.net/
-Version: 1.0
-Tags: minimalism
-
-General comments (optional).
-*/
+/* General comments (optional). */
 
 body {}
 
@@ -28,7 +18,7 @@ div {
   &.hfeed {
     .entry-title a:link, div.entry-meta a:link {} }
   &.sidebar a:link, &#footer a:link, &.hfeed a:visited, &.entry-content ul.xoxo li.hentry span a:visited, &.hfeed .entry-title a:visited, &#header a:hover, &#footer a:hover {}
-  &.hfeed {
+  &.hfeed { 
     a:hover, .entry-title a:hover, div.entry-meta a:hover {} }
   &.sidebar a:hover, &.entry-content ul.xoxo li.hentry span a:hover, &.hfeed a:active, &.sidebar a:active {} }
 
@@ -125,6 +115,10 @@ div {
     textarea#comment {} } }
 
 p#mustlogin {}
+
+#s {
+  &:focus { opacity: 1; }
+  &:active { opacity: 1; } }
 
 div {
   &.hentry div {
@@ -224,6 +218,8 @@ h3#respond, .loggedin h3#respond, p#mustlogin, #nav-below {}
   label, input#s, #searchsubmit:hover {} }
 
 body.search div.hfeed div.page, div.hentry div.entry-meta {}
+
+div.hfeed { min-height: 550px; }
 
 /**
  * JavaScript
