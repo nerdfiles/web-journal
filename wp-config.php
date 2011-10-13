@@ -19,13 +19,13 @@
 define('DB_NAME', 'nerdfiles_webjou');
 
 /** MySQL database username */
-define('DB_USER', 'nerdfiles_webjou');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'f0xf0x0!6');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'webjournaldev.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
