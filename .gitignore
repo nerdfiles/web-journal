@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled source #
 ###################
 *.com
@@ -69,3 +70,6 @@ wp-config.php
 ########
 
 .sass-cache/*
+=======
+wp-config.php
+>>>>>>> f135eb96378ee6524de7bbb0cac8f5f01f7766b9
