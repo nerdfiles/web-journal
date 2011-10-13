@@ -1,10 +1,10 @@
 <!DOCTYPE
   html 
   public "♥">
-<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6 <?php blogtxt_body_class() ?>"> <![endif]-->
-<!--[if IE 7]>    <html lang="en-us" class="no-js ie7 <?php blogtxt_body_class() ?>"> <![endif]-->
-<!--[if IE 8]>    <html lang="en-us" class="no-js ie8 <?php blogtxt_body_class() ?>"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js <?php blogtxt_body_class() ?>"> <!--<![endif]-->
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6 <?php webjournal_body_class() ?>"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7 <?php webjournal_body_class() ?>"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8 <?php webjournal_body_class() ?>"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js <?php webjournal_body_class() ?>"> <!--<![endif]-->
 <head>
 
 <meta charset="utf-8" />
@@ -23,15 +23,15 @@
 
 <title dir="ltr">
 <?php if ( is_404() ) : ?>
-    <?php _e('Page not found', 'blogtxt') ?>
+    <?php _e('Page not found', 'webjournal') ?>
 <?php elseif ( is_home() ) : ?>
     <?php echo "Home"; ?>
 <?php elseif ( is_category() ) : ?>
     <?php echo single_cat_title(); ?>
 <?php elseif ( is_date() ) : ?>
-    <?php _e('Blog archives', 'blogtxt') ?>
+    <?php _e('Blog archives', 'webjournal') ?>
 <?php elseif ( is_search() ) : ?>
-    <?php _e('Search results', 'blogtxt') ?>
+    <?php _e('Search results', 'webjournal') ?>
 <?php else : ?>
     <?php the_title() ?>
 <?php endif ?>
@@ -64,7 +64,7 @@
   rel="alternate" 
   type="application/rdf+xml" 
   href="<?php bloginfo('rdf_url') ?>" 
-  title="<?php bloginfo('name') ?> <?php _e('RDF feed', 'blogtxt' ) ?>" />
+  title="<?php bloginfo('name') ?> <?php _e('RDF feed', 'webjournal' ) ?>" />
 
 <!-- Comments Feed -->
 
@@ -72,7 +72,7 @@
   rel="alternate" 
   type="application/rss+xml" 
   href="<?php bloginfo('comments_rss2_url') ?>" 
-  title="<?php bloginfo('name') ?> <?php _e( 'comments RSS feed', 'blogtxt' ) ?>" />
+  title="<?php bloginfo('name') ?> <?php _e( 'comments RSS feed', 'webjournal' ) ?>" />
 
 <!-- Trace and Pinkbacks -->
 
@@ -113,18 +113,18 @@ if ('open' == $post->comment_status && !is_front_page()) {
 ?>
 <li><span class="content-access"><a href="#respond" title="Respond to post">Respond to post</a></span></li>
 <?php } ?>
-<li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'blogtxt'); ?>"><?php _e('Skip to #latest', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span></li>
 <?php if(is_front_page()) { ?>
-<li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'blogtxt'); ?>"><?php _e('Skip to #art posts', 'blogtxt'); ?></a></span></li>
-<li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'blogtxt'); ?>"><?php _e('Skip to #philosophy posts', 'blogtxt'); ?></a></span></li>
-<li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'blogtxt'); ?>"><?php _e('Skip to #life posts', 'blogtxt'); ?></a></span></li>
-<li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'blogtxt'); ?>"><?php _e('Skip to #web posts', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'webjournal'); ?>"><?php _e('Skip to #art posts', 'webjournal'); ?></a></span></li>
+<li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'webjournal'); ?>"><?php _e('Skip to #philosophy posts', 'webjournal'); ?></a></span></li>
+<li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'webjournal'); ?>"><?php _e('Skip to #life posts', 'webjournal'); ?></a></span></li>
+<li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'webjournal'); ?>"><?php _e('Skip to #web posts', 'webjournal'); ?></a></span></li>
 <?php } ?>
-<li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to nav', 'blogtxt'); ?>"><?php _e('Skip to nav', 'blogtxt'); ?></a></span></li>
-<li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'blogtxt'); ?>"><?php _e('Skip to search', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to nav', 'webjournal'); ?>"><?php _e('Skip to nav', 'webjournal'); ?></a></span></li>
+<li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'webjournal'); ?>"><?php _e('Skip to search', 'webjournal'); ?></a></span></li>
 <!--li><span class="content-access"><a href="#site-social">Skip to g+</a></li-->
 <noscript><li><span class="content-access"><a href="#footer">Skip to #footer</a></li></noscript>
-<li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to #meta', 'blogtxt'); ?>"><?php _e('Skip to #meta', 'blogtxt'); ?></a></span></li>
+<li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to #meta', 'webjournal'); ?>"><?php _e('Skip to #meta', 'webjournal'); ?></a></span></li>
 </ul>
 </div><!-- End #site-access -->
                 
@@ -219,15 +219,15 @@ if ('open' == $post->comment_status && !is_front_page()) {
 
 <?php if ( is_day() ) : ?>
 
-<div class="archive-description archive-description-daily"><?php _e('You are currently viewing the daily archives for', 'blogtxt') ?> <?php the_time(__('l, F Y', 'blogtxt')) ?></div>
+<div class="archive-description archive-description-daily"><?php _e('You are currently viewing the daily archives for', 'webjournal') ?> <?php the_time(__('l, F Y', 'webjournal')) ?></div>
 <?php elseif ( is_month() ) : ?>
-<div class="archive-description archive-description-monthly"><?php _e('You are currently viewing the monthly archives for', 'blogtxt') ?> <?php the_time(__('F Y', 'blogtxt')) ?></div>
+<div class="archive-description archive-description-monthly"><?php _e('You are currently viewing the monthly archives for', 'webjournal') ?> <?php the_time(__('F Y', 'webjournal')) ?></div>
 <?php elseif ( is_year() ) : ?>
-<div class="archive-description archive-description-yearly"><?php _e('You are currently viewing the yearly archives for', 'blogtxt') ?> <?php the_time(__('Y', 'blogtxt')) ?></div>
+<div class="archive-description archive-description-yearly"><?php _e('You are currently viewing the yearly archives for', 'webjournal') ?> <?php the_time(__('Y', 'webjournal')) ?></div>
 <?php elseif ( is_author() ) : ?>
-<div class="archive-description archive-description-author"><?php _e('You are currently viewing the author archives of ', 'blogtxt') ?> <?php the_author(); ?></div>
+<div class="archive-description archive-description-author"><?php _e('You are currently viewing the author archives of ', 'webjournal') ?> <?php the_author(); ?></div>
 <?php elseif ( is_category() ) : ?>
-<div class="archive-description archive-description-category"><?php if ( !('' == category_description()) ) : echo single_cat_title(); _e(' &mdash; ', 'blogtxt'); echo category_description(); else : echo 'You are currently viewing the category archives of '; echo single_cat_title(); endif; ?></div>
+<div class="archive-description archive-description-category"><?php if ( !('' == category_description()) ) : echo single_cat_title(); _e(' &mdash; ', 'webjournal'); echo category_description(); else : echo 'You are currently viewing the category archives of '; echo single_cat_title(); endif; ?></div>
 
 <?php endif; ?>
 

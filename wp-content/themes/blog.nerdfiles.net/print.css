@@ -1,4 +1,4 @@
-/* BLOG.TXT PRINT STYLES */
+/* webjournal PRINT STYLES */
 /* Styles for basic printing only. If you want remove print styles, delete line 13 from the header.php file. */
 body div#blog-description,body div.sidebar,body div.access,body div#globalnav,body span.archive-meta,body div.cat-meta,body div#footer,body div.navigation,body div.comments form#commentform,body h3#respond{display:none;}
 body div#wrapper div#header{background-color:#fff;background-image:none;color:#000;}

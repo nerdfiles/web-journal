@@ -1,14 +1,14 @@
-# BLOG.TXT for WordPress
+# webjournal for WordPress
 # Copyright (C) 2006-2008 SCOTT ALLAN WALLICK
-# This file is part of BLOG.TXT.
-# BLOG.TXT is free software: you can redistribute it and/or
+# This file is part of webjournal.
+# webjournal is free software: you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as
 # published by the Free Software Foundation, either version 3 of
 # the License, or (at your option) any later version.
 msgid ""
 msgstr ""
 "Project-Id-Version: 4.6.1\n"
-"Report-Msgid-Bugs-To: http://blogtxt.googlecode.com/\n"
+"Report-Msgid-Bugs-To: http://webjournal.googlecode.com/\n"
 "POT-Creation-Date: 2008-07-18 23:58-0500\n"
 "PO-Revision-Date: 2008-07-29 23:06+0000\n"
 "Last-Translator: Scott Allan Wallick <s@plaintxt.org>\n"
@@ -391,7 +391,7 @@ msgid "Post"
 msgstr ""
 
 #: footer.php:3
-msgid "blog.txt theme for WordPress"
+msgid "webjournal theme for WordPress"
 msgstr ""
 
 #: footer.php:3
@@ -478,15 +478,15 @@ msgid "(at most 15)"
 msgstr ""
 
 #: functions.php:447
-msgid "A search form for your blog (blog.txt)"
+msgid "A search form for your blog (webjournal)"
 msgstr ""
 
 #: functions.php:456
-msgid "Log in/out and administration links (blog.txt)"
+msgid "Log in/out and administration links (webjournal)"
 msgstr ""
 
 #: functions.php:465
-msgid "Link to the front page when elsewhere (blog.txt)"
+msgid "Link to the front page when elsewhere (webjournal)"
 msgstr ""
 
 #: functions.php:467
@@ -495,16 +495,16 @@ msgid "Home Link"
 msgstr ""
 
 #: functions.php:473
-msgid "Semantic recent comments (blog.txt)"
+msgid "Semantic recent comments (webjournal)"
 msgstr ""
 
 #: functions.php:481
-msgid "RSS links for both posts and comments (blog.txt)"
+msgid "RSS links for both posts and comments (webjournal)"
 msgstr ""
 
 #: functions.php:523
 #: functions.php:565
-msgid "Blog.txt Theme Options"
+msgid "webjournal Theme Options"
 msgstr ""
 
 #: functions.php:523
@@ -513,16 +513,16 @@ msgstr ""
 
 #: functions.php:561
 #, php-format
-msgid "Blog.txt theme options saved. <a href=\"%s\">View site.</a>"
+msgid "webjournal theme options saved. <a href=\"%s\">View site.</a>"
 msgstr ""
 
 #: functions.php:562
-msgid "Blog.txt theme options reset."
+msgid "webjournal theme options reset."
 msgstr ""
 
 #: functions.php:566
 #, php-format
-msgid "%1$s<p>Thanks for selecting the <a href=\"http://www.plaintxt.org/themes/blogtxt/\" title=\"blog.txt theme for WordPress\">blog.txt</a> theme by <span class=\"vcard\"><a class=\"url fn n\" href=\"http://scottwallick.com/\" title=\"scottwallick.com\" rel=\"me designer\"><span class=\"given-name\">Scott</span> <span class=\"additional-name\">Allan</span> <span class=\"family-name\">Wallick</span></a></span>. Please read the included <a href=\"%2$s\" title=\"Open the readme.html\" rel=\"enclosure\" id=\"readme\">documentation</a> for more information about the blog.txt and its advanced features. <strong>If you find this theme useful, please consider <label for=\"paypal\">donating</label>.</strong> You must click on <i><u>S</u>ave Options</i> to save any changes. You can also discard your changes and reload the default settings by clicking on <i><u>R</u>eset</i>.</p>"
+msgid "%1$s<p>Thanks for selecting the <a href=\"http://www.plaintxt.org/themes/webjournal/\" title=\"webjournal theme for WordPress\">webjournal</a> theme by <span class=\"vcard\"><a class=\"url fn n\" href=\"http://scottwallick.com/\" title=\"scottwallick.com\" rel=\"me designer\"><span class=\"given-name\">Scott</span> <span class=\"additional-name\">Allan</span> <span class=\"family-name\">Wallick</span></a></span>. Please read the included <a href=\"%2$s\" title=\"Open the readme.html\" rel=\"enclosure\" id=\"readme\">documentation</a> for more information about the webjournal and its advanced features. <strong>If you find this theme useful, please consider <label for=\"paypal\">donating</label>.</strong> You must click on <i><u>S</u>ave Options</i> to save any changes. You can also discard your changes and reload the default settings by clicking on <i><u>R</u>eset</i>.</p>"
 msgstr ""
 
 #: functions.php:570
@@ -678,7 +678,7 @@ msgid "Reset Options"
 msgstr ""
 
 #: functions.php:711
-msgid "Resetting deletes all stored blog.txt options from your database. After resetting, default options are loaded but are not stored until you click <i>Save Options</i>. A reset does not affect the actual theme files in any way. If you are uninstalling blog.txt, please reset before removing the theme files to clear your databse."
+msgid "Resetting deletes all stored webjournal options from your database. After resetting, default options are loaded but are not stored until you click <i>Save Options</i>. A reset does not affect the actual theme files in any way. If you are uninstalling webjournal, please reset before removing the theme files to clear your databse."
 msgstr ""
 
 #: functions.php:715
