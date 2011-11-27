@@ -33,7 +33,7 @@
 					<div class="entry-meta">
 						<span class="meta-sep">&para;</span>
 						<span class="entry-date"><?php _e('Posted', 'webjournal') ?> <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php unset($previousday); printf(__('%1$s', 'webjournal'), the_date('d F Y', false)) ?></abbr></span>
-						<?php if ( !is_author() ) : webjournal_author_link(); endif; // Displays if NOT author archive page ?>
+						<?php if ( !is_author() ) : webjournal_author_hCard(); endif; // Displays if NOT author archive page ?>
 						
 						<span class="meta-sep">&sect;</span>
 						<span class="entry-category"><?php if ( !is_category() ) { echo the_category(' &sect; '); } else { $other_cats = webjournal_other_cats(' &sect; '); echo $other_cats; } // Hides the current category if category archive ?></span>

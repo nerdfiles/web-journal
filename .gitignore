@@ -69,3 +69,16 @@ wp-config.php
 ########
 
 .sass-cache/*
+
+*.swp
+*.swo
+wp-config.php
+wp-admin/*
+wp-includes/*
+.gitignore~
+.DS_Store
+wp-*.php
+!/
+!wp-content
+!wp-content/*
+
