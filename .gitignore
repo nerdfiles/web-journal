@@ -78,7 +78,18 @@ wp-includes/*
 .gitignore~
 .DS_Store
 wp-*.php
-!/
-!wp-content
-!wp-content/*
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/*
+wp-content/backup-db/*
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/*
+wp-content/cache/supercache/*
+sitemap.xml
+sitemap.xml.gz
+readme.html
+license.txt
+.htaccess
+xmlrpc.php
 
