@@ -3,6 +3,7 @@ fabbin' fer PHP shit
 """
 
 import posixpath
+import datetime
 
 from fabric.api import run, local, abort, env, put, settings, cd, task
 from fabric.decorators import runs_once
@@ -12,11 +13,14 @@ from fabric.context_managers import cd, lcd, settings, hide
 LOCAL_DEVELOPMENT = False
 
 env.hosts = ['nerdfiles@nerdfiles.net']
+env.site = 'web-journal'
+env.project = '/home/nerdfiles/webapps/webjournal'
+env.venv = '/home/nerdfiles/.virtualenvs/web_journal'
 
 if LOCAL_DEVELOPMENT:
   DJANGO_APP_ROOT = '/Users/nerdfiles/Sites/nerdfiles.net/web-journal/' 
 else:
-  DJANGO_APP_ROOT = '/home/nerdfiles/webapps/webjournal/' 
+  DJANGO_APP_ROOT = env.project+'/'
   
 
 # Directory where static sources should be collected.  This must equal the value
@@ -29,7 +33,7 @@ SRC_SUBDIR = 'src'
 if LOCAL_DEVELOPMENT:
   VENV_SUBDIR = '/Users/nerdfiles/.virtualenvs/web_journal/'
 else:
-  VENV_SUBDIR = '/home/nerdfiles/.virtualenvs/webjournal/'
+  VENV_SUBDIR = env.project+'/'
 
 # Python version
 PYTHON_BIN = "python2.7"
@@ -66,43 +70,49 @@ def run_venv(command, **kwargs):
 @task
 def install_dependencies():
     ensure_virtualenv()
-    with virtualenv(venv_dir):
+    with virtualenv(env.project):
         with cd(src_dir):
             run_venv("pip install -r requirements.txt")
 
 @task
 def ensure_virtualenv():
-    if exists(venv_dir):
+    if exists(env.venv):
         return
 
-    with cd(DJANGO_APP_ROOT):
+    with cd(env.project):
         run("virtualenv --no-site-packages --python=%s %s" %
-            (PYTHON_BIN, VENV_SUBDIR))
+            (PYTHON_BIN, env.venv))
         run("echo %s > %s/lib/%s/site-packages/projectsource.pth" %
-            (src_dir, VENV_SUBDIR, PYTHON_BIN))
+            (src_dir, env.venv, PYTHON_BIN))
 
 @task
-def ensure_src_dir():
-    if not exists(src_dir):
-        run("mkdir -p %s" % src_dir)
-    with cd(src_dir):
-        if not exists(posixpath.join(src_dir, '.hg')):
-            run("hg init")
+def pack():
+  print('Packaging instance...')
+  local('rm -rf wp-deploy/')
+  local('mkdir wp-deploy && cd wp-deploy && touch .delete-me && cd ..')
+  local('git archive --format=tar HEAD | gzip > wp-deploy/%s.tar.gz' % env.site)
+  print('Package created: ./wp-deploy/%s.tar.gz at %s' % (env.site, datetime.datetime.now()))
 
+@task
+def remote_pull():
+  with cd('%s' % env.project):
+    run('git pull -u origin dev')
 
+@task
 def push_sources():
     """
     Push source code to server
     """
-    ensure_src_dir()
-    local("hg push -f ssh://%(user)s@%(host)s/%(path)s" %
-          dict(host=env.host,
-               user=env.user,
-               path=src_dir,
-               ))
-    with cd(src_dir):
-        run("hg update")
-
+    #ensure_src_dir()
+    pack()
+    #run('cd /home/nerdfiles/webapps/webjournal/')
+    #with cd('/home/nerdfiles/webapps/webjournal/'):
+    with cd('%s' % env.project):
+      if not exists('%s/wp-deploy' % env.project):
+        run('mkdir wp-deploy')
+    put('wp-deploy/%s.tar.gz' % env.site, '%s/wp-deploy/' % env.project)
+    with cd('%s/wp-deploy/' % env.project):
+      run('tar zxvf %s/wp-deploy/%s.tar.gz -C ../' % (env.project, env.site))
 
 @task
 def webserver_stop():
@@ -133,48 +143,23 @@ def webserver_restart():
         webserver_start()
 
 
-def build_static():
-    assert STATIC_ROOT.strip() != '' and STATIC_ROOT.strip() != '/'
-    # Before Django 1.4 we don't have the --clear option to collectstatic
-    run("rm -rf %s/*" % STATIC_ROOT)
-
-    with virtualenv(venv_dir):
-        with cd(src_dir):
-            run_venv("./manage.py collectstatic -v 0 --noinput")
-
-    run("chmod -R ugo+r %s" % STATIC_ROOT)
-
-
-@task
-def first_deployment_mode():
-    """
-    Use before first deployment to switch on fake south migrations.
-    """
-    env.initial_deploy = True
-
-
-def update_database():
-    with virtualenv(venv_dir):
-        with cd(src_dir):
-            if getattr(env, 'initial_deploy', False):
-                run_venv("./manage.py syncdb --all")
-                run_venv("./manage.py migrate --fake --noinput")
-            else:
-                run_venv("./manage.py syncdb --noinput")
-                run_venv("./manage.py migrate --noinput")
-
+def sass_it():
+  with cd('%s/../' % STATIC_ROOT):
+    run('sass-convert global.scss global.css')
+    #run("sass --watch -t compressed global.scss:global.css")
 
 @task
 def deploy():
-    """
-    Deploy project.
-    """
-    with settings(warn_only=True):
-        webserver_stop()
+    pack()
     push_sources()
     install_dependencies()
-    update_database()
-    build_static()
-
+    #update_database()
+    #build_static()
+    sass_it()
     webserver_start()
+
+@task
+def sync():
+  remote_pull()
+  sass_it()
 
