@@ -1,4 +1,5 @@
 wp-*
+.htaccess
 !wp-content/
 *.swp
 *.swo
