@@ -1,6 +1,5 @@
 wp-*
 .htaccess
-/wp-content/w3tc/*
 !wp-content/themes/
 !wp-content/plugins/
 *.swp
