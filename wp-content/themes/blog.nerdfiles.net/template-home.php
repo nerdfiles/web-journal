@@ -5,6 +5,15 @@ Template Name: blog.nerdfiles.net > Home
 
 get_header() ?>
 
+
+<!-- == 
+  
+  template-home.php 
+  
+== -->
+
+
+
 <div id="home" class="hfeed clearfix">
 
 <h1 class="page-title">Home | nerdfiles.net</h1>
@@ -19,11 +28,23 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><?php the_date(); ?></time>
+<time><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
-<footer></footer>
+<footer>
+<!--div class="entry-meta">
+<span class="meta-sep">&para;</span>
+<span class="entry-date"><?php _e('Posted', 'webjournal') ?> <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php unset($previousday); printf(__('%1$s', 'webjournal'), the_date('d F Y', false)) ?></abbr></span>
+<?php if ( !is_author() ) : webjournal_author_hCard(); endif; // Displays if NOT author archive page ?>
+
+<span class="meta-sep">&sect;</span>
+<span class="entry-category"><?php if ( !is_category() ) { echo the_category(' &sect; '); } else { $other_cats = webjournal_other_cats(' &sect; '); echo $other_cats; } // Hides the current category if category archive ?></span>
+<span class="meta-sep">&Dagger;</span>
+<span class="tag-links"><?php if ( !is_tag() ) { echo the_tags(__('Tagged: ', 'webjournal'), ", ", ""); } else { $other_tags = webjournal_other_tags(', '); printf(__('Also tagged: %s', 'webjournal'), $other_tags); } ?></span>
+<?php edit_post_link(__('Edit', 'webjournal'), "\t\t\t\t\t<span class=\"meta-sep\">&equiv;</span>\n\t\t\t\t\t<span class='entry-edit'>", "</span>\n"); ?>
+</div-->
+</footer>
 </article>
 <?php endwhile; ?>
 </section>
@@ -40,11 +61,23 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><?php the_date(); ?></time>
+<time><a href="<?php echo get_day_link('', '', ''); ?>"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
-<footer></footer>
+<footer>
+<!--div class="entry-meta">
+<span class="meta-sep">&para;</span>
+<span class="entry-date"><?php _e('Posted', 'webjournal') ?> <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php unset($previousday); printf(__('%1$s', 'webjournal'), the_date('d F Y', false)) ?></abbr></span>
+<?php if ( !is_author() ) : webjournal_author_hCard(); endif; // Displays if NOT author archive page ?>
+
+<span class="meta-sep">&sect;</span>
+<span class="entry-category"><?php if ( !is_category() ) { echo the_category(' &sect; '); } else { $other_cats = webjournal_other_cats(' &sect; '); echo $other_cats; } // Hides the current category if category archive ?></span>
+<span class="meta-sep">&Dagger;</span>
+<span class="tag-links"><?php if ( !is_tag() ) { echo the_tags(__('Tagged: ', 'webjournal'), ", ", ""); } else { $other_tags = webjournal_other_tags(', '); printf(__('Also tagged: %s', 'webjournal'), $other_tags); } ?></span>
+<?php edit_post_link(__('Edit', 'webjournal'), "\t\t\t\t\t<span class=\"meta-sep\">&equiv;</span>\n\t\t\t\t\t<span class='entry-edit'>", "</span>\n"); ?>
+</div-->
+</footer>
 </article>
 <?php endwhile; ?>
 </section>
@@ -61,11 +94,23 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><?php the_date(); ?></time>
+<time><a href="<?php echo get_day_link('', '', ''); ?>"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
-<footer></footer>
+<footer>
+<!--div class="entry-meta">
+<span class="meta-sep">&para;</span>
+<span class="entry-date"><?php _e('Posted', 'webjournal') ?> <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php unset($previousday); printf(__('%1$s', 'webjournal'), the_date('d F Y', false)) ?></abbr></span>
+<?php if ( !is_author() ) : webjournal_author_hCard(); endif; // Displays if NOT author archive page ?>
+
+<span class="meta-sep">&sect;</span>
+<span class="entry-category"><?php if ( !is_category() ) { echo the_category(' &sect; '); } else { $other_cats = webjournal_other_cats(' &sect; '); echo $other_cats; } // Hides the current category if category archive ?></span>
+<span class="meta-sep">&Dagger;</span>
+<span class="tag-links"><?php if ( !is_tag() ) { echo the_tags(__('Tagged: ', 'webjournal'), ", ", ""); } else { $other_tags = webjournal_other_tags(', '); printf(__('Also tagged: %s', 'webjournal'), $other_tags); } ?></span>
+<?php edit_post_link(__('Edit', 'webjournal'), "\t\t\t\t\t<span class=\"meta-sep\">&equiv;</span>\n\t\t\t\t\t<span class='entry-edit'>", "</span>\n"); ?>
+</div-->
+</footer>
 </article>
 <?php endwhile; ?>
 </section>
@@ -82,11 +127,23 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><?php the_date(); ?></time>
+<time><a href="<?php echo get_day_link('', '', ''); ?>"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
-<footer></footer>
+<footer>
+<!--div class="entry-meta">
+<span class="meta-sep">&para;</span>
+<span class="entry-date"><?php _e('Posted', 'webjournal') ?> <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php unset($previousday); printf(__('%1$s', 'webjournal'), the_date('d F Y', false)) ?></abbr></span>
+<?php if ( !is_author() ) : webjournal_author_hCard(); endif; // Displays if NOT author archive page ?>
+
+<span class="meta-sep">&sect;</span>
+<span class="entry-category"><?php if ( !is_category() ) { echo the_category(' &sect; '); } else { $other_cats = webjournal_other_cats(' &sect; '); echo $other_cats; } // Hides the current category if category archive ?></span>
+<span class="meta-sep">&Dagger;</span>
+<span class="tag-links"><?php if ( !is_tag() ) { echo the_tags(__('Tagged: ', 'webjournal'), ", ", ""); } else { $other_tags = webjournal_other_tags(', '); printf(__('Also tagged: %s', 'webjournal'), $other_tags); } ?></span>
+<?php edit_post_link(__('Edit', 'webjournal'), "\t\t\t\t\t<span class=\"meta-sep\">&equiv;</span>\n\t\t\t\t\t<span class='entry-edit'>", "</span>\n"); ?>
+</div-->
+</footer>
 </article>
 <?php endwhile; ?>
 </section>

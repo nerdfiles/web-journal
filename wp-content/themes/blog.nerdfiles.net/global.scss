@@ -1,13 +1,80 @@
 /* General comments (optional). */
 
+//@import "compass";
+// fucks up on my windows box
+
+@font-face {
+  font-family: 'Pidgeon';
+  src: url('_assets/_fonts/pigeon.otf')  format('opentype');
+  //src: url('_assets/_fonts/pigeon.eot'); /* IE9 Compatibility Modes */
+  //src: url('_assets/_fonts/pigeon.eot?') format('eot'),  /* IE6-IE8 */
+  //url('_assets/_fonts/pigeon.woff') format('woff'), /* Modern Browsers */
+  src: url('_assets/_fonts/pigeon.ttf')  format('truetype'); /* Safari, Android, iOS */
+  //url('_assets/_fonts/pigeon.svg#svgGraublauweb') format('svg'); /* Legacy iOS */
+}
+
 body {}
 
+
 a {
+
   color: #acbf87;
+  //color: #2D4800;
   opacity: 1 !important;
   &:link {
     color: #acbf87;
+    //color: #2D4800;
     opacity: 1 !important; } }
+ 
+.more a {
+    //text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.3);
+    display: inline-block !important;
+    *zoom: 1;
+    *display: inline;
+    //line-height: 1.2;
+    padding: 0 !important; 
+    letter-spacing: 1px;
+    //opacity: .65;
+    font-family: "Pigeon", "Philosopher";
+    text-decoration: none;
+    border-bottom: 1px #ccc solid; 
+    
+    &:hover { 
+      border-bottom: 1px #ccc dashed;
+      text-decoration: none !important;  
+    } } 
+    
+a[title="rdf"] {
+  border-bottom: none !important;
+}
+    
+body.single,
+body.archive,
+body.search, 
+body.page-template-default,
+body.page-template-template-single-column-php,
+body.page-template-archives-php {
+#site-breadcrumb a,
+.hfeed a {
+    //text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.3);
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    line-height: 1.2; 
+    letter-spacing: 1px;
+    //opacity: .65;
+    font-family: "Pigeon", "Philosopher";
+    text-decoration: none;
+    border-bottom: 1px #ccc solid; 
+    
+    &:hover { 
+      border-bottom: 1px #ccc dashed;
+      text-decoration: none !important;  
+    } } }
+    
+#site-header { 
+  a { 
+    color: #acbf87; } }
 
 :focus { outline: none; } 
  
@@ -215,6 +282,11 @@ h3#respond, .loggedin h3#respond, p#mustlogin, #nav-below {}
       background-color: #fcf7f4; } } }
 
 #searchform {
+  div { }
+  label { opacity: 0; }
+  input { 
+     &[type="text"] { }
+     &[type="submit"] { opacity: 0; } }
   label, input#s, #searchsubmit:hover {} }
 
 body.search div.hfeed div.page, div.hentry div.entry-meta {}
@@ -231,15 +303,20 @@ html {
 /* hide stuff if enabled */
 
 h1, h2, h3, h4, h5, h6 {
-  color: #222; }
+  color: #5d5d5d; }
 
 body {
   color: #222;
   background: #f7f7f7;
   font-family: "Philosopher", Georgia, serif; }
 
-.site-name .drop-shadow, #site-description .drop-shadow {
+.site-name .drop-shadow {
   background: #f5fbe9; }
+  
+.site-description .drop-shadow {
+  background-color: #fcf7f4;  
+  //background: #A07258; 
+  }
 
 /*
 ul { opacity: .3; }
@@ -360,7 +437,15 @@ html.js #site-access { display: none; }
 
 #site-access {
   position: absolute;
-  left: -9999px; 
+  left: -9999px;
+  ul { 
+    list-style: none; 
+    margin: 0 0 30px; }
+  li { 
+    margin: 0; }
+  a { 
+    text-decoration: none;
+    border-bottom: 1px #ccc solid; } 
   &.show { position: relative; left: 0; }
   &.hide { }  
   &.sticky { position: fixed; width: 150px; left: inherit !important; right: 0 !important; }
@@ -388,8 +473,12 @@ html.js #site-access { display: none; }
     font-family: "Philosopher", Georgia, serif;
     
     .logo { position: relative; top: 5px; }
-    
+    .author-tag a {
+      font-family: "Pigeon", "Philosopher", Georgia, serif !important; 
+      font-size: .9em; }
     a {
+      font-size: 26px;
+      line-height: 1.1;
       height: 57px;
       display: block;
       color: #222; } }
@@ -503,7 +592,7 @@ html {
     font-size: 2em;
     clear: left; }
   &.page .entry-title a, &.single .entry-title a {
-    color: #222;
+    color: hsl(0, 0%, 36%);
     text-decoration: none; }
   &.page .entry-content, &.single .entry-content {
     font-size: 1em; }
@@ -567,22 +656,36 @@ html {
     display: inline !important;
     height: auto; } }
 
-.site-description .drop-shadow {
-  background-color: #fcf7f4; }
-
 #latest {
   height: 57px;
   header {
     display: inline-block; }
   h1 a, h2 a {
-    color: #222;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.5);
     text-decoration: none; }
+  .time { 
+    color: #777;
+    border-bottom: 1px #ccc solid;
+    line-height: 1.7;
+    opacity: .7;
+    display: inline-block;
+    //text-shadow: 0 0 0 rgba(0,0,0,.5);
+    padding: 0 0 0 45px; 
+    font: {
+      size: 16px;
+      family: "Philosopher", Georgia, serif;
+    } }
   h1 {
+    line-height: 1;
     font-size: 1em;
-    margin: 0;
+    margin: 0 5px 0 0;
     display: inline-block; }
   h2 {
-    font-size: 1.4em;
+    &:hover { 
+      opacity: 1; }
+    opacity: .7;
+    line-height: 1;
+    font-size: 1.753em;
     margin: 0;
     display: inline-block; } }
 
@@ -591,7 +694,7 @@ html {
  */
 
 h1, h2, h3 {
-  font-family: "Philosopher", Georgia, serif; }
+  font-family: "Pigeon", "Philosopher", Georgia, serif; }
 
 #home {
   margin-bottom: 2em;
@@ -614,6 +717,10 @@ h1, h2, h3 {
     display: block;
     padding: .5em 0; }
   .time {
+    a {
+      text-decoration: none;
+      color: hsl(0, 0%, 47%);
+    }
     margin: .5em 0;
     font-size: .9em;
     color: #777; }
@@ -779,16 +886,16 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 */
 
 .wp-pagenavi {
-	clear: both;
+  clear: both;
   border-top: 1px #BFBFBF solid;
   border-bottom: 1px #BFBFBF solid;
   padding: .5em 0;
   text-align: center;
   
   & a, & span {
-	text-decoration: none;
-	padding: 3px 5px;
-	margin: 2px; } 
+  text-decoration: none;
+  padding: 3px 5px;
+  margin: 2px; } 
 
   & a:hover, & span.current { border-color: #000; } 
 
@@ -822,6 +929,90 @@ blockquote { margin: 1.5em 0; }
 blockquote cite { display: block; text-align: right; font-sty1le: italic; font-size: 1.3em; opacity: .7; }
 blockquote em { display: inline; }
 
+body {
+  div.entry-meta {
+    color: #777;
+    a { 
+      text-decoration: none;
+      color: #777;
+      border-bottom: 1px #CCC solid;
+      &:hover { } } 
+    line-height: 2.3;
+    margin: 30px 30px; }
+    
+  &.search { 
+    
+    .hentry { margin-bottom: 40px; } }
+    
+  &.home { 
+    
+    #home {
+      section { 
+        article { 
+          margin-bottom: 40px; } } }  // this is how clean (blends of sufficient vagueness) 
+                                      // selecting _in_ a (team_language)"template" should be
+      
+    div.entry-meta { 
+      margin: 0 0; } }
+  &.search {
+    div.entry-meta { 
+      margin: 0 0; } }
+      
+  &.single {
+    div.entry-meta { 
+      line-height: 2.3;
+      margin: 30px 30px 50px; } } }
+      
+.mouse-thinkers-beware {
+  opacity: .75;
+  width: 42%;
+  color: #999;
+  font: { 
+    size: 18px;
+    family: 'Pigeon'; } 
+  float: right;
+  text-align: right; }
+  
+.sticky { 
+  .mouse-thinkers-beware { 
+    display: none; } }
+      
+body.archive {
+  
+  
+  .page-title {
+    text-align: center; 
+    color: #e0e0e0; 
+    //margin: 0 0 20px;
+    font: {
+      size: 30px; 
+
+  } } } 
+
+
+#site-breadcrumb { margin-top: 15px; text-align: center; color: #e0e0e0; }
+#site-breadcrumb ul { margin: 0; list-style: none; }
+#site-breadcrumb li { display: inline; margin: 0 0 0 5px; }
+#site-breadcrumb a { text-decoration: none; }
+
+#site-breadcrumb { 
+  ul { 
+    a {
+      &:hover { text-decoration: underline; }
+    }
+    li { 
+      margin: 0;
+      &:first-child {
+        &:before { content: ""; }
+      }
+      &:last-child { 
+        &:after { 
+          color: #999;
+          content: " /"; } }
+      &:before { 
+        color: #999;
+        content: "/ "; } } } }
+
 .call-access-menu { 
   background: #F7F7F7 !important;
   padding: 3px 6px 1px;
@@ -854,4 +1045,4 @@ body div#wrapper div#header h1 a,html body div#wrapper div#header h1 a:link,html
 body.single div.entry-meta{line-height:200%;margin:0 20%;}
 body.home div.entry-meta,body.archive div.entry-meta,body.search div.entry-meta{text-align:center;margin:0 5%;padding:0 2em;}
 
-}
+} 

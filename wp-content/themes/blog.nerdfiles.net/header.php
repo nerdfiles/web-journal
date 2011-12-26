@@ -85,7 +85,20 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="top"></div>
+  
+
+
+<!-- == 
+  
+  header.php 
+  
+== -->
+
+
+
+
+<div id="top"></div><!-- hackish? fuck you.-->
+
 <div id="wrapper" dir="ltr">
 <div id="container" class="container_16 clearfix">
 <div id="content" class="grid_16">
@@ -93,6 +106,7 @@
 <div id="header" class="clearfix">
       
 <div id="site-access">
+<p class="mouse-thinkers-beware" title="An analysis of modalities, link strategy, and tacticle experience, oh my!"><small>Design's heavily influenced by my practices in unlearning the Mouse and the variegrated habits of Mouse-think (theism, restroom banter, the politico-historical moorings of crepe cuisine, et cetera), with a touch of not having gone to finishing school.</small></p>
 <ul>
 <li><span class="content-access">Back to <a href="#top">top</a></span></li>
 <?php
@@ -106,12 +120,17 @@ $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
 <?php } ?>
 <?php 
 if ( $post->comment_count != 0 ) { ?>
-<li><span class="content-access"><a href="#comments" title="Read post comments">Read comments</a></span></li>
+<!--li><span class="content-access"><a href="#comments" title="Read post comments">Read comments</a></span></li-->
 <?php } ?>
 <?php
 if ('open' == $post->comment_status && !is_front_page()) {
 ?>
-<li><span class="content-access"><a href="#respond" title="Respond to post">Respond to post</a></span></li>
+<li><span class="content-access"><a href="#disqus_thread" title"Go to comments">Go to comments</a></li>
+<?php } ?>
+<?php
+if ('open' == $post->comment_status && !is_front_page()) {
+?>
+<!--li><span class="content-access"><a href="#respond" title="Respond to post">Respond to post</a></span></li-->
 <?php } ?>
 <li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span></li>
 <?php if(is_front_page()) { ?>
@@ -133,9 +152,7 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <div class="drop-shadow">
 <span class="call-access-menu drop-shadow">&uarr; esc</span>
 <a href="<?php echo get_settings('home') ?>/" title="A weedy florilegium" class="logo">
-<span class="a">A</span>
-<span class="weedy">weedy</span>
-<span class="florilegium">florilegium</span>
+A weedy florilegium
 </a>
 <span class="author-tag">web journal of <a href="http://nerdfiles.net" title="Go to nerdfiles.net">nerdfiles</a></span>
 </div>
@@ -154,6 +171,8 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <time><?php the_date(); ?></time>
 </div>
 <?php endwhile; ?>
+<?php wp_reset_query(); ?>
+<?php $my_query = new WP_Query('p='+get_the_ID()); ?>
 </aside>
 </div>
 </div>
@@ -181,7 +200,7 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <?php if ( is_user_logged_in() ) { ?>
 <li class="grid_2 alpha"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/wp-admin/">proliferate</a></li>
 <?php if (!current_user_can('administrator')) { ?>
-<li class="grid_2 omega"><a class="drop-shadow" onclick="google.friendconnect.requestSignOut()" href="#signout">an exodus</a></li>
+<li class="grid_2 omega"><a class="drop-shadow" onclick="#disqus-signout" href="#signout">an exodus</a></li>
 <?php } else { ?> 
 <li class="grid_2 omega"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/wp-login.php?action=logout&#038;_wpnonce=2d602251a8">an exodus</a></li>
 <?php } ?>
@@ -196,20 +215,42 @@ if ('open' == $post->comment_status && !is_front_page()) {
 </div><!-- End #site-admin -->
 
 <div id="site-breadcrumb" class="grid_16 alpha">
+  
+<!--
+  
+  urls and breadcrumbs _are_ different
+  
+-->
+  
 <ul>
-<li><a href="//webjournal.nerdfiles.net" rel="index" title="A weedy florilegium">..</a></li>
-<?php if (!is_front_page()) { ?>
-<li><a href="<?php echo $_SERVER['REQUEST_URI']; ?>"><?php echo $_SERVER['REQUEST_URI']; ?></a></li>
-<?php } ?>
-</ul>
-</div><!-- End #site-breadcrumb -->
 
-<style>
-#site-breadcrumb { margin-top: 15px; text-align: center; color: #e0e0e0; }
-#site-breadcrumb ul { margin: 0; list-style: none; }
-#site-breadcrumb li { display: inline; margin: 0 0 0 5px; }
-#site-breadcrumb a { text-decoration: none; }
-</style>
+<li><a href="//webjournal.nerdfiles.net" rel="index" title="A weedy florilegium">~</a></li>
+
+<?php if (!is_front_page()) { ?>
+ 
+<?php $arc_year = get_the_modified_time('Y'); ?>
+<?php $arc_month = get_the_modified_time('m'); ?>
+<?php $arc_day = get_the_modified_time('d'); ?>
+
+<li><a href="/<?php echo get_the_modified_date('Y'); ?>/"><?=$arc_year;?></a></li>
+
+<?php if ( is_single() or is_page() or is_month() or is_day() ) { ?>
+<!--li><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/"><?=$arc_month;?></a></li-->
+<?php } ?>
+
+<?php if ( is_single() or is_page() or is_day() ) { ?>
+<!--li><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?=$arc_day;?></a></li-->
+<?php } ?>
+
+<?php if (is_single() or is_page()) { ?> 
+<li><a href="<?php echo get_permalink(); ?>"><?php echo str_replace(" ", "-", strtolower(get_the_title())); ?></a></li>
+<?php } ?>
+
+<?php } ?>
+
+</ul>
+
+</div><!-- End #site-breadcrumb -->
 
 <div id="site-search" class="grid_16 alpha">
 <?php get_search_form(); ?>

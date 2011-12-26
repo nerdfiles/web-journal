@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+  
+  <head>
+    
+    <meta charset="utf-8" />
+    
+    <title>Web Workin'</title>
+    
+    <link rel="stylesheet" media="all" href="_assets/css/compass/stylesheets/screen.css" />
+    <!--[if IE]>
+    <link href="_assets/css/stylesheets/ie.css" media="screen, projection" rel="stylesheet" />
+    <![endif]-->
+    
+  </head>
+  
+  <body class="web-workin">  
+    <div class="container">
+      <section class="main">
+        <header class="mast-head">
+          <h1><img src="#" alt="Site Logo" /></h1>
+        </header>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">The</a></li>
+            <li><a href="#">Other</a></li>
+            <li><a href="#">Things</a></li>
+          </ul>
+        </nav>
+        <article>
+          <nav class="page-nav">
+            <header>
+              <h1>TOC</h1>
+            </header>
+            <ol>
+              <li><a href="#">First page</a></li>
+            </ol>
+          </nav>
+          <section class="main-content">
+            <header>
+              <h1>Article</h1>
+            </header>
+            <p>Body</p>
+          </section>
+        </article>
+        <aside>
+          <section>
+            <header>
+              <h1>Aside</h1>
+            </header>
+            <p>Body</p>
+            <form action='.' method='post'>
+              <fieldset>
+                <legend></legend>
+                <input type="text" class="pass" id="pass" name="pass" placeholder="wat?" value="" />
+              </fieldset>
+              <fieldset>
+                <legend></legend>
+                <button value="init" id="sendr" name="sendr">init</button>
+              </fieldset>
+            </form>
+          </section>
+        </aside>
+      </section>
+    </div>
+  </body>
+  
+  <script>
+    function WorkerMessage(cmd, msg) {
+      this.cmd = cmd;
+      this.msg = msg;
+    }
+    
+    if (window.Worker) {
+      var bob = new Worker('_assets/workers/bob.js');
+      
+      bob.addEventListener('message', function(e) {
+        console.log(e.data);
+      }, false);
+      
+      var _btn = document.getElementById('sendr');
+      var _i = document.getElementById('pass');
+      
+      _btn.onclick = function(e) {
+        var elem = this;
+        bob.postMessage(new WorkerMessage('init', _i.value));
+        bob.postMessage(new WorkerMessage(elem.getAttribute('id'), 'results'))
+        return false;
+        //bob.terminate();
+      }; 
+      
+      //var l = document.getElementsByTagName('*').length;
+      //bob.postMessage(new WorkerMessage('after:count:elements', l));
+      
+    }
+  </script>
+  	
+</html>

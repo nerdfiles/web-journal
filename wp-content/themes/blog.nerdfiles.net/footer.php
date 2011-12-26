@@ -1,8 +1,18 @@
-<div class="pagenavi-container footer-pagenavi container_16 clearfix">
+
+
+<!-- == 
+  
+  footer.php 
+  
+== -->
+
+
+
+<!--div class="pagenavi-container footer-pagenavi container_16 clearfix">
 <div class="grid_16">
 <?php wp_pagenavi(); ?>
 </div>
-</div>
+</div-->
 
 <div id="footer">
 <div class="footer-inner">

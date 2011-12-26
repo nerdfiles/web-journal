@@ -1,3 +1,13 @@
+
+
+<!-- == 
+  
+  comments.php 
+  
+== -->
+
+
+
 <?php if ( !is_front_page() && 'open' == $post->comment_status ) { ?>
 
 <section class="comments">

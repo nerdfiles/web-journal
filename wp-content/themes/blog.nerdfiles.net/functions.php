@@ -54,10 +54,10 @@ function clear_fe() {
     //add_action('wp_footer', 'gfc_wp_head');
     add_action('wp_footer', 'g_analytics', 2);
     if ( !is_front_page() && 'open' == $post->comment_status ) {
-      add_action('wp_head', 'friendconnect', 11);
+      // comments?
     }
     
-    wp_deregister_script('l10n');
+    //wp_deregister_script('l10n');
     wp_deregister_script('jquery');
     
     add_action('wp_footer', 'javascript_res', 1);
@@ -68,101 +68,29 @@ function javascript_res() {
 ?>
 <!-- Scripts -->
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-    <script>
-        Modernizr.load([
-            {
-                load: 'http://code.jquery.com/jquery.min.js',
-                complete: function () {
-                    
-                    if ( !window.jQuery ) {
-                        // We're fucked!
-                    }
-                    
-                    Modernizr.load('/wp-includes/js/l10n.js?ver=20101110');
-                    Modernizr.load('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
-                    Modernizr.load('/wp-content/themes/blog.nerdfiles.net/_assets/_js-lib/jquery.waypoints/waypoints.min.js');
-                    Modernizr.load('/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js');
-                    
-                }
-            }
-        ]);
-    </script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+<script>
+  Modernizr.load([
+      {
+          load: 'http://code.jquery.com/jquery.min.js',
+          complete: function () {
+              
+              if ( !window.jQuery ) {
+                  // We're fucked!
+              }
+              
+              Modernizr.load('/wp-includes/js/l10n.js?ver=20101110');
+              Modernizr.load('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+              Modernizr.load('/wp-content/themes/blog.nerdfiles.net/_assets/_js-lib/jquery.waypoints/waypoints.min.js');
+              Modernizr.load('/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js');
+              
+          }
+      }
+  ]);
+</script>
 
 <?php
 }
-
-function friendconnect() {
-?>
-
-<style type="text/css">
-
-    #gfc_profile {
-        font-size: 11px;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        margin: 20px 40px;
-        padding: 15px;
-    }
-
-    #gfc_profile img {
-        border: 2px solid grey;
-        margin-top: 15px;
-        margin-right: 10px;     
-    }
-
-    #gfc_profile ul {
-        list-style-type:none;
-    }
-
-    #gfc_profile ul li {
-        list-style-type:none;
-    } 
-</style>
-
-<!-- Load the Google AJAX API Loader -->
-<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-<!-- Load the Google Friend Connect javascript library. -->
-
-<script type="text/javascript">
-google.load('friendconnect', '0.8');
-</script>
-
-<!-- Initialize the Google Friend Connect OpenSocial API. -->
-<script type="text/javascript">
-var SITE_ID = "12148896585969289050"
-google.friendconnect.container.setParentUrl('http://webjournal.nerdfiles.net/' /* location of rpc_relay.html and canvas.html */);
-google.friendconnect.container.initOpenSocialApi({
-    site: SITE_ID,
-    onload: function(securityToken) { 
-        if (!window.timesloaded) {
-            window.timesloaded = 1;
-        } else {
-            window.timesloaded++;
-        }
-        initAllData(window.timesloaded); 
-    }
-});
-</script>
-<script type="text/javascript">
-
-// Send request to GFC if needed
-
-function initAllData(gfc_loaded) {
-
-    if ( gfc_loaded > 1 ) {
-        //Page is loded twice or more
-        //Sign In or Sign out happened -> reload page
-        window.location.reload();
-    } else {
-        google.friendconnect.renderSignInButton({ 'id': 'gfc_profile','style':'standard','text': 'Sign In'});
-    }
-};   
-</script>
-<script type="text/javascript" src="http://www.google.com/friendconnect/script/friendconnect.js"></script>
-<?php
-}
-
 function g_analytics() {
 ?>
 <script>
@@ -198,6 +126,11 @@ function webjournal_admin_hCard() {
 
 // Produces an hCard for post authors
 function webjournal_author_hCard() {
+	global $wpdb, $authordata;
+	echo '<span class="entry-author author vcard"><a class="url fn n" href="' . get_author_link(false, $authordata->ID, $authordata->user_nicename) . '" title="View all posts by ' . $authordata->display_name . '">' . get_the_author() . '</a></span>';
+}
+
+function webjournal_author_link() {
 	global $wpdb, $authordata;
 	echo '<span class="entry-author author vcard"><a class="url fn n" href="' . get_author_link(false, $authordata->ID, $authordata->user_nicename) . '" title="View all posts by ' . $authordata->display_name . '">' . get_the_author() . '</a></span>';
 }
@@ -447,15 +380,15 @@ function widget_webjournal_search($args) {
 	$title = empty($options['title']) ? __( 'Blog Search', 'webjournal' ) : $options['title'];
 	$button = empty($options['button']) ? __( 'Find', 'webjournal' ) : $options['button'];
 ?>
-		<?php echo $before_widget ?>
-				<?php echo $before_title ?><label for="s"><?php echo $title ?></label><?php echo $after_title ?>
-			<form id="searchform" method="get" action="<?php bloginfo('home') ?>">
-				<div>
-					<input id="s" name="s" class="text-input" type="text" value="<?php the_search_query() ?>" size="10" tabindex="1" accesskey="S" />
-					<input id="searchsubmit" name="searchsubmit" class="submit-button" type="submit" value="<?php echo $button ?>" tabindex="2" />
-				</div>
-			</form>
-		<?php echo $after_widget ?>
+<?php echo $before_widget ?>
+<?php echo $before_title ?><label for="s"><?php echo $title ?></label><?php echo $after_title ?>
+<form id="searchform" method="get" action="<?php bloginfo('home') ?>">
+<div>
+<input id="s" name="s" class="text-input" type="text" value="<?php the_search_query() ?>" size="10" tabindex="1" accesskey="S" />
+<input id="searchsubmit" name="searchsubmit" class="submit-button" type="submit" value="<?php echo $button ?>" tabindex="2" />
+</div>
+</form>
+<?php echo $after_widget ?>
 <?php
 }
 
@@ -473,9 +406,9 @@ function widget_webjournal_search_control() {
 	$title = attribute_escape( $options['title'] );
 	$button = attribute_escape( $options['button'] );
 ?>
-			<p><label for="search-title"><?php _e( 'Title:', 'webjournal' ) ?> <input class="widefat" id="search-title" name="search-title" type="text" value="<?php echo $title; ?>" /></label></p>
-			<p><label for="search-button"><?php _e( 'Button Text:', 'webjournal' ) ?> <input class="widefat" id="search-button" name="search-button" type="text" value="<?php echo $button; ?>" /></label></p>
-			<input type="hidden" id="search-submit" name="search-submit" value="1" />
+<p><label for="search-title"><?php _e( 'Title:', 'webjournal' ) ?> <input class="widefat" id="search-title" name="search-title" type="text" value="<?php echo $title; ?>" /></label></p>
+<p><label for="search-button"><?php _e( 'Button Text:', 'webjournal' ) ?> <input class="widefat" id="search-button" name="search-button" type="text" value="<?php echo $button; ?>" /></label></p>
+<input type="hidden" id="search-submit" name="search-submit" value="1" />
 <?php
 }
 
@@ -485,18 +418,18 @@ function widget_webjournal_meta($args) {
 	$options = get_option('widget_meta');
 	$title = empty($options['title']) ? __('Meta', 'webjournal') : $options['title'];
 ?>
-		<?php echo $before_widget; ?>
-			<?php echo $before_title . $title . $after_title; ?>
-			<ul>
-				<li id="copyright">&copy; <?php echo( date('Y') ); ?> <?php webjournal_admin_hCard(); ?></li>
-				<li id="generator-link"><?php _e('Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>', 'webjournal') ?></li>
-				<li id="web-standards"><?php printf(__('Compliant <a href="http://validator.w3.org/check/referer" title="Valid XHTML">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/validator?profile=css2&amp;warning=2&amp;uri=%s" title="Valid CSS">CSS</a>', 'webjournal'), get_bloginfo('stylesheet_url') ); ?></li>
-				<?php wp_register() ?>
+<?php echo $before_widget; ?>
+<?php echo $before_title . $title . $after_title; ?>
+<ul>
+<li id="copyright">&copy; <?php echo( date('Y') ); ?> <?php webjournal_admin_hCard(); ?></li>
+<li id="generator-link"><?php _e('Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>', 'webjournal') ?></li>
+<li id="web-standards"><?php printf(__('Compliant <a href="http://validator.w3.org/check/referer" title="Valid XHTML">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/validator?profile=css2&amp;warning=2&amp;uri=%s" title="Valid CSS">CSS</a>', 'webjournal'), get_bloginfo('stylesheet_url') ); ?></li>
+<?php wp_register() ?>
 
-				<li><?php wp_loginout() ?></li>
-				<?php wp_meta() ?>
-			</ul>
-		<?php echo $after_widget; ?>
+<li><?php wp_loginout() ?></li>
+<?php wp_meta() ?>
+</ul>
+<?php echo $after_widget; ?>
 <?php
 }
 
@@ -524,9 +457,9 @@ function widget_webjournal_homelink_control() {
 	}
 	$title = attribute_escape( $options['title'] );
 ?>
-			<p><?php _e('Adds a link to the home page on every page <em>except</em> the home.', 'webjournal'); ?></p>
-			<p><label for="homelink-title"><?php _e( 'Title:', 'webjournal' ) ?> <input class="widefat" id="homelink-title" name="homelink-title" type="text" value="<?php echo $title; ?>" /></label></p>
-			<input type="hidden" id="homelink-submit" name="homelink-submit" value="1" />
+<p><?php _e('Adds a link to the home page on every page <em>except</em> the home.', 'webjournal'); ?></p>
+<p><label for="homelink-title"><?php _e( 'Title:', 'webjournal' ) ?> <input class="widefat" id="homelink-title" name="homelink-title" type="text" value="<?php echo $title; ?>" /></label></p>
+<input type="hidden" id="homelink-submit" name="homelink-submit" value="1" />
 <?php
 }
 
@@ -536,13 +469,13 @@ function widget_webjournal_rsslinks($args) {
 	$options = get_option('widget_webjournal_rsslinks');
 	$title = empty($options['title']) ? __( 'RSS Links', 'webjournal' ) : $options['title'];
 ?>
-		<?php echo $before_widget; ?>
-			<?php echo $before_title . $title . $after_title; ?>
-			<ul>
-				<li><a href="<?php bloginfo('rss2_url') ?>" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?> <?php _e( 'Posts RSS feed', 'webjournal' ); ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All posts', 'webjournal' ) ?></a></li>
-				<li><a href="<?php bloginfo('comments_rss2_url') ?>" title="<?php echo wp_specialchars(bloginfo('name'), 1) ?> <?php _e( 'Comments RSS feed', 'webjournal' ); ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All comments', 'webjournal' ) ?></a></li>
-			</ul>
-		<?php echo $after_widget; ?>
+<?php echo $before_widget; ?>
+<?php echo $before_title . $title . $after_title; ?>
+<ul>
+<li><a href="<?php bloginfo('rss2_url') ?>" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?> <?php _e( 'Posts RSS feed', 'webjournal' ); ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All posts', 'webjournal' ) ?></a></li>
+<li><a href="<?php bloginfo('comments_rss2_url') ?>" title="<?php echo wp_specialchars(bloginfo('name'), 1) ?> <?php _e( 'Comments RSS feed', 'webjournal' ); ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All comments', 'webjournal' ) ?></a></li>
+</ul>
+<?php echo $after_widget; ?>
 <?php
 }
 
@@ -558,8 +491,8 @@ function widget_webjournal_rsslinks_control() {
 	}
 	$title = attribute_escape( $options['title'] );
 ?>
-			<p><label for="rsslinks-title"><?php _e( 'Title:', 'webjournal' ) ?> <input class="widefat" id="rsslinks-title" name="rsslinks-title" type="text" value="<?php echo $title; ?>" /></label></p>
-			<input type="hidden" id="rsslinks-submit" name="rsslinks-submit" value="1" />
+<p><label for="rsslinks-title"><?php _e( 'Title:', 'webjournal' ) ?> <input class="widefat" id="rsslinks-title" name="rsslinks-title" type="text" value="<?php echo $title; ?>" /></label></p>
+<input type="hidden" id="rsslinks-submit" name="rsslinks-submit" value="1" />
 <?php
 }
 
@@ -572,17 +505,17 @@ function widget_webjournal_recent_comments($args) {
 	$count = empty($options['count']) ? __('5', 'webjournal') : $options['count'];
 	$comments = $wpdb->get_results("SELECT comment_author, comment_author_url, comment_ID, comment_post_ID, SUBSTRING(comment_content,1,65) AS comment_excerpt FROM $wpdb->comments LEFT OUTER JOIN $wpdb->posts ON ($wpdb->comments.comment_post_ID = $wpdb->posts.ID) WHERE comment_approved = '1' AND comment_type = '' AND post_password = '' ORDER BY comment_date_gmt DESC LIMIT $count");
 ?>
-		<?php echo $before_widget; ?>
-			<?php echo $before_title ?><?php echo $title ?><?php echo $after_title ?>
-				<ul id="recentcomments"><?php
-				if ( $comments ) : foreach ($comments as $comment) :
-				echo  '<li class="recentcomments">' . sprintf(__('<span class="comment-author vcard">%1$s</span> <span class="comment-entry-title">on <cite title="%2$s">%2$s</cite></span> <blockquote class="comment-summary" cite="%3$s" title="Comment on %2$s">%4$s &hellip;</blockquote>'),
-					'<a href="'. get_permalink($comment->comment_post_ID) . '#comment-' . $comment->comment_ID . '" title="' . $comment->comment_author . ' on ' . get_the_title($comment->comment_post_ID) . '"><span class="fn n">' . $comment->comment_author . '</span></a>',
-					get_the_title($comment->comment_post_ID),
-					get_permalink($comment->comment_post_ID),
-					strip_tags($comment->comment_excerpt) ) . '</li>';
-				endforeach; endif;?></ul>
-		<?php echo $after_widget; ?>
+<?php echo $before_widget; ?>
+<?php echo $before_title ?><?php echo $title ?><?php echo $after_title ?>
+<ul id="recentcomments"><?php
+if ( $comments ) : foreach ($comments as $comment) :
+echo  '<li class="recentcomments">' . sprintf(__('<span class="comment-author vcard">%1$s</span> <span class="comment-entry-title">on <cite title="%2$s">%2$s</cite></span> <blockquote class="comment-summary" cite="%3$s" title="Comment on %2$s">%4$s &hellip;</blockquote>'),
+'<a href="'. get_permalink($comment->comment_post_ID) . '#comment-' . $comment->comment_ID . '" title="' . $comment->comment_author . ' on ' . get_the_title($comment->comment_post_ID) . '"><span class="fn n">' . $comment->comment_author . '</span></a>',
+get_the_title($comment->comment_post_ID),
+get_permalink($comment->comment_post_ID),
+strip_tags($comment->comment_excerpt) ) . '</li>';
+endforeach; endif;?></ul>
+<?php echo $after_widget; ?>
 <?php
 }
 
@@ -600,13 +533,13 @@ function widget_webjournal_recent_comments_control() {
 	$rc_title = attribute_escape( $options['title'] );
 	$rc_count = attribute_escape( $options['count'] );
 ?>
-			<p><label for="rc-title"><?php _e( 'Title:', 'webjournal' ) ?> <input class="widefat" id="rc-title" name="rc-title" type="text" value="<?php echo $rc_title; ?>" /></label></p>
-			<p>
-				<label for="rc-count"><?php _e('Number of comments to show:', 'webjournal'); ?> <input style="width:25px;text-align:center;" id="rc-count" name="rc-count" type="text" value="<?php echo $rc_count; ?>" /></label>
-				<br />
-				<small><?php _e('(at most 15)'); ?></small>
-			</p>
-			<input type="hidden" id="rc-submit" name="rc-submit" value="1" />
+<p><label for="rc-title"><?php _e( 'Title:', 'webjournal' ) ?> <input class="widefat" id="rc-title" name="rc-title" type="text" value="<?php echo $rc_title; ?>" /></label></p>
+<p>
+<label for="rc-count"><?php _e('Number of comments to show:', 'webjournal'); ?> <input style="width:25px;text-align:center;" id="rc-count" name="rc-count" type="text" value="<?php echo $rc_count; ?>" /></label>
+<br />
+<small><?php _e('(at most 15)'); ?></small>
+</p>
+<input type="hidden" id="rc-submit" name="rc-submit" value="1" />
 <?php
 }
 

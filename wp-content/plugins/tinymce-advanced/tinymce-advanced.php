@@ -3,7 +3,7 @@
 Plugin Name: TinyMCE Advanced
 Plugin URI: http://www.laptoptips.ca/projects/tinymce-advanced/
 Description: Enables advanced features and plugins in TinyMCE, the visual editor in WordPress.
-Version: 3.3.9.2
+Version: 3.4.5
 Author: Andrew Ozz
 Author URI: http://www.laptoptips.ca/
 
@@ -24,23 +24,38 @@ if ( ! function_exists('tadv_paths') ) {
 	*/
 	function tadv_paths() {
 		if ( !defined('TADV_URL') )
-			define('TADV_URL', WP_PLUGIN_URL . '/tinymce-advanced/');
+			define('TADV_URL', plugin_dir_url(__FILE__));
 			
 		if ( !defined('TADV_PATH') )
-			define('TADV_PATH', WP_PLUGIN_DIR . '/tinymce-advanced/');
+			define('TADV_PATH', plugin_dir_path(__FILE__));
 	}
 	add_action( 'plugins_loaded', 'tadv_paths', 50 );
+}
+
+
+if ( ! function_exists('tadv_version') ) {
+	function tadv_version() {
+		$ver = get_option('tadv_version', 0);
+
+		if ( $ver < 3420 ) {
+			update_option('tadv_version', 3420);
+
+			$plugins = array_diff( get_option('tadv_plugins', array()), array('media') );
+			update_option('tadv_plugins', $plugins);
+		}
+	}
+	add_action( 'admin_init', 'tadv_version' );
 }
 
 
 if ( ! function_exists('tadv_add_scripts') ) {
 	function tadv_add_scripts($page) {
 		if ( 'settings_page_tinymce-advanced' == $page ) {
-			wp_enqueue_script( 'tadv-js', TADV_URL . 'js/tadv.js', array('jquery-ui-sortable'), '3.3.9', true );
-			wp_enqueue_style( 'tadv-css', TADV_URL . 'css/tadv-styles.css', array(), '3.3.9' );
+			wp_enqueue_script( 'tadv-js', TADV_URL . 'js/tadv.js', array('jquery-ui-sortable'), '3.4.2', true );
+			wp_enqueue_style( 'tadv-css', TADV_URL . 'css/tadv-styles.css', array(), '3.4.2' );
 		}
 	}
-} // end tadv_add_scripts
+}
 
 
 if ( ! function_exists('tadv_load_defaults') ) {
@@ -173,7 +188,6 @@ if ( ! function_exists('tadv_mce_options') ) {
 	function tadv_mce_options($init) {
 		global $tadv_hidden_row;
 		$tadv_options = get_option('tadv_options', array());
-		$ext_elements = '';
 
 		if ( $tadv_hidden_row > 0 )
 			$init['wordpress_adv_toolbar'] = 'toolbar' . $tadv_hidden_row;
@@ -185,20 +199,6 @@ if ( ! function_exists('tadv_mce_options') ) {
 
 		if ( isset($tadv_options['hideclasses']) && $tadv_options['hideclasses'] == 1 )
 			$init['class_filter'] = '[function(){return false;}]';
-
-		if ( isset($tadv_options['iframe']) && $tadv_options['iframe'] == 1 )
-			$ext_elements = ',iframe[*]';
-
-		if ( isset($tadv_options['html5']) && $tadv_options['html5'] == 1 )
-			$ext_elements .= ',article[*],aside[*],audio[*],canvas[*],command[*],datalist[*],details[*],embed[*],figcaption[*],figure[*],footer[*],header[*],hgroup[*],keygen[*],mark[*],meter[*],nav[*],output[*],progress[*],section[*],source[*],summary,time[*],video[*],wbr';
-
-		if ( !empty($ext_elements) ) {
-
-			if ( !empty($init['extended_valid_elements']) )
-				$init['extended_valid_elements'] .= $ext_elements;
-			else
-				$init['extended_valid_elements'] = trim($ext_elements, ',');
-		}
 
 		return $init;
 	}
@@ -223,57 +223,28 @@ if ( ! function_exists('tadv_htmledit') ) {
 
 if ( ! function_exists('tmce_replace') ) {
 	function tmce_replace() {
-		global $merged_filters;
 		$tadv_options = get_option('tadv_options', array());
 		$tadv_plugins = get_option('tadv_plugins', array());
-
-		if ( ! array_key_exists('tiny_mce_before_init', $merged_filters) ) // we are not on a page that has the visual editor included with wp_tiny_mce()
-			return;
 
 		if ( isset($tadv_options['no_autop']) && $tadv_options['no_autop'] == 1 ) { ?>
 
 <script type="text/javascript">
-//<![CDATA[
-jQuery('body').bind('afterPreWpautop', function(e, o){
-	o.data = o.unfiltered
-		.replace(/caption\]\[caption/g, 'caption] [caption')
-		.replace(/<object[\s\S]+?<\/object>/g, function(a) {
-			return a.replace(/[\r\n]+/g, ' ');
-        });
-
-}).bind('afterWpautop', function(e, o){
-	o.data = o.unfiltered;
-});
-//]]>
-</script>
-<?php
-		}
-
-		if ( in_array('advlist', $tadv_plugins) ) {
-			$lang = ( '' == get_locale() ) ? 'en' : strtolower( substr(get_locale(), 0, 2) );
-?>
-
-<script type="text/javascript">
-//<![CDATA[
-tinyMCE.addI18n({<?php echo $lang; ?>:{
-advlist:{
-types:"Types",
-def:"Default",
-lower_alpha:"a b c",
-lower_greek:"\u03b1 \u03b2 \u03b3",
-lower_roman:"i ii iii",
-upper_alpha:"A B C",
-upper_roman:"I II III",
-circle:"\u26aa",
-disc:"\u26ab",
-square:"\u25a0"
-}}});
-//]]>
+if ( typeof(jQuery) != 'undefined' ) {
+  jQuery('body').bind('afterPreWpautop', function(e, o){
+    o.data = o.unfiltered
+    .replace(/caption\]\[caption/g, 'caption] [caption')
+    .replace(/<object[\s\S]+?<\/object>/g, function(a) {
+      return a.replace(/[\r\n]+/g, ' ');
+    });
+  }).bind('afterWpautop', function(e, o){
+    o.data = o.unfiltered;
+  });
+}
 </script>
 <?php
 		}
 	}
-	add_action( 'admin_print_footer_scripts', 'tmce_replace', 50 );
+	add_action( 'after_wp_tiny_mce', 'tmce_replace' );
 }
 
 
@@ -302,7 +273,7 @@ if ( ! function_exists('tadv_load_langs') ) {
 			return $langs;
 
 		$langpath = TADV_PATH . 'mce/';
-		$dolangs = array( 'advhr', 'advimage', 'advlink', 'media', 'searchreplace', 'style', 'table', 'xhtmlxtras' );
+		$dolangs = array( 'advhr', 'advimage', 'advlink', 'searchreplace', 'style', 'table', 'xhtmlxtras' );
 
 		$langs = (array) $langs;
 		foreach( $tadv_plugins as $plugin ) {
@@ -322,6 +293,7 @@ if ( ! function_exists('tadv_page') ) {
 		if ( !defined('TADV_ADMIN_PAGE') )
 			define('TADV_ADMIN_PAGE', true);
 
+		tadv_paths();
 		include_once( TADV_PATH . 'tadv_admin.php');
 	}
 }

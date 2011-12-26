@@ -2,24 +2,24 @@
 Contributors: azaozz
 Donate link: 
 Tags: wysiwyg, formatting, tinymce, write, editor
-Requires at least: 3.1
-Tested up to: 3.1
-Stable tag: 3.3.9.2
+Requires at least: 3.3
+Tested up to: 3.3
+Stable tag: 3.4.5
 
 Enables the advanced features of TinyMCE, the WordPress WYSIWYG editor. 
 
 == Description ==
 
-Attention: if you are using customized tadv-mce.css and are updating to version 3.3.9.1 or newer, see the release notes.
+Attention: if you are using customized tadv-mce.css and are updating from version 3.3.9 or earlier to version 3.3.9.1 or newer, see the release notes.
 
-This plugin adds 17 plugins to [TinyMCE](http://tinymce.moxiecode.com/): Advanced HR, Advanced Image, Advanced Link, Advanced List, Context Menu, Emotions (Smilies), Date and Time, IESpell, Layer, Embed Media, Nonbreaking, Print, Search and Replace, Style, Table, Visual Characters and XHTML Extras. 
+This plugin adds 16 plugins to [TinyMCE](http://tinymce.moxiecode.com/): Advanced HR, Advanced Image, Advanced Link, Advanced List, Context Menu, Emotions (Smilies), Date and Time, IESpell, Layer, Nonbreaking, Print, Search and Replace, Style, Table, Visual Characters and XHTML Extras. 
 
 **Language Support:** The plugin interface in only in English, but the TinyMCE plugins include several translations: German, French, Italian, Spanish, Portuguese, Russian, Chinese and Japanese. More translations are available at the [TinyMCE web site](http://tinymce.moxiecode.com/download_i18n.php).
 
 
 = Some of the features added by this plugin =
 
-* Imports all CSS classes from the main theme stylesheet and add them to a drop-down list.
+* Imports the CSS classes from the theme stylesheet and add them to a drop-down list.
 * Support for making and editing tables.
 * In-line css styles.
 * Advanced list and image dialogs that offer a lot of options.
@@ -40,6 +40,15 @@ This plugin adds 17 plugins to [TinyMCE](http://tinymce.moxiecode.com/): Advance
 
 
 == Changelog ==
+
+= 3.4.5 =
+Updated for WordPress 3.3 or later and TinyMCE 3.4.5.
+
+= 3.4.2.1 =
+Fix the removal of the *media* plugin so it does not require re-saving the settings.
+
+= 3.4.2 =
+Compatibility with WordPress 3.2 and TinyMCE 3.4.2, removed the options for suport for iframe and HTML 5.0 elements as they are supported by default in WordPress 3.2, removed the *media* plugin as it is included by default.
 
 = 3.3.9.1 =
 Added advanced options: stop removing iframes, stop removing HTML 5.0 elements, moved the support for custom editor styles to editor-style.css in the current theme.
@@ -81,7 +90,7 @@ Includes an admin page for arranging the TinyMCE toolbar buttons, easy installat
 
 = No styles are imported in the Styles drop-down menu. =
 
-These styles (just the classes) are imported from your current theme editor-style.css file. However some themes do not have this functionality. For these themes TinyMCE Advanced will let you add a customized editor-style.css and import it into the editor.
+These styles (just the classes) are imported from your current theme editor-style.css file. However some themes do not have this functionality. For these themes TinyMCE Advanced has the option to let you add a customized editor-style.css and import it into the editor.
 
 = I have just installed this plugin, but it does not do anything. =
 
@@ -89,7 +98,7 @@ Log out of WordPress, clear your browser cache, quit and restart the browser and
 
 = When I add "Smilies", they do not show in the editor. =
 
-The "Emotions" button in TinyMCE adds the codes for the smilies. The actual images are added by WordPress when viewing the Post/Page. Make sure the checkbox "Convert emoticons to graphics on display" in "Options - Writing" is checked.
+The "Emotions" button in TinyMCE adds the codes for the smilies. The actual images are added by WordPress when viewing the Post. Make sure the checkbox "Convert emoticons to graphics on display" in "Options - Writing" is checked.
 
 = The plugin does not add any buttons. =
 
@@ -97,7 +106,7 @@ Make sure the "Disable the visual editor when writing" checkbox under "Users - Y
 
 = I still see the "old" buttons in the editor =
 
-Click the "Remove Settings" button on the plugin settings page and then on "reload this page" to reset all buttons.
+Click the "Remove Settings" button on the plugin settings page and then set the buttons again and save.
 
 = Other questions? More screenshots? =
 
