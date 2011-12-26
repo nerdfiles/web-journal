@@ -96,3 +96,5 @@ xmlrpc.php
 
 wp-*
 !wp-content/
+*.swp
+*.swo

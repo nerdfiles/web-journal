@@ -8,12 +8,6 @@
 
 
 
-<!--div class="pagenavi-container footer-pagenavi container_16 clearfix">
-<div class="grid_16">
-<?php wp_pagenavi(); ?>
-</div>
-</div-->
-
 <div id="footer">
 <div class="footer-inner">
 <p>Copyright &copy; 2003-2011. Rights &amp;c. <a href="http://nerdfiles.net">nerdfiles.net</a> | Back to <a href="#top">top</a></p>

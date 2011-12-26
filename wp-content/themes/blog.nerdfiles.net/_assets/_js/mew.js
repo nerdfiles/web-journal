@@ -65,36 +65,7 @@ if ( ! window.localStorage ) {
 
 $(document).ready(function() {
 
-    $('#site-search label').attr('title', 'Search for anything you can dream of!');
-    
-    // wierd scroll-y links
-    
-  	$("a[href^='#']").bind('click', function(e) {
-  		
-  		e.preventDefault();
-  		
-  		var $self = $(this),
-      		target = this.hash,
-      		$target = $(target);
-  		
-      $('html, body').animate({
-        'scrollTop': ($target.offset().top+offset)
-      }, 750, 'swing', function() {
-      
-        if ("onhashchange" in window) {
-          
-          //$target.prop('id', '');
-          //window.location.hash = target;
-          //$target.prop('id', target.replace('#', ''));
-          
-        } else {
-          //window.location.hash = target;
-        }
-        
-      });
-          
-  	});
-  
+    $('#site-search label').attr('title', 'Search for anything you can dream of!'); 
   
     $('a[href^="#"]').bind('click.hashit', function(e) {
       
