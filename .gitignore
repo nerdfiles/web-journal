@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled source #
 ###################
 *.com
@@ -93,3 +94,5 @@ license.txt
 .htaccess
 xmlrpc.php
 
+wp-*
+!wp-content/
