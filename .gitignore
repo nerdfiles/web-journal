@@ -1,11 +1,10 @@
 wp-*
 .htaccess
+/wp-content/w3tc/*
 !wp-content/
 *.swp
 *.swo
 advanced-cache.php
-wp-content/w3tc/
 db.php
 object-cache.php
 w3-total-cache-config.php
-wp-content/w3tc/
