@@ -1,2 +1,4 @@
 wp-*
 !wp-content/
+*.swp
+*.swo
