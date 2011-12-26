@@ -1,7 +1,8 @@
 wp-*
 .htaccess
 /wp-content/w3tc/*
-!wp-content/
+!wp-content/themes/
+!wp-content/plugins/
 *.swp
 *.swo
 advanced-cache.php
