@@ -1,10 +1,12 @@
 wp-*
 .htaccess
-!wp-content/themes/
-!wp-content/plugins/
+!wp-content/themes/*
+!wp-content/plugins/*
 *.swp
 *.swo
 advanced-cache.php
 db.php
 object-cache.php
 w3-total-cache-config.php
+settings.py
+*.pyc
