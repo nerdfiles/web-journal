@@ -2,6 +2,14 @@
 
 body {}
 
+body.logged-in { 
+
+#site-navigation { position: absolute;  left: -9999px; }
+#site-admin { position: absolute; left: -9999px; }
+// fuck you
+
+}
+
 a {
   color: #acbf87;
   opacity: 1 !important;
