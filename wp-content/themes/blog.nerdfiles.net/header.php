@@ -116,7 +116,7 @@ $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
 ?>
 <li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
 <?php if ( current_user_can('administrator') ) { ?>
-<li><a href="http://webjournal.nerdfiles.net/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
+<li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
 <?php } ?>
 <?php 
 if ( $post->comment_count != 0 ) { ?>
@@ -183,13 +183,13 @@ A weedy florilegium
 <?php // @copyof wp_nav_menu(); ?>
 <div class="menu-jininmi-container">
 <ul id="menu-jininmi" class="menu">
-<li id="menu-item-2218" class="grid_1 alpha menu-item menu-item-type-post_type menu-item-object-page menu-item-2218"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/the-semantic-web/">sw</a></li>
-<li id="menu-item-2219" class="grid_1 menu-item menu-item-type-post_type menu-item-object-page menu-item-2219"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/content-is-king/">cok</a></li>
-<li id="menu-item-2220" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/recipes/">recipes</a></li>
-<li id="menu-item-2221" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2221"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/poems/">poems</a></li>
-<li id="menu-item-2222" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2222"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/claims/">claims</a></li>
-<li id="menu-item-2223" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2223"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/quotes/">quotes</a></li>
-<li id="menu-item-2224" class="grid_2 omega menu-item menu-item-type-post_type menu-item-object-page menu-item-2224"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/about/">about</a></li>
+<li id="menu-item-2218" class="grid_1 alpha menu-item menu-item-type-post_type menu-item-object-page menu-item-2218"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/the-semantic-web/">sw</a></li>
+<li id="menu-item-2219" class="grid_1 menu-item menu-item-type-post_type menu-item-object-page menu-item-2219"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/content-is-king/">cok</a></li>
+<li id="menu-item-2220" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/recipes/">recipes</a></li>
+<li id="menu-item-2221" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2221"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/poems/">poems</a></li>
+<li id="menu-item-2222" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2222"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/claims/">claims</a></li>
+<li id="menu-item-2223" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2223"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/quotes/">quotes</a></li>
+<li id="menu-item-2224" class="grid_2 omega menu-item menu-item-type-post_type menu-item-object-page menu-item-2224"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/about/">about</a></li>
 </ul>
 </div>
 
@@ -198,17 +198,17 @@ A weedy florilegium
 <div id="site-admin" class="grid_4 omega">
 <ul class="admin-meta">
 <?php if ( is_user_logged_in() ) { ?>
-<li class="grid_2 alpha"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/wp-admin/">proliferate</a></li>
+<li class="grid_2 alpha"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/wp-admin/">proliferate</a></li>
 <?php if (!current_user_can('administrator')) { ?>
 <li class="grid_2 omega"><a class="drop-shadow" onclick="#disqus-signout" href="#signout">an exodus</a></li>
 <?php } else { ?> 
-<li class="grid_2 omega"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/wp-login.php?action=logout&#038;_wpnonce=2d602251a8">an exodus</a></li>
+<li class="grid_2 omega"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/wp-login.php?action=logout&#038;_wpnonce=2d602251a8">an exodus</a></li>
 <?php } ?>
 <?php } else { ?>
 <?php if (!current_user_can('administrator')) { ?>
-<li class="grid_4 alpha omega"><a class="drop-shadow" href="http://webjournal.nerdfiles.net/wp-login.php">transpierce</a></li>
+<li class="grid_4 alpha omega"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/wp-login.php">transpierce</a></li>
 <?php } else { ?>
-<li class="grid_4 alpha omega"><a class="drop-shadow gfc-button-base-v2 gfc-button-2" href="http://webjournal.nerdfiles.net/wp-login.php">transpierce</a></li>
+<li class="grid_4 alpha omega"><a class="drop-shadow gfc-button-base-v2 gfc-button-2" href="<?php bloginfo('url'); ?>/wp-login.php">transpierce</a></li>
 <?php } ?>
 <?php }; ?>
 </ul>
@@ -224,7 +224,7 @@ A weedy florilegium
   
 <ul>
 
-<li><a href="//webjournal.nerdfiles.net" rel="index" title="A weedy florilegium">~</a></li>
+<li><a href="<?php bloginfo('url'); ?>" rel="index" title="A weedy florilegium">~</a></li>
 
 <?php if (!is_front_page()) { ?>
  
