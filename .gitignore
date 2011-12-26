@@ -3,3 +3,5 @@ wp-*
 !wp-content/
 *.swp
 *.swo
+advanced-cache.php
+wp-content/w3tc/
