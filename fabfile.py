@@ -61,7 +61,8 @@ def push_sources():
 @task
 def sass_it():
   with cd('%s/_css' % env.static):
-    run('sass global.scss global.css')
+    run('compassing')
+    #run('sass global.scss global.css')
 
 @task
 def host_type():
