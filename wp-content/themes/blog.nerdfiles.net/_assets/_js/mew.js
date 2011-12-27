@@ -249,6 +249,7 @@ $(document).ready(function() {
             __with__$site_breadcrumb = $.merge(__with__$site_header, $('#site-breadcrumb').find('a')),
             __with__$home = $.merge(__with__$site_breadcrumb, $('#home').find('a')),
             __with__$hentry = $.merge(__with__$home, $('.hentry').find('a')),
+            __with__$entrymeta = $.merge(__with$hentry, $('.entry-meta').find('a')),
             term_list = [];
          
         if ( __ki__enter && tashu_store == __ki__ctrl && $('#s').val() === "b__bies" ) {
