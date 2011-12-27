@@ -159,7 +159,11 @@ def deploy():
     webserver_start()
 
 @task
-def sync():
+def qsync():
+  local('git status')
+  local('git add .')
+  local('git commit -am "quick_sync @ %s"' % datetime.datetime.now())
+  local('git push -u origin dev')
   remote_pull()
   sass_it()
 

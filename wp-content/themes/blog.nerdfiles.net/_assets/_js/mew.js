@@ -1,7 +1,5 @@
 var DEBUG = false;
 
-alert('fuck off');
-
 if ( ! window.localStorage ) {
   Object.defineProperty(window, "localStorage", new (function () {
     var aKeys = [], oStorage = {};
