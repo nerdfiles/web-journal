@@ -249,6 +249,7 @@ $(document).ready(function() {
             __with__$home = $.merge(__with__$site_breadcrumb, $('#home').find('a')),
             __with__$hentry = $.merge(__with__$home, $('.hentry').find('a')),
             __with__$entrymeta = $.merge(__with__$hentry, $('.entry-meta').find('a')),
+            __with__$pagenavi = $.merge(__with__$entrymeta, $('.wp-pagenavi').find('a')),
             term_list = [];
          
         if ( __ki__enter && tashu_store == __ki__ctrl && $('#s').val() === "b__bies" ) {
@@ -262,7 +263,7 @@ $(document).ready(function() {
            
         if ( e.type === "keyup" && __ki__enter && tashu_store == __ki__ctrl ) {
           // keyword list
-          $.each(p = __with__$hentry, function(i, e) {
+          $.each(p = __with__$pagenavi, function(i, e) {
             if( $(p[i]).text() === $('#s').val() ) {
               if ( DEBUG ) {
                 console.log('command: page: ' + $('#s').val());
