@@ -10,69 +10,69 @@ from fabric.decorators import runs_once
 from fabric.contrib.files import exists
 from fabric.context_managers import cd, lcd, settings, hide
 
-LOCAL_DEVELOPMENT = False
+import settings
+
+DEBUG = settings.DEBUG
+DEPS = False
 
 env.hosts = ['nerdfiles@nerdfiles.net']
 env.site = 'web-journal'
 env.project = '/home/nerdfiles/webapps/webjournal'
 env.venv = '/home/nerdfiles/.virtualenvs/web_journal'
+env.src = 'src'
+env.static = '%s/wp-content/themes/blog.nerdfiles.net/_assets/' % env.project 
 
-if LOCAL_DEVELOPMENT:
-  DJANGO_APP_ROOT = '/Users/nerdfiles/Sites/nerdfiles.net/web-journal/' 
-else:
-  DJANGO_APP_ROOT = env.project+'/'
-  
-
-# Directory where static sources should be collected.  This must equal the value
-# of STATIC_ROOT in the settings.py that is used on the server.
-STATIC_ROOT = '/home/nerdfiles/webapps/webjournal/wp-content/themes/blog.nerdfiles.net/_assets/' 
-
-# Subdirectory of DJANGO_APP_ROOT in which project sources will be stored
-SRC_SUBDIR = 'src'
-
-if LOCAL_DEVELOPMENT:
-  VENV_SUBDIR = '/Users/nerdfiles/.virtualenvs/web_journal/'
-else:
-  VENV_SUBDIR = env.project+'/'
-
-# Python version
 PYTHON_BIN = "python2.7"
 PYTHON_PREFIX = "" # e.g. /usr/local  Use "" for automatic
 PYTHON_FULL_PATH = "%s/bin/%s" % (PYTHON_PREFIX, PYTHON_BIN) if PYTHON_PREFIX else PYTHON_BIN
 
+# for mod_wsgi setups
 
-# Commands to stop and start the webserver that is serving the Django app.
-# CHANGEME!  These defaults work for Webfaction
-DJANGO_SERVER_STOP = posixpath.join(DJANGO_APP_ROOT, 'apache2', 'bin', 'stop')
-DJANGO_SERVER_START = posixpath.join(DJANGO_APP_ROOT, 'apache2', 'bin', 'start')
-DJANGO_SERVER_RESTART = None
+DJANGO_SERVER_STOP = posixpath.join(env.project, 'apache2', 'bin', 'stop')
+DJANGO_SERVER_START = posixpath.join(env.project, 'apache2', 'bin', 'start')
+DJANGO_SERVER_RESTART = posixpath.join(env.project, 'apache2', 'bin', 'restart')
 
-src_dir = posixpath.join(VENV_SUBDIR, SRC_SUBDIR)
-venv_dir = posixpath.join(VENV_SUBDIR)
+# dirs
+
+src_dir = posixpath.join(env.venv, env.src)
+venv_dir = posixpath.join(env.venv)
+
+# utilities
+
+def virtualenv(venv_dir):
+  return settings(venv=venv_dir)
+
+def run_venv(command, **kwargs):
+  run("source %s/bin/activate" % env.venv + " && " + command, **kwargs)
+
+def push_sources():
+  with cd('%s' % env.project):
+    print('Securing deploy folder...')
+    if not exists('%s/wp-deploy' % env.project):
+      run('mkdir wp-deploy')
+  print('Placing in %s/wp-deploy/%s.tar.gz' % (env.project, env.site))
+  put('wp-deploy/%s.tar.gz' % env.site, '%s/wp-deploy/' % env.project)
+  print('Extracting %s/%s.tar.gz to %s' % (env.project, env.site, env.project)) 
+  with cd('%s/wp-deploy/' % env.project):
+    run('tar zxvf %s/wp-deploy/%s.tar.gz -C %s' % (env.project, env.site, env.project))
+
+# usual utils
+
+@task
+def sass_it():
+  with cd('%s../' % env.static):
+    run('sass global.scss global.css')
 
 @task
 def host_type():
-    run('uname -s')
-
-def virtualenv(venv_dir):
-    """
-    Context manager that establishes a virtualenv to use.
-    """
-    return settings(venv=venv_dir)
-
-def run_venv(command, **kwargs):
-    """
-    Runs a command in a virtualenv (which has been specified using
-    the virtualenv context manager
-    """
-    run("source %s/bin/activate" % env.venv + " && " + command, **kwargs)
+  run('uname -s')
 
 @task
-def install_dependencies():
-    ensure_virtualenv()
-    with virtualenv(env.venv):
-        with cd(env.project):
-            run_venv("pip install -r requirements.txt")
+def deps():
+  ensure_virtualenv()
+  with virtualenv(env.venv):
+    with cd(env.project):
+      run_venv("pip install -r requirements.txt")
 
 @task
 def ensure_virtualenv():
@@ -105,28 +105,24 @@ def remote_pull():
   with cd('%s' % env.project):
     run('git pull -u origin dev')
 
-@task
-def push_sources():
-  with cd('%s' % env.project):
-    print('Securing deploy folder...')
-    if not exists('%s/wp-deploy' % env.project):
-      run('mkdir wp-deploy')
-  print('Placing in %s/wp-deploy/%s.tar.gz' % (env.project, env.site))
-  put('wp-deploy/%s.tar.gz' % env.site, '%s/wp-deploy/' % env.project)
-  print('Extracting %s/%s.tar.gz to %s' % (env.project, env.site, env.project)) 
-  with cd('%s/wp-deploy/' % env.project):
-    run('tar zxvf %s/wp-deploy/%s.tar.gz -C %s' % (env.project, env.site, env.project))
+# server admin
 
 @task
-def sass_it():
-  with cd('%s../' % STATIC_ROOT):
-    run('sass global.scss global.css')
+def start_remote():
+  run('%' % DJANGO_SERVER_START)
+
+@task
+def stop_remote():
+  run('%' % DJANGO_SERVER_STOP)
+
+# the usual interfaces
 
 @task
 def deploy():
   pack()
   push_sources()
-  install_dependencies()
+  if DEPS:
+    deps()
   sass_it()
 
 @task
