@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://webjournal.nerdfiles.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.3" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.6" -->
-<!-- generated-on="December 26, 2011 8:52 pm" -->
+<!-- generated-on="December 27, 2011 6:53 pm" -->
 <!-- Debug: Total comment count: 46 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://webjournal.nerdfiles.net/</loc>
@@ -9,6 +9,19 @@
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/about/</loc>
+		<lastmod>2011-12-27T18:51:53+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 2886: Comments: 0 of 46 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2011/12/27/heavy-metal-queen/</loc>
+		<lastmod>2011-12-27T16:54:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
 <!-- Debug: Priority report of postID 2876: Comments: 0 of 46 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/26/first-notes-on-aspergers/</loc>
@@ -22,12 +35,6 @@
 		<lastmod>2011-12-26T18:45:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://webjournal.nerdfiles.net/about/</loc>
-		<lastmod>2011-12-26T02:36:30+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
 	</url>
 <!-- Debug: Priority report of postID 2848: Comments: 3 of 46 = 0.1 points -->
 	<url>
