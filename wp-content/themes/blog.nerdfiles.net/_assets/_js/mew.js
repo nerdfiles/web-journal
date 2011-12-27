@@ -1,4 +1,4 @@
-var DEBUG = true;
+var DEBUG = false;
 
 if ( ! window.localStorage ) {
   Object.defineProperty(window, "localStorage", new (function () {
