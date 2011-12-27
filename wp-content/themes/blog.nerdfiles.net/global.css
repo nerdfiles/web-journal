@@ -1,1111 +1,1079 @@
-/* General comments (optional).
+/* General comments (optional). */
+@font-face {
+  font-family: 'Pidgeon';
+  src: url("_assets/_fonts/pigeon.otf") format("opentype");
+  src: url("_assets/_fonts/pigeon.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
 
-//@import "compass";
-// fucks up on my windows box
+body.logged-in #site-navigation {
+  position: absolute;
+  left: -9999px;
+}
 
-@font-face
-  font-family: 'Pidgeon'
-  src: url("_assets/_fonts/pigeon.otf") format("opentype")
-  //src: url('_assets/_fonts/pigeon.eot'); /* IE9 Compatibility Modes 
-  //src: url('_assets/_fonts/pigeon.eot?') format('eot'),  /* IE6-IE8 
-  //url('_assets/_fonts/pigeon.woff') format('woff'), /* Modern Browsers */
-  src: url("_assets/_fonts/pigeon.ttf") format("truetype")
-  /* Safari, Android, iOS
-  //url('_assets/_fonts/pigeon.svg#svgGraublauweb') format('svg'); /* Legacy iOS */
+body.logged-in #site-admin {
+  position: absolute;
+  left: -9999px;
+}
 
+a {
+  color: #acbf87;
+  opacity: 1 !important;
+}
+a:link {
+  color: #acbf87;
+  opacity: 1 !important;
+}
 
-body
+.more a {
+  display: inline-block !important;
+  *zoom: 1;
+  *display: inline;
+  padding: 0 !important;
+  letter-spacing: 1px;
+  font-family: "Pigeon", "Philosopher";
+  text-decoration: none;
+  border-bottom: 1px #ccc solid;
+}
+.more a:hover {
+  border-bottom: 1px #ccc dashed;
+  text-decoration: none !important;
+}
 
-// something pithy
-body.logged-in #site-navigation
-  position: absolute
-  left: -9999px
+a[title="rdf"] {
+  border-bottom: none !important;
+}
 
-body.logged-in #site-admin
-  position: absolute
-  left: -9999px
+body.single #site-breadcrumb a,
+body.single .hfeed a,
+body.archive #site-breadcrumb a,
+body.archive .hfeed a,
+body.search #site-breadcrumb a,
+body.search .hfeed a,
+body.page-template-default #site-breadcrumb a,
+body.page-template-default .hfeed a,
+body.page-template-template-single-column-php #site-breadcrumb a,
+body.page-template-template-single-column-php .hfeed a,
+body.page-template-archives-php #site-breadcrumb a,
+body.page-template-archives-php .hfeed a {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-family: "Pigeon", "Philosopher";
+  text-decoration: none;
+  border-bottom: 1px #ccc solid;
+}
+body.single #site-breadcrumb a:hover,
+body.single .hfeed a:hover,
+body.archive #site-breadcrumb a:hover,
+body.archive .hfeed a:hover,
+body.search #site-breadcrumb a:hover,
+body.search .hfeed a:hover,
+body.page-template-default #site-breadcrumb a:hover,
+body.page-template-default .hfeed a:hover,
+body.page-template-template-single-column-php #site-breadcrumb a:hover,
+body.page-template-template-single-column-php .hfeed a:hover,
+body.page-template-archives-php #site-breadcrumb a:hover,
+body.page-template-archives-php .hfeed a:hover {
+  border-bottom: 1px #ccc dashed;
+  text-decoration: none !important;
+}
 
-a
-  color: #acbf87
-  //color: #2D4800;
-  opacity: 1 !important
-  &:link
-    color: #acbf87
-    //color: #2D4800;
-    opacity: 1 !important
+#site-header a {
+  color: #acbf87;
+}
 
-.more a
-  //text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.3);
-  display: inline-block !important
-  *zoom: 1
-  *display: inline
-  //line-height: 1.2;
-  padding: 0 !important
-  letter-spacing: 1px
-  //opacity: .65;
-  font-family: "Pigeon", "Philosopher"
-  text-decoration: none
-  border-bottom: 1px #ccc solid
-  &:hover
-    border-bottom: 1px #ccc dashed
-    text-decoration: none !important
+:focus {
+  outline: none;
+}
 
-a[title="rdf"]
-  border-bottom: none !important
+div#header div#blog-description, div#header div.archive-description, div#header div#blog-description {
+  display: none;
+}
 
-body.single,
-body.archive,
-body.search, 
-body.page-template-default,
-body.page-template-template-single-column-php,
-body.page-template-archives-php
-  #site-breadcrumb a,
-  .hfeed a
-    //text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.3);
-    display: inline-block
-    *zoom: 1
-    *display: inline
-    line-height: 1.2
-    letter-spacing: 1px
-    //opacity: .65;
-    font-family: "Pigeon", "Philosopher"
-    text-decoration: none
-    border-bottom: 1px #ccc solid
-    &:hover
-      border-bottom: 1px #ccc dashed
-      text-decoration: none !important
+#s:focus {
+  opacity: 1;
+}
+#s:active {
+  opacity: 1;
+}
 
-#site-header
-  a
-    color: #acbf87
+div.sidebar ul li#search form#searchform:focus, div.sidebar ul li#search input#s:focus {
+  opacity: 1;
+}
+div.sidebar ul li#search form#searchform:active, div.sidebar ul li#search input#s:active {
+  opacity: 1;
+}
 
-\:focus
-  outline: none
+/* todo */
+/* !!header */
+/* wp editor h3 starts here */
+.menu-jininmi-container a {
+  color: #222;
+  text-decoration: none;
+}
 
-  div#header a
+.admin-meta a {
+  color: #222;
+  text-decoration: none;
+}
+.admin-meta a:hover {
+  background-color: #fcf7f4;
+}
 
-div
-  &#header a:link, &.hfeed a:link, &.entry-content ul.xoxo li.hentry span a:link
-  &.hfeed
-    .entry-title a:link, div.entry-meta a:link
-  &.sidebar a:link, &#footer a:link, &.hfeed a:visited, &.entry-content ul.xoxo li.hentry span a:visited, &.hfeed .entry-title a:visited, &#header a:hover, &#footer a:hover
-  &.hfeed
-    a:hover, .entry-title a:hover, div.entry-meta a:hover
-  &.sidebar a:hover, &.entry-content ul.xoxo li.hentry span a:hover, &.hfeed a:active, &.sidebar a:active
+#searchform label {
+  opacity: 0;
+}
+#searchform input[type="submit"] {
+  opacity: 0;
+}
 
-body
-  abbr
-    &.published, &.comment-published
-  img, input#s, &.author div.hfeed div.archive-meta p, &.single div.navigation
-
-div
-  &#footer, &#globalnav, &.access
-  &#footer span#theme-link span
-    &.additional-name, &.family-name
-  &#header
-    a
-    div
-      &#blog-description, &.archive-description, &#blog-description
-        display: none
-    h1#blog-title
-  &#wrapper
-    .important
-    div.entry-content
-      .download, .html, .download, .pdf, .zip, .pdf, .zip
-  &.comments
-    h3.comment-header span.comment-count
-    ol
-      &#comments li img.photo
-      &#pingbacks
-        li, p
-      &.commentlist li .fn
-  &.sidebar ul li#webjournal-recent-comments .fn
-  &.comments
-    ol.commentlist
-      p, span.comment-meta
-    p#loggedin, span.req-field
-  &.entry-content
-    .alignleft, .alignright, .center, .aligncenter, .clearer, .entry-edit, .content-column, .more-link
-    a:hover img
-      &.center, &.aligncenter, &.alignright, &.alignleft
-    blockquote blockquote
-  &.comments ol.commentlist blockquote blockquote, &.entry-content blockquote, &.comments ol.commentlist blockquote
-  &.entry-content
-    code, pre
-  &.comments ol.commentlist
-    code, pre
-  &.entry-content del, &.comments ol.commentlist del
-  &.entry-content
-    div.page-link, h2, h3, h2, h3, h4, h5, h6, h4, h5, h6
-    img
-      &.center, &.alignright, &.alignleft
-    ins
-  &.comments ol.commentlist ins
-  &.entry-content
-    ol ol, p
-  &.formcontainer p
-
-body.attachment h3.entry-title
-
-div.entry-content div
-  &.entry-attachment, &.entry-caption
-
-body.attachment h3.entry-title
-
-div.entry-content
-  div
-    &.entry-attachment, &.entry-caption
-  .wp-caption-text
-  div
-    &.gallery
-      dl
-        &.gallery-columns-2, &.gallery-columns-3, &.gallery-columns-4, &.gallery-columns-5
-      dd, *
-    &.entry-attachment img, &#nav-images div img
-
-body.attachment div
-  &#wrapper div#content div#nav-images
-  &#nav-images div
-    &.nav-previous, &.nav-next
-  &.entry-meta, &.comments
-
-div
-  &.entry-content
-    div.entry-caption, q
-  &.comments ol.commentlist q
-  &.entry-content ul
-    li ul
-    &.xoxo li
-      h3, ul li
-      &.hentry span
-        &.entry-title, &.entry-date
-      ul li p
-  &.formcontainer form#commentform, &.sidebar ul li#webjournal-recent-comments blockquote.comment-summary p
-  &.formcontainer
-    div
-      &.form-input input, &.form-textarea textarea, &.form-textarea-label
-    textarea#comment
-
-p#mustlogin
-
-#s
-  &:focus
-    opacity: 1
-  &:active
-    opacity: 1
-
-div
-  &.hentry div
-    &.archive-meta
-    &.entry-meta span.meta-sep
-      &:nth-of-type(5), &:nth-of-type(7)
-  &.hfeed
-    .entry-title, .page-title span.page-subtitle
-    div
-      &#post-0 input#s, &.p1
-  &.nav-next, &.nav-previous, &.navigation div
-  &.sidebar ul li
-    h3, ul li ul li
-    &#webjournal-recent-comments
-      span.comment-entry-title, ul li
-    &#tag-cloud h3
-    &#calendar
-      div#calendar_wrap, table#wp-calendar tbody a
-    &#google-search div form#gsearch, &#calendar table#wp-calendar caption, &#rss_links ul li a, &#rss-links ul li a
-    &#search
-      form#searchform, input#s
-        &:focus
-          opacity: 1
-        &:active
-          opacity: 1
-    &.entry-interact ul li
-      &.comment-link a, &.trackback-link a
-    &.widget_text div.textwidget p
-
-/* todo
-
-#respond, abbr, acronym, body, h1, h2, h3, h4, h5, h6, .entry-title, h1.entry-title
-
-body
-  &.home h2.entry-title, &.category h1.page-title, &.search h1.page-title
-
-/* !!header
-
-div.hfeed p, h2, h3, div.comments h3.comment-header, h4, h5, h1 a:hover, .entry-title, h1, .entry-title a, h1, .entry-title a:visited, h1, .entry-title a:hover, .entry-comments, #quote, .post, body.home h2.entry-title
-
-/* wp editor h3 starts here
-
-div
-  &.comments p#loggedin:hover
-  &.formcontainer div
-    &.form-input input, &.form-textarea textarea, &.form-input input:focus, &.form-textarea textarea:focus
-
-.form-textarea-label label, div.formcontainer div.focus, .form-textarea-label label.focus
-
-div
-  &.form-submit input[type="submit"]
-    &:hover, &:focus, &:active
-  &.comments ol
-    &#comments li
-    &.commentlist span
-      &.comment-author
-        a:hover, img
-      &.comment-meta a:hover
-    &#comments li p
-  &#header, &.site-header a:hover
-
-body div#wrapper
-
-div
-  &.hfeed div
-    &.post, &.page, &.post, &.page
-  &#container
-
-.mini-nav
-  a, li, .sep
-
-h3#respond, .loggedin h3#respond, p#mustlogin, #nav-below
-
-#primary-search
-  fieldset
-  input
-    &.text, &:focus
-    &.submit
-      &:focus, &:hover
-
-.search-container
-
-.menu-jininmi-container
-  ul, li
-  a
-    color: #222
-    text-decoration: none
-    &:hover
-
-.admin-meta
-  li
-  a
-    color: #222
-    text-decoration: none
-    &:hover
-      background-color: #fcf7f4
-
-#searchform
-  div
-  label
-    opacity: 0
-  input
-    &[type="text"]
-    &[type="submit"]
-      opacity: 0
-  label, input#s, #searchsubmit:hover
-
-body.search div.hfeed div.page, div.hentry div.entry-meta
-
-div.hfeed
-  min-height: 550px
+div.hfeed {
+  min-height: 550px;
+}
 
 /**
  * JavaScript
+ */
+/* hide stuff if enabled */
+h1, h2, h3, h4, h5, h6 {
+  color: #5d5d5d;
+}
 
-html
-  &.no-js, &.js-enabled, &.no-js body, &.js-enabled body
+body {
+  color: #222;
+  background: #f7f7f7;
+  font-family: "Philosopher", Georgia, serif;
+}
 
-/* hide stuff if enabled
+.site-name .drop-shadow {
+  background: #f5fbe9;
+}
 
-h1, h2, h3, h4, h5, h6
-  color: #5d5d5d
-
-body
-  color: #222
-  background: #f7f7f7
-  font-family: "Philosopher", Georgia, serif
-
-.site-name .drop-shadow
-  background: #f5fbe9
-
-.site-description .drop-shadow
-  background-color: #fcf7f4
-  //background: #A07258;
+.site-description .drop-shadow {
+  background-color: #fcf7f4;
+}
 
 /*
- *ul { opacity: .3; }
- *ul.not-this { opacity: .4; }
- *ul.near-this { opacity: .8; }
- *ul.this { opacity: 1; }
- *
- *ol { opacity: .3; }
- *ol.not-this { opacity: .4; }
- *ol.near-this { opacity: .8; }
- *ol.this { opacity: 1; }
- *
- *p { opacity: .3; }
- *p.not-this { opacity: .4; }
- *p.near-this { opacity: .8; }
- *p.this { opacity: 1; }
+ul { opacity: .3; }
+ul.not-this { opacity: .4; }
+ul.near-this { opacity: .8; }
+ul.this { opacity: 1; }
 
-#content
-  margin-bottom: 3em
+ol { opacity: .3; }
+ol.not-this { opacity: .4; }
+ol.near-this { opacity: .8; }
+ol.this { opacity: 1; }
 
-.form-textarea-label
-  margin: 0 0 1em 0
+p { opacity: .3; }
+p.not-this { opacity: .4; }
+p.near-this { opacity: .8; }
+p.this { opacity: 1; }
+*/
+#content {
+  margin-bottom: 3em;
+}
 
-.form-textarea
-  margin: 0 0 1em
+.form-textarea-label {
+  margin: 0 0 1em 0;
+}
 
-.form-submit
-  text-align: center
+.form-textarea {
+  margin: 0 0 1em;
+}
 
-.comments
-  margin: 3em 0 0 0
-  padding-top: 2em
-  border-top: 3px #ccc double
-  .comment-author
-    text-align: center
-    padding: 0 0 0 20px
-    margin: 1em 0 0 0
-    float: left
-    display: block
-    width: 110px
-    height: 150px
-    img
-  div.avatar
-    display: inline-block
-    float: left
-    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5)
-    margin: 0 0 .6em 0
-  li .fn
-    margin: 0 0 0 -20px
-    text-align: center
-    display: block
-    width: 100%
-    clear: left
-    float: left
-  .comment-meta
-    margin: 1em 0 0 0
-    float: left
-    font-size: 11px
-    width: 190px
-    opacity: .6
-    display: block
-  li
-    margin: 0 auto
-    clear: left
-    &:hover .comment-meta
-      opacity: 1
-  .comment-entry
-    width: 600px
-    margin: 0 20px 0 0
-    float: left
-    & ul
-      margin-left: 20px
-    & li
-      border-top: none
-      padding: 0
-  ol
-    border-bottom: 3px #ccc double
-    font-size: 1.5em
-    list-style: none
-    margin: 0 0 2em
-    padding: 0 0 1em
-  li
-    &.c1
-      border-top: none
-    margin: 0
-    padding: 0
-    border-top: 1px #ccc solid
-    padding: 1em 0
-  label
-    font: 2em / 1 "Philosopher", Georgia, serif
-  input[type="submit"]
-    border: none
-    font-size: 3em
-    font-family: "Philosopher", Georgia, serif
-    background: transparent
+.form-submit {
+  text-align: center;
+}
 
-.unapproved
-  background: #ffdd77
-  display: inline-block
-  padding: 5px 10px 2px
-  margin: 0 0 .5em 0
+.comments {
+  margin: 3em 0 0 0;
+  padding-top: 2em;
+  border-top: 3px #ccc double;
+}
+.comments .comment-author {
+  text-align: center;
+  padding: 0 0 0 20px;
+  margin: 1em 0 0 0;
+  float: left;
+  display: block;
+  width: 110px;
+  height: 150px;
+}
+.comments div.avatar {
+  display: inline-block;
+  float: left;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  margin: 0 0 .6em 0;
+}
+.comments li .fn {
+  margin: 0 0 0 -20px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  clear: left;
+  float: left;
+}
+.comments .comment-meta {
+  margin: 1em 0 0 0;
+  float: left;
+  font-size: 11px;
+  width: 190px;
+  opacity: .6;
+  display: block;
+}
+.comments li {
+  margin: 0 auto;
+  clear: left;
+}
+.comments li:hover .comment-meta {
+  opacity: 1;
+}
+.comments .comment-entry {
+  width: 600px;
+  margin: 0 20px 0 0;
+  float: left;
+}
+.comments .comment-entry ul {
+  margin-left: 20px;
+}
+.comments .comment-entry li {
+  border-top: none;
+  padding: 0;
+}
+.comments ol {
+  border-bottom: 3px #ccc double;
+  font-size: 1.5em;
+  list-style: none;
+  margin: 0 0 2em;
+  padding: 0 0 1em;
+}
+.comments li {
+  margin: 0;
+  padding: 0;
+  border-top: 1px #ccc solid;
+  padding: 1em 0;
+}
+.comments li.c1 {
+  border-top: none;
+}
+.comments label {
+  font: 2em/1 "Philosopher", Georgia, serif;
+}
+.comments input[type="submit"] {
+  border: none;
+  font-size: 3em;
+  font-family: "Philosopher", Georgia, serif;
+  background: transparent;
+}
 
-#numcomments
-  margin: 0 0 .5em
+.unapproved {
+  background: #ffdd77;
+  display: inline-block;
+  padding: 5px 10px 2px;
+  margin: 0 0 .5em 0;
+}
 
-#respond
-  margin: 0 0 1em
-  clear: left
+#numcomments {
+  margin: 0 0 .5em;
+}
 
-textarea
-  border: 1px #ccc solid
-  width: 97.5%
-  font: 1.3em / 1.3 "Philosopher", Georgia, serif
-  padding: .5em !important
+#respond {
+  margin: 0 0 1em;
+  clear: left;
+}
 
-#header
-  margin: 1em 0
+textarea {
+  border: 1px #ccc solid;
+  width: 97.5%;
+  font: 1.3em/1.3 "Philosopher", Georgia, serif;
+  padding: .5em !important;
+}
 
-html.js #site-access
-  display: none
+#header {
+  margin: 1em 0;
+}
 
-#site-access
-  position: absolute
-  left: -9999px
-  ul
-    list-style: none
-    margin: 0 0 30px
-  li
-    margin: 0
-  a
-    text-decoration: none
-    border-bottom: 1px #ccc solid
-  &.show
-    position: relative
-    left: 0
-  &.hide
-  &.sticky
-    position: fixed
-    width: 150px
-    left: inherit !important
-    right: 0 !important
-  &.sticky.hide
-  &.sticky.show
-  &.sticky ul
-    list-style: none
-    position: absolute
-    right: 20px
-    top: 75px
-  &.sticky li
-    -webkit-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8)
-    -moz-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8)
-    box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8)
-    display: block
-    list-style: none outside none
-    margin: 0 0 1px
-    padding: 5px 10px
-    text-align: right
-  &.sticky li:hover
-    -webkit-box-shadow: 0 0 0.5em rgba(210, 210, 210, 1)
-    -moz-box-shadow: 0 0 0.5em rgba(210, 210, 210, 1)
-    box-shadow: 0 0 0.5em rgba(210, 210, 210, 1)
-  &.sticky a
+html.js #site-access {
+  display: none;
+}
 
-#site-header
-  margin: 0 0 1.5em 0
-  .site-name
-    font-family: "Philosopher", Georgia, serif
-    .logo
-      position: relative
-      top: 5px
-    .author-tag a
-      font-family: "Pigeon", "Philosopher", Georgia, serif !important
-      font-size: .9em
-    a
-      font-size: 26px
-      line-height: 1.1
-      height: 57px
-      display: block
-      color: #222
-  .site-description
-    font-family: "Philosopher", Georgia, serif
+#site-access {
+  position: absolute;
+  left: -9999px;
+}
+#site-access ul {
+  list-style: none;
+  margin: 0 0 30px;
+}
+#site-access li {
+  margin: 0;
+}
+#site-access a {
+  text-decoration: none;
+  border-bottom: 1px #ccc solid;
+}
+#site-access.show {
+  position: relative;
+  left: 0;
+}
+#site-access.sticky {
+  position: fixed;
+  width: 150px;
+  left: inherit !important;
+  right: 0 !important;
+}
+#site-access.sticky ul {
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  top: 75px;
+}
+#site-access.sticky li {
+  -webkit-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+  -moz-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+  box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+  display: block;
+  list-style: none outside none;
+  margin: 0 0 1px;
+  padding: 5px 10px;
+  text-align: right;
+}
+#site-access.sticky li:hover {
+  -webkit-box-shadow: 0 0 0.5em #d2d2d2;
+  -moz-box-shadow: 0 0 0.5em #d2d2d2;
+  box-shadow: 0 0 0.5em #d2d2d2;
+}
 
-#site-navigation
-  clear: left
-  ul
-    display: inline-block
-    margin: 0
-  li
-    display: inline-block
-  a
-    opacity: .5
-    text-align: center
-    color: #222
-    &:visited
-      color: #222
-    &.drop-shadow:hover
-      background: #f6fcea
-    &:hover
-      opacity: 1
+#site-header {
+  margin: 0 0 1.5em 0;
+}
+#site-header .site-name {
+  font-family: "Philosopher", Georgia, serif;
+}
+#site-header .site-name .logo {
+  position: relative;
+  top: 5px;
+}
+#site-header .site-name .author-tag a {
+  font-family: "Pigeon", "Philosopher", Georgia, serif !important;
+  font-size: .9em;
+}
+#site-header .site-name a {
+  font-size: 26px;
+  line-height: 1.1;
+  height: 57px;
+  display: block;
+  color: #222;
+}
+#site-header .site-description {
+  font-family: "Philosopher", Georgia, serif;
+}
 
-#menu-item-2218
-  text-indent: -0.15em
+#site-navigation {
+  clear: left;
+}
+#site-navigation ul {
+  display: inline-block;
+  margin: 0;
+}
+#site-navigation li {
+  display: inline-block;
+}
+#site-navigation a {
+  opacity: .5;
+  text-align: center;
+  color: #222;
+}
+#site-navigation a:visited {
+  color: #222;
+}
+#site-navigation a.drop-shadow:hover {
+  background: #f6fcea;
+}
+#site-navigation a:hover {
+  opacity: 1;
+}
 
-#menu-item-2219
-  text-indent: -0.35em
+#menu-item-2218 {
+  text-indent: -0.15em;
+}
 
-.menu-jininmi
-  display: block
+#menu-item-2219 {
+  text-indent: -0.35em;
+}
 
-#site-admin
-  ul
-    display: inline-block
-    margin: 0
-  li
-    display: inline-block
-  a
-    opacity: .5
-    text-align: center
-    &:hover
-      opacity: 1
+.menu-jininmi {
+  display: block;
+}
 
-#site-search
-  opacity: .4
-  clear: left
-  padding: 1em 0
-  text-align: center
-  &.sticky
-    z-index: 9001
-    background: #F7F7F7
-    position: fixed
-    top: 0
-    left: 0
-    border-bottom: 3px #ccc double
-    width: 100%
-    -moz-box-shadow: 0 0 1em #ccc
-    -webkit-box-shadow: 0 0 1em #ccc
-    box-shadow: 0 0 1em #ccc
-  &:hover
-    opacity: 7
-  label
-    font-family: "Philosopher", Georgia, serif
-    cursor: help
-    width: 80px
-    display: inline
-    text-align: center
-    line-height: 1
-    position: relative
-    right: 10px
-  input
-    font-family: "Philosopher", Georgia, serif
-    cursor: pointer
-    &[type="text"]
-      font-style: italic
-      color: #777
-      padding: .3em .5em !important
-      font-size: 1.7em
-      border: none
-      border: 1px #ccc solid
-      width: 700px
-      display: inline !important
-  input[type="submit"]
-    font-size: 1.4em
-    border: none
-    display: inline
-    background: none
-    line-height: 1
-    position: relative
-    vertical-align: middle
+#site-admin ul {
+  display: inline-block;
+  margin: 0;
+}
+#site-admin li {
+  display: inline-block;
+}
+#site-admin a {
+  opacity: .5;
+  text-align: center;
+}
+#site-admin a:hover {
+  opacity: 1;
+}
 
-section
-  display: block
+#site-search {
+  opacity: .4;
+  clear: left;
+  padding: 1em 0;
+  text-align: center;
+}
+#site-search.sticky {
+  z-index: 9001;
+  background: #F7F7F7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 3px #ccc double;
+  width: 100%;
+  -moz-box-shadow: 0 0 1em #ccc;
+  -webkit-box-shadow: 0 0 1em #ccc;
+  box-shadow: 0 0 1em #ccc;
+}
+#site-search:hover {
+  opacity: 7;
+}
+#site-search label {
+  font-family: "Philosopher", Georgia, serif;
+  cursor: help;
+  width: 80px;
+  display: inline;
+  text-align: center;
+  line-height: 1;
+  position: relative;
+  right: 10px;
+}
+#site-search input {
+  font-family: "Philosopher", Georgia, serif;
+  cursor: pointer;
+}
+#site-search input[type="text"] {
+  font-style: italic;
+  color: #777;
+  padding: .3em .5em !important;
+  font-size: 1.7em;
+  border: none;
+  border: 1px #ccc solid;
+  width: 700px;
+  display: inline !important;
+}
+#site-search input[type="submit"] {
+  font-size: 1.4em;
+  border: none;
+  display: inline;
+  background: none;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+}
 
-div
-  &.hfeed
-    clear: left
-  &.hfeed.sticky
-    padding-top: 3em
-  &.entry-meta
-    clear: left
-    margin: 0 0 1.5em
+section {
+  display: block;
+}
 
-html
-  &.page .entry-title, &.single .entry-title
-    font-size: 2em
-    clear: left
-  &.page .entry-title a, &.single .entry-title a
-    color: hsl(0, 0%, 36%)
-    text-decoration: none
-  &.page .entry-content, &.single .entry-content
-    font-size: 1em
-  &.search
-    .entry-title
-      font-size: 1em
-      a
-        color: #222
-        text-decoration: none
-    .hentry
-      width: 220px
-      float: left
-      margin: 0 10px
-      &:nth-child(4n)
-        margin-right: 0
-      &:nth-child(4n+1)
-        clear: left
-        margin-left: 0
-    .results-none
-      width: 100%
-    .p1
-      margin-left: 0
-    .entry-meta
-      font-size: .8em
-      color: #999
-    .entry-content
-      margin-bottom: 1em
-    .navigation
-      clear: left
+div.hfeed {
+  clear: left;
+}
+div.hfeed.sticky {
+  padding-top: 3em;
+}
+div.entry-meta {
+  clear: left;
+  margin: 0 0 1.5em;
+}
 
-.pagenavi-container
-  padding-bottom: 2em
+html.page .entry-title, html.single .entry-title {
+  font-size: 2em;
+  clear: left;
+}
+html.page .entry-title a, html.single .entry-title a {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+html.page .entry-content, html.single .entry-content {
+  font-size: 1em;
+}
+html.search .entry-title {
+  font-size: 1em;
+}
+html.search .entry-title a {
+  color: #222;
+  text-decoration: none;
+}
+html.search .hentry {
+  width: 220px;
+  float: left;
+  margin: 0 10px;
+}
+html.search .hentry:nth-child(4n) {
+  margin-right: 0;
+}
+html.search .hentry:nth-child(4n+1) {
+  clear: left;
+  margin-left: 0;
+}
+html.search .results-none {
+  width: 100%;
+}
+html.search .p1 {
+  margin-left: 0;
+}
+html.search .entry-meta {
+  font-size: .8em;
+  color: #999;
+}
+html.search .entry-content {
+  margin-bottom: 1em;
+}
+html.search .navigation {
+  clear: left;
+}
 
-.footer-pagenavi
-  padding-bottom: 3em
+.pagenavi-container {
+  padding-bottom: 2em;
+}
 
-.site-name
-  position: relative
-  span
-    font-size: 1.5em
-    letter-spacing: .2em
-  a
-    text-decoration: none
+.footer-pagenavi {
+  padding-bottom: 3em;
+}
 
-.a, .weedy
-  display: inline
+.site-name {
+  position: relative;
+}
+.site-name span {
+  font-size: 1.5em;
+  letter-spacing: .2em;
+}
+.site-name a {
+  text-decoration: none;
+}
 
-.florilegium
-  display: block
+.a, .weedy {
+  display: inline;
+}
 
-.site-name .author-tag
-  display: block
-  position: absolute
-  color: #999
-  top: 1.5em
-  right: 1em
-  font-size: .8em
-  text-align: right
-  width: 80px
-  a
-    display: inline !important
-    height: auto
+.florilegium {
+  display: block;
+}
 
-#latest
-  height: 57px
-  header
-    display: inline-block
-  h1 a, h2 a
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5)
-    text-decoration: none
-  .time
-    color: #777
-    border-bottom: 1px #ccc solid
-    line-height: 1.7
-    opacity: .7
-    display: inline-block
-    //text-shadow: 0 0 0 rgba(0,0,0,.5);
-    padding: 0 0 0 45px
-    font:
-      size: 16px
-      family: "Philosopher", Georgia, serif
-  h1
-    line-height: 1
-    font-size: 1em
-    margin: 0 5px 0 0
-    display: inline-block
-  h2
-    &:hover
-      opacity: 1
-    opacity: .7
-    line-height: 1
-    font-size: 1.753em
-    margin: 0
-    display: inline-block
+.site-name .author-tag {
+  display: block;
+  position: absolute;
+  color: #999;
+  top: 1.5em;
+  right: 1em;
+  font-size: .8em;
+  text-align: right;
+  width: 80px;
+}
+.site-name .author-tag a {
+  display: inline !important;
+  height: auto;
+}
+
+#latest {
+  height: 57px;
+}
+#latest header {
+  display: inline-block;
+}
+#latest h1 a, #latest h2 a {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+#latest .time {
+  color: #777;
+  border-bottom: 1px #ccc solid;
+  line-height: 1.7;
+  opacity: .7;
+  display: inline-block;
+  padding: 0 0 0 45px;
+  font-size: 16px;
+  font-family: "Philosopher", Georgia, serif;
+}
+#latest h1 {
+  line-height: 1;
+  font-size: 1em;
+  margin: 0 5px 0 0;
+  display: inline-block;
+}
+#latest h2 {
+  opacity: .7;
+  line-height: 1;
+  font-size: 1.753em;
+  margin: 0;
+  display: inline-block;
+}
+#latest h2:hover {
+  opacity: 1;
+}
 
 /**
  * Home
+ */
+h1, h2, h3 {
+  font-family: "Pigeon", "Philosopher", Georgia, serif;
+}
 
-h1, h2, h3
-  font-family: "Pigeon", "Philosopher", Georgia, serif
-
-#home
-  margin-bottom: 2em
-  h1
-    display: none
-  h2
-    font-size: 1.5em
-    margin-bottom: .5em
-    color: #acbf87
-  h3
-    font-size: 1.2em
-    margin-bottom: .5em
-  .grid_4 img
-    width: 220px
-  article
-    margin: 1em 0 1.5em 0
-    p
-      margin: 1em 0 .7em
-  .more a
-    display: block
-    padding: .5em 0
-  .time
-    a
-      text-decoration: none
-      color: hsl(0, 0%, 47%)
-    margin: .5em 0
-    font-size: .9em
-    color: #777
-  time
-    border-bottom: 1px #ccc solid
+#home {
+  margin-bottom: 2em;
+}
+#home h1 {
+  display: none;
+}
+#home h2 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  color: #acbf87;
+}
+#home h3 {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+#home .grid_4 img {
+  width: 220px;
+}
+#home article {
+  margin: 1em 0 1.5em 0;
+}
+#home article p {
+  margin: 1em 0 .7em;
+}
+#home .more a {
+  display: block;
+  padding: .5em 0;
+}
+#home .time {
+  margin: .5em 0;
+  font-size: .9em;
+  color: #777;
+}
+#home .time a {
+  text-decoration: none;
+  color: #787878;
+}
+#home time {
+  border-bottom: 1px #ccc solid;
+}
 
 /*#home article:hover {
- *    background: #f8f9e8;
- *    top: -.2em;
- *    left: .2em;
- *    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
- *       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
- *            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
- *}
+    background: #f8f9e8;
+    top: -.2em;
+    left: .2em;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}*/
+.raised {
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 
-.raised
-  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+/* Shared styles */
+html.single textarea, #site-search input[type="text"], .drop-shadow {
+  display: block;
+  /* Shouldn't this be the case by default? */
+  position: relative;
+  padding: 1em;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 
-/* Shared styles
+html.single textarea:before, html.single textarea:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
 
-html.single textarea, #site-search input[type="text"], .drop-shadow
-  display: block
-  /* Shouldn't this be the case by default?
-  position: relative
-  padding: 1em
-  background: #fff
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+#site-search input[type="text"]:before, #site-search input[type="text"]:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
 
-html.single textarea
-  &:before, &:after
-    content: ""
-    position: absolute
-    z-index: -2
-
-#site-search input[type="text"]
-  &:before, &:after
-    content: ""
-    position: absolute
-    z-index: -2
-
-.drop-shadow
-  &:before, &:after
-    content: ""
-    position: absolute
-    z-index: -2
+.drop-shadow:before, .drop-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
 
 /**
  * Single
+ */
+body.page div.page h1 {
+  margin-top: .5em;
+  text-align: center;
+  font-size: 4em;
+  text-shadow: -0.5em -0.5em 0.1em rgba(200, 200, 200, 0.3);
+}
+body.single div.post .entry-content {
+  font-size: 16px;
+}
+body.page div.page .entry-content {
+  font-size: 16px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  -webkit-column-rule: 1px dotted #bbb;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -moz-column-rule: 1px dotted #bbb;
+  column-count: 2;
+  column-gap: 20px;
+  column-rule: 1px dotted #bbb;
+}
 
-body
-  &.page div.page h1
-    margin-top: .5em
-    text-align: center
-    font-size: 4em
-    text-shadow: -0.5em -0.5em 0.1em rgba(200, 200, 200, 0.3)
-  &.single div.post .entry-content
-    font-size: 16px
-  &.page div.page .entry-content
-    font-size: 16px
-    -webkit-column-count: 2
-    -webkit-column-gap: 40px
-    -webkit-column-rule: 1px dotted #bbb
-    -moz-column-count: 2
-    -moz-column-gap: 20px
-    -moz-column-rule: 1px dotted #bbb
-    column-count: 2
-    column-gap: 20px
-    column-rule: 1px dotted #bbb
+.clear-fix {
+  zoom: 1;
+}
+.clear-fix:before {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-.clear-fix
-  &:before
-    content: ""
-    display: table
-  &:after
-    content: ""
-    display: table
-    clear: both
-  zoom: 1
+/* (hasLayout trigger) */
+#footer {
+  padding: 5px 10px 15px;
+  background: #fff;
+  border-top: 3px #e0e0e0 double;
+  border-bottom: 1px #e0e0e0 solid;
+  -moz-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
+  -webkit-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
+  box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
+  z-index: 9001;
+  display: block !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: .6;
+  width: 100%;
+}
+#footer .footer-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+#footer:hover {
+  opacity: 1;
+}
+#footer p {
+  margin: 0;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+#footer .twitter {
+  position: relative;
+  top: .5em;
+  display: inline;
+  *zoom: 1;
+  *display: inline;
+  margin: 0 0 0 1em;
+}
+#footer .twitter iframe {
+  display: inline;
+  width: auto !important;
+}
+#footer .googleplus {
+  position: relative;
+  top: .65em;
+  display: inline;
+  *zoom: 1;
+  *display: inline;
+  margin: 0 0 0 1em;
+}
 
-/* (hasLayout trigger)
+#gfc_profile {
+  margin: -20px 0 0 !important;
+  padding: 0;
+  border: none !important;
+  position: relative;
+  top: -15px;
+  font-size: 1em;
+}
+#gfc_profile ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  left: 75px;
+}
+#gfc_profile li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  border: none;
+}
+#gfc_profile img {
+  margin: 0;
+  padding: 0;
+  float: none !important;
+}
 
-#footer
-  padding: 5px 10px 15px
-  background: #fff
-  border-top: 3px #e0e0e0 double
-  border-bottom: 1px #e0e0e0 solid
-  -moz-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset
-  -webkit-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset
-  box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset
-  z-index: 9001
-  display: block !important
-  position: fixed
-  bottom: 0
-  left: 0
-  opacity: .6
-  width: 100%
-  .footer-inner
-    width: 960px
-    margin: 0 auto
-  &:hover
-    opacity: 1
-  p
-    margin: 0
-    display: inline-block
-    *zoom: 1
-    *display: inline
-  .twitter
-    position: relative
-    top: .5em
-    display: inline
-    *zoom: 1
-    *display: inline
-    margin: 0 0 0 1em
-  .twitter iframe
-    display: inline
-    width: auto !important
-  .googleplus
-    position: relative
-    top: .65em
-    display: inline
-    *zoom: 1
-    *display: inline
-    margin: 0 0 0 1em
+body.page-template-template-single-column-php div.post .entry-content, body.page-template-template-single-column-php div.page .entry-content {
+  -webkit-column-count: 1;
+  -webkit-column-gap: 40px;
+  -webkit-column-rule: 1px dotted #BBB;
+  -moz-column-count: 1;
+  -moz-column-gap: 20px;
+  -moz-column-rule: 1px dotted #BBB;
+  column-count: 1;
+  column-gap: 20px;
+  column-rule: 1px dotted #BBB;
+}
 
-#gfc_profile
-  margin: -20px 0 0 !important
-  padding: 0
-  border: none !important
-  position: relative
-  top: -15px
-  font-size: 1em
-  ul
-    margin: 0
-    padding: 0
-    position: absolute
-    top: 0px
-    left: 75px
-  li
-    margin: 0
-    padding: 0
-    display: inline
-    border: none
-  img
-    margin: 0
-    padding: 0
-    float: none !important
-
-body.page-template-template-single-column-php div
-  &.post .entry-content, &.page .entry-content
-    -webkit-column-count: 1
-    -webkit-column-gap: 40px
-    -webkit-column-rule: 1px dotted #BBB
-    -moz-column-count: 1
-    -moz-column-gap: 20px
-    -moz-column-rule: 1px dotted #BBB
-    column-count: 1
-    column-gap: 20px
-    column-rule: 1px dotted #BBB
-
-body.page-template-archives-php ul.xoxo
-  h3
-  img
-    float: left
-    margin: 2px 10px 0 0
-  ul
-    margin: 0
-    list-style: none
-  li
-    margin: 0
-    list-style: none
-    float: left
-    width: 225px
-  li li
-    float: none
-    width: auto
-    padding: 5px 0
-  li ul
+body.page-template-archives-php ul.xoxo img {
+  float: left;
+  margin: 2px 10px 0 0;
+}
+body.page-template-archives-php ul.xoxo ul {
+  margin: 0;
+  list-style: none;
+}
+body.page-template-archives-php ul.xoxo li {
+  margin: 0;
+  list-style: none;
+  float: left;
+  width: 225px;
+}
+body.page-template-archives-php ul.xoxo li li {
+  float: none;
+  width: auto;
+  padding: 5px 0;
+}
 
 /*
- *Default style for WP-PageNavi plugin
- *
- *http://wordpress.org/extend/plugins/wp-pagenavi/
+Default style for WP-PageNavi plugin
 
-.wp-pagenavi
-  clear: both
-  border-top: 1px #BFBFBF solid
-  border-bottom: 1px #BFBFBF solid
-  padding: .5em 0
-  text-align: center
-  & a, & span
-    text-decoration: none
-    padding: 3px 5px
-    margin: 2px
-  & a:hover, & span.current
-    border-color: #000
-  & span.current
-    font-weight: bold
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+div.pagenavi-container {
+  padding-bottom: 1em;
+}
 
-#site-social
-  position: relative
+.wp-pagenavi {
+  clear: both;
+  padding: .5em 0;
+  color: #E0E0E0;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+  text-decoration: none;
+  padding: 3px 5px;
+  margin: 2px;
+}
+.wp-pagenavi .last {
+  position: relative;
+  top: 1px;
+}
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+  border-color: #000;
+}
+.wp-pagenavi span.current {
+  font-weight: bold;
+}
 
-.addthis_default_style
-  position: absolute
-  right: -1em
-  top: 268px
+#site-social {
+  position: relative;
+}
 
-body.home .addthis_default_style
+.addthis_default_style {
+  position: absolute;
+  right: -1em;
+  top: 268px;
+}
 
-img.alignleft
-  float: left
-  margin: 0 1em 1em 0
-  line-height: 1
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+  line-height: 1;
+}
 
-body.single div.post .entry-content, 
-body.page div.page .entry-content
-  margin-bottom: 3em
+body.single div.post .entry-content,
+body.page div.page .entry-content {
+  margin-bottom: 3em;
+}
 
-.byline
-  margin: 0 0 1em 0
-  color: #999
-  em
-    display: block
+.byline {
+  margin: 0 0 1em 0;
+  color: #999;
+}
+.byline em {
+  display: block;
+}
 
-.poem
-  margin: 0 0 1em
-  h2
-  pre
-  cite
+.poem {
+  margin: 0 0 1em;
+}
 
-blockquote
-  margin: 1.5em 0
+blockquote {
+  margin: 1.5em 0;
+}
 
-blockquote cite
-  display: block
-  text-align: right
-  font-sty1le: italic
-  font-size: 1.3em
-  opacity: .7
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-sty1le: italic;
+  font-size: 1.3em;
+  opacity: .7;
+}
 
-blockquote em
-  display: inline
+blockquote em {
+  display: inline;
+}
 
-body
-  div.entry-meta
-    color: #777
-    a
-      text-decoration: none
-      color: #777
-      border-bottom: 1px #CCC solid
-      &:hover
-    line-height: 2.3
-    margin: 30px 30px
-  &.search
-    .hentry
-      margin-bottom: 40px
-  &.home
-    #home
-      section
-        article
-          margin-bottom: 40px
-    // this is how clean (blends of sufficient vagueness) 
-    // selecting _in_ a (team_language)"template" should be
-    div.entry-meta
-      margin: 0 0
-  &.search
-    div.entry-meta
-      margin: 0 0
-  &.single
-    div.entry-meta
-      line-height: 2.3
-      margin: 30px 30px 50px
+body div.entry-meta {
+  color: #777;
+  line-height: 2.3;
+  margin: 30px 30px;
+}
+body div.entry-meta a {
+  text-decoration: none;
+  color: #777;
+  border-bottom: 1px #CCC solid;
+}
+body.search .hentry {
+  margin-bottom: 40px;
+}
+body.home #home section article {
+  margin-bottom: 40px;
+}
+body.home div.entry-meta {
+  margin: 0 0;
+}
+body.search div.entry-meta {
+  margin: 0 0;
+}
+body.single div.entry-meta {
+  line-height: 2.3;
+  margin: 30px 30px 50px;
+}
 
-.mouse-thinkers-beware
-  opacity: .75
-  width: 42%
-  color: #999
-  font:
-    size: 18px
-    family: 'Pigeon'
-  float: right
-  text-align: right
+.mouse-thinkers-beware {
+  opacity: .75;
+  width: 42%;
+  color: #999;
+  font-size: 18px;
+  font-family: 'Pigeon';
+  float: right;
+  text-align: right;
+}
 
-.sticky
-  .mouse-thinkers-beware
-    display: none
+.sticky .mouse-thinkers-beware {
+  display: none;
+}
 
-body.archive
-  .page-title
-    text-align: center
-    color: #e0e0e0
-    //margin: 0 0 20px;
-    font:
-      size: 30px
+body.archive .page-title {
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 30px;
+}
 
-#site-breadcrumb
-  margin-top: 15px
-  text-align: center
-  color: #e0e0e0
+#site-breadcrumb {
+  margin-top: 15px;
+  text-align: center;
+  color: #e0e0e0;
+}
 
-#site-breadcrumb ul
-  margin: 0
-  list-style: none
+#site-breadcrumb ul {
+  margin: 0;
+  list-style: none;
+}
 
-#site-breadcrumb li
-  display: inline
-  margin: 0 0 0 5px
+#site-breadcrumb li {
+  display: inline;
+  margin: 0 0 0 5px;
+}
 
-#site-breadcrumb a
-  text-decoration: none
+#site-breadcrumb a {
+  text-decoration: none;
+}
 
-#site-breadcrumb
-  ul
-    a
-      &:hover
-        text-decoration: underline
-    li
-      margin: 0
-      &:first-child
-        &:before
-          content: ""
-      &:last-child
-        &:after
-          color: #999
-          content: " /"
-      &:before
-        color: #999
-        content: "/ "
+#site-breadcrumb ul a:hover {
+  text-decoration: underline;
+}
+#site-breadcrumb ul li {
+  margin: 0;
+}
+#site-breadcrumb ul li:first-child:before {
+  content: "";
+}
+#site-breadcrumb ul li:last-child:after {
+  color: #999;
+  content: " /";
+}
+#site-breadcrumb ul li:before {
+  color: #999;
+  content: "/ ";
+}
 
-.call-access-menu
-  background: #F7F7F7 !important
-  padding: 3px 6px 1px
-  position: absolute
-  font-size: 9px !important
-  color: #999
-  font-weight: 400
-  margin-top: -15px
-  margin-left: 4px
-  opacity: .4
-  text-shadow: 0 0 1px rgba(30, 30, 30, 0.5)
-  cursor: pointer
+.call-access-menu {
+  background: #F7F7F7 !important;
+  padding: 3px 6px 1px;
+  position: absolute;
+  font-size: 9px !important;
+  color: #999;
+  font-weight: 400;
+  margin-top: -15px;
+  margin-left: 4px;
+  opacity: .4;
+  text-shadow: 0 0 1px rgba(30, 30, 30, 0.5);
+  cursor: pointer;
+}
 
-@media screen and (max-device-width: 480px)
-  /* iphone only
-  #footer
-    position: relative
-    bottom: 0
-    left: 0
-    opacity: 1
-    width: 100%
+@media screen and (max-device-width: 480px) {
+  /* iphone only */
+  #footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+  }
+}
+@media print {
+  body div#blog-description, body div.sidebar, body div.access, body div#globalnav, body span.archive-meta, body div.cat-meta, body div#footer, body div.navigation, body div.comments form#commentform, body h3#respond {
+    display: none;
+  }
 
-@media print
-  body div#blog-description,body div.sidebar,body div.access,body div#globalnav,body span.archive-meta,body div.cat-meta,body div#footer,body div.navigation,body div.comments form#commentform,body h3#respond
-    display: none
-  body div#wrapper div#header
-    background-color: #fff
-    background-image: none
-    color: #000
-  body div#wrapper div#header h1 a,html body div#wrapper div#header h1 a:link,html body div#wrapper div#header h1 a:visited,html body div#wrapper div#header h1 a:hover,html body div#wrapper div#header h1 a:active
-    color: #000
-  body.single div.entry-meta
-    line-height: 200%
-    margin: 0 20%
-  body.home div.entry-meta,body.archive div.entry-meta,body.search div.entry-meta
-    text-align: center
-    margin: 0 5%
-    padding: 0 2em
+  body div#wrapper div#header {
+    background-color: #fff;
+    background-image: none;
+    color: #000;
+  }
+
+  body div#wrapper div#header h1 a, html body div#wrapper div#header h1 a:link, html body div#wrapper div#header h1 a:visited, html body div#wrapper div#header h1 a:hover, html body div#wrapper div#header h1 a:active {
+    color: #000;
+  }
+
+  body.single div.entry-meta {
+    line-height: 200%;
+    margin: 0 20%;
+  }
+
+  body.home div.entry-meta, body.archive div.entry-meta, body.search div.entry-meta {
+    text-align: center;
+    margin: 0 5%;
+    padding: 0 2em;
+  }
+}

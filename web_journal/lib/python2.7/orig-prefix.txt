@@ -1,0 +1,1 @@
+/Users/nerdfiles/.pythonbrew/pythons/Python-2.7.2

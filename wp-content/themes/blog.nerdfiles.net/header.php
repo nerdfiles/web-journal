@@ -29,7 +29,7 @@
 <?php elseif ( is_category() ) : ?>
     <?php echo single_cat_title(); ?>
 <?php elseif ( is_date() ) : ?>
-    <?php _e('Blog archives', 'webjournal') ?>
+    <?php _e('Archives', 'webjournal') ?>
 <?php elseif ( is_search() ) : ?>
     <?php _e('Search results', 'webjournal') ?>
 <?php else : ?>
@@ -86,25 +86,27 @@
 
 <body <?php body_class(); ?>>
   
-
-
-<!-- == 
-  
-  header.php 
-  
-== -->
-
-
-
-
 <div id="top"></div><!-- hackish? fuck you.-->
 
 <div id="wrapper" dir="ltr">
 <div id="container" class="container_16 clearfix">
 <div id="content" class="grid_16">
 
+<!-- == SITE HEADER ========================================== > 
+
+
+
+
+
+
+
+
+< ========================================================== -->
+
 <div id="header" class="clearfix">
-      
+
+<!-- == SITE ACCESS ======================================== --> 
+
 <div id="site-access">
 <p class="mouse-thinkers-beware" title="An analysis of modalities, link strategy, and tacticle experience, oh my!"><small>Design's heavily influenced by my practices in unlearning the Mouse and the variegrated habits of Mouse-think (theism, restroom banter, the politico-historical moorings of crepe cuisine, et cetera), with a touch of not having gone to finishing school.</small></p>
 <ul>
@@ -146,7 +148,10 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to #meta', 'webjournal'); ?>"><?php _e('Skip to #meta', 'webjournal'); ?></a></span></li>
 </ul>
 </div><!-- End #site-access -->
-                
+
+
+<!-- == SITE ACCESS ======================================== --> 
+
 <div id="site-header" class="grid_16 alpha">
 <div class="grid_4 alpha site-name">
 <div class="drop-shadow">
@@ -157,6 +162,10 @@ A weedy florilegium
 <span class="author-tag">web journal of <a href="http://nerdfiles.net" title="Go to nerdfiles.net">nerdfiles</a></span>
 </div>
 </div><!-- End .site-name -->
+
+
+<!-- == LATEST ============================================= --> 
+
 <div class="grid_12 omega site-description">
 <div class="drop-shadow">
 <div id="latest" class="latest">
@@ -177,8 +186,25 @@ A weedy florilegium
 </div>
 </div>
 </div><!-- End .site-description -->
+
 </div><!-- End #site-header -->
-				
+
+<!-- == END SITE HEADER ==================================== --> 
+
+
+<!-- == SITE NAV ============================================= > 
+
+
+
+
+
+
+
+
+< ========================================================== -->
+
+<!-- == MAIN NAV =========================================== --> 
+
 <div id="site-navigation" class="grid_12 alpha">
 <?php // @copyof wp_nav_menu(); ?>
 <div class="menu-jininmi-container">
@@ -194,6 +220,9 @@ A weedy florilegium
 </div>
 
 </div><!-- End #site-navigation -->
+
+
+<!-- == SITE ADMIN ======================================== --> 
 
 <div id="site-admin" class="grid_4 omega">
 <ul class="admin-meta">
@@ -214,14 +243,24 @@ A weedy florilegium
 </ul>
 </div><!-- End #site-admin -->
 
-<div id="site-breadcrumb" class="grid_16 alpha">
-  
-<!--
-  
+<!-- == END SITE NAV ======================================= -->
+
+
+<!-- == SITE BREADCRUMB ====================================== > 
+
+
   urls and breadcrumbs _are_ different
-  
--->
-  
+
+
+
+
+
+< ========================================================== -->
+
+<!-- == BREADCRUMB ========================================= -->
+
+<div id="site-breadcrumb" class="grid_16 alpha">
+
 <ul>
 
 <li><a href="<?php bloginfo('url'); ?>" rel="index" title="A weedy florilegium">~</a></li>
@@ -232,7 +271,7 @@ A weedy florilegium
 <?php $arc_month = get_the_modified_time('m'); ?>
 <?php $arc_day = get_the_modified_time('d'); ?>
 
-<li><a href="/<?php echo get_the_modified_date('Y'); ?>/"><?=$arc_year;?></a></li>
+<li><a href="<?php bloginfo('url'); ?>/<?php echo get_the_modified_date('Y'); ?>/"><?=$arc_year;?></a></li>
 
 <?php if ( is_single() or is_page() or is_month() or is_day() ) { ?>
 <!--li><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/"><?=$arc_month;?></a></li-->
@@ -251,6 +290,22 @@ A weedy florilegium
 </ul>
 
 </div><!-- End #site-breadcrumb -->
+
+<!-- == END SITE BREADCRUMB ================================ -->
+
+
+<!-- == SITE SEARCH ========================================== > 
+
+
+
+
+
+
+
+
+< ========================================================== -->
+
+<!-- == SEARCH ============================================= -->
 
 <div id="site-search" class="grid_16 alpha">
 <?php get_search_form(); ?>
@@ -276,7 +331,7 @@ A weedy florilegium
 
 </div><!-- #header -->
 
-<?php if (is_search()) : ?>
+<?php if (is_search() or is_archive()) : ?>
 <div class="pagenavi-container clearfix">
 <div class="grid_16 alpha">
 <?php wp_pagenavi(); ?>
