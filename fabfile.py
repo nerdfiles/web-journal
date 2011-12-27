@@ -116,7 +116,7 @@ def local_push():
 @task
 def remote_pull():
   print('Pulling to %s' % env.project)
-  with cd('%s' % env.project):
+  with cd('%s' % env.project): 
     run('git pull -u origin dev')
 
 # server admin
