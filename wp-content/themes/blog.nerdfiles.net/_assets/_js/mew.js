@@ -1,5 +1,3 @@
-;(function($) {
-  
 var DEBUG = false;
 
 if ( ! window.localStorage ) {
@@ -393,4 +391,3 @@ $(document).ready(function() {
 
 }); // $domready
 
-})(jQuery);
