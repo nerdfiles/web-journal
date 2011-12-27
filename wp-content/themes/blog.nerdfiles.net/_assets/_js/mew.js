@@ -391,6 +391,6 @@ $(document).ready(function() {
     });
     */
 
-}); // domready
+}); // $domready
 
 })(jQuery);
