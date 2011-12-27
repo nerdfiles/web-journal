@@ -1,9 +1,11 @@
 <?php
 /*
-Template Name: Single Column Layout
-*/
-?>
-<?php get_header() ?>
+
+  Template Name: Single 
+ 
+ */
+
+  get_header(); ?>
 
 
 <!-- == 
