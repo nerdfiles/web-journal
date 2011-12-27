@@ -1,3 +1,5 @@
+;(function($) {
+  
 var DEBUG = false;
 
 if ( ! window.localStorage ) {
@@ -389,4 +391,6 @@ $(document).ready(function() {
     });
     */
 
-});
+}); // ready
+
+})(jQuery);
