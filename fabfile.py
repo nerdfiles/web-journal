@@ -69,14 +69,13 @@ def compass_it():
 def sass_it():
   with cd('%s/_css' % env.static):
     run('compass watch compass')
-    #run('compassing')
     #run('sass global.scss global.css')
 
 @task
 def compasswatch():
   with cd('%s/_css' % env.static):
-    #run('compass watch compass')
-    run('compassing')
+    #run('compassing')
+    run('compass watch compass')
 
 @task
 def host_type():
