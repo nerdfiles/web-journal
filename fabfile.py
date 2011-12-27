@@ -131,32 +131,16 @@ def webserver_start():
 
 
 @task
-def webserver_restart():
-    """
-    Restarts the webserver that is running the Django instance
-    """
-    if DJANGO_SERVER_RESTART:
-        run(DJANGO_SERVER_RESTART)
-    else:
-        with settings(warn_only=True):
-            webserver_stop()
-        webserver_start()
-
-
 def sass_it():
   with cd('%s../' % STATIC_ROOT):
     run('sass global.scss global.css')
-    #run("sass --watch -t compressed global.scss:global.css")
 
 @task
 def deploy():
-    pack()
-    push_sources()
-    install_dependencies()
-    #update_database()
-    #build_static()
-    sass_it()
-    webserver_start()
+  pack()
+  push_sources()
+  install_dependencies()
+  sass_it()
 
 @task
 def qsync():
