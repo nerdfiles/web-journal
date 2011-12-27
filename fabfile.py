@@ -60,7 +60,7 @@ def push_sources():
 
 @task
 def sass_it():
-  with cd('%s/_css/' % env.static):
+  with cd('%s/_css' % env.static):
     run('sass global.scss global.css')
 
 @task
