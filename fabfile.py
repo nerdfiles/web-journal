@@ -59,11 +59,21 @@ def push_sources():
 # usual utils
 
 @task
+def compass_it():
+  with cd('%s/_css' % env.static):
+    #run('')
+
+@task
 def sass_it():
   with cd('%s/_css' % env.static):
     run('compass watch compass')
     #run('compassing')
     #run('sass global.scss global.css')
+
+@task
+def compasswatch():
+  with cd('%s/_css' % env.static):
+    run('compass watch compass')
 
 @task
 def host_type():
@@ -131,5 +141,16 @@ def deploy():
 def syncup():
   local_push()
   remote_pull()
-  sass_it()
+
+@task
+def compassup():
+  local_push()
+  remote_pull()
+  compass_it()
+
+@task
+def compassing():
+  #local_push()
+  #remote_pull()
+  #compasswatch()
 
