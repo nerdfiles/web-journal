@@ -53,7 +53,7 @@
 <link 
   rel="stylesheet" 
   media="all" 
-  href="<?php bloginfo('template_directory'); ?>/global.css" />
+  href="<?php bloginfo('template_directory'); ?>/_assets/_css/compass/stylesheets/global.css" />
   
 <?php wp_head() // Do not remove; helps plugins work ?>
 <!-- End wp_head -->

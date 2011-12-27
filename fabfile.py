@@ -58,10 +58,12 @@ def push_sources():
 
 # usual utils
 
+'''
 @task
 def compass_it():
   with cd('%s/_css' % env.static):
     #run('')
+'''
 
 @task
 def sass_it():
@@ -73,7 +75,8 @@ def sass_it():
 @task
 def compasswatch():
   with cd('%s/_css' % env.static):
-    run('compass watch compass')
+    #run('compass watch compass')
+    run('compassing')
 
 @task
 def host_type():
@@ -146,11 +149,11 @@ def syncup():
 def compassup():
   local_push()
   remote_pull()
-  compass_it()
+  #compass_it()
 
 @task
 def compassing():
-  #local_push()
-  #remote_pull()
-  #compasswatch()
+  local_push()
+  remote_pull()
+  compasswatch()
 
