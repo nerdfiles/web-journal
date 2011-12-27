@@ -144,8 +144,8 @@ def webserver_restart():
 
 
 def sass_it():
-  with cd('%s/../' % STATIC_ROOT):
-    run('sass-convert global.scss global.css')
+  with cd('%s../' % STATIC_ROOT):
+    run('sass global.scss global.css')
     #run("sass --watch -t compressed global.scss:global.css")
 
 @task
