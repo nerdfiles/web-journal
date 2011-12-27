@@ -3,7 +3,7 @@
 Template Name: blog.nerdfiles.net > Home
 */
 
-get_header() ?>
+get_header() ?> 
 
 
 <!-- == 

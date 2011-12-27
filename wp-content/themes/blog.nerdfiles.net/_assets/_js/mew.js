@@ -186,7 +186,6 @@ $(document).ready(function() {
       
       $this.attr('tabindex', '1');
       $this.attr('placeholder', 'hypertext: ctrl+enter or search: enter; e.g., "recipes", ctrl+enter');
-      //$this.attr('placeholder', '')
       
       $this.bind('focus', function(e) {
         
