@@ -20,7 +20,7 @@ env.site = 'web-journal'
 env.project = '/home/nerdfiles/webapps/webjournal'
 env.venv = '/home/nerdfiles/.virtualenvs/web_journal'
 env.src = 'src'
-env.static = '%s/wp-content/themes/blog.nerdfiles.net/_assets/' % env.project 
+env.static = '%s/wp-content/themes/blog.nerdfiles.net/_assets' % env.project 
 
 PYTHON_BIN = "python2.7"
 PYTHON_PREFIX = "" # e.g. /usr/local  Use "" for automatic
@@ -60,7 +60,7 @@ def push_sources():
 
 @task
 def sass_it():
-  with cd('%s../' % env.static):
+  with cd('%s/_css/' % env.static):
     run('sass global.scss global.css')
 
 @task
