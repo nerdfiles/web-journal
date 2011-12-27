@@ -61,7 +61,7 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><a href="<?php echo get_day_link('', '', ''); ?>"><?php the_date(); ?></a></time>
+<time><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
@@ -94,7 +94,7 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><a href="<?php echo get_day_link('', '', ''); ?>"><?php the_date(); ?></a></time>
+<time><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
@@ -127,7 +127,7 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><a href="<?php echo get_day_link('', '', ''); ?>"><?php the_date(); ?></a></time>
+<time><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
