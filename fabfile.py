@@ -70,65 +70,52 @@ def run_venv(command, **kwargs):
 @task
 def install_dependencies():
     ensure_virtualenv()
-    with virtualenv(env.project):
-        with cd(src_dir):
+    with virtualenv(env.venv):
+        with cd(env.project):
             run_venv("pip install -r requirements.txt")
 
 @task
 def ensure_virtualenv():
-    if exists(env.venv):
-        return
-
-    with cd(env.project):
-        run("virtualenv --no-site-packages --python=%s %s" %
-            (PYTHON_BIN, env.venv))
-        run("echo %s > %s/lib/%s/site-packages/projectsource.pth" %
-            (src_dir, env.venv, PYTHON_BIN))
+  if exists(env.venv):
+    return
+  run("mkvirtualenv --no-site-packages --python=%s %s" %
+    (PYTHON_BIN, env.venv))
+  run("echo %s > %s/lib/%s/site-packages/projectsource.pth" %
+    (src_dir, env.venv, PYTHON_BIN))
 
 @task
 def pack():
-  print('Packaging instance...')
+  print('Removing previous package ./wp-deploy/%s.tar.gz' % env.site)
   local('rm -rf wp-deploy/')
   local('mkdir wp-deploy && cd wp-deploy && touch .delete-me && cd ..')
+  print('Archiving ./wp-deploy/%s.tar.gz' % env.site)
   local('git archive --format=tar HEAD | gzip > wp-deploy/%s.tar.gz' % env.site)
   print('Package created: ./wp-deploy/%s.tar.gz at %s' % (env.site, datetime.datetime.now()))
 
 @task
+def local_push():
+  local('git status')
+  local('git add .')
+  local('git commit -am "quick_sync @ %s"' % datetime.datetime.now())
+  local('git push -u origin dev')
+
+@task
 def remote_pull():
+  print('Pulling to %s' % env.project)
   with cd('%s' % env.project):
     run('git pull -u origin dev')
 
 @task
 def push_sources():
-    """
-    Push source code to server
-    """
-    #ensure_src_dir()
-    pack()
-    #run('cd /home/nerdfiles/webapps/webjournal/')
-    #with cd('/home/nerdfiles/webapps/webjournal/'):
-    with cd('%s' % env.project):
-      if not exists('%s/wp-deploy' % env.project):
-        run('mkdir wp-deploy')
-    put('wp-deploy/%s.tar.gz' % env.site, '%s/wp-deploy/' % env.project)
-    with cd('%s/wp-deploy/' % env.project):
-      run('tar zxvf %s/wp-deploy/%s.tar.gz -C ../' % (env.project, env.site))
-
-@task
-def webserver_stop():
-    """
-    Stop the webserver that is running the Django instance
-    """
-    run(DJANGO_SERVER_STOP)
-
-
-@task
-def webserver_start():
-    """
-    Startsp the webserver that is running the Django instance
-    """
-    run(DJANGO_SERVER_START)
-
+  with cd('%s' % env.project):
+    print('Securing deploy folder...')
+    if not exists('%s/wp-deploy' % env.project):
+      run('mkdir wp-deploy')
+  print('Placing in %s/wp-deploy/%s.tar.gz' % (env.project, env.site))
+  put('wp-deploy/%s.tar.gz' % env.site, '%s/wp-deploy/' % env.project)
+  print('Extracting %s/%s.tar.gz to %s' % (env.project, env.site, env.project)) 
+  with cd('%s/wp-deploy/' % env.project):
+    run('tar zxvf %s/wp-deploy/%s.tar.gz -C %s' % (env.project, env.site, env.project))
 
 @task
 def sass_it():
@@ -143,11 +130,8 @@ def deploy():
   sass_it()
 
 @task
-def qsync():
-  local('git status')
-  local('git add .')
-  local('git commit -am "quick_sync @ %s"' % datetime.datetime.now())
-  local('git push -u origin dev')
+def syncup():
+  local_push()
   remote_pull()
   sass_it()
 
