@@ -29,7 +29,8 @@
 <div class="entry-meta">
 <div class="entry-meta-inner">
 <span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><i><?php unset($previousday); printf(__('%1$s', 'webjournal'), the_date('d F Y', false)) ?></i></abbr></span>
-<?php edit_post_link(__('Edit this entry', 'webjournal'),'<div class="entry-edit">','</div>') ?>
+<?php edit_post_link(__('Edit ' + get_the_title(), 'webjournal'), "\t\t\t\t\t<span class=\"meta-sep\">&equiv;</span>\n\t\t\t\t\t<span class='entry-edit'>", "</span>\n"); ?>
+
 </div>
 </div>
 
