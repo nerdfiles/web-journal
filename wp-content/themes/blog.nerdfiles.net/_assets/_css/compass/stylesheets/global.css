@@ -5,14 +5,14 @@
   /* Safari, Android, iOS */
 }
 
-/* line 17, ../sass/global.scss */
-body.logged-in #site-navigation {
+/* line 18, ../sass/global.scss */
+#site-navigation {
   position: absolute;
   left: -9999px;
 }
 
 /* line 21, ../sass/global.scss */
-body.logged-in #site-admin {
+#site-admin {
   position: absolute;
   left: -9999px;
 }

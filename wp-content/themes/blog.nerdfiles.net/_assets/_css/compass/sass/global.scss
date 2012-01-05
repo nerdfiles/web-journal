@@ -14,11 +14,11 @@
 body {}
 
 // something pithy
-body.logged-in #site-navigation {
+
+#site-navigation {
   position: absolute;
   left: -9999px }
-
-body.logged-in #site-admin { 
+#site-admin { 
   position: absolute;
   left: -9999px }
 
