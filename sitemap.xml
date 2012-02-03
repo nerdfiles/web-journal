@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://webjournal.nerdfiles.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.3.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.6" -->
-<!-- generated-on="January 5, 2012 9:09 am" -->
-<!-- Debug: Total comment count: 50 -->
+<!-- generated-on="February 2, 2012 6:58 pm" -->
+<!-- Debug: Total comment count: 54 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://webjournal.nerdfiles.net/</loc>
 		<lastmod>2011-04-08T21:02:08+00:00</lastmod>
@@ -9,256 +9,446 @@
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
-<!-- Debug: Priority report of postID 2762: Comments: 1 of 50 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/quotes/</loc>
+		<lastmod>2012-02-02T18:58:17+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 2927: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/01/car-ima-eat-you/</loc>
+		<lastmod>2012-02-02T18:48:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3162: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/02/02/anon/</loc>
+		<lastmod>2012-02-02T18:39:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3157: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/02/01/naps-act/</loc>
+		<lastmod>2012-02-02T00:36:08+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3146: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/02/01/fuck-you-america/</loc>
+		<lastmod>2012-02-01T19:33:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3138: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/31/dope-a/</loc>
+		<lastmod>2012-01-31T02:42:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3129: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/29/the-indivisibility-of-content/</loc>
+		<lastmod>2012-01-29T19:05:28+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3126: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/29/the-reading-web/</loc>
+		<lastmod>2012-01-29T18:38:32+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3124: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/28/micro-rap-career/</loc>
+		<lastmod>2012-01-28T09:32:28+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3120: Comments: 1 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/27/yet-another-rant-about-sopa/</loc>
+		<lastmod>2012-01-27T22:51:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3115: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/27/net-death-wound/</loc>
+		<lastmod>2012-01-27T21:55:48+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3106: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/27/another-site/</loc>
+		<lastmod>2012-01-27T21:29:03+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://webjournal.nerdfiles.net/about/</loc>
+		<lastmod>2012-01-27T18:23:52+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3099: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/27/google/</loc>
+		<lastmod>2012-01-27T06:05:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3084: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/26/political-atheism/</loc>
+		<lastmod>2012-01-27T05:34:46+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3048: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/13/west/</loc>
+		<lastmod>2012-01-26T22:46:28+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3090: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/26/sopa-template-for-web-developers/</loc>
+		<lastmod>2012-01-26T22:43:32+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3073: Comments: 1 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/24/ladies-the-logos-aint-out-to-get-you/</loc>
+		<lastmod>2012-01-25T15:40:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3061: Comments: 1 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/16/this-is-a-hyperlink/</loc>
+		<lastmod>2012-01-16T06:34:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3053: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/13/whats-that-ip-address-again/</loc>
+		<lastmod>2012-01-13T15:42:38+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3045: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/12/on-text-editors/</loc>
+		<lastmod>2012-01-12T19:05:18+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3034: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/11/im-an-asshole/</loc>
+		<lastmod>2012-01-11T17:45:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3030: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/11/the-obamas/</loc>
+		<lastmod>2012-01-11T16:11:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3026: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/11/a-new-kind-of-war/</loc>
+		<lastmod>2012-01-11T06:21:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3017: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/10/preferable/</loc>
+		<lastmod>2012-01-10T07:45:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3012: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/08/old-skin/</loc>
+		<lastmod>2012-01-08T04:04:44+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3004: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/07/what-we-wrote/</loc>
+		<lastmod>2012-01-07T15:32:09+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2992: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/07/a-convergence-of-worlds/</loc>
+		<lastmod>2012-01-07T02:31:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2987: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/06/the-intellect/</loc>
+		<lastmod>2012-01-06T15:09:31+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2969: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/06/pipa-will-not-win/</loc>
+		<lastmod>2012-01-06T10:53:59+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2975: Comments: 0 of 54 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/01/06/a-friend-renders-a-deadly-serious-game-what-is-the-internet/</loc>
+		<lastmod>2012-01-06T10:33:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2762: Comments: 2 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/11/23/generations/</loc>
 		<lastmod>2012-01-05T09:08:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2960: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2960: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2012/01/04/ndaa/</loc>
 		<lastmod>2012-01-04T18:41:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-	<url>
-		<loc>http://webjournal.nerdfiles.net/a-declaration-of-the-independence-of-cyberspace/</loc>
-		<lastmod>2012-01-04T06:25:39+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-<!-- Debug: Priority report of postID 2927: Comments: 0 of 50 = 0 points -->
-	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/01/01/car-ima-eat-you/</loc>
-		<lastmod>2012-01-04T05:24:49+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 2940: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2940: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2012/01/04/o-beautiful-type/</loc>
 		<lastmod>2012-01-04T05:18:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-	<url>
-		<loc>http://webjournal.nerdfiles.net/quotes/</loc>
-		<lastmod>2012-01-03T23:54:29+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-<!-- Debug: Priority report of postID 2916: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2916: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/31/sopa-side-effects/</loc>
 		<lastmod>2012-01-02T20:05:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2930: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2930: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2012/01/01/web-workin/</loc>
 		<lastmod>2012-01-01T16:44:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2920: Comments: 2 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2920: Comments: 2 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/31/welcome-to-the-new-dark-age/</loc>
 		<lastmod>2011-12-31T18:01:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-	<url>
-		<loc>http://webjournal.nerdfiles.net/about/</loc>
-		<lastmod>2011-12-30T07:00:38+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-<!-- Debug: Priority report of postID 2899: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2899: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/28/testing-mnemonic/</loc>
 		<lastmod>2011-12-28T21:34:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2781: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2781: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/11/24/classing-mnemonic-homr-hiding-objects-and-modules-religiously/</loc>
 		<lastmod>2011-12-28T21:11:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2787: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2787: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/11/26/call-listeners-needed-for-tts-standards-intelligibility-test/</loc>
 		<lastmod>2011-12-27T19:41:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2886: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2886: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/27/heavy-metal-queen/</loc>
 		<lastmod>2011-12-27T16:54:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2876: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2876: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/26/first-notes-on-aspergers/</loc>
 		<lastmod>2011-12-26T20:52:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2854: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2854: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/25/behold/</loc>
 		<lastmod>2011-12-26T18:45:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2848: Comments: 4 of 50 = 0.1 points -->
+<!-- Debug: Priority report of postID 2848: Comments: 4 of 54 = 0.1 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/25/economy-of-silence/</loc>
 		<lastmod>2011-12-25T21:42:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2846: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2846: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/23/whendy/</loc>
 		<lastmod>2011-12-23T17:15:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2831: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2831: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/22/sopa-and-the-extended-phenotype/</loc>
 		<lastmod>2011-12-22T18:23:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2749: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2749: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/11/17/hashoccupy/</loc>
 		<lastmod>2011-12-21T19:00:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2817: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2817: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/16/the-patient-code/</loc>
 		<lastmod>2011-12-16T01:08:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2797: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2797: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/12/06/web-phenotype/</loc>
 		<lastmod>2011-12-06T13:30:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2774: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2774: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/11/24/think-of-b-element/</loc>
 		<lastmod>2011-11-24T20:59:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2191: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2191: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/03/18/leaves-on-the-internet/</loc>
 		<lastmod>2011-11-17T10:33:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2268: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2268: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/06/09/broke/</loc>
 		<lastmod>2011-11-17T10:32:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2735: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2735: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/11/10/the-typeface/</loc>
 		<lastmod>2011-11-10T15:08:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2729: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2729: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/27/report-on-resistentialism-by-paul-jennings/</loc>
 		<lastmod>2011-10-27T21:01:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2720: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2720: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/23/a-september-before-the-winter/</loc>
 		<lastmod>2011-10-23T16:06:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2715: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2715: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/23/platitude-of-the-pauper/</loc>
 		<lastmod>2011-10-23T15:48:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2166: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2166: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/02/23/moving-on/</loc>
 		<lastmod>2011-10-21T21:28:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2704: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2704: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/21/top-5-greatest-albums-for-rigorous-study-of-human-relationships/</loc>
 		<lastmod>2011-10-21T16:49:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2699: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2699: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/20/that-such-is-possible/</loc>
 		<lastmod>2011-10-20T20:10:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2671: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2671: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/20/this-is-called-bereavement/</loc>
 		<lastmod>2011-10-20T19:08:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2646: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2646: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/19/a-house-is-not-a-home/</loc>
 		<lastmod>2011-10-20T01:32:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2635: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2635: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/19/my-one-poet-friend-as-many/</loc>
 		<lastmod>2011-10-19T20:02:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2596: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2596: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/09/treehouse/</loc>
 		<lastmod>2011-10-18T05:25:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2605: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2605: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/10/safer/</loc>
 		<lastmod>2011-10-13T20:04:17+00:00</lastmod>
@@ -271,70 +461,70 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 2582: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2582: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/09/observe/</loc>
 		<lastmod>2011-10-10T15:47:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2564: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2564: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/09/takepills/</loc>
 		<lastmod>2011-10-10T15:42:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2568: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2568: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/09/29/nether-or-not/</loc>
 		<lastmod>2011-10-09T20:56:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2566: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2566: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/09/grado-sr225i/</loc>
 		<lastmod>2011-10-09T20:55:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2573: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2573: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/09/24/the-other-night-someone-called-me-a-%e2%80%9cstranger%e2%80%9d/</loc>
 		<lastmod>2011-10-09T20:52:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2570: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2570: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/09/28/2570/</loc>
 		<lastmod>2011-10-09T20:49:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2586: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2586: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/09/reference-1/</loc>
 		<lastmod>2011-10-09T20:46:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2579: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2579: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/08/28/bukowski/</loc>
 		<lastmod>2011-10-09T20:42:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2577: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2577: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/10/09/untitled-3/</loc>
 		<lastmod>2011-10-09T20:40:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2575: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2575: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/09/21/2575/</loc>
 		<lastmod>2011-10-09T20:38:01+00:00</lastmod>
@@ -347,91 +537,91 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 2538: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2538: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/08/24/worlds-word-enough/</loc>
 		<lastmod>2011-08-26T03:51:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1653: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1653: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/09/the-child/</loc>
 		<lastmod>2011-08-26T03:40:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1980: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1980: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/12/26/hatred-hallows-the-marching-meek/</loc>
 		<lastmod>2011-08-17T06:36:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1683: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1683: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/13/hedons-and-heroine/</loc>
 		<lastmod>2011-08-17T06:24:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1691: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1691: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/18/untitled/</loc>
 		<lastmod>2011-08-17T06:21:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1896: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1896: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/09/16/continues/</loc>
 		<lastmod>2011-08-17T06:20:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1888: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1888: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/09/13/liners/</loc>
 		<lastmod>2011-08-17T06:18:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1808: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1808: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/05/07/fff/</loc>
 		<lastmod>2011-08-17T06:16:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1198: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1198: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/08/01/the-world-and-its-chores/</loc>
 		<lastmod>2011-08-17T06:14:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1757: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1757: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/04/06/slash-paren-slash-paren-tilde/</loc>
 		<lastmod>2011-08-17T06:11:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 232: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 232: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/30/submission-of-church-to-state/</loc>
 		<lastmod>2011-08-10T23:37:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2433: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2433: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/08/04/intp/</loc>
 		<lastmod>2011-08-05T05:43:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2093: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2093: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/02/10/on-modal-windows-and-lazy-interaction-design/</loc>
 		<lastmod>2011-08-04T15:11:16+00:00</lastmod>
@@ -468,2436 +658,2436 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 2333: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2333: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/07/25/the-future-of-names/</loc>
 		<lastmod>2011-08-01T00:26:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2329: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2329: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/07/23/open-internet-order/</loc>
 		<lastmod>2011-07-23T15:24:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1950: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1950: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/12/16/demo-death-rites/</loc>
 		<lastmod>2011-07-02T14:06:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2297: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2297: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/07/01/rough-draft/</loc>
 		<lastmod>2011-07-02T14:03:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2292: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2292: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/06/28/please-scroll/</loc>
 		<lastmod>2011-06-28T16:36:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2215: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2215: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/03/27/copy/</loc>
 		<lastmod>2011-06-23T16:26:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2276: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2276: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/06/22/the-terminal-haircuts-of-silouhettes/</loc>
 		<lastmod>2011-06-22T20:44:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2257: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2257: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/05/15/user-interface-metaphors/</loc>
 		<lastmod>2011-05-15T18:46:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2249: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2249: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/04/22/the-problems-of-ui-development-part-one-and-class-itis/</loc>
 		<lastmod>2011-04-22T18:32:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2059: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2059: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/02/05/2059/</loc>
 		<lastmod>2011-04-22T17:32:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2247: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2247: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/04/15/ab/</loc>
 		<lastmod>2011-04-15T12:33:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2194: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2194: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/03/18/vs-javascriptvoid0-vs-return-false-vs-javascript-versus-javascriptfunc/</loc>
 		<lastmod>2011-03-28T02:49:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2144: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2144: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/02/22/ffff/</loc>
 		<lastmod>2011-02-22T07:23:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2112: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2112: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/02/16/ampersandtheism-and-its-criteria/</loc>
 		<lastmod>2011-02-17T01:42:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2069: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2069: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/02/06/clients-1/</loc>
 		<lastmod>2011-02-06T15:34:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2043: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2043: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/02/04/candidates-for-claims/</loc>
 		<lastmod>2011-02-05T15:46:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2031: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2031: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/02/01/untitled-2/</loc>
 		<lastmod>2011-02-02T01:07:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2014: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2014: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/01/20/description/</loc>
 		<lastmod>2011-01-20T18:56:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2011: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2011: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/01/14/lifecoloncolonrepeat/</loc>
 		<lastmod>2011-01-14T17:58:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2006: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 2006: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/01/08/css-ontology/</loc>
 		<lastmod>2011-01-08T16:26:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 738: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 738: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/18/conjunctious-fallacious/</loc>
 		<lastmod>2011-01-04T20:07:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1781: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1781: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/04/13/front-end-developer-quiz-draft/</loc>
 		<lastmod>2011-01-04T19:44:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1998: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1998: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2011/01/03/discussion-with-rajiv-shah-on-mathematicsnaturestuff/</loc>
 		<lastmod>2011-01-04T02:07:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1993: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1993: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/12/29/vacation/</loc>
 		<lastmod>2010-12-29T17:57:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1843: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1843: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/06/12/justifiable-suicide/</loc>
 		<lastmod>2010-12-27T04:54:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1976: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1976: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/12/19/the-internal-property-of-a-rule/</loc>
 		<lastmod>2010-12-19T18:26:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1314: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1314: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/10/14/aspects-of-thought/</loc>
 		<lastmod>2010-11-26T16:03:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1904: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1904: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/09/16/what-css-frameworks-must-do/</loc>
 		<lastmod>2010-09-16T17:30:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1901: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1901: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/09/16/judgments/</loc>
 		<lastmod>2010-09-16T17:00:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1875: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1875: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/08/27/euthyphro/</loc>
 		<lastmod>2010-08-27T18:31:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1859: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1859: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/07/09/new-flickr-new-camera/</loc>
 		<lastmod>2010-07-09T19:02:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1616: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1616: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/08/conceivable-believable-god/</loc>
 		<lastmod>2010-07-06T17:26:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1851: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1851: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/07/01/js_101_1/</loc>
 		<lastmod>2010-07-01T20:12:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1846: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1846: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/06/26/pedants-and-pedestrians/</loc>
 		<lastmod>2010-06-26T15:17:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1800: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1800: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/04/20/mathematics1usic2ence/</loc>
 		<lastmod>2010-05-18T21:50:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1819: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1819: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/05/17/analysis-warrantablility-and-knowledge/</loc>
 		<lastmod>2010-05-17T20:57:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1768: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1768: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/04/12/give-me-a-fucking-br/</loc>
 		<lastmod>2010-04-12T18:43:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1490: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1490: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/01/29/marketing-goes-tech/</loc>
 		<lastmod>2010-04-09T15:09:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1760: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1760: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/04/08/what-we-find-when-we-sorrow/</loc>
 		<lastmod>2010-04-09T01:27:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1733: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1733: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/30/spectre-of-parole-basic-thoughts/</loc>
 		<lastmod>2010-03-31T14:25:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1722: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1722: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/25/method/</loc>
 		<lastmod>2010-03-25T19:59:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1055: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1055: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/05/12/whose-language/</loc>
 		<lastmod>2010-03-19T17:49:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1145: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1145: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/06/30/death-of-mind-revisited/</loc>
 		<lastmod>2010-03-19T17:39:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1243: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1243: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/09/13/thought-concealed/</loc>
 		<lastmod>2010-03-19T17:36:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1700: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1700: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/19/constantly-lively/</loc>
 		<lastmod>2010-03-19T17:19:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1697: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1697: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/19/reading-material-march-19-2010/</loc>
 		<lastmod>2010-03-19T16:01:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1668: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1668: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/11/magical-anonymous-objects-mao/</loc>
 		<lastmod>2010-03-11T19:00:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1656: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1656: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/10/more-stupidity-versus-g/</loc>
 		<lastmod>2010-03-11T16:52:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1385: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1385: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/11/15/1385/</loc>
 		<lastmod>2010-03-10T23:20:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1408: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1408: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/11/24/perfecting-ie9/</loc>
 		<lastmod>2010-03-10T23:10:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1609: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1609: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/04/return-anon/</loc>
 		<lastmod>2010-03-04T15:44:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1449: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1449: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/12/24/anarchism-and-morality/</loc>
 		<lastmod>2010-03-03T02:14:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1598: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1598: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/03/02/to-be-a-prgrmmr/</loc>
 		<lastmod>2010-03-02T22:56:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1559: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1559: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/02/25/two-senses-of-meta/</loc>
 		<lastmod>2010-02-26T19:52:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1546: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1546: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/02/23/the-indispensablility-argument-for-mathematical-realism/</loc>
 		<lastmod>2010-02-24T15:01:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1544: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1544: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/02/23/stupidity/</loc>
 		<lastmod>2010-02-23T18:14:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1519: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1519: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/02/03/webane/</loc>
 		<lastmod>2010-02-11T23:04:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1533: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1533: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/02/10/anonanonanon/</loc>
 		<lastmod>2010-02-11T02:10:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1521: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1521: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2010/02/05/successful-description/</loc>
 		<lastmod>2010-02-09T15:33:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 582: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 582: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/24/boy-writ-large-the-deity/</loc>
 		<lastmod>2010-01-30T06:54:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1468: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1468: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/12/31/1468/</loc>
 		<lastmod>2010-01-01T03:01:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1466: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1466: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/12/31/unimorphic-subjectivism/</loc>
 		<lastmod>2010-01-01T01:00:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1440: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1440: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/12/24/1440/</loc>
 		<lastmod>2009-12-25T03:34:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1435: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1435: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/12/21/1435/</loc>
 		<lastmod>2009-12-24T07:16:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1268: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1268: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/10/06/zen-coding/</loc>
 		<lastmod>2009-11-27T00:33:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1413: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1413: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/11/26/our-paradox-in-aesthetic-praxis/</loc>
 		<lastmod>2009-11-27T00:28:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1402: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1402: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/11/23/defense-of-zen-coding/</loc>
 		<lastmod>2009-11-23T16:07:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1400: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1400: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/11/21/scoulen-the-embedded/</loc>
 		<lastmod>2009-11-22T00:00:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1390: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1390: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/11/19/analogical-powersproto-scientific-linguistic-philosophy/</loc>
 		<lastmod>2009-11-20T15:59:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1379: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1379: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/11/11/travelers/</loc>
 		<lastmod>2009-11-11T06:09:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1360: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1360: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/10/30/we-call-it-html/</loc>
 		<lastmod>2009-10-30T21:00:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1356: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1356: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/10/29/html/</loc>
 		<lastmod>2009-10-29T18:46:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1353: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1353: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/10/28/deprecated-html-ive-encountered-p1/</loc>
 		<lastmod>2009-10-28T17:00:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1296: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1296: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/10/06/class-dual-agenda/</loc>
 		<lastmod>2009-10-06T17:17:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1257: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1257: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/09/30/varied-vanilla-arguments-for-knowledge-skepticism/</loc>
 		<lastmod>2009-10-04T03:54:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1264: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1264: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/10/03/a-brain-more-or-less-in-a-vat-roughly/</loc>
 		<lastmod>2009-10-03T08:45:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1252: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1252: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/09/30/long-winded-noise-making-involving-predicate-logic/</loc>
 		<lastmod>2009-09-30T07:42:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1250: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1250: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/09/27/golden-malady-snapshot-of-a-failure/</loc>
 		<lastmod>2009-09-28T01:32:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1246: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1246: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/09/24/1246/</loc>
 		<lastmod>2009-09-24T16:34:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1239: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1239: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/09/06/value-relativism-cultural-complexity/</loc>
 		<lastmod>2009-09-06T06:11:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1235: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1235: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/09/02/the-unpoetic/</loc>
 		<lastmod>2009-09-03T19:09:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1228: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1228: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/08/31/permutation-for-a-thought-on-the-grammar-of-the-same/</loc>
 		<lastmod>2009-08-31T15:45:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1226: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1226: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/08/30/mereological-nihilism/</loc>
 		<lastmod>2009-08-31T06:09:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1220: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1220: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/08/25/sign-of-a-metaphysician/</loc>
 		<lastmod>2009-08-25T20:25:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1211: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1211: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/08/08/the-anthropological-and-the-political/</loc>
 		<lastmod>2009-08-08T14:04:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 998: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 998: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/13/man-o-man/</loc>
 		<lastmod>2009-08-03T08:04:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1193: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1193: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/07/29/picture-or-tool-metaphor-early-or-late-wittgenstein/</loc>
 		<lastmod>2009-07-29T17:45:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1183: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1183: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/07/22/free-will-a-ritual-misuse-of-language/</loc>
 		<lastmod>2009-07-24T02:38:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1181: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1181: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/07/22/variable-fugue-on-pi/</loc>
 		<lastmod>2009-07-22T18:04:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1178: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1178: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/07/21/the-undiscussability-of-torture/</loc>
 		<lastmod>2009-07-21T16:23:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 290: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 290: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/08/16/politely-politely/</loc>
 		<lastmod>2009-07-07T02:59:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 543: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 543: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/25/practise-1/</loc>
 		<lastmod>2009-06-14T05:40:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1128: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1128: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/06/11/spinoza-and-ontological-commitment/</loc>
 		<lastmod>2009-06-12T05:56:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1119: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1119: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/06/09/notes-on-walter-sinnott-armstrong-on-moral-psychology/</loc>
 		<lastmod>2009-06-12T04:17:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 658: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 658: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/05/my-old-car/</loc>
 		<lastmod>2009-06-07T18:12:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1060: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1060: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/05/17/from-realms-to-fields-disjointed-thoughts/</loc>
 		<lastmod>2009-06-07T18:08:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1066: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1066: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/05/25/a-minor-comedy/</loc>
 		<lastmod>2009-06-07T16:46:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1096: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1096: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/06/02/cheap-little-blues-riff/</loc>
 		<lastmod>2009-06-03T05:09:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1064: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1064: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/05/18/%c2%a72/</loc>
 		<lastmod>2009-05-18T16:06:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1053: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1053: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/05/07/intentionality/</loc>
 		<lastmod>2009-05-08T03:27:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1018: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1018: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/05/02/proposition-the-non-linguistic-rule/</loc>
 		<lastmod>2009-05-05T02:33:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1014: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1014: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/28/preliminary-thoughts-modal-properties-identity-and-time/</loc>
 		<lastmod>2009-04-28T19:38:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1011: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1011: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/25/the-burdening-of-proof/</loc>
 		<lastmod>2009-04-26T03:53:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1009: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1009: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/25/objectivity-and-truth-a-characterization-of-williams-critique/</loc>
 		<lastmod>2009-04-25T20:15:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1003: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 1003: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/18/the-ship-of-theseus/</loc>
 		<lastmod>2009-04-18T18:50:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 994: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 994: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/12/the-moral-the-logical/</loc>
 		<lastmod>2009-04-12T21:25:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 989: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 989: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/12/some-words-on-the-pragmatic-theory-of-truth/</loc>
 		<lastmod>2009-04-12T20:09:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 952: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 952: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/11/the-existence-of-god/</loc>
 		<lastmod>2009-04-12T05:25:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 943: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 943: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/10/time/</loc>
 		<lastmod>2009-04-11T02:53:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 936: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 936: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/10/counter-to-the-evidentialist-atheist/</loc>
 		<lastmod>2009-04-10T06:51:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 924: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 924: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/06/constraints-on-synecdoche-and-linguistic-mereology/</loc>
 		<lastmod>2009-04-06T23:52:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 901: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 901: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/01/belief-that-again/</loc>
 		<lastmod>2009-04-05T01:59:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 906: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 906: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/04/02/against-subjectivism/</loc>
 		<lastmod>2009-04-02T14:10:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 868: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 868: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/29/an-analysis-of-knowledge/</loc>
 		<lastmod>2009-03-30T14:53:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 889: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 889: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/29/contingency/</loc>
 		<lastmod>2009-03-30T04:47:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 866: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 866: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/27/belief/</loc>
 		<lastmod>2009-03-27T07:59:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 863: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 863: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/25/criterion-def/</loc>
 		<lastmod>2009-03-26T05:58:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 845: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 845: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/25/an-objection-to-an-objection-to-meaning-is-use/</loc>
 		<lastmod>2009-03-26T05:05:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 843: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 843: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/25/skepticism-and-belief/</loc>
 		<lastmod>2009-03-26T00:55:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 841: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 841: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/25/facts/</loc>
 		<lastmod>2009-03-25T23:57:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 826: Comments: 2 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 826: Comments: 2 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/08/duty-and-inclination/</loc>
 		<lastmod>2009-03-08T06:53:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 819: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 819: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/05/truth-and-sense/</loc>
 		<lastmod>2009-03-06T04:22:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 811: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 811: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/02/the-days/</loc>
 		<lastmod>2009-03-02T08:55:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 805: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 805: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/01/david-weinberger/</loc>
 		<lastmod>2009-03-02T04:52:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 801: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 801: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/03/01/philosophizing-on-the-internet/</loc>
 		<lastmod>2009-03-02T04:36:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 796: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 796: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/23/thought-and-language-a-simple-distinction/</loc>
 		<lastmod>2009-02-24T04:20:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 787: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 787: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/23/787/</loc>
 		<lastmod>2009-02-23T14:07:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 588: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 588: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/24/love-again/</loc>
 		<lastmod>2009-02-22T09:23:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 725: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 725: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/15/harmonicology/</loc>
 		<lastmod>2009-02-16T00:28:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 720: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 720: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/13/mereological-fallacy-in-neuroscience/</loc>
 		<lastmod>2009-02-14T04:03:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 716: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 716: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/12/kindred-concepts/</loc>
 		<lastmod>2009-02-13T03:04:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 712: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 712: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/08/ktb-and-gettier-cases-preliminary-steps/</loc>
 		<lastmod>2009-02-08T20:23:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 672: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 672: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/05/the-logical-grammar-of-ought-implies-can/</loc>
 		<lastmod>2009-02-08T20:20:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 705: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 705: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/07/mistakes-in-the-study-of-ethics/</loc>
 		<lastmod>2009-02-08T02:26:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 699: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 699: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/07/ethical-systems/</loc>
 		<lastmod>2009-02-07T19:39:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 693: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 693: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/06/heaven-hell-and-atoms/</loc>
 		<lastmod>2009-02-06T18:07:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 686: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 686: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/06/history-of-ethics-feb-2-2009/</loc>
 		<lastmod>2009-02-06T17:36:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 20: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 20: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/05/watch-part-one-of-a-brief-history-of-disbelief/</loc>
 		<lastmod>2009-02-06T16:15:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 650: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 650: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/02/05/concepts-which-demand-attention/</loc>
 		<lastmod>2009-02-06T00:47:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 627: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 627: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/30/law-society-and-morality-jan-29-2009/</loc>
 		<lastmod>2009-01-31T14:49:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 624: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 624: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/29/rules/</loc>
 		<lastmod>2009-01-30T06:43:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 620: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 620: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/29/private-language/</loc>
 		<lastmod>2009-01-30T05:51:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 568: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 568: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/05/is-moral-absolutism-our-problem/</loc>
 		<lastmod>2009-01-28T23:41:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 607: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 607: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/26/01262009/</loc>
 		<lastmod>2009-01-27T03:38:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 594: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 594: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/26/ramblings-on-determinism/</loc>
 		<lastmod>2009-01-27T03:13:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 591: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 591: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/24/the-mapmaker-and-the-map/</loc>
 		<lastmod>2009-01-25T00:19:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 579: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 579: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/23/when-we-were-nihilists/</loc>
 		<lastmod>2009-01-24T00:10:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 558: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 558: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2009/01/03/postmodern-atheism/</loc>
 		<lastmod>2009-01-03T20:39:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 554: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 554: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/30/quietism-of-every-flavor/</loc>
 		<lastmod>2008-12-30T23:21:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 547: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 547: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/27/the-rise-of-the-idiot-quote/</loc>
 		<lastmod>2008-12-27T08:11:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 545: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 545: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/26/a-test-of-legal-positivism/</loc>
 		<lastmod>2008-12-26T18:38:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 537: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 537: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/23/of-the-importance-of-rationality-and-insanity/</loc>
 		<lastmod>2008-12-23T21:04:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 535: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 535: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/21/the-world-as-event/</loc>
 		<lastmod>2008-12-21T07:59:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 533: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 533: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/20/a-past-time/</loc>
 		<lastmod>2008-12-21T03:26:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 523: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 523: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/17/human-puzzles/</loc>
 		<lastmod>2008-12-19T03:51:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 527: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 527: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/18/the-myth-of-dualism/</loc>
 		<lastmod>2008-12-18T18:23:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 521: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 521: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/15/communist-economics-accountability-as-power/</loc>
 		<lastmod>2008-12-15T19:02:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 514: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 514: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/10/the-impossibility-of-ai/</loc>
 		<lastmod>2008-12-10T09:03:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 507: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 507: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/06/oh-searle/</loc>
 		<lastmod>2008-12-06T17:16:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 505: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 505: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/06/metaphorism/</loc>
 		<lastmod>2008-12-06T07:43:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 497: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 497: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/06/justification/</loc>
 		<lastmod>2008-12-06T06:56:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 493: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 493: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/05/ethos-ethics-morals-etc/</loc>
 		<lastmod>2008-12-05T22:35:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 478: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 478: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/05/tragically-optimistic-zombie/</loc>
 		<lastmod>2008-12-05T06:43:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 469: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 469: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/04/shoutout-to-highschool-agnosticism-postmodernism/</loc>
 		<lastmod>2008-12-05T03:25:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 467: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 467: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/04/gettier-redux/</loc>
 		<lastmod>2008-12-05T02:50:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 461: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 461: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/04/negative-freedom/</loc>
 		<lastmod>2008-12-05T01:06:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 456: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 456: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/12/02/wit-ends-when-wit-ends/</loc>
 		<lastmod>2008-12-02T22:01:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 451: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 451: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/30/alls-im-tryin-to-say/</loc>
 		<lastmod>2008-11-30T23:23:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 449: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 449: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/30/language-as-habit/</loc>
 		<lastmod>2008-11-30T10:06:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 446: Comments: 2 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 446: Comments: 2 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/29/an-oversimplification-of-free-action/</loc>
 		<lastmod>2008-11-29T21:53:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 439: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 439: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/29/scripture-against-unisex-clothing/</loc>
 		<lastmod>2008-11-29T21:03:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 436: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 436: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/28/the-term-god/</loc>
 		<lastmod>2008-11-28T19:19:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 423: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 423: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/27/gradations-of-politico-religious-belief/</loc>
 		<lastmod>2008-11-28T06:35:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 421: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 421: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/27/orgod/</loc>
 		<lastmod>2008-11-28T04:48:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 415: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 415: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/27/global-rules-local-rules-ai/</loc>
 		<lastmod>2008-11-28T00:52:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 407: Comments: 7 of 50 = 0.1 points -->
+<!-- Debug: Priority report of postID 407: Comments: 7 of 54 = 0.1 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/23/counterexample-to-the-fregean-solution/</loc>
 		<lastmod>2008-11-23T19:49:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 401: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 401: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/23/predications-of-the-deity-come-discretely/</loc>
 		<lastmod>2008-11-23T11:16:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 393: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 393: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/23/london-and-pierres-content/</loc>
 		<lastmod>2008-11-23T10:35:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 389: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 389: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/23/existential-generalization/</loc>
 		<lastmod>2008-11-23T09:43:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 379: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 379: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/20/trees-are-cats/</loc>
 		<lastmod>2008-11-20T21:46:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 373: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 373: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/19/letre-et-levenement/</loc>
 		<lastmod>2008-11-20T15:12:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 367: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 367: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/19/what-we-are-taught/</loc>
 		<lastmod>2008-11-20T02:07:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 363: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 363: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/19/noncognitivists-against-the-first-blush-infantile-thoughts/</loc>
 		<lastmod>2008-11-19T23:08:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 359: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 359: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/18/quasi-set-theoretic-approach-to-the-n-fallacy/</loc>
 		<lastmod>2008-11-18T22:33:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 357: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 357: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/18/moral-adages-and-analyticity/</loc>
 		<lastmod>2008-11-18T22:00:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 321: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 321: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/15/of-manifold-discourse/</loc>
 		<lastmod>2008-11-18T16:37:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 348: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 348: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/16/categorical-imperative-as-epistemic-modal/</loc>
 		<lastmod>2008-11-16T21:22:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 344: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 344: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/15/the-skeptic-against-coherence/</loc>
 		<lastmod>2008-11-15T21:19:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 330: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 330: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/15/your-cat-is-a-robot/</loc>
 		<lastmod>2008-11-15T20:25:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 335: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 335: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/15/abortion-and-the-convenience-argument/</loc>
 		<lastmod>2008-11-15T19:58:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 333: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 333: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/15/happy-judges-haplessly/</loc>
 		<lastmod>2008-11-15T19:41:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 315: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 315: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/14/necessary-pompousteriori/</loc>
 		<lastmod>2008-11-14T20:19:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 312: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 312: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/13/the-nader-dilemma-sam-or-tom/</loc>
 		<lastmod>2008-11-14T01:59:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 310: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 310: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/11/quantifying-over-virtues/</loc>
 		<lastmod>2008-11-12T02:21:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 309: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 309: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/09/galitarianism-as-a-revolt-against-nature/</loc>
 		<lastmod>2008-11-11T01:12:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 308: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 308: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/08/intentionality-and-the-inanimate/</loc>
 		<lastmod>2008-11-08T23:15:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 307: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 307: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/05/idea-how-to-say-things-with-actions/</loc>
 		<lastmod>2008-11-06T08:08:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 306: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 306: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/05/those-sayings-pt-1/</loc>
 		<lastmod>2008-11-06T00:45:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 305: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 305: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/03/counterargument-to-anti-fair-trade-argument-1/</loc>
 		<lastmod>2008-11-03T07:28:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 304: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 304: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/11/02/r-a-d/</loc>
 		<lastmod>2008-11-03T05:23:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 301: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 301: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/10/31/street-corner-counterexamples/</loc>
 		<lastmod>2008-11-02T04:03:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 302: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 302: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/10/31/questions-to-fair-trade/</loc>
 		<lastmod>2008-11-01T20:22:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 296: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 296: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/09/08/of-symbolothology/</loc>
 		<lastmod>2008-09-08T06:55:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 295: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 295: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/09/07/antisyn/</loc>
 		<lastmod>2008-09-08T01:41:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 293: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 293: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/09/07/runes-on-radio/</loc>
 		<lastmod>2008-09-07T10:41:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 292: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 292: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/09/07/292/</loc>
 		<lastmod>2008-09-07T09:30:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 291: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 291: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/08/21/a-submerged-self-refutation/</loc>
 		<lastmod>2008-08-21T08:48:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 288: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 288: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/08/04/dirty-version-of-a-critique-on-modo-onto-arguments/</loc>
 		<lastmod>2008-08-12T08:02:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 289: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 289: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/08/04/elements/</loc>
 		<lastmod>2008-08-04T19:51:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 287: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 287: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/07/30/use-your-inside-roar/</loc>
 		<lastmod>2008-07-30T06:59:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 286: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 286: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/07/17/prayer-in-philosophy/</loc>
 		<lastmod>2008-07-17T08:18:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 285: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 285: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/07/14/from-landlord-to-lame/</loc>
 		<lastmod>2008-07-15T05:12:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 275: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 275: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/05/24/275/</loc>
 		<lastmod>2008-07-09T18:41:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 284: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 284: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/07/04/in-wierding-that-weaves/</loc>
 		<lastmod>2008-07-04T14:53:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 278: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 278: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/06/07/the-frighting-drake/</loc>
 		<lastmod>2008-07-01T22:30:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 282: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 282: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/06/19/thoughts-on-causation/</loc>
 		<lastmod>2008-07-01T22:29:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 283: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 283: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/06/22/somewhere-near-denton/</loc>
 		<lastmod>2008-06-23T02:51:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 281: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 281: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/06/13/notes-on-use-and-coherence/</loc>
 		<lastmod>2008-06-19T03:26:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 280: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 280: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/06/10/god-talk/</loc>
 		<lastmod>2008-06-12T19:07:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 279: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 279: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/06/09/darks/</loc>
 		<lastmod>2008-06-09T19:38:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 277: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 277: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/05/27/some-words-on-moral-relativism-and-absolutism/</loc>
 		<lastmod>2008-05-28T14:26:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 274: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 274: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/05/20/3/</loc>
 		<lastmod>2008-05-22T16:16:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 273: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 273: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/05/20/survey-of-the-argument-from-presupposition-of-composition/</loc>
 		<lastmod>2008-05-21T01:45:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 272: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 272: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/05/19/ribot-says-things/</loc>
 		<lastmod>2008-05-19T08:29:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 271: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 271: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/05/18/trenchant-windows/</loc>
 		<lastmod>2008-05-19T02:46:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 267: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 267: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/30/against-the-golden-rule/</loc>
 		<lastmod>2008-05-12T02:18:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 269: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 269: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/05/04/attributive-referential-distinction-qua-gettier/</loc>
 		<lastmod>2008-05-04T19:42:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 268: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 268: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/30/works-idealism-works/</loc>
 		<lastmod>2008-05-01T02:32:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 259: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 259: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/23/the-myth-of-a-nations-morality/</loc>
 		<lastmod>2008-04-29T20:59:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 264: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 264: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/27/misanalogy-agnoiology/</loc>
 		<lastmod>2008-04-29T17:26:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 261: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 261: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/26/moral-relativism-and-toleration/</loc>
 		<lastmod>2008-04-29T14:32:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 253: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 253: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/22/time-times-time/</loc>
 		<lastmod>2008-04-29T04:17:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 247: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 247: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/14/fotahsuffy/</loc>
 		<lastmod>2008-04-27T22:01:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 196: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 196: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/20/natura-naturans-sive/</loc>
 		<lastmod>2008-04-27T22:01:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 160: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 160: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/27/we-love-them/</loc>
 		<lastmod>2008-04-27T22:00:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 254: Comments: 3 of 50 = 0.1 points -->
+<!-- Debug: Priority report of postID 254: Comments: 3 of 54 = 0.1 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/22/ethics-as-a-linguistic-dilemma/</loc>
 		<lastmod>2008-04-22T18:00:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 252: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 252: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/21/is-consciousness-possible/</loc>
 		<lastmod>2008-04-21T17:20:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 251: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 251: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/20/gettier-yet-again/</loc>
 		<lastmod>2008-04-21T03:13:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 194: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 194: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/18/gettiers-noncounters-perhaps/</loc>
 		<lastmod>2008-04-20T18:55:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 249: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 249: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/18/gettiers-gender/</loc>
 		<lastmod>2008-04-20T18:53:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 250: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 250: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/20/venerability/</loc>
 		<lastmod>2008-04-20T15:50:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 248: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 248: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/18/gettier-revisited/</loc>
 		<lastmod>2008-04-18T10:41:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 246: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 246: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/11/game-show-ethics/</loc>
 		<lastmod>2008-04-12T00:07:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 245: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 245: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/10/n1/</loc>
 		<lastmod>2008-04-11T01:23:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 240: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 240: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/06/feline-creeps/</loc>
 		<lastmod>2008-04-10T23:44:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 241: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 241: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/07/humean-skepticism-and-logic/</loc>
 		<lastmod>2008-04-10T23:26:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 244: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 244: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/09/society-a-spinozistic-dilemma/</loc>
 		<lastmod>2008-04-10T02:59:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 243: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 243: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/08/2/</loc>
 		<lastmod>2008-04-09T04:13:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 239: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 239: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/06/realistic-fair-trade/</loc>
 		<lastmod>2008-04-07T01:14:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 238: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 238: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/06/what-religion-does-not/</loc>
 		<lastmod>2008-04-07T00:30:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 237: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 237: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/04/05/veg-arg-1/</loc>
 		<lastmod>2008-04-05T16:35:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 33: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 33: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/06/watch-part-three-of-a-brief-history-of-disbelief/</loc>
 		<lastmod>2008-04-04T05:48:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 214: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 214: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/26/kantian-inhumanity/</loc>
 		<lastmod>2008-04-02T22:51:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 229: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 229: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/29/rethinking-gettier-case-ii/</loc>
 		<lastmod>2008-03-31T01:49:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 228: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 228: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/29/proverbs/</loc>
 		<lastmod>2008-03-29T09:15:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 152: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 152: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/24/their-opinion/</loc>
 		<lastmod>2008-03-29T08:44:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 166: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 166: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/01/absurdity-threshold/</loc>
 		<lastmod>2008-03-29T08:40:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 174: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 174: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/08/inoculators-lament/</loc>
 		<lastmod>2008-03-29T08:37:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 219: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 219: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/28/principle-of-sufficient-reason/</loc>
 		<lastmod>2008-03-28T14:05:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 216: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 216: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/26/1/</loc>
 		<lastmod>2008-03-28T13:47:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 217: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 217: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/26/term-play/</loc>
 		<lastmod>2008-03-26T23:52:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 213: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 213: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/26/on-moral-philosophy/</loc>
 		<lastmod>2008-03-26T09:10:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 211: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 211: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/25/and-death-and-death/</loc>
 		<lastmod>2008-03-26T06:18:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 169: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 169: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/03/french-nudes/</loc>
 		<lastmod>2008-03-26T05:23:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 205: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 205: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/23/some-words-on-infinite-ethics-and-mathematics/</loc>
 		<lastmod>2008-03-24T17:53:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 74: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 74: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/10/22/wanking-off-wittgenstein-circa-tlp/</loc>
 		<lastmod>2008-03-24T12:52:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 201: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 201: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/21/a-proposition-is-a-queer-thing/</loc>
 		<lastmod>2008-03-23T23:29:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 202: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 202: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/21/meta-ethical-relativism-and-power/</loc>
 		<lastmod>2008-03-23T22:12:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 171: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 171: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/03/supernatural-beings-are-never-posited/</loc>
 		<lastmod>2008-03-22T18:05:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 199: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 199: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/20/death-of-mind/</loc>
 		<lastmod>2008-03-21T19:27:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 193: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 193: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/17/leibniz-was-a-douchebag/</loc>
 		<lastmod>2008-03-20T19:52:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 192: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 192: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/15/motion-movement/</loc>
 		<lastmod>2008-03-16T04:28:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 186: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 186: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/12/party-politicks/</loc>
 		<lastmod>2008-03-12T06:32:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 176: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 176: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/10/old-webs-for-code-monkey/</loc>
 		<lastmod>2008-03-12T02:43:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 172: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 172: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/04/metanarratives-earthworms/</loc>
 		<lastmod>2008-03-05T03:26:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 167: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 167: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/02/of-the-translation-of-scripture/</loc>
 		<lastmod>2008-03-03T00:21:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 164: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 164: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/01/bomb-bomb-bomb-iran/</loc>
 		<lastmod>2008-03-02T20:07:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 163: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 163: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/03/01/whole-damn-book/</loc>
 		<lastmod>2008-03-01T06:16:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 162: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 162: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/29/quotes-on-candidates/</loc>
 		<lastmod>2008-03-01T01:26:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 157: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 157: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/27/pragmatism-as-a-study-in-beauty/</loc>
 		<lastmod>2008-02-29T23:51:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 158: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 158: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/27/impressive-definitions/</loc>
 		<lastmod>2008-02-28T05:22:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 151: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 151: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/24/initiation-to-power/</loc>
 		<lastmod>2008-02-27T06:34:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 155: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 155: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/26/slow-reading/</loc>
 		<lastmod>2008-02-26T18:45:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 150: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 150: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/24/looking-for-spinoza-starting/</loc>
 		<lastmod>2008-02-26T05:14:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 153: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 153: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/24/power-from-the-few-to-the-many/</loc>
 		<lastmod>2008-02-25T04:14:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 60: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 60: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/28/why-philosophy/</loc>
 		<lastmod>2008-02-25T03:35:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 145: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 145: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/22/pragmatism-empiricism/</loc>
 		<lastmod>2008-02-24T23:45:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 146: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 146: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/22/the-national-initiative/</loc>
 		<lastmod>2008-02-24T13:53:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 149: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 149: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/24/the-autosavior/</loc>
 		<lastmod>2008-02-24T13:47:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 147: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 147: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/22/obama-corp/</loc>
 		<lastmod>2008-02-22T22:26:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 144: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 144: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/20/the-lie/</loc>
 		<lastmod>2008-02-20T19:38:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 142: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 142: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/17/eternity/</loc>
 		<lastmod>2008-02-20T18:36:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 143: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 143: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/19/raa/</loc>
 		<lastmod>2008-02-20T06:28:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 141: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 141: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/16/command-as-proposition/</loc>
 		<lastmod>2008-02-16T18:51:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 139: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 139: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/16/the-stoic-game/</loc>
 		<lastmod>2008-02-16T18:31:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 112: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 112: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/26/misreading-spinoza/</loc>
 		<lastmod>2008-02-15T19:25:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 138: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 138: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/15/the-universe/</loc>
 		<lastmod>2008-02-15T18:30:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 131: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 131: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/02/07/consummation-of-church-and-state/</loc>
 		<lastmod>2008-02-08T01:39:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 115: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 115: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/27/assembling/</loc>
 		<lastmod>2008-02-04T08:24:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 114: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 114: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/26/multiplicity-of-substances-or-monads/</loc>
 		<lastmod>2008-02-02T06:42:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 111: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 111: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/25/proposition-5-of-ethics/</loc>
 		<lastmod>2008-01-27T00:24:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 110: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 110: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/25/metaphysical-individualism/</loc>
 		<lastmod>2008-01-26T05:23:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 109: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 109: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/12/the-javascript-programming-language/</loc>
 		<lastmod>2008-01-13T04:07:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 105: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 105: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/08/i-dont-believe-in-atheists/</loc>
 		<lastmod>2008-01-12T04:28:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 107: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 107: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/10/tension-as-opposed-to-tension/</loc>
 		<lastmod>2008-01-10T20:14:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 102: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 102: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/04/veggg/</loc>
 		<lastmod>2008-01-04T12:16:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 101: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 101: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/01/the-upright-philosopher/</loc>
 		<lastmod>2008-01-01T21:00:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 97: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 97: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/12/25/final-word-on-definition/</loc>
 		<lastmod>2007-12-25T19:22:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 85: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 85: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/11/13/intelligible-propositions-and-their-relation-to-infants/</loc>
 		<lastmod>2007-12-24T07:38:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 95: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 95: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/12/22/absolute-truth-god/</loc>
 		<lastmod>2007-12-22T15:32:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 93: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 93: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/12/18/something-i-once-said/</loc>
 		<lastmod>2007-12-19T19:51:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 92: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 92: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/12/12/a-redundancy-worth-its-being-said-yet-again/</loc>
 		<lastmod>2007-12-18T17:58:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 87: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 87: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/12/03/the-church-will-never-outlive-him/</loc>
 		<lastmod>2007-12-03T18:55:29+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 34: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 34: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/07/living-an-intellectual-love-of-god/</loc>
 		<lastmod>2007-12-03T18:53:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 36: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 36: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/08/living-an-intellectual-love-of-god-2/</loc>
 		<lastmod>2007-12-03T18:53:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 14: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 14: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/03/refutation-of-the-problem-of-evil-pt-1/</loc>
 		<lastmod>2007-12-03T18:18:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 78: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 78: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/10/27/78/</loc>
 		<lastmod>2007-11-22T14:56:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 84: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 84: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/11/13/atheists-free-will-or-determinism/</loc>
 		<lastmod>2007-11-13T08:00:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 73: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 73: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/10/21/mere-questionable-assumption/</loc>
 		<lastmod>2007-10-22T03:14:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 72: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 72: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/10/19/mysterious-pangramz/</loc>
 		<lastmod>2007-10-19T12:14:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 66: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 66: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/10/10/on-apophatic-theology/</loc>
 		<lastmod>2007-10-11T02:02:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 65: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 65: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/10/10/philosophers-scientists/</loc>
 		<lastmod>2007-10-11T01:10:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 63: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 63: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/10/08/a-reflection-on-the-content-of-atheism/</loc>
 		<lastmod>2007-10-09T05:26:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 61: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 61: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/30/befriending-the-nihilistic-tendency/</loc>
 		<lastmod>2007-10-08T20:03:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 62: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 62: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/10/06/childish-president/</loc>
 		<lastmod>2007-10-08T17:20:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 58: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 58: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/18/being-a-spinozist/</loc>
 		<lastmod>2007-10-07T23:44:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 59: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 59: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/22/refutation-of-the-problem-of-evil-pt-2/</loc>
 		<lastmod>2007-09-26T05:22:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 57: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 57: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/14/definition-of-casuistry/</loc>
 		<lastmod>2007-09-15T04:17:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 56: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 56: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/14/colors/</loc>
 		<lastmod>2007-09-14T19:23:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 18: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 18: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/04/a-step-towards-theocracy/</loc>
 		<lastmod>2007-09-11T13:09:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 49: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 49: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/05/first-principles/</loc>
 		<lastmod>2007-09-11T13:07:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 50: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 50: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/05/playing-for-perpetual-war/</loc>
 		<lastmod>2007-09-08T23:43:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 53: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 53: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/07/thought-fall/</loc>
 		<lastmod>2007-09-08T04:25:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 51: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 51: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/05/hill-country-history/</loc>
 		<lastmod>2007-09-05T23:52:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 47: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 47: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/03/weekly-literature/</loc>
 		<lastmod>2007-09-03T19:29:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 16: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 16: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/03/jonathan-millers-brief-history-of-disbelief-2005/</loc>
 		<lastmod>2007-09-02T16:08:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 46: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 46: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/09/02/a-mothers-doubt/</loc>
 		<lastmod>2007-09-02T08:44:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 22: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 22: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/07/fair-trade-2006-07-flo-annual-report/</loc>
 		<lastmod>2007-08-22T01:51:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 45: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 45: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/16/rosa-i-mississippi-you-2005/</loc>
 		<lastmod>2007-08-17T02:30:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 39: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 39: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/11/the-skeptics-society/</loc>
 		<lastmod>2007-08-12T20:05:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 32: Comments: 1 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 32: Comments: 1 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/05/watch-part-two-of-a-brief-history-of-disbelief/</loc>
 		<lastmod>2007-08-06T22:41:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 4: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 4: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/02/viva-la-wal-mart-elementary/</loc>
 		<lastmod>2007-08-05T22:59:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 28: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 28: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/05/tracer-amcs-flux-and-form-2004/</loc>
 		<lastmod>2007-08-05T22:01:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 8: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 8: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/02/actarus-self-titled/</loc>
 		<lastmod>2007-08-05T16:08:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 19: Comments: 2 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 19: Comments: 2 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/04/the-fourth-of-july-dans-aout/</loc>
 		<lastmod>2007-08-05T07:58:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 9: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 9: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/03/the-war-on-ears-pt-1/</loc>
 		<lastmod>2007-08-03T17:37:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 5: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 5: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/02/cheval-de-frise-self-titled/</loc>
 		<lastmod>2007-08-03T17:07:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 6: Comments: 0 of 50 = 0 points -->
+<!-- Debug: Priority report of postID 6: Comments: 0 of 54 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2007/08/02/65daysofstatic-the-destruction-of-small-ideas/</loc>
 		<lastmod>2007-08-03T17:06:55+00:00</lastmod>

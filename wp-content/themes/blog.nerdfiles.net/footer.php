@@ -1,5 +1,4 @@
 
-
 <!-- == 
   
   footer.php 
@@ -27,6 +26,8 @@
 
 <script src="http://apis.google.com/js/plusone.js"></script>
 <script src="http://platform.twitter.com/widgets.js"></script>
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/sopa/1.0/stopcensorship.js"></script>
 
 </body><!-- end transmission -->
 </html>
