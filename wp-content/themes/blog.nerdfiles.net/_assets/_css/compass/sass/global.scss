@@ -13,9 +13,8 @@
 
 body {}
 
-body {  overflow-y: scroll }
+body { }
 ::-webkit-scrollbar-track-piece {
-  background-color: transparent;
   -webkit-border-radius: 0; }
 ::-webkit-scrollbar {
   width: 8px;
