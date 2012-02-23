@@ -1116,7 +1116,7 @@ blockquote:before {
   left: -0.1em;
   top: -0.2em;
   font-size: 28px;
-  opacity: .4;
+  opacity: .25;
 }
 
 /* line 945, ../sass/global.scss */
