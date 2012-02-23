@@ -15,7 +15,7 @@ body {}
 
 body {  overflow-y: scroll }
 ::-webkit-scrollbar-track-piece {
-  background-color: #fff;
+  background-color: transparent;
   -webkit-border-radius: 0; }
 ::-webkit-scrollbar {
   width: 8px;

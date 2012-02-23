@@ -12,7 +12,7 @@ body {
 
 /* line 17, ../sass/global.scss */
 ::-webkit-scrollbar-track-piece {
-  background-color: #fff;
+  background-color: transparent;
   -webkit-border-radius: 0;
 }
 
