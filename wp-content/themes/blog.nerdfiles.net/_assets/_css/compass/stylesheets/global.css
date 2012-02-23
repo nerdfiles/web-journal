@@ -1104,58 +1104,66 @@ body.page div.page .entry-content {
 
 /* line 943, ../sass/global.scss */
 blockquote {
-  margin: 1.5em 0;
+  margin: 1.5em 1em;
+  padding: 1em;
 }
 
 /* line 944, ../sass/global.scss */
+blockquote:before {
+  content: "❝";
+}
+
+/* line 945, ../sass/global.scss */
 blockquote cite {
   display: block;
   text-align: right;
   font-sty1le: italic;
   font-size: 1.3em;
   opacity: .7;
+  padding: 0 1em;
+  margin: 0 1em;
 }
 
-/* line 945, ../sass/global.scss */
+/* line 946, ../sass/global.scss */
 blockquote em {
   display: inline;
 }
 
-/* line 948, ../sass/global.scss */
+/* line 949, ../sass/global.scss */
 body div.entry-meta {
   color: #777;
   line-height: 2.3;
   margin: 30px 30px;
 }
-/* line 950, ../sass/global.scss */
+/* line 951, ../sass/global.scss */
 body div.entry-meta a {
   text-decoration: none;
   color: #777;
   border-bottom: 1px #CCC solid;
 }
-/* line 960, ../sass/global.scss */
+/* line 961, ../sass/global.scss */
 body.search .hentry {
   margin-bottom: 40px;
 }
-/* line 966, ../sass/global.scss */
+/* line 967, ../sass/global.scss */
 body.home #home section article {
   margin-bottom: 40px;
 }
-/* line 970, ../sass/global.scss */
+/* line 971, ../sass/global.scss */
 body.home div.entry-meta {
   margin: 0 0;
 }
-/* line 973, ../sass/global.scss */
+/* line 974, ../sass/global.scss */
 body.search div.entry-meta {
   margin: 0 0;
 }
-/* line 977, ../sass/global.scss */
+/* line 978, ../sass/global.scss */
 body.single div.entry-meta {
   line-height: 2.3;
   margin: 30px 30px 50px;
 }
 
-/* line 981, ../sass/global.scss */
+/* line 982, ../sass/global.scss */
 .mouse-thinkers-beware {
   opacity: .75;
   width: 42%;
@@ -1166,66 +1174,66 @@ body.single div.entry-meta {
   text-align: right;
 }
 
-/* line 992, ../sass/global.scss */
+/* line 993, ../sass/global.scss */
 .sticky .mouse-thinkers-beware {
   display: none;
 }
 
-/* line 998, ../sass/global.scss */
+/* line 999, ../sass/global.scss */
 body.archive .page-title {
   text-align: center;
   color: #e0e0e0;
   font-size: 30px;
 }
 
-/* line 1008, ../sass/global.scss */
+/* line 1009, ../sass/global.scss */
 #site-breadcrumb {
   margin-top: 15px;
   text-align: center;
   color: #e0e0e0;
 }
 
-/* line 1009, ../sass/global.scss */
+/* line 1010, ../sass/global.scss */
 #site-breadcrumb ul {
   margin: 0;
   list-style: none;
 }
 
-/* line 1010, ../sass/global.scss */
+/* line 1011, ../sass/global.scss */
 #site-breadcrumb li {
   display: inline;
   margin: 0 0 0 5px;
 }
 
-/* line 1011, ../sass/global.scss */
+/* line 1012, ../sass/global.scss */
 #site-breadcrumb a {
   text-decoration: none;
 }
 
-/* line 1016, ../sass/global.scss */
+/* line 1017, ../sass/global.scss */
 #site-breadcrumb ul a:hover {
   text-decoration: underline;
 }
-/* line 1018, ../sass/global.scss */
+/* line 1019, ../sass/global.scss */
 #site-breadcrumb ul li {
   margin: 0;
 }
-/* line 1021, ../sass/global.scss */
+/* line 1022, ../sass/global.scss */
 #site-breadcrumb ul li:first-child:before {
   content: "";
 }
-/* line 1024, ../sass/global.scss */
+/* line 1025, ../sass/global.scss */
 #site-breadcrumb ul li:last-child:after {
   color: #999;
   content: " /";
 }
-/* line 1027, ../sass/global.scss */
+/* line 1028, ../sass/global.scss */
 #site-breadcrumb ul li:before {
   color: #999;
   content: "/ ";
 }
 
-/* line 1031, ../sass/global.scss */
+/* line 1032, ../sass/global.scss */
 .call-access-menu {
   background: #F7F7F7 !important;
   padding: 3px 6px 1px;
@@ -1242,7 +1250,7 @@ body.archive .page-title {
 
 @media screen and (max-device-width: 480px) {
   /* iphone only */
-  /* line 1046, ../sass/global.scss */
+  /* line 1047, ../sass/global.scss */
   #footer {
     position: relative;
     bottom: 0;
@@ -1252,30 +1260,30 @@ body.archive .page-title {
   }
 }
 @media print {
-  /* line 1057, ../sass/global.scss */
+  /* line 1058, ../sass/global.scss */
   body div#blog-description, body div.sidebar, body div.access, body div#globalnav, body span.archive-meta, body div.cat-meta, body div#footer, body div.navigation, body div.comments form#commentform, body h3#respond {
     display: none;
   }
 
-  /* line 1058, ../sass/global.scss */
+  /* line 1059, ../sass/global.scss */
   body div#wrapper div#header {
     background-color: #fff;
     background-image: none;
     color: #000;
   }
 
-  /* line 1059, ../sass/global.scss */
+  /* line 1060, ../sass/global.scss */
   body div#wrapper div#header h1 a, html body div#wrapper div#header h1 a:link, html body div#wrapper div#header h1 a:visited, html body div#wrapper div#header h1 a:hover, html body div#wrapper div#header h1 a:active {
     color: #000;
   }
 
-  /* line 1060, ../sass/global.scss */
+  /* line 1061, ../sass/global.scss */
   body.single div.entry-meta {
     line-height: 200%;
     margin: 0 20%;
   }
 
-  /* line 1061, ../sass/global.scss */
+  /* line 1062, ../sass/global.scss */
   body.home div.entry-meta, body.archive div.entry-meta, body.search div.entry-meta {
     text-align: center;
     margin: 0 5%;
