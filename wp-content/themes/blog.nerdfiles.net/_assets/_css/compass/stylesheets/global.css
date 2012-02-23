@@ -1113,8 +1113,8 @@ blockquote {
 blockquote:before {
   content: "❝";
   position: absolute;
-  left: -0.7em;
-  top: -0.5em;
+  left: -0.1em;
+  top: -0.2em;
   font-size: 28px;
   opacity: .4;
 }
