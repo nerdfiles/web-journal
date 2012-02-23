@@ -1113,9 +1113,10 @@ blockquote {
 blockquote:before {
   content: "❝";
   position: absolute;
-  left: -10px;
-  font-size: 24px;
-  opacity: .6;
+  left: -0.7em;
+  top: -0.5em;
+  font-size: 28px;
+  opacity: .4;
 }
 
 /* line 945, ../sass/global.scss */
