@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://webjournal.nerdfiles.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.3.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.6" -->
-<!-- generated-on="February 23, 2012 4:39 pm" -->
+<!-- generated-on="February 24, 2012 3:31 pm" -->
 <!-- Debug: Total comment count: 55 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://webjournal.nerdfiles.net/</loc>
@@ -11,7 +11,7 @@
 <!-- Debug: Start Postings -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/quotes/</loc>
-		<lastmod>2012-02-23T16:39:43+00:00</lastmod>
+		<lastmod>2012-02-24T15:30:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
