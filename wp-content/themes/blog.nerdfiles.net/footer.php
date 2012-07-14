@@ -8,7 +8,7 @@
 
 
 <div id="footer">
-<os.path.join(PROJECT_ROOT, "_themes", THEME, "_assets")div class="footer-inner">
+<div class="footer-inner">
 <p>Copyright &copy; 2003-2011. Rights &amp;c. <a href="http://nerdfiles.net">nerdfiles.net</a> | Back to <a href="#top">top</a></p>
 <div class="googleplus">
 
