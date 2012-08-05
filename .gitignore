@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Compiled source #
 ###################
 *.com
@@ -92,9 +91,18 @@ sitemap.xml.gz
 readme.html
 license.txt
 .htaccess
+.htaccess-bk
 xmlrpc.php
 
 wp-*
-!wp-content/
+.htaccess
 *.swp
 *.swo
+advanced-cache.php
+db.php
+object-cache.php
+w3-total-cache-config.php
+settings.py
+*.pyc
+wp-content/w3tc/
+wp-content/w3tc/*

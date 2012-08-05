@@ -79,7 +79,7 @@ function javascript_res() {
                   // We're fucked!
               }
               
-              Modernizr.load('<?php bloginfo('url'); ?>/wp-includes/js/l10n.js?ver=20101110');
+              //Modernizr.load('<?php bloginfo('url'); ?>/wp-includes/js/l10n.js?ver=20101110');
               Modernizr.load('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
               Modernizr.load('<?php bloginfo('url'); ?>/wp-content/themes/blog.nerdfiles.net/_assets/_js-lib/jquery.waypoints/waypoints.min.js');
               Modernizr.load('<?php bloginfo('url'); ?>/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js');
