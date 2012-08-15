@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://webjournal.nerdfiles.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
-<!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.7" -->
-<!-- generated-on="August 4, 2012 2:44 am" -->
+<!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
+<!-- generated-on="August 15, 2012 12:29 am" -->
 <!-- Debug: Total comment count: 58 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://webjournal.nerdfiles.net/</loc>
@@ -9,6 +9,34 @@
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
+<!-- Debug: Priority report of postID 3637: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/15/cleanup-test-one-more-time/</loc>
+		<lastmod>2012-08-15T00:28:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3623: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/13/newstruth/</loc>
+		<lastmod>2012-08-13T22:38:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 102: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2008/01/04/veggg/</loc>
+		<lastmod>2012-08-11T01:26:17+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3614: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/05/pick-up-light/</loc>
+		<lastmod>2012-08-05T15:13:26+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
 <!-- Debug: Priority report of postID 3506: Comments: 0 of 58 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2012/07/17/quantum-physics-in-neuroscience/</loc>
@@ -3133,13 +3161,6 @@
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2008/01/10/tension-as-opposed-to-tension/</loc>
 		<lastmod>2008-01-10T20:14:16+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 102: Comments: 0 of 58 = 0 points -->
-	<url>
-		<loc>http://webjournal.nerdfiles.net/2008/01/04/veggg/</loc>
-		<lastmod>2008-01-04T12:16:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
