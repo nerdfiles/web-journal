@@ -1,5 +1,6 @@
 wp-*
 .htaccess
+.htaccess-bk
 *.swp
 *.swo
 advanced-cache.php
@@ -8,3 +9,5 @@ object-cache.php
 w3-total-cache-config.php
 settings.py
 *.pyc
+wp-content/w3tc/
+wp-content/w3tc/*
