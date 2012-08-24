@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://webjournal.nerdfiles.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="August 15, 2012 12:29 am" -->
+<!-- generated-on="August 24, 2012 1:51 am" -->
 <!-- Debug: Total comment count: 58 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://webjournal.nerdfiles.net/</loc>
@@ -9,10 +9,72 @@
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
-<!-- Debug: Priority report of postID 3637: Comments: 0 of 58 = 0 points -->
+<!-- Debug: Priority report of postID 3670: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/15/cleanup-test-one-more-time/</loc>
-		<lastmod>2012-08-15T00:28:54+00:00</lastmod>
+		<loc>http://webjournal.nerdfiles.net/2012/08/24/a/</loc>
+		<lastmod>2012-08-24T01:51:03+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3663: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/19/social-momentumologisticalolology/</loc>
+		<lastmod>2012-08-19T05:15:40+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://webjournal.nerdfiles.net/recipes/</loc>
+		<lastmod>2012-08-19T04:46:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3654: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/15/cleanup/</loc>
+		<lastmod>2012-08-15T21:33:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3652: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/15/added-perceptual-system-as-section-as-a-degrading-type/</loc>
+		<lastmod>2012-08-15T21:21:16+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3650: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/15/merge-branch-dev-2/</loc>
+		<lastmod>2012-08-15T21:21:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3648: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/15/added-sections/</loc>
+		<lastmod>2012-08-15T21:21:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3646: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/15/merge-branch-dev/</loc>
+		<lastmod>2012-08-15T21:21:10+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3644: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/15/cleanup-iggy/</loc>
+		<lastmod>2012-08-15T21:20:58+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3642: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/15/making-porn-compulsory/</loc>
+		<lastmod>2012-08-15T07:57:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
@@ -1021,12 +1083,6 @@
 	<url>
 		<loc>http://webjournal.nerdfiles.net/content-is-king/</loc>
 		<lastmod>2011-08-01T20:05:16+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://webjournal.nerdfiles.net/recipes/</loc>
-		<lastmod>2011-08-01T18:30:55+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
