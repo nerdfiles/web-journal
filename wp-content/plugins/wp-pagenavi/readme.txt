@@ -1,9 +1,11 @@
 === WP-PageNavi ===
 Contributors: GamerZ, scribu
 Tags: navigation, pagination, paging, pages
-Requires at least: 3.1
-Tested up to: 3.3
-Stable tag: 2.82
+Requires at least: 3.2
+Tested up to: 3.4
+Stable tag: 2.83
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Adds a more advanced paging navigation interface.
 
@@ -88,9 +90,14 @@ You can do that like so:
 
 == Changelog ==
 
+= 2.83 =
+* added 'echo' parameter
+* added Estonian and Bengali translations
+* updated scbFramework
+
 = 2.82 =
 * fixed prev/next links not appearing in some conditions
-* added Hebrew, Georgian and Azeri translations
+* added Hebrew, Georgian and Azerbaijani translations
 * updated scbFramework
 
 = 2.81 =
