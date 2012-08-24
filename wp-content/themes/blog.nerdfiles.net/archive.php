@@ -26,10 +26,7 @@
 
   <h2 class="page-title page-title-author"><?php _e('author:', 'webjournal') ?> <span class="page-subtitle"><?php webjournal_author_hCard() ?></span></h2>
   <div class="author-callout">
-    <ul>
-      <?php if ( !(''== $authordata->user_description) ) : echo '<li>' . apply_filters('archive_meta', $authordata->user_description) . '</li>'; endif; ?>
-      <?php if ( !(''== $authordata->user_url) ) : echo '<li>' . apply_filters('archive_meta', $authordata->user_url) . '</li>'; endif; ?>
-    </ul>
+    <ul><?php if ( !(''== $authordata->user_description) ) : echo '<li>' . apply_filters('archive_meta', $authordata->user_description) . '</li>'; endif; ?><?php if ( !(''== $authordata->user_url) ) : echo '<li>' . apply_filters('archive_meta', $authordata->user_url) . '</li>'; endif; ?></ul>
   </div>
 
 <?php elseif ( is_category() ) : ?>
