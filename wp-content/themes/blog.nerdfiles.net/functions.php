@@ -27,8 +27,9 @@ function list_hooked_functions($tag=false){
 }
 
 //list_hooked_functions('wp_head');
-remove_action('wp_head', 'rsd_link');
+//remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
+remove_action( 'wp_head', 'feed_links', 2 );
 
 function remove_generator() {
 	return '';
