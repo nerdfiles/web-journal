@@ -71,7 +71,7 @@
   title="<?php bloginfo('name') ?> <?php _e('RDF feed', 'webjournal' ) ?>" />
 
 <?php 
-if (is_category()) {
+if (is_category()) :
 $the_cat = get_the_category();
 $category_name = $the_cat[0]->cat_name;
 ?>
