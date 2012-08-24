@@ -1082,7 +1082,7 @@ body.archive {
     overflow: hidden; 
     list-style: none;
     &:empty {
-      border-bottom: none;
+      border-bottom: none !important;
     }
   }
   li { 

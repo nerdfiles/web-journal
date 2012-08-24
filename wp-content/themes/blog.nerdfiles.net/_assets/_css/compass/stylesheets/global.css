@@ -1317,7 +1317,7 @@ body.archive .page-title {
 }
 /* line 1084, ../sass/global.scss */
 .author-callout ul:empty {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 /* line 1088, ../sass/global.scss */
 .author-callout li {
