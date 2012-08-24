@@ -33,7 +33,7 @@
 <?php elseif ( is_search() ) : ?>
     <?php _e('Search results', 'webjournal') ?>
 <?php elseif ( is_author() ) : ?>
-<?php _e('Author', 'webjournal') ?> <?echo $authordata->user_display_name; ?>
+<?php _e('Author', 'webjournal') ?> <?php the_author_meta('user_display_name'); ?>
 <?php else : ?>
     <?php the_title() ?>
 <?php endif ?>
