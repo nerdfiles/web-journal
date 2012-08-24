@@ -28,7 +28,7 @@
   <div class="author-callout">
     <ul>
       <li><?php if ( !(''== $authordata->user_description) ) : echo apply_filters('archive_meta', $authordata->user_description); endif; ?></li>
-      <li><?php if ( !(''== $authordata->user_url) ) : echo apply_filter('archive_meta', $authordata->user_url); endif; ?></li>
+      <li><?php if ( !(''== $authordata->user_url) ) : echo apply_filters('archive_meta', $authordata->user_url); endif; ?></li>
     </ul>
   </div>
 
