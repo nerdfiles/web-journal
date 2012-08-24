@@ -187,7 +187,7 @@ endwhile;
 <?php wp_reset_query(); ?>
 <?php $my_query = new WP_Query('posts_per_page=1&orderby=date&order=DESC'); ?>
 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-<?php if (strpos(get_the_title(), '#wp') { ?>
+<?php if (strpos(get_the_title(), '#wp')) { ?>
 <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
 <?php } else { ?>
 <h2><a href="<?echo $nogithublink; ?>"><?echo $nogithubtitle; ?></a></h2>
