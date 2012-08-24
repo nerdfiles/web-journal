@@ -70,6 +70,19 @@
   href="<?php bloginfo('rdf_url') ?>" 
   title="<?php bloginfo('name') ?> <?php _e('RDF feed', 'webjournal' ) ?>" />
 
+<?php 
+if (is_category()) {
+$the_cat = get_the_category();
+$category_name = $the_cat[0]->cat_name;
+?>
+<link 
+  rel="alternate" 
+  type="application/rdf+xml" 
+  href="<?php bloginfo('rdf_url') ?>" 
+  title="<?php bloginfo('name') ?> | <?echo $category_name; ?> <?php _e('RDF feed', 'webjournal' ) ?>" />  
+
+<?php endif ?>
+
 <!-- Comments Feed -->
 
 <link 
