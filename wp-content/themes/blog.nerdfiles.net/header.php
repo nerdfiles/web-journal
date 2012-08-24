@@ -180,8 +180,8 @@ A weedy florilegium
 </header>
 <?php $nogithub = new WP_Query('cat=-64&posts_per_page=1&orderby=date&order=DESC'); 
 while ($nogithub->have_posts()) : $nogithub->the_post(); 
-$nogithubtitle = $nogithub->get_the_title();
-$nogithublink = $nogithub->get_permalink();
+$nogithubtitle = get_the_title();
+$nogithublink = get_permalink();
 endwhile;
 ?>
 <?php wp_reset_query(); ?>
