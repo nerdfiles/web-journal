@@ -62,7 +62,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
 
-<!-- RDF Feed -->
+<!-- RDF Feeds -->
   
 <link 
   rel="alternate" 
@@ -70,18 +70,17 @@
   href="<?php bloginfo('rdf_url') ?>" 
   title="<?php bloginfo('name') ?> <?php _e('RDF feed', 'webjournal' ) ?>" />
 
-<?php 
-if (is_category()) :
+<?php if (is_category()) :
 $the_cat = get_the_category();
-$category_name = $the_cat[0]->cat_name;
-?>
+$cat_slug = $the_cat[0]->slug; ?>
+
 <link 
   rel="alternate" 
   type="application/rdf+xml" 
-  href="<?php bloginfo('rdf_url') ?>" 
+  href="<?echo get_bloginfo('home_url'); ?>topics/<?echo $cat_slug; ?>/feed/rdf/" 
   title="<?php bloginfo('name') ?> | <?echo $category_name; ?> <?php _e('RDF feed', 'webjournal' ) ?>" />  
 
-<?php endif ?>
+<?php endif; ?>
 
 <!-- Comments Feed -->
 
