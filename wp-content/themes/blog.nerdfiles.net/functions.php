@@ -128,12 +128,12 @@ function webjournal_admin_hCard() {
 // Produces an hCard for post authors
 function webjournal_author_hCard() {
 	global $wpdb, $authordata;
-	echo '<span class="entry-author author vcard"><a class="url fn n" href="' . get_author_link(false, $authordata->ID, $authordata->user_nicename) . '" title="View all posts by ' . $authordata->display_name . '">' . get_the_author() . '</a></span>';
+	echo '<span class="entry-author author vcard"><span class="meta-sep">&#10006;</span> <a class="url fn n" href="' . get_author_link(false, $authordata->ID, $authordata->user_nicename) . '" title="View all posts by ' . $authordata->display_name . '">' . get_the_author() . '</a></span>';
 }
 
 function webjournal_author_link() {
 	global $wpdb, $authordata;
-	echo '<span class="entry-author author vcard"><a class="url fn n" href="' . get_author_link(false, $authordata->ID, $authordata->user_nicename) . '" title="View all posts by ' . $authordata->display_name . '">' . get_the_author() . '</a></span>';
+	echo '<span class="entry-author author vcard"><span class="meta-sep">&#10006;</span> <a class="url fn n" href="' . get_author_link(false, $authordata->ID, $authordata->user_nicename) . '" title="View all posts by ' . $authordata->display_name . '">' . get_the_author() . '</a></span>';
 }
 
 // Produces semantic classes for the body element; Originally from the Sandbox, http://www.plaintxt.org/themes/sandbox/
