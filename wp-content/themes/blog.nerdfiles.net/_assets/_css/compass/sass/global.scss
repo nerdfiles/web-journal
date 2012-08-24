@@ -1080,7 +1080,10 @@ body.archive {
     margin: 30px 0;
     padding-bottom: 15px; 
     overflow: hidden; 
-    list-style: none; 
+    list-style: none;
+    &:empty {
+      border-bottom: none;
+    }
   }
   li { 
     float: left; 
