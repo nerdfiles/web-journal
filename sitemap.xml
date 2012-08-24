@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://webjournal.nerdfiles.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="August 24, 2012 2:00 am" -->
+<!-- generated-on="August 24, 2012 2:33 am" -->
 <!-- Debug: Total comment count: 58 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://webjournal.nerdfiles.net/</loc>
@@ -9,6 +9,20 @@
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
+<!-- Debug: Priority report of postID 3695: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/24/merge-branch-dev-of-github-comnerdfilesweb-journal-into-dev-4/</loc>
+		<lastmod>2012-08-24T02:30:39+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3693: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/24/cleanup-footer-on-home/</loc>
+		<lastmod>2012-08-24T02:30:37+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
 <!-- Debug: Priority report of postID 3673: Comments: 0 of 58 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2012/08/24/ad-dashboard-and-reorder/</loc>
