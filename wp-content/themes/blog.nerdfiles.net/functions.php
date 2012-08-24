@@ -621,6 +621,6 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Readies for translation.
 load_theme_textdomain('webjournal');
 
-add_filter( 'show_admin_bar', '__return_false' );
+// add_filter( 'show_admin_bar', '__return_false' );
 
 ?>
