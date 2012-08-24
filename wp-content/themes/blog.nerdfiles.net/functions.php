@@ -68,7 +68,6 @@ function javascript_res() {
 ?>
 <!-- Scripts -->
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 <script>
   Modernizr.load([
       {
