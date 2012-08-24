@@ -116,10 +116,15 @@ global $post;
 $content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
 $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
 ?>
-<li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
+
 <?php if ( current_user_can('administrator') ) { ?>
+<li>
+  <a href="<?php bloginfo('url'); ?>/wp-admin/">Dashboardly</a>
+</li>
 <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
 <?php } ?>
+
+<li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
 <?php 
 if ( $post->comment_count != 0 ) { ?>
 <!--li><span class="content-access"><a href="#comments" title="Read post comments">Read comments</a></span></li-->
