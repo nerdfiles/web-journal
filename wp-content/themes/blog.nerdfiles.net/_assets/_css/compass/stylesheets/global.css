@@ -1306,26 +1306,30 @@ body.archive .page-title {
 
 /* line 1075, ../sass/global.scss */
 .author-callout ul {
+  opacity: .6;
+  border-top: 1px #e9e9e9 solid;
+  border-bottom: 1px #e9e9e9 solid;
+  padding: 30px 0 0px;
+  margin: 30px 0;
   padding-bottom: 15px;
   overflow: hidden;
   list-style: none;
-  margin: 0;
 }
-/* line 1081, ../sass/global.scss */
+/* line 1085, ../sass/global.scss */
 .author-callout li {
   float: left;
   font-size: 24px;
   margin: 0;
   width: 100%;
 }
-/* line 1087, ../sass/global.scss */
+/* line 1091, ../sass/global.scss */
 .author-callout li:last-child {
   text-align: right;
 }
 
 @media screen and (max-device-width: 480px) {
   /* iphone only */
-  /* line 1094, ../sass/global.scss */
+  /* line 1098, ../sass/global.scss */
   #footer {
     position: relative;
     bottom: 0;
@@ -1335,30 +1339,30 @@ body.archive .page-title {
   }
 }
 @media print {
-  /* line 1105, ../sass/global.scss */
+  /* line 1109, ../sass/global.scss */
   body div#blog-description, body div.sidebar, body div.access, body div#globalnav, body span.archive-meta, body div.cat-meta, body div#footer, body div.navigation, body div.comments form#commentform, body h3#respond {
     display: none;
   }
 
-  /* line 1106, ../sass/global.scss */
+  /* line 1110, ../sass/global.scss */
   body div#wrapper div#header {
     background-color: #fff;
     background-image: none;
     color: #000;
   }
 
-  /* line 1107, ../sass/global.scss */
+  /* line 1111, ../sass/global.scss */
   body div#wrapper div#header h1 a, html body div#wrapper div#header h1 a:link, html body div#wrapper div#header h1 a:visited, html body div#wrapper div#header h1 a:hover, html body div#wrapper div#header h1 a:active {
     color: #000;
   }
 
-  /* line 1108, ../sass/global.scss */
+  /* line 1112, ../sass/global.scss */
   body.single div.entry-meta {
     line-height: 200%;
     margin: 0 20%;
   }
 
-  /* line 1109, ../sass/global.scss */
+  /* line 1113, ../sass/global.scss */
   body.home div.entry-meta, body.archive div.entry-meta, body.search div.entry-meta {
     text-align: center;
     margin: 0 5%;
