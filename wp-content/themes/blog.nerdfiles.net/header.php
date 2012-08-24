@@ -11,7 +11,7 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
 
-<meta name="viewport" content="width=device-width, initial-scale=0.33" />  
+<meta name="viewport" content="width=device-width" />  
 
 <link rel="dns-prefetch" href="//fonts.googleapis.com/" />
 <link rel="dns-prefetch" href="//code.jquery.com/" />
@@ -32,6 +32,8 @@
     <?php _e('Archives', 'webjournal') ?>
 <?php elseif ( is_search() ) : ?>
     <?php _e('Search results', 'webjournal') ?>
+<?php elseif ( is_author() ) : ?>
+<?php _e('Author', 'webjournal') ?> <?echo $authordata->user_display_name; ?>
 <?php else : ?>
     <?php the_title() ?>
 <?php endif ?>
