@@ -77,7 +77,7 @@ $cat_slug = $the_cat[0]->slug; ?>
 <link 
   rel="alternate" 
   type="application/rdf+xml" 
-  href="<?echo get_bloginfo('home_url'); ?>topics/<?echo $cat_slug; ?>/feed/rdf/" 
+  href="<?echo get_bloginfo('url'); ?>topics/<?echo $cat_slug; ?>/feed/rdf/" 
   title="<?php bloginfo('name') ?> | <?echo $category_name; ?> <?php _e('RDF feed', 'webjournal' ) ?>" />  
 
 <?php endif; ?>
