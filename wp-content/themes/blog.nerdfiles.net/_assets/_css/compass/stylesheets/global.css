@@ -1320,7 +1320,7 @@ body.archive .page-title {
 }
 /* line 1087, ../sass/global.scss */
 .author-callout li:last-child {
-  width: auto;
+  text-align: right;
 }
 
 @media screen and (max-device-width: 480px) {
