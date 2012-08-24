@@ -1,6 +1,5 @@
 <?php get_header() ?>
 
-
 <!-- == 
   
   archive.php 
@@ -8,29 +7,50 @@
 == -->
 
 
-
 <div class="hfeed">
 
 <?php the_post() ?>
 <?php if ( is_day() ) : ?>
-<h2 class="page-title page-title-daily"><?php _e('daily:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('l, F Y', 'webjournal')) ?></span></h2>
-<?php elseif ( is_month() ) : ?>
-<h2 class="page-title page-title-monthly"><?php _e('monthly:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('F Y', 'webjournal')) ?></span></h2>
-<?php elseif ( is_year() ) : ?>
-<h2 class="page-title page-title-yearly"><?php _e('yearly:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('Y', 'webjournal')) ?></span></h2>
-<?php elseif ( is_author() ) : ?>
-<h2 class="page-title page-title-author"><?php _e('author:', 'webjournal') ?> <span class="page-subtitle"><?php webjournal_author_hCard() ?></span></h2>
-<div class="archive-meta"><?php if ( !(''== $authordata->user_description) ) : echo apply_filters('archive_meta', $authordata->user_description); endif; ?></div>
-<?php elseif ( is_category() ) : ?>
-<h2 class="page-title"><?php _e('topic:', 'webjournal') ?> <span class="page-subtitle"><?php echo single_cat_title(); ?></span></h2>
-<?php elseif ( is_tag() ) : ?>
-<h2 class="page-title"><span class="archive-meta"><?php _e('Tag Archives:', 'webjournal') ?></span> <span class="page-subtitle"><?php single_tag_title(); ?></span></h2>
-<?php elseif ( isset($_GET['paged']) && !empty($_GET['paged']) ) : ?>
-<h2 class="page-title"><?php _e('archives', 'webjournal') ?> <?php printf(__('%1$s archives', 'webjournal'), wp_specialchars(get_the_title(), 'double') ) ?></h2>
-<?php endif; ?>
-<?php rewind_posts() ?>
 
-<?php while ( have_posts() ) : the_post(); ?>
+  <h2 class="page-title page-title-daily"><?php _e('daily:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('l, F Y', 'webjournal')) ?></span></h2>
+
+<?php elseif ( is_month() ) : ?>
+
+  <h2 class="page-title page-title-monthly"><?php _e('monthly:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('F Y', 'webjournal')) ?></span></h2>
+
+<?php elseif ( is_year() ) : ?>
+
+  <h2 class="page-title page-title-yearly"><?php _e('yearly:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('Y', 'webjournal')) ?></span></h2>
+
+<?php elseif ( is_author() ) : ?>
+
+  <h2 class="page-title page-title-author"><?php _e('author:', 'webjournal') ?> <span class="page-subtitle"><?php webjournal_author_hCard() ?></span></h2>
+  <div class="author-callout">
+    <ul>
+      <li><?php if ( !(''== $authordata->user_description) ) : echo apply_filters('archive_meta', $authordata->user_description); endif; ?></li>
+      <li><?php if ( !(''== $authordata->user_link) ) : echo apply_filter('archive_meta', $authordata->user_link); endif; ?></li>
+    </ul>
+  </div>
+
+<?php elseif ( is_category() ) : ?>
+
+  <h2 class="page-title"><?php _e('topic:', 'webjournal') ?> <span class="page-subtitle"><?php echo single_cat_title(); ?></span></h2>
+
+<?php elseif ( is_tag() ) : ?>
+
+  <h2 class="page-title"><span class="archive-meta"><?php _e('tag:', 'webjournal') ?></span> <span class="page-subtitle"><?php single_tag_title(); ?></span></h2>
+
+<?php elseif ( isset($_GET['paged']) && !empty($_GET['paged']) ) : ?>
+
+  <h2 class="page-title"><?php _e('archives', 'webjournal') ?> <?php printf(__('%1$s archives', 'webjournal'), wp_specialchars(get_the_title(), 'double') ) ?></h2>
+
+<?php 
+
+endif;
+
+rewind_posts();
+
+while ( have_posts() ) : the_post(); ?>
 
 <div id="post-<?php the_ID() ?>" class="<?php webjournal_post_class() ?>">
 <h3 class="entry-title"><a href="<?php the_permalink() ?>" title="<?php printf(__('Permalink to %s', 'webjournal'), wp_specialchars(get_the_title(), 1)) ?>" rel="bookmark"><?php the_title() ?></a></h3>
