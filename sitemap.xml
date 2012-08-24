@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://webjournal.nerdfiles.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="August 24, 2012 3:43 am" -->
+<!-- generated-on="August 24, 2012 3:05 pm" -->
 <!-- Debug: Total comment count: 58 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://webjournal.nerdfiles.net/</loc>
@@ -9,31 +9,36 @@
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
-<!-- Debug: Priority report of postID 3708: Comments: 0 of 58 = 0 points -->
+<!-- Debug: Priority report of postID 3725: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/24/fix-vars-for-post/</loc>
-		<lastmod>2012-08-24T03:43:36+00:00</lastmod>
+		<loc>http://webjournal.nerdfiles.net/2012/08/24/messages/</loc>
+		<lastmod>2012-08-24T15:04:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 3706: Comments: 0 of 58 = 0 points -->
+<!-- Debug: Priority report of postID 123: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/24/fix-header/</loc>
-		<lastmod>2012-08-24T03:43:35+00:00</lastmod>
+		<loc>http://webjournal.nerdfiles.net/2008/01/29/notes-on-handbook-of-epictetus/</loc>
+		<lastmod>2012-08-24T07:41:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 3704: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/24/merge-branch-dev-of-github-comnerdfilesweb-journal-into-dev-5/</loc>
-		<lastmod>2012-08-24T03:43:34+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
+		<loc>http://webjournal.nerdfiles.net/claims/</loc>
+		<lastmod>2012-08-24T07:25:42+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 3702: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/24/cleanup-header/</loc>
-		<lastmod>2012-08-24T03:43:32+00:00</lastmod>
+		<loc>http://webjournal.nerdfiles.net/poems/</loc>
+		<lastmod>2012-08-24T07:00:08+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3718: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://webjournal.nerdfiles.net/2012/08/24/sitemap-update/</loc>
+		<lastmod>2012-08-24T04:01:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
@@ -41,34 +46,6 @@
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2012/08/24/ad-dashboard-and-reorder/</loc>
 		<lastmod>2012-08-24T03:36:20+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 3699: Comments: 0 of 58 = 0 points -->
-	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/24/cleanup-sitemap-2/</loc>
-		<lastmod>2012-08-24T02:46:38+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 3697: Comments: 0 of 58 = 0 points -->
-	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/24/another-update/</loc>
-		<lastmod>2012-08-24T02:46:36+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 3695: Comments: 0 of 58 = 0 points -->
-	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/24/merge-branch-dev-of-github-comnerdfilesweb-journal-into-dev-4/</loc>
-		<lastmod>2012-08-24T02:30:39+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 3693: Comments: 0 of 58 = 0 points -->
-	<url>
-		<loc>http://webjournal.nerdfiles.net/2012/08/24/cleanup-footer-on-home/</loc>
-		<lastmod>2012-08-24T02:30:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
@@ -537,12 +514,6 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-	<url>
-		<loc>http://webjournal.nerdfiles.net/claims/</loc>
-		<lastmod>2012-03-02T15:57:03+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
 <!-- Debug: Priority report of postID 3205: Comments: 0 of 58 = 0 points -->
 	<url>
 		<loc>http://webjournal.nerdfiles.net/2012/02/27/woman-as-activity/</loc>
@@ -983,12 +954,6 @@
 		<lastmod>2011-10-13T20:04:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://webjournal.nerdfiles.net/poems/</loc>
-		<lastmod>2011-10-13T17:05:40+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
 	</url>
 <!-- Debug: Priority report of postID 2582: Comments: 0 of 58 = 0 points -->
 	<url>
