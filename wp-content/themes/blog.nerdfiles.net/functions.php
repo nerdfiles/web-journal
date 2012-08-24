@@ -26,11 +26,6 @@ function list_hooked_functions($tag=false){
  return;
 }
 
-//list_hooked_functions('wp_head');
-//remove_action('wp_head', 'rsd_link');
-remove_action('wp_head', 'wlwmanifest_link');
-remove_action( 'wp_head', 'feed_links', 2 );
-
 function remove_generator() {
 	return '';
 }
@@ -41,6 +36,12 @@ add_action('wp', 'clear_fe', 1);
 
 function clear_fe() {
     global $post;
+
+    //list_hooked_functions('wp_head');
+    //remove_action('wp_head', 'rsd_link');
+    remove_action('wp_head', 'wlwmanifest_link');
+    remove_action('wp_head', 'feed_links_extra', 3); // Remove category feeds
+    remove_action('wp_head', 'feed_links', 2); // Remove Post and Comment Feeds
     
     if (!is_admin()) {
     remove_action('wp_head', 'GA_Filterspool_analytics', 2);
