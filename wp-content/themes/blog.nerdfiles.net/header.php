@@ -196,7 +196,9 @@ A weedy florilegium
 </header>
 <?php $my_query = new WP_Query('posts_per_page=1&orderby=date&order=DESC'); ?>
 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
 <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+
 <div class="time">
 <time><?php the_date(); ?></time>
 </div>
