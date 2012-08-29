@@ -178,17 +178,17 @@ $(document).ready(function() {
       
     });
 
-    $('#searchform').bind('pages', function(e) {
-      e.preventDefault();
+    $('#searchform').bind('submit.pages', function(e) {
       var $this = $(this),
           input = $('#s');
 
       if ( input.val().substr(0,1) == "/" ) {
+        e.preventDefault();
         window.location.href = 'http://webjournal.nerdfiles.net' + input.val();
       }
     });
 
-    $('#searchform').trigger('pages');
+    //$('#searchform').trigger('pages');
     
     $('#s').bind('term', function(e) {
       
