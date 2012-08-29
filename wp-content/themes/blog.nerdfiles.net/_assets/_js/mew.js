@@ -265,7 +265,7 @@ $(document).ready(function() {
           return false;
         }
            
-        if ( tashu_store == __ki__alt && e.type === "keyup" && __ki__enter ) {
+        if ( e.type === "keyup" && tashu_store == __ki__alt && __ki__enter ) {
           // keyword list
           $.each(p = __with__$pagenavi, function(i, e) {
             if( $(p[i]).text() === $('#s').val() ) {
