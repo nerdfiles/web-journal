@@ -179,11 +179,11 @@ $(document).ready(function() {
     });
 
     $('#searchform').bind('pages', function(e) {
+      e.preventDefault();
       var $this = $(this),
           input = $('#s');
 
       if ( input.val().substr(0,1) == "/" ) {
-        e.preventDefault();
         window.location.href = 'http://webjournal.nerdfiles.net' + input.val();
       }
     });
