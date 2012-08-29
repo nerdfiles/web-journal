@@ -192,7 +192,7 @@ $(document).ready(function() {
       var $this = $(this),
           input = $this.find('#s');
 
-      input.attr('placeholder', 'e.g. "/about" for pages');
+      input.attr('placeholder', 'e.g. "/about", "/recipes", etc. for pages');
     });
 
     $('#searchform').trigger('pages');
