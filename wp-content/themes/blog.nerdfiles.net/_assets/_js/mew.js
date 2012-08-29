@@ -185,7 +185,7 @@ $(document).ready(function() {
       // UI design
       
       $this.attr('tabindex', '1');
-      $this.attr('placeholder', 'hypertext: &#8963; + &#8679; &#8617; or search: &#8617;; e.g., "recipes", &#8963; + &#8617;');
+      $this.attr('placeholder', '"pages": ⌃ + ⇧ + ↩');
       
       $this.bind('focus', function(e) {
         
