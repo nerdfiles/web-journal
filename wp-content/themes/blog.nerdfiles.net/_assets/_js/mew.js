@@ -180,7 +180,7 @@ $(document).ready(function() {
 
     $('#searchform').bind('submit.pages', function(e) {
       var $this = $(this),
-          input = $('#s');
+          input = $this.find('#s');
 
       if ( input.val().substr(0,1) == "/" ) {
         e.preventDefault();
@@ -188,7 +188,14 @@ $(document).ready(function() {
       }
     });
 
-    //$('#searchform').trigger('pages');
+    $('#searchform').bind('pages', function(e) {
+      var $this = $(this),
+          input = $this.find('#s');
+
+      input.attr('placeholder', 'e.g. "/about" for pages');
+    });
+
+    $('#searchform').trigger('pages');
     
     $('#s').bind('term', function(e) {
       
