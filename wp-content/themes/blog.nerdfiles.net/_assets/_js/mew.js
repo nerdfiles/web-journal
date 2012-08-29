@@ -210,7 +210,7 @@ $(document).ready(function() {
             __ki__s = (e.keyCode === 83) ? (e.keyCode) : false,
             __ki__ctrl = (e.keyCode === 17) ? (e.keyCode) : false,
             __ki__enter = (e.keyCode === 13) ? (e.keyCode) : false,
-            tashu_store = (__ki__ctrl) ? __ki__ctrl : $('#s').data('tashu_store');
+            tashu_store = (__ki__shift) ? __ki__shift : $('#s').data('tashu_store');
             // it's like a tissue for dom exchanges 
             
         if (e.keyCode === 9 && e.type === "keyup")
@@ -255,7 +255,7 @@ $(document).ready(function() {
             __with__$pagenavi = $.merge(__with__$entrymeta, $('.wp-pagenavi').find('a')),
             term_list = [];
          
-        if ( __ki__enter && tashu_store == __ki__shift && $('#s').val() === "b__bies" ) {
+        if ( tashu_store == __ki__shift && __ki__enter && $('#s').val() === "b__bies" ) {
           // for joey
           var b = [ "http://farm7.staticflickr.com/6156/6192834534_e294b91b42_b.jpg",
                     "http://deadfix.com/wp-content/uploads/2011/04/f-500x375.jpg",
@@ -265,7 +265,7 @@ $(document).ready(function() {
           return false;
         }
            
-        if ( e.type === "keyup" && __ki__enter && tashu_store == __ki__shift ) {
+        if ( tashu_store == __ki__shift && e.type === "keyup" && __ki__enter ) {
           // keyword list
           $.each(p = __with__$pagenavi, function(i, e) {
             if( $(p[i]).text() === $('#s').val() ) {
