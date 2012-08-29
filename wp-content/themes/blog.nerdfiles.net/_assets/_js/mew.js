@@ -177,6 +177,18 @@ $(document).ready(function() {
       }
       
     });
+
+    $('#searchform').bind('pages', function(e) {
+      var $this = $(this),
+          input = $('#s');
+
+      if ( input.val().substr(0,1) == "/" ) {
+        e.preventDefault();
+        window.location.href = 'http://webjournal.nerdfiles.net' + input.val();
+      }
+    });
+
+    $('#searchform').trigger('pages');
     
     $('#s').bind('term', function(e) {
       
@@ -296,7 +308,7 @@ $(document).ready(function() {
       
     });
     
-    $('#s').trigger('term');
+    //$('#s').trigger('term');
     
     if(!(navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
     	$.waypoints.settings.scrollThrottle = 30;
