@@ -280,7 +280,7 @@ $(document).ready(function() {
           });
         }
         
-        if ( tashu_store && __ki__ctrl ) {
+        if ( tashu_store && __ki__alt ) {
           
           //console.log(tashu_store);
           
