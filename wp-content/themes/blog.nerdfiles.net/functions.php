@@ -384,10 +384,25 @@ function widget_webjournal_search($args) {
 <?php echo $before_widget ?>
 <?php echo $before_title ?><label for="s"><?php echo $title ?></label><?php echo $after_title ?>
 <form id="searchform" method="get" action="<?php bloginfo('home') ?>">
-<div>
-<input id="s" name="s" class="text-input" type="text" value="<?php the_search_query() ?>" size="10" tabindex="1" accesskey="S" />
-<input id="searchsubmit" name="searchsubmit" class="submit-button" type="submit" value="<?php echo $button ?>" tabindex="2" />
-</div>
+  <div>
+    <input 
+      id="s" 
+      name="s" 
+      class="text-input" 
+      type="text" 
+      value="<?php the_search_query() ?>" 
+      size="10" 
+      tabindex="1" 
+      placeholder="e.g. \"/about\" for pages"
+      accesskey="S" />
+    <input 
+      id="searchsubmit" 
+      name="searchsubmit" 
+      class="submit-button" 
+      type="submit" 
+      value="<?php echo $button ?>" 
+      tabindex="2" />
+  </div>
 </form>
 <?php echo $after_widget ?>
 <?php
