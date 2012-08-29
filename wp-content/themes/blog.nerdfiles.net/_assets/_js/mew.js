@@ -185,7 +185,7 @@ $(document).ready(function() {
       // UI design
       
       $this.attr('tabindex', '1');
-      $this.attr('placeholder', '"pages": ⌃ + ⇧ + ↩');
+      $this.attr('placeholder', 'for "pages": hold (⌃ + ⇧), ↩');
       
       $this.bind('focus', function(e) {
         
@@ -218,8 +218,10 @@ $(document).ready(function() {
             
         
         if ( tashu_store ) {
+          /*
           console.log('tashu_store:');
           console.log(tashu_store);
+          */
         } else {
           //tashu_store = window.stash;
         }
@@ -231,6 +233,7 @@ $(document).ready(function() {
         }
         
         if ( DEBUG ) {
+          /*
           console.log("--key--");
           console.log(e.keyCode);
           console.log("--tash--");
@@ -238,7 +241,7 @@ $(document).ready(function() {
           console.log("--keydowns--");
           console.log(__ki__alt);
           console.log(__ki__s);
-        
+          */
         }
         
         var $site_nav = $('#site-navigation'),
@@ -255,19 +258,20 @@ $(document).ready(function() {
         if ( __ki__enter && tashu_store == __ki__ctrl && $('#s').val() === "b__bies" ) {
           // for joey
           var b = [ "http://farm7.staticflickr.com/6156/6192834534_e294b91b42_b.jpg",
-                    "http://deadfix.com/wp-content/uploads/2011/04/f-500x375.jpg" ];
+                    "http://deadfix.com/wp-content/uploads/2011/04/f-500x375.jpg",
+                    "http://img14.imagetwist.com/i/01965/5f1pkcz6gppr.jpg" ];
                     
           window.location = b[Math.floor(Math.random()*b.length)];
           return false;
         }
            
-        if ( e.type === "keyup" && __ki__enter && tashu_store == __ki__ctrl ) {
+        if ( e.type === "keyup" && __ki__enter && tashu_store == __ki__alt ) {
           // keyword list
           $.each(p = __with__$pagenavi, function(i, e) {
             if( $(p[i]).text() === $('#s').val() ) {
               if ( DEBUG ) {
-                console.log('command: page: ' + $('#s').val());
-                console.log( p.filter(':contains("about")') );
+                //console.log('command: page: ' + $('#s').val());
+                //console.log( p.filter(':contains("about")') );
               }
               
               localStorage.setItem("__last__", $.trim($('#s').val()));
@@ -278,7 +282,7 @@ $(document).ready(function() {
         
         if ( tashu_store && __ki__ctrl ) {
           
-          console.log(tashu_store);
+          //console.log(tashu_store);
           
           // modes?
           
