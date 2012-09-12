@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Pidgeon';
-  src: url("../../../../_assets/_fonts/pigeon.otf") format("opentype");
-  src: url("../../../../_assets/_fonts/pigeon.ttf") format("truetype");
+  src: url("../../../../_assets/_fonts/pigeon/pigeon.otf") format("opentype");
+  src: url("../../../../_assets/_fonts/pigeon/pigeon.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 
