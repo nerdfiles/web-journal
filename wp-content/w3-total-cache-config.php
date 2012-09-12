@@ -497,7 +497,7 @@ return array(
 	),
 	'common.support' => '',
 	'common.install' => 1324875675,
-	'common.tweeted' => false,
+	'common.tweeted' => true,
 	'config.check' => true,
 	'config.path' => '',
 	'widget.latest.enabled' => true,
