@@ -124,7 +124,7 @@ $cat_slug = $the_cat[0]->slug; ?>
 <!-- == SITE ACCESS ======================================== --> 
 
 <div id="site-access">
-<p class="mouse-thinkers-beware" title="An analysis of modalities, link strategy, and tacticle experience, oh my!"><small>Design's heavily influenced by my practices in unlearning the Mouse and the variegrated habits of Mouse-think (theism, restroom banter, the politico-historical moorings of crepe cuisine, et cetera), with a touch of not having gone to finishing school.</small></p>
+<p class="mouse-thinkers-beware" title="An analysis of modalities, link strategy, and tacticle experience, oh my!"><small>Design's heavily influenced by my practices in unlearning the Mouse and the variegrated habits of Mouse-think (theism, restroom banter, the politico-historical moorings of cr&ecirc;pe cuisine, et cetera), with a touch of not having gone to finishing school.</small></p>
 <ul>
 <li><span class="content-access">Back to <a href="#top">top</a></span></li>
 <?php
