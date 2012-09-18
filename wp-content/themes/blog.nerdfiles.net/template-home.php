@@ -155,8 +155,11 @@ $do_not_duplicate = $post->ID; ?>
 
 </div><!-- .hfeed -->
 </div><!-- #content -->
+
+<?php do_action('home_disqus_comments'); ?>
+
 </div><!-- #container -->
 
-<?php get_sidebar() ?>
-<?php get_footer() ?>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
 

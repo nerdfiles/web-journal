@@ -10,7 +10,7 @@
 
 <!-- == 
   
-  template-single-column.php 
+  template-single.php 
   
 == -->
 
