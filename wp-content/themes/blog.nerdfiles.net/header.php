@@ -204,7 +204,7 @@ A weedy florilegium
 </div>
 <?php endwhile; ?>
 <?php wp_reset_query(); ?>
-<?php //$my_query = new WP_Query('p='+get_the_ID()); ?>
+<?php $my_query = new WP_Query('p='+get_the_ID()); ?>
 </aside>
 </div>
 </div>
@@ -334,7 +334,7 @@ A weedy florilegium
 <?php get_search_form(); ?>
 </div><!-- End #site-search -->
 
-<?php the_post() ?><!-- the_post() -->
+<?php //the_post() ?><!-- the_post() -->
 
 <?php if ( is_day() ) : ?>
 
