@@ -297,7 +297,7 @@ A weedy florilegium
 
     <li><a href="<?php bloginfo('url'); ?>/<?php if (is_single() or is_page()) { ?><?php echo get_the_date('Y'); ?><? } ?>/"><?php if (is_single() or is_page()) { ?><?php echo get_the_date('Y'); ?><? } ?></a></li>
 
-    <?php if (!is_year() && get_permalink()) { ?>
+    <?php if (is_single() || is_page()) { ?>
       <li><a href="<?php echo get_permalink(); ?>"><?php echo preg_replace('/http\:\/\/webjournal\.nerdfiles\.net\/(\d+)\/(\d+)\/(\d+)\/(.*)?\//', '$4', get_permalink()); ?></a></li>
     <?php } ?>
 
