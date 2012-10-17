@@ -284,6 +284,8 @@ A weedy florilegium
 
 <!-- == BREADCRUMB ========================================= -->
 
+<?php if (!is_page()) { ?>
+
 <div id="site-breadcrumb" class="grid_16 alpha">
 
 <ul>
@@ -303,6 +305,8 @@ A weedy florilegium
 </ul>
 
 </div><!-- End #site-breadcrumb -->
+
+<?php } ?>
 
 <!-- == END SITE BREADCRUMB ================================ -->
 
