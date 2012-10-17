@@ -226,6 +226,10 @@ div {
       font-variant: small-caps;
       text-transform: lowercase;
     }
+    .page-title span.page-subtitle {
+      font-size: 40em;
+      opacity: .6;
+    }
     div {
       &#post-0 input#s, &.p1 {} } }
   &.nav-next, &.nav-previous, &.navigation div {}
