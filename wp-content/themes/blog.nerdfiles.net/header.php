@@ -204,7 +204,7 @@ A weedy florilegium
 </div>
 <?php endwhile; ?>
 <?php wp_reset_query(); ?>
-<?php $my_query = new WP_Query('p='+get_the_ID()); ?>
+<?php //$my_query = new WP_Query('p='+get_the_ID()); ?>
 </aside>
 </div>
 </div>
