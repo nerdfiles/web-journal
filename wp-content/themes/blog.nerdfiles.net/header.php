@@ -284,7 +284,6 @@ A weedy florilegium
 
 <!-- == BREADCRUMB ========================================= -->
 
-<?php if (!is_page()) { ?>
 
 <div id="site-breadcrumb" class="grid_16 alpha">
 
@@ -294,11 +293,14 @@ A weedy florilegium
 
 <?php if (!is_front_page()) { ?>
  
-<li><a href="<?php bloginfo('url'); ?>/<?php if (is_single() or is_page()) { ?><?php echo get_the_date('Y'); ?><? } ?>/"><?php if (is_single() or is_page()) { ?><?php echo get_the_date('Y'); ?><? } ?></a></li>
+  <?php if (!is_page()) { ?>
+  <li><a href="<?php bloginfo('url'); ?>/<?php if (is_single() or is_page()) { ?><?php echo get_the_date('Y'); ?><? } ?>/"><?php if (is_single() or is_page()) { ?><?php echo get_the_date('Y'); ?><? } ?></a></li>
 
-<?php if (is_single() or is_page()) { ?> 
-<li><a href="<?php echo get_permalink(); ?>"><?php echo preg_replace('/http\:\/\/webjournal\.nerdfiles\.net\/(\d+)\/(\d+)\/(\d+)\/(.*)?\//', '$4', get_permalink()); ?></a></li>
-<?php } ?>
+  <?php if (is_single() or is_page()) { ?> 
+  <li><a href="<?php echo get_permalink(); ?>"><?php echo preg_replace('/http\:\/\/webjournal\.nerdfiles\.net\/(\d+)\/(\d+)\/(\d+)\/(.*)?\//', '$4', get_permalink()); ?></a></li>
+  <?php } ?>
+
+  <?php } ?>
 
 <?php } ?>
 
@@ -306,7 +308,6 @@ A weedy florilegium
 
 </div><!-- End #site-breadcrumb -->
 
-<?php } ?>
 
 <!-- == END SITE BREADCRUMB ================================ -->
 
