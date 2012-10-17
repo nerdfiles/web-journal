@@ -292,10 +292,6 @@ A weedy florilegium
 
 <?php if (!is_front_page()) { ?>
  
-<?php $arc_year = get_the_modified_time('Y'); ?>
-<?php $arc_month = get_the_modified_time('m'); ?>
-<?php $arc_day = get_the_modified_time('d'); ?>
-
 <li><a href="<?php bloginfo('url'); ?>/<?php if (is_single() or is_page()) { ?><?php echo get_the_modified_date('Y'); ?><? } ?>/"><?php if (is_single() or is_page()) { ?><?php echo get_the_modified_date('Y'); ?><? } ?></a></li>
 
 <?php if ( is_single() or is_page() or is_month() or is_day() ) { ?>
