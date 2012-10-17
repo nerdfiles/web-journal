@@ -35,7 +35,7 @@
 <span class="meta-sep">&Dagger;</span>
 <!--span class="entry-comments"><?php comments_popup_link(__('Comments (0)', 'webjournal'), __('Comments (1)', 'webjournal'), __('Comments (%)', 'webjournal')) ?></span-->
 <span class="meta-sep">&deg;</span>
-<span class="entry-tags"><?php the_tags(__('#: ', 'webjournal'), ", ", "") ?></span>
+<span class="entry-tags"><?php the_tags(__('#', 'webjournal'), ", #", "") ?></span>
 <?php edit_post_link(__('Edit this entry', 'webjournal'), "<div class='entry-edit'>", "</div>\n"); ?>
 </div>
 </div>
