@@ -292,15 +292,7 @@ A weedy florilegium
 
 <?php if (!is_front_page()) { ?>
  
-<li><a href="<?php bloginfo('url'); ?>/<?php if (is_single() or is_page()) { ?><?php echo get_the_modified_date('Y'); ?><? } ?>/"><?php if (is_single() or is_page()) { ?><?php echo get_the_modified_date('Y'); ?><? } ?></a></li>
-
-<?php if ( is_single() or is_page() or is_month() or is_day() ) { ?>
-<!--li><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/"><?=$arc_month;?></a></li-->
-<?php } ?>
-
-<?php if ( is_single() or is_page() or is_day() ) { ?>
-<!--li><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?=$arc_day;?></a></li-->
-<?php } ?>
+<li><a href="<?php bloginfo('url'); ?>/<?php if (is_single() or is_page()) { ?><?php echo get_the_date('Y'); ?><? } ?>/"><?php if (is_single() or is_page()) { ?><?php echo get_the_date('Y'); ?><? } ?></a></li>
 
 <?php if (is_single() or is_page()) { ?> 
 <li><a href="<?php echo get_permalink(); ?>"><?php echo preg_replace('/http\:\/\/webjournal\.nerdfiles\.net\/(\d+)\/(\d+)\/(\d+)\/(.*)\//', '$4', get_permalink()); ?></a></li>
