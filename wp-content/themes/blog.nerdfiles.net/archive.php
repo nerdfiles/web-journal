@@ -63,7 +63,7 @@ while ( have_posts() ) : the_post(); ?>
 <span class="meta-sep">&sect;</span>
 <span class="entry-category"><?php if ( !is_category() ) { echo the_category(' &sect; '); } else { $other_cats = webjournal_other_cats(' &sect; '); echo $other_cats; } // Hides the current category if category archive ?></span>
 <span class="meta-sep">&Dagger;</span>
-<span class="tag-links"><?php if ( !is_tag() ) { echo the_tags(__('Tagged: ', 'webjournal'), ", ", ""); } else { $other_tags = webjournal_other_tags(', '); printf(__('Also tagged: %s', 'webjournal'), $other_tags); } ?></span>
+<span class="entry-tags"><?php the_tags(__('#', 'webjournal'), ", #", "") ?></span>
 <?php edit_post_link(__('Edit ' + get_the_title(), 'webjournal'), "\t\t\t\t\t<span class=\"meta-sep\">&equiv;</span>\n\t\t\t\t\t<span class='entry-edit'>", "</span>\n"); ?>
 </div>
 </div><!-- .post -->
