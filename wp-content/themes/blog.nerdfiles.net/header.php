@@ -305,7 +305,7 @@ A weedy florilegium
 <?php } ?>
 
 <?php if (is_single() or is_page()) { ?> 
-<li><a href="<?php echo get_permalink(); ?>"><?php echo preg_replace('/http\:\/\/webjournal\.nerdfiles\.net\/(\d+)/(\d+)/(\d+)/', '/', get_permalink()); ?></a></li>
+<li><a href="<?php echo get_permalink(); ?>"><?php echo preg_replace('/http\:\/\/webjournal\.nerdfiles\.net\/(\d+)\/(\d+)\/(\d+)/', '/', get_permalink()); ?></a></li>
 <?php } ?>
 
 <?php } ?>
