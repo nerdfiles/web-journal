@@ -31,11 +31,11 @@
 
 <?php elseif ( is_category() ) : ?>
 
-  <h2 class="page-title"><?php _e('topic:', 'webjournal') ?> <span class="page-subtitle"><?php echo single_cat_title(); ?></span></h2>
+  <h2 class="page-title"><?php _e('~/', 'webjournal') ?> <span class="page-subtitle"><?php echo single_cat_title(); ?></span></h2>
 
 <?php elseif ( is_tag() ) : ?>
 
-  <h2 class="page-title"><span class="archive-meta"><?php _e('tag:', 'webjournal') ?></span> <span class="page-subtitle"><?php single_tag_title(); ?></span></h2>
+  <h2 class="page-title"><span class="archive-meta"><?php _e('#', 'webjournal') ?></span> <span class="page-subtitle"><?php single_tag_title(); ?></span></h2>
 
 <?php elseif ( isset($_GET['paged']) && !empty($_GET['paged']) ) : ?>
 
