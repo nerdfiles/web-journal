@@ -61,7 +61,7 @@ while ( have_posts() ) : the_post(); ?>
 <?php if ( !is_author() ) : webjournal_author_hCard(); endif; // Displays if NOT author archive page ?> 
 <span class="meta-sep">&Dagger;</span>
 <span class="entry-category"><?php if ( !is_category() ) { echo the_category(' &sect; '); } else { $other_cats = webjournal_other_cats(' &sect; '); echo $other_cats; } // Hides the current category if category archive ?></span>
-<span class="meta-sep">&Dagger;</span>
+<span class="meta-sep">&deg;</span>
 <span class="entry-tags"><?php the_tags(__('#', 'webjournal'), ", #", "") ?></span>
 <?php edit_post_link(__('Edit ' + get_the_title(), 'webjournal'), "\t\t\t\t\t<span class=\"meta-sep\">&equiv;</span>\n\t\t\t\t\t<span class='entry-edit'>", "</span>\n"); ?>
 </div>
