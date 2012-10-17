@@ -280,6 +280,8 @@ A weedy florilegium
 
 < ========================================================== -->
 
+<?php rewind_posts() ?>
+
 <!-- == BREADCRUMB ========================================= -->
 
 <div id="site-breadcrumb" class="grid_16 alpha">
@@ -349,8 +351,6 @@ A weedy florilegium
 <div class="archive-description archive-description-category"><?php if ( !('' == category_description()) ) : echo single_cat_title(); _e(' &mdash; ', 'webjournal'); echo category_description(); else : echo 'You are currently viewing the category archives of '; echo single_cat_title(); endif; ?></div>
 
 <?php endif; ?>
-
-<?php rewind_posts() ?>
 
 </div><!-- #header -->
 
