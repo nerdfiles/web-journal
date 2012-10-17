@@ -12,7 +12,7 @@
 <?php the_post() ?>
 <?php if ( is_day() ) : ?>
 
-  <h2 class="page-title page-title-daily"><?php _e('&#8987; ', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('l, F Y', 'webjournal')) ?></span></h2>
+  <h2 class="page-title page-title-daily"><?php _e('&#8987; ', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('l, d F Y', 'webjournal')) ?></span></h2>
 
 <?php elseif ( is_month() ) : ?>
 
