@@ -222,7 +222,10 @@ div {
     &.entry-meta span.meta-sep {
       &:nth-of-type(5), &:nth-of-type(7) {} } }
   &.hfeed {
-    .entry-title, .page-title span.page-subtitle {}
+    .entry-title, .page-title span.page-subtitle {
+      font-variant: small-caps;
+      text-transform: lowercase;
+    }
     div {
       &#post-0 input#s, &.p1 {} } }
   &.nav-next, &.nav-previous, &.navigation div {}
