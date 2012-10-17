@@ -28,7 +28,7 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?php the_date(); ?></a></time>
+<time><a href="/<?php echo get_the_date('Y'); ?>/<?php echo get_the_date('m'); ?>/<?php echo get_the_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
@@ -62,7 +62,7 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?php the_date(); ?></a></time>
+<time><a href="/<?php echo get_the_date('Y'); ?>/<?php echo get_the_date('m'); ?>/<?php echo get_the_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
@@ -88,7 +88,7 @@ $do_not_duplicate = $post->ID; ?>
 <div id="life" class="grid_4 life">
 <section>
 <header><h2>Life</h2></header>
-<?php $my_query = new WP_Query('category_name=uncategorized,none,podcasts,links,school,life,humor,news,school,foodstuffs&posts_per_page=5&orderby=date&order=DESC'); ?>
+<?php $my_query = new WP_Query('category_name=podcasts,links,school,life,humor,news,school,foodstuffs&posts_per_page=5&orderby=date&order=DESC'); ?>
 <?php while ($my_query->have_posts()) : $my_query->the_post(); 
 if( $post->ID == $do_not_duplicate ) continue; 
 $do_not_duplicate = $post->ID; ?>
@@ -96,7 +96,7 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?php the_date(); ?></a></time>
+<time><a href="/<?php echo get_the_date('Y'); ?>/<?php echo get_the_date('m'); ?>/<?php echo get_the_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
@@ -130,7 +130,7 @@ $do_not_duplicate = $post->ID; ?>
 <header>
 <h3 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 <div class="time">
-<time><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/<?php echo get_the_modified_date('d'); ?>/"><?php the_date(); ?></a></time>
+<time><a href="/<?php echo get_the_date('Y'); ?>/<?php echo get_the_date('m'); ?>/<?php echo get_the_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
 <?php the_excerpt(); ?>
