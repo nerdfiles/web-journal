@@ -31,7 +31,7 @@
 
 <?php elseif ( is_category() ) : ?>
 
-  <h2 class="page-title"><?php _e('~/', 'webjournal') ?> <span class="page-subtitle"><?php echo single_cat_title(); ?></span></h2>
+  <h2 class="page-title"><?php _e('~/', 'webjournal') ?> <span class="page-subtitle"><?php echo strtolower(single_cat_title()); ?></span></h2>
 
 <?php elseif ( is_tag() ) : ?>
 
