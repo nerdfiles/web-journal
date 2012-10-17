@@ -253,6 +253,15 @@ div {
 body {
   &.home h2.entry-title, &.category h1.page-title, &.search h1.page-title {} }
 
+body {
+  &.category {
+    h2 .page-subtitle { 
+      text-transform: lowercase;
+    }
+  }
+
+}
+
 /* !!header */
 
 div.hfeed p, h2, h3, div.comments h3.comment-header, h4, h5, h1 a:hover, .entry-title, h1, .entry-title a, h1, .entry-title a:visited, h1, .entry-title a:hover, .entry-comments, #quote, .post, body.home h2.entry-title {}
