@@ -12,15 +12,15 @@
 <?php the_post() ?>
 <?php if ( is_day() ) : ?>
 
-  <h2 class="page-title page-title-daily"><?php _e('daily:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('l, F Y', 'webjournal')) ?></span></h2>
+  <h2 class="page-title page-title-daily"><?php _e('&#8987; ', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('l, F Y', 'webjournal')) ?></span></h2>
 
 <?php elseif ( is_month() ) : ?>
 
-  <h2 class="page-title page-title-monthly"><?php _e('monthly:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('F Y', 'webjournal')) ?></span></h2>
+  <h2 class="page-title page-title-monthly"><?php _e('&#8987; ', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('F Y', 'webjournal')) ?></span></h2>
 
 <?php elseif ( is_year() ) : ?>
 
-  <h2 class="page-title page-title-yearly"><?php _e('yearly:', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('Y', 'webjournal')) ?></span></h2>
+  <h2 class="page-title page-title-yearly"><?php _e('&#8987; ', 'webjournal') ?> <span class="page-subtitle"><?php the_time(__('Y', 'webjournal')) ?></span></h2>
 
 <?php elseif ( is_author() ) : ?>
 

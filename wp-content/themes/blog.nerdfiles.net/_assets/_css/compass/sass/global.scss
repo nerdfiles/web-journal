@@ -223,8 +223,6 @@ div {
       &:nth-of-type(5), &:nth-of-type(7) {} } }
   &.hfeed {
     .entry-title, .page-title span.page-subtitle {
-      font-variant: small-caps;
-      text-transform: lowercase;
     }
     .page-title span.page-subtitle {
       opacity: .6;
