@@ -296,7 +296,7 @@ A weedy florilegium
 <?php $arc_month = get_the_modified_time('m'); ?>
 <?php $arc_day = get_the_modified_time('d'); ?>
 
-<li><a href="<?php bloginfo('url'); ?>/<?php if (is_single() or is_page()) { ?><?php echo get_the_modified_date('Y'); ?><? } ?>/"><?=$arc_year;?></a></li>
+<li><a href="<?php bloginfo('url'); ?>/<?php if (is_single() or is_page()) { ?><?php echo get_the_modified_date('Y'); ?><? } ?>/"><?php if (is_single() or is_page()) { ?><?php echo get_the_modified_date('Y'); ?><? } ?></a></li>
 
 <?php if ( is_single() or is_page() or is_month() or is_day() ) { ?>
 <!--li><a href="/<?php echo get_the_modified_date('Y'); ?>/<?php echo get_the_modified_date('m'); ?>/"><?=$arc_month;?></a></li-->
