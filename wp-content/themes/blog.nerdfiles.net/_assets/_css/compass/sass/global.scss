@@ -223,6 +223,7 @@ div {
       &:nth-of-type(5), &:nth-of-type(7) {} } }
   &.hfeed {
     .entry-title, .page-title span.page-subtitle {
+      text-shadow: 0 .1em .2em #ccc;
     }
     .page-title span.page-subtitle {
       opacity: .6;
