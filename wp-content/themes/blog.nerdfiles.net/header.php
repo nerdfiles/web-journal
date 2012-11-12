@@ -21,7 +21,7 @@
 <link rel="dns-prefetch" href="//apis.google.com/" />
 <link rel="dns-prefetch" href="//platform.twitter.com/" />
 
-<title dir="ltr">
+<!--title dir="ltr">
 <?php if ( is_404() ) : ?>
     <?php _e('Page not found', 'webjournal') ?>
 <?php elseif ( is_home() ) : ?>
@@ -38,7 +38,7 @@
     <?php the_title() ?>
 <?php endif ?>
  &sect; <?php bloginfo('name') ?>
-</title>
+</title-->
 
 <!-- Stylesheets -->
   
