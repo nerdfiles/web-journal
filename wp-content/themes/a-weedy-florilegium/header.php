@@ -21,25 +21,6 @@
 <link rel="dns-prefetch" href="//apis.google.com/" />
 <link rel="dns-prefetch" href="//platform.twitter.com/" />
 
-<!--title dir="ltr">
-<?php if ( is_404() ) : ?>
-    <?php _e('Page not found', 'webjournal') ?>
-<?php elseif ( is_home() ) : ?>
-    <?php echo "Home"; ?>
-<?php elseif ( is_category() ) : ?>
-    <?php echo single_cat_title(); ?>
-<?php elseif ( is_date() ) : ?>
-    <?php _e('Archives', 'webjournal') ?>
-<?php elseif ( is_search() ) : ?>
-    <?php _e('Search results', 'webjournal') ?>
-<?php elseif ( is_author() ) : ?>
-<?php _e('Author', 'webjournal') ?> <?php the_author_meta('user_display_name'); ?>
-<?php else : ?>
-    <?php the_title() ?>
-<?php endif ?>
- &sect; <?php bloginfo('name') ?>
-</title-->
-
 <!-- Stylesheets -->
   
 <link 

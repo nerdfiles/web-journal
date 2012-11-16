@@ -80,7 +80,7 @@ a:link {
   *display: inline;
   padding: 0 !important;
   letter-spacing: 1px;
-  font-family: "Pigeon", "Philosopher";
+  font-family: "Eulexia", "Pigeon", "Philosopher";
   text-decoration: none;
   border-bottom: 1px #ccc solid;
 }
@@ -113,7 +113,7 @@ body.page-template-archives-php .hfeed a {
   *display: inline;
   line-height: 1.2;
   letter-spacing: 1px;
-  font-family: "Pigeon", "Philosopher";
+  font-family: "Eulexia", "Pigeon", "Philosopher";
   text-decoration: none;
   border-bottom: 1px #ccc solid;
 }
@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   color: #222;
   background: #f7f7f7;
-  font-family: "Philosopher", Georgia, serif;
+  font-family: "Eulexia", "Philosopher", Georgia, serif;
 }
 
 /* line 365, ../sass/global.scss */
@@ -367,13 +367,13 @@ p.this { opacity: 1; }
 }
 /* line 458, ../sass/global.scss */
 .comments label {
-  font: 2em/1 "Philosopher", Georgia, serif;
+  font: 2em/1 "Eulexia", "Philosopher", Georgia, serif;
 }
 /* line 460, ../sass/global.scss */
 .comments input[type="submit"] {
   border: none;
   font-size: 3em;
-  font-family: "Philosopher", Georgia, serif;
+  font-family: "Eulexia", "Philosopher", Georgia, serif;
   background: transparent;
 }
 
@@ -400,7 +400,7 @@ p.this { opacity: 1; }
 textarea {
   border: 1px #ccc solid;
   width: 97.5%;
-  font: 1.3em/1.3 "Philosopher", Georgia, serif;
+  font: 1.3em/1.3 "Eulexia", "Philosopher", Georgia, serif;
   padding: .5em !important;
 }
 
@@ -476,7 +476,7 @@ html.js #site-access {
 }
 /* line 524, ../sass/global.scss */
 #site-header .site-name {
-  font-family: "Philosopher", Georgia, serif;
+  font-family: "Eulexia", "Philosopher", Georgia, serif;
 }
 /* line 527, ../sass/global.scss */
 #site-header .site-name .logo {
@@ -485,7 +485,7 @@ html.js #site-access {
 }
 /* line 528, ../sass/global.scss */
 #site-header .site-name .author-tag a {
-  font-family: "Pigeon", "Philosopher", Georgia, serif !important;
+  font-family: "Eulexia", "Pigeon", "Philosopher", Georgia, serif !important;
   font-size: .9em;
 }
 /* line 531, ../sass/global.scss */
@@ -498,7 +498,7 @@ html.js #site-access {
 }
 /* line 537, ../sass/global.scss */
 #site-header .site-description {
-  font-family: "Philosopher", Georgia, serif;
+  font-family: "Eulexia", "Philosopher", Georgia, serif;
 }
 
 /* line 540, ../sass/global.scss */
@@ -593,7 +593,7 @@ html.js #site-access {
 }
 /* line 599, ../sass/global.scss */
 #site-search label {
-  font-family: "Philosopher", Georgia, serif;
+  font-family: "Eulexia", "Philosopher", Georgia, serif;
   cursor: help;
   width: 80px;
   display: inline;
@@ -604,7 +604,7 @@ html.js #site-access {
 }
 /* line 608, ../sass/global.scss */
 #site-search input {
-  font-family: "Philosopher", Georgia, serif;
+  font-family: "Eulexia", "Philosopher", Georgia, serif;
   cursor: pointer;
 }
 /* line 611, ../sass/global.scss */
@@ -781,7 +781,7 @@ html.search .navigation {
   display: inline-block;
   padding: 0 0 0 45px;
   font-size: 16px;
-  font-family: "Philosopher", Georgia, serif;
+  font-family: "Eulexia", "Philosopher", Georgia, serif;
 }
 /* line 730, ../sass/global.scss */
 #latest h1 {
@@ -808,7 +808,7 @@ html.search .navigation {
  */
 /* line 748, ../sass/global.scss */
 h1, h2, h3 {
-  font-family: "Pigeon", "Philosopher", Georgia, serif;
+  font-family: "OpenDyslexic", "Eulexia", "Pigeon", "Philosopher", Georgia, serif;
 }
 
 /* line 751, ../sass/global.scss */
