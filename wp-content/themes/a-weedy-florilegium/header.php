@@ -282,7 +282,7 @@ A weedy florilegium
   <?php } ?>
 
   <?php if (is_single() || is_page()) { ?>
-    <li><a href="<?php echo get_permalink(); ?>"><?php echo get_the_slug(); ?></a></li>
+    <li><a href="<?php echo get_permalink(); ?>"><?php $slug = basename(get_permalink()); echo $slug; ?></a></li>
   <?php } ?>
 
 <?php } ?>
