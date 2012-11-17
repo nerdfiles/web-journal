@@ -6,7 +6,6 @@
 == -->
 
 
-
 <div id="footer">
 <div class="footer-inner">
 <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><img src="http://i.creativecommons.org/l/by-sa/3.0/us/80x15.png"  alt="Creative Commons License" title="Attribution-ShareAlike 3.0 United States (CC BY-SA 3.0)" /></a> Chief Curator, <a href="http://webjournal.nerdfiles.net/author/nerdfiles/">nerdfiles</a> (Aharon Alexander) | Back to <a href="#top">top</a></p>
