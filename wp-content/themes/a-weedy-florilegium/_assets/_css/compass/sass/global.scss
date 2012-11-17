@@ -11,6 +11,15 @@
   //url('../../../../_assets/_fonts/pigeon/pigeon.svg#svgGraublauweb') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'Eulexia';
+  src: url('../../../../_assets/_fonts/_eulexia/ttf-stable/eulexia.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../../../../_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
+}
+
 body {}
 
 body {  overflow-y: scroll }
@@ -1127,6 +1136,25 @@ body.archive {
     text-align: right;
   }
 }
+
+
+
+
+
+
+
+.universal {
+  .widget { 
+    @extend .grid_4;
+  }
+}
+
+
+
+
+
+
+
 
 @media screen and (max-device-width: 480px) {
   /* iphone only */

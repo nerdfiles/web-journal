@@ -38,17 +38,6 @@
   rel="stylesheet" 
   href="//fonts.googleapis.com/css?family=Philosopher"
   media="all" /--> 
-
-<style charset="utf-8">
-@font-face {
-  font-family: 'Eulexia';
-  src: url('<?php bloginfo("template_directory"); ?>/_assets/_fonts/_eulexia/ttf-stable/eulexia.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'OpenDyslexic';
-  src: url('<?php bloginfo("template_directory"); ?>/_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
-}
-</style>
   
 <link 
   rel="stylesheet" 

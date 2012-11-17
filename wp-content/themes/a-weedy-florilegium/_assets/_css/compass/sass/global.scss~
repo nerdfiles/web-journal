@@ -11,6 +11,15 @@
   //url('../../../../_assets/_fonts/pigeon/pigeon.svg#svgGraublauweb') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'Eulexia';
+  src: url('../../../../_assets/_fonts/_eulexia/ttf-stable/eulexia.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../../../../_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
+}
+
 body {}
 
 body {  overflow-y: scroll }
