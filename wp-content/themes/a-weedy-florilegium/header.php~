@@ -34,7 +34,7 @@
 }
 @font-face {
   font-family: 'OpenDyslexic';
-  src: url('<?php bloginfo("template_directory"); ?>/_assets_fonts/OpenDyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
+  src: url('<?php bloginfo("template_directory"); ?>/_assets/_fonts/OpenDyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
 }
 </style>
   
