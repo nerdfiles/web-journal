@@ -1137,6 +1137,26 @@ body.archive {
   }
 }
 
+
+
+
+
+
+
+#primary {
+  .widget { 
+    @extend .grid_4;
+    @extend .alpha;
+  }
+}
+
+
+
+
+
+
+
+
 @media screen and (max-device-width: 480px) {
   /* iphone only */
   #footer {

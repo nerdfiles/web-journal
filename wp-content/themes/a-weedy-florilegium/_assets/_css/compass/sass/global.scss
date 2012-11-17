@@ -1143,9 +1143,10 @@ body.archive {
 
 
 
-.universal {
-  .widget { 
+#primary {
+  li.widget { 
     @extend .grid_4;
+    @extend .alpha;
   }
 }
 
