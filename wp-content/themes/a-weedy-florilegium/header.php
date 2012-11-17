@@ -26,6 +26,17 @@
   rel="stylesheet" 
   href="//fonts.googleapis.com/css?family=Philosopher"
   media="all" /> 
+
+<style>
+@font-face {
+  font-family: 'Eulexia';
+  url('https://www.dropbox.com/sh/sscph5xpshvwttc/YhhcA67TPS/Fonts/Eulexia/ttf-stable/eulexia.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenDyslexic';
+  url('https://www.dropbox.com/sh/sscph5xpshvwttc/h5HHDoXrre/Fonts/OpenDyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
+}
+</style>
   
 <link 
   rel="stylesheet" 
