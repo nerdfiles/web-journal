@@ -21,13 +21,25 @@
 <link rel="dns-prefetch" href="//platform.twitter.com/" />
 
 <!-- Stylesheets -->
-  
-<link 
+
+<!-- 
+
+  Font Schemes:
+
+    Accesstive
+    Formal
+    Personal
+
+  @nerdfiles 17 2012 11 16:12:44
+
+-->
+
+<!--link 
   rel="stylesheet" 
   href="//fonts.googleapis.com/css?family=Philosopher"
-  media="all" /> 
+  media="all" /--> 
 
-<style>
+<style charset="utf-8">
 @font-face {
   font-family: 'Eulexia';
   src: url('<?php bloginfo("template_directory"); ?>/_assets/_fonts/_eulexia/ttf-stable/eulexia.ttf') format('truetype');
