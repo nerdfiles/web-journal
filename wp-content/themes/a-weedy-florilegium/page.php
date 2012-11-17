@@ -28,7 +28,7 @@
 
 <div class="entry-meta">
 <div class="entry-meta-inner">
-<span class="entry-date"><abbr class="published" title="<?php the_modified_time('Y-m-d\TH:i:sO'); ?>"><i><?php unset($previousday); printf(__('%1$s', 'webjournal'), the_modified_date('d F Y', false)) ?></i></abbr></span>
+<span class="entry-date">Last touch'd on <abbr class="published" title="<?php the_modified_time('Y-m-d\TH:i:sO'); ?>"><i><?php unset($previousday); printf(__('%1$s', 'webjournal'), the_modified_date('d F Y', false)) ?></i></abbr></span>
 <?php edit_post_link(__('Edit this entry', 'webjournal'),'<div class="entry-edit">','</div>') ?>
 </div>
 </div>
