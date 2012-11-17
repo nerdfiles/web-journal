@@ -30,11 +30,11 @@
 <style>
 @font-face {
   font-family: 'Eulexia';
-  src: url('http://dl.dropbox.com/u/47805860/Fonts/Eulexia/ttf-stable/eulexia.ttf') format('truetype');
+  src: url('//dl.dropbox.com/u/47805860/Fonts/Eulexia/ttf-stable/eulexia.ttf') format('truetype');
 }
 @font-face {
   font-family: 'OpenDyslexic';
-  src: url('http://dl.dropbox.com/u/47805860/Fonts/OpenDyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
+  src: url('//dl.dropbox.com/u/47805860/Fonts/OpenDyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
 }
 </style>
   
