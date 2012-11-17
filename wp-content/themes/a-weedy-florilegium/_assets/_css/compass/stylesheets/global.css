@@ -841,7 +841,7 @@ h1, h2, h3 {
   margin-bottom: .5em;
 }
 /* line 773, ../sass/global.scss */
-#home .grid_4 img, #home #primary li.widget img, #primary #home li.widget img {
+#home .grid_4 img {
   width: 220px;
 }
 /* line 775, ../sass/global.scss */
@@ -1359,6 +1359,16 @@ body.archive .page-title {
 /* line 1137, ../sass/global.scss */
 .author-callout li:last-child {
   text-align: right;
+}
+
+/* line 1149, ../sass/global.scss */
+#primary li.widget {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px;
+  margin-left: 0;
 }
 
 @media screen and (max-device-width: 480px) {
