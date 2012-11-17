@@ -17,6 +17,7 @@
 <link rel="dns-prefetch" href="//code.jquery.com/" />
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/" />
 <link rel="dns-prefetch" href="//ajax.googleapis.com/" />
+<link rel="dns-prefetch" href="//google.com/jsapi" />
 <link rel="dns-prefetch" href="//platform.twitter.com/" />
 
 <!-- Stylesheets -->
