@@ -1148,7 +1148,7 @@ body.archive {
 #primary {
   li.widget { 
     @include grid(4);
-    @include alpha();
+    @include alpha;
   }
 }
 
