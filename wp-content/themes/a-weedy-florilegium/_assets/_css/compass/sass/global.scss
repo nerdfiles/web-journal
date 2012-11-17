@@ -1147,8 +1147,13 @@ body.archive {
 
 #primary {
   li.widget { 
-    @include grid(3);
-    @include alpha;
+    @include grid(6);
+    &:first-child {
+      @include alpha;
+    }
+    &:last-child {
+      @include omega;
+    }
   }
 }
 

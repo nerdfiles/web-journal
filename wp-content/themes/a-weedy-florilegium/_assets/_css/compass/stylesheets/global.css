@@ -1367,13 +1367,20 @@ body.archive .page-title {
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 220px;
+  width: 460px;
+}
+/* line 1151, ../sass/global.scss */
+#primary li.widget:first-child {
   margin-left: 0;
+}
+/* line 1154, ../sass/global.scss */
+#primary li.widget:last-child {
+  margin-right: 0;
 }
 
 @media screen and (max-device-width: 480px) {
   /* iphone only */
-  /* line 1164, ../sass/global.scss */
+  /* line 1169, ../sass/global.scss */
   #footer {
     position: relative;
     bottom: 0;
@@ -1383,30 +1390,30 @@ body.archive .page-title {
   }
 }
 @media print {
-  /* line 1175, ../sass/global.scss */
+  /* line 1180, ../sass/global.scss */
   body div#blog-description, body div.sidebar, body div.access, body div#globalnav, body span.archive-meta, body div.cat-meta, body div#footer, body div.navigation, body div.comments form#commentform, body h3#respond {
     display: none;
   }
 
-  /* line 1176, ../sass/global.scss */
+  /* line 1181, ../sass/global.scss */
   body div#wrapper div#header {
     background-color: #fff;
     background-image: none;
     color: #000;
   }
 
-  /* line 1177, ../sass/global.scss */
+  /* line 1182, ../sass/global.scss */
   body div#wrapper div#header h1 a, html body div#wrapper div#header h1 a:link, html body div#wrapper div#header h1 a:visited, html body div#wrapper div#header h1 a:hover, html body div#wrapper div#header h1 a:active {
     color: #000;
   }
 
-  /* line 1178, ../sass/global.scss */
+  /* line 1183, ../sass/global.scss */
   body.single div.entry-meta {
     line-height: 200%;
     margin: 0 20%;
   }
 
-  /* line 1179, ../sass/global.scss */
+  /* line 1184, ../sass/global.scss */
   body.home div.entry-meta, body.archive div.entry-meta, body.search div.entry-meta {
     text-align: center;
     margin: 0 5%;
