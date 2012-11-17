@@ -7,7 +7,10 @@
 == -->
 
 <style>
-  
+
+#primary {
+  padding-bottom: 200px;
+}
 </style>
 
 <div id="primary" class="sidebar universal container_16 clearfix">
