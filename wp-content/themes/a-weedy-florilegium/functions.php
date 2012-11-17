@@ -103,8 +103,8 @@ function javascript_res() {
               
               //Modernizr.load('<?php bloginfo('url'); ?>/wp-includes/js/l10n.js?ver=20101110');
               Modernizr.load('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
-              Modernizr.load('<?php bloginfo('url'); ?>/wp-content/themes/blog.nerdfiles.net/_assets/_js-lib/jquery.waypoints/waypoints.min.js');
-              Modernizr.load('<?php bloginfo('url'); ?>/wp-content/themes/blog.nerdfiles.net/_assets/_js/mew.js');
+              Modernizr.load('<?php bloginfo('url'); ?>/wp-content/themes/a-weedy-florilegium/_assets/_js-lib/jquery.waypoints/waypoints.min.js');
+              Modernizr.load('<?php bloginfo('url'); ?>/wp-content/themes/a-weedy-florilegium/_assets/_js/mew.js');
               
           }
       }

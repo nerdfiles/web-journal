@@ -82,7 +82,7 @@ function clear_fe() {
       //wp_deregister_script('l10n');
       wp_deregister_script('jquery');
 
-      add_action('home_disqus_comments', 'disqus_embed_js');
+      //add_action('home_disqus_comments', 'disqus_embed_js');
       add_action('wp_footer', 'javascript_res', 1);
     }
 }
