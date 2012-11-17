@@ -282,7 +282,7 @@ A weedy florilegium
   <?php } ?>
 
   <?php if (is_single() || is_page()) { ?>
-    <li><a href="<?php echo get_permalink(); ?>"><?php echo preg_replace('/http\:\/\/webjournal\.nerdfiles\.net\/(\d+)\/(\d+)\/(\d+)\/(.*)?\//', '$4', get_permalink()); ?></a></li>
+    <li><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></li>
   <?php } ?>
 
 <?php } ?>
