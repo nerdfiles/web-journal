@@ -50,7 +50,7 @@ return array(
 	'objectcache.lifetime' => 180,
 	'pgcache.enabled' => true,
 	'pgcache.debug' => false,
-	'pgcache.engine' => 'file_generic',
+	'pgcache.engine' => 'file',
 	'pgcache.file.gc' => 3600,
 	'pgcache.file.nfs' => false,
 	'pgcache.file.locking' => false,
