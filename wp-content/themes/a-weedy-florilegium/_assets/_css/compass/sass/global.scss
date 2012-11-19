@@ -535,7 +535,8 @@ html.js #site-access { display: none; }
   .site-name {
     font-family: "Eulexia", "Philosopher", Georgia, serif;
     
-    .logo { position: relative; top: 5px; }
+    .logo { position: relative; top: 5px; 
+      text-shadow: 0 -2px 3px #FFFFFF, 0 -2px 3px #FFFFFF, 0 2px 3px #FFFFFF, 2px 0 3px #FFFFFF; }
     .author-tag a {
       font-family: "Eulexia", "Pigeon", "Philosopher", Georgia, serif !important; 
       font-size: .9em; }
