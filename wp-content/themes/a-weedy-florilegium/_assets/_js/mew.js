@@ -192,7 +192,7 @@ $(document).ready(function() {
       var $this = $(this),
           input = $this.find('#s');
 
-      input.attr('placeholder', 'e.g. "/recipes", "poetry", and so on...');
+      input.attr('placeholder', 'e.g. "/recipes", "/poetry/page/3", "/2009/04", "facts", ...');
     });
 
     $('#searchform').trigger('pages');
