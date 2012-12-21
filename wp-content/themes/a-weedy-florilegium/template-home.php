@@ -31,7 +31,7 @@ $do_not_duplicate = $post->ID; ?>
 <time><a href="/<?php echo get_the_date('Y'); ?>/<?php echo get_the_date('m'); ?>/<?php echo get_the_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
-<?php the_excerpt(); ?>
+<?php //the_excerpt(); ?>
 <footer>
 <!--div class="entry-meta">
 <span class="meta-sep">&para;</span>
@@ -65,7 +65,7 @@ $do_not_duplicate = $post->ID; ?>
 <time><a href="/<?php echo get_the_date('Y'); ?>/<?php echo get_the_date('m'); ?>/<?php echo get_the_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
-<?php the_excerpt(); ?>
+<?php //the_excerpt(); ?>
 <footer>
 <!--div class="entry-meta">
 <span class="meta-sep">&para;</span>
@@ -99,7 +99,7 @@ $do_not_duplicate = $post->ID; ?>
 <time><a href="/<?php echo get_the_date('Y'); ?>/<?php echo get_the_date('m'); ?>/<?php echo get_the_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
-<?php the_excerpt(); ?>
+<?php //the_excerpt(); ?>
 <footer>
 <!--div class="entry-meta">
 <span class="meta-sep">&para;</span>
@@ -133,7 +133,7 @@ $do_not_duplicate = $post->ID; ?>
 <time><a href="/<?php echo get_the_date('Y'); ?>/<?php echo get_the_date('m'); ?>/<?php echo get_the_date('d'); ?>/"><?php the_date(); ?></a></time>
 </div>
 </header>
-<?php the_excerpt(); ?>
+<?php //the_excerpt(); ?>
 <footer>
 <!--div class="entry-meta">
 <span class="meta-sep">&para;</span>
