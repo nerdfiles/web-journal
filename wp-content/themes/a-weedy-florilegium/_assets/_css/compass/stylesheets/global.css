@@ -16,32 +16,36 @@
   src: url("../../../../_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf") format("truetype");
 }
 
-/* line 25, ../sass/global.scss */
-body {
+/* line 28, ../sass/global.scss */
+body,
+input,
+select,
+textarea {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  font-family: 'Eulexia';
 }
 
-/* line 32, ../sass/global.scss */
+/* line 36, ../sass/global.scss */
 body {
   overflow-y: scroll;
 }
 
-/* line 33, ../sass/global.scss */
+/* line 37, ../sass/global.scss */
 ::-webkit-scrollbar-track-piece {
   background-color: #fff;
   -webkit-border-radius: 0;
 }
 
-/* line 36, ../sass/global.scss */
+/* line 40, ../sass/global.scss */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-/* line 39, ../sass/global.scss */
+/* line 43, ../sass/global.scss */
 ::-webkit-scrollbar-thumb {
   height: 50px;
   background-color: #999;
@@ -51,47 +55,47 @@ body {
   border: 2px solid #fff;
 }
 
-/* line 46, ../sass/global.scss */
+/* line 50, ../sass/global.scss */
 ::-webkit-scrollbar-thumb:hover {
   height: 50px;
   background-color: #9f9f9f;
   -webkit-border-radius: 4px;
 }
 
-/* line 50, ../sass/global.scss */
+/* line 54, ../sass/global.scss */
 :-webkit-scrollbar {
   width: 16px;
 }
 
-/* line 55, ../sass/global.scss */
+/* line 59, ../sass/global.scss */
 #site-navigation {
   position: absolute;
   left: -9999px;
 }
 
-/* line 58, ../sass/global.scss */
+/* line 62, ../sass/global.scss */
 #site-admin {
   position: absolute;
   left: -9999px;
 }
 
-/* line 62, ../sass/global.scss */
+/* line 66, ../sass/global.scss */
 #site-header .site-name a {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
-/* line 64, ../sass/global.scss */
+/* line 68, ../sass/global.scss */
 a {
   color: #acbf87;
   opacity: 1 !important;
 }
-/* line 69, ../sass/global.scss */
+/* line 73, ../sass/global.scss */
 a:link {
   color: #acbf87;
   opacity: 1 !important;
 }
 
-/* line 74, ../sass/global.scss */
+/* line 78, ../sass/global.scss */
 .more a {
   display: inline-block !important;
   *zoom: 1;
@@ -102,18 +106,18 @@ a:link {
   text-decoration: none;
   border-bottom: 1px #ccc solid;
 }
-/* line 87, ../sass/global.scss */
+/* line 91, ../sass/global.scss */
 .more a:hover {
   border-bottom: 1px #ccc dashed;
   text-decoration: none !important;
 }
 
-/* line 92, ../sass/global.scss */
+/* line 96, ../sass/global.scss */
 a[title="rdf"] {
   border-bottom: none !important;
 }
 
-/* line 103, ../sass/global.scss */
+/* line 107, ../sass/global.scss */
 body.single #site-breadcrumb a,
 body.single .hfeed a,
 body.archive #site-breadcrumb a,
@@ -135,7 +139,7 @@ body.page-template-archives-php .hfeed a {
   text-decoration: none;
   border-bottom: 1px #ccc solid;
 }
-/* line 115, ../sass/global.scss */
+/* line 119, ../sass/global.scss */
 body.single #site-breadcrumb a:hover,
 body.single .hfeed a:hover,
 body.archive #site-breadcrumb a:hover,
@@ -152,87 +156,87 @@ body.page-template-archives-php .hfeed a:hover {
   text-decoration: none !important;
 }
 
-/* line 121, ../sass/global.scss */
+/* line 125, ../sass/global.scss */
 #site-header a {
   color: #acbf87;
 }
 
-/* line 124, ../sass/global.scss */
+/* line 128, ../sass/global.scss */
 :focus {
   outline: none;
 }
 
-/* line 149, ../sass/global.scss */
+/* line 153, ../sass/global.scss */
 div#header div#blog-description, div#header div.archive-description, div#header div#blog-description {
   display: none;
 }
 
-/* line 232, ../sass/global.scss */
+/* line 236, ../sass/global.scss */
 #s:focus {
   opacity: 1;
 }
-/* line 233, ../sass/global.scss */
+/* line 237, ../sass/global.scss */
 #s:active {
   opacity: 1;
 }
 
-/* line 236, ../sass/global.scss */
+/* line 240, ../sass/global.scss */
 body.single .entry-title, body.single .page-title {
   text-shadow: 0 .1em .2em #ccc;
 }
 
-/* line 249, ../sass/global.scss */
+/* line 253, ../sass/global.scss */
 div.hfeed .page-title span.page-subtitle {
   opacity: .6;
 }
-/* line 265, ../sass/global.scss */
+/* line 269, ../sass/global.scss */
 div.sidebar ul li#search form#searchform:focus, div.sidebar ul li#search input#s:focus {
   opacity: 1;
 }
-/* line 266, ../sass/global.scss */
+/* line 270, ../sass/global.scss */
 div.sidebar ul li#search form#searchform:active, div.sidebar ul li#search input#s:active {
   opacity: 1;
 }
 
 /* todo */
-/* line 280, ../sass/global.scss */
+/* line 284, ../sass/global.scss */
 body.category h2 .page-subtitle {
   text-transform: lowercase;
 }
 
 /* !!header */
 /* wp editor h3 starts here */
-/* line 324, ../sass/global.scss */
+/* line 328, ../sass/global.scss */
 #nav-below {
   margin-bottom: 55px;
 }
 
-/* line 339, ../sass/global.scss */
+/* line 343, ../sass/global.scss */
 .menu-jininmi-container a {
   color: #222;
   text-decoration: none;
 }
 
-/* line 346, ../sass/global.scss */
+/* line 350, ../sass/global.scss */
 .admin-meta a {
   color: #222;
   text-decoration: none;
 }
-/* line 349, ../sass/global.scss */
+/* line 353, ../sass/global.scss */
 .admin-meta a:hover {
   background-color: #fcf7f4;
 }
 
-/* line 354, ../sass/global.scss */
+/* line 358, ../sass/global.scss */
 #searchform label {
   opacity: 0;
 }
-/* line 357, ../sass/global.scss */
+/* line 361, ../sass/global.scss */
 #searchform input[type="submit"] {
   opacity: 0;
 }
 
-/* line 362, ../sass/global.scss */
+/* line 366, ../sass/global.scss */
 div.hfeed {
   min-height: 550px;
 }
@@ -241,24 +245,24 @@ div.hfeed {
  * JavaScript
  */
 /* hide stuff if enabled */
-/* line 373, ../sass/global.scss */
+/* line 377, ../sass/global.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #5d5d5d;
 }
 
-/* line 376, ../sass/global.scss */
+/* line 380, ../sass/global.scss */
 body {
   color: #222;
   background: #f7f7f7;
   font-family: "Eulexia", "Philosopher", Georgia, serif;
 }
 
-/* line 381, ../sass/global.scss */
+/* line 385, ../sass/global.scss */
 .site-name .drop-shadow {
   background: #f5fbe9;
 }
 
-/* line 384, ../sass/global.scss */
+/* line 388, ../sass/global.scss */
 .site-description .drop-shadow {
   background-color: #fcf7f4;
 }
@@ -279,33 +283,33 @@ p.not-this { opacity: .4; }
 p.near-this { opacity: .8; }
 p.this { opacity: 1; }
 */
-/* line 406, ../sass/global.scss */
+/* line 410, ../sass/global.scss */
 #content {
   margin-bottom: 3em;
 }
 
-/* line 409, ../sass/global.scss */
+/* line 413, ../sass/global.scss */
 .form-textarea-label {
   margin: 0 0 1em 0;
 }
 
-/* line 412, ../sass/global.scss */
+/* line 416, ../sass/global.scss */
 .form-textarea {
   margin: 0 0 1em;
 }
 
-/* line 415, ../sass/global.scss */
+/* line 419, ../sass/global.scss */
 .form-submit {
   text-align: center;
 }
 
-/* line 417, ../sass/global.scss */
+/* line 421, ../sass/global.scss */
 .comments {
   margin: 3em 0 0 0;
   padding-top: 2em;
   border-top: 3px #ccc double;
 }
-/* line 422, ../sass/global.scss */
+/* line 426, ../sass/global.scss */
 .comments .comment-author {
   text-align: center;
   padding: 0 0 0 20px;
@@ -315,14 +319,14 @@ p.this { opacity: 1; }
   width: 110px;
   height: 150px;
 }
-/* line 431, ../sass/global.scss */
+/* line 435, ../sass/global.scss */
 .comments div.avatar {
   display: inline-block;
   float: left;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
   margin: 0 0 .6em 0;
 }
-/* line 436, ../sass/global.scss */
+/* line 440, ../sass/global.scss */
 .comments li .fn {
   margin: 0 0 0 -20px;
   text-align: center;
@@ -331,7 +335,7 @@ p.this { opacity: 1; }
   clear: left;
   float: left;
 }
-/* line 443, ../sass/global.scss */
+/* line 447, ../sass/global.scss */
 .comments .comment-meta {
   margin: 1em 0 0 0;
   float: left;
@@ -340,31 +344,31 @@ p.this { opacity: 1; }
   opacity: .6;
   display: block;
 }
-/* line 450, ../sass/global.scss */
+/* line 454, ../sass/global.scss */
 .comments li {
   margin: 0 auto;
   clear: left;
 }
-/* line 453, ../sass/global.scss */
+/* line 457, ../sass/global.scss */
 .comments li:hover .comment-meta {
   opacity: 1;
 }
-/* line 455, ../sass/global.scss */
+/* line 459, ../sass/global.scss */
 .comments .comment-entry {
   width: 600px;
   margin: 0 20px 0 0;
   float: left;
 }
-/* line 459, ../sass/global.scss */
+/* line 463, ../sass/global.scss */
 .comments .comment-entry ul {
   margin-left: 20px;
 }
-/* line 460, ../sass/global.scss */
+/* line 464, ../sass/global.scss */
 .comments .comment-entry li {
   border-top: none;
   padding: 0;
 }
-/* line 461, ../sass/global.scss */
+/* line 465, ../sass/global.scss */
 .comments ol {
   border-bottom: 3px #ccc double;
   font-size: 1.5em;
@@ -372,22 +376,22 @@ p.this { opacity: 1; }
   margin: 0 0 2em;
   padding: 0 0 1em;
 }
-/* line 467, ../sass/global.scss */
+/* line 471, ../sass/global.scss */
 .comments li {
   margin: 0;
   padding: 0;
   border-top: 1px #ccc solid;
   padding: 1em 0;
 }
-/* line 468, ../sass/global.scss */
+/* line 472, ../sass/global.scss */
 .comments li.c1 {
   border-top: none;
 }
-/* line 474, ../sass/global.scss */
+/* line 478, ../sass/global.scss */
 .comments label {
   font: 2em/1 "Eulexia", "Philosopher", Georgia, serif;
 }
-/* line 476, ../sass/global.scss */
+/* line 480, ../sass/global.scss */
 .comments input[type="submit"] {
   border: none;
   font-size: 3em;
@@ -395,7 +399,7 @@ p.this { opacity: 1; }
   background: transparent;
 }
 
-/* line 482, ../sass/global.scss */
+/* line 486, ../sass/global.scss */
 .unapproved {
   background: #ffdd77;
   display: inline-block;
@@ -403,18 +407,18 @@ p.this { opacity: 1; }
   margin: 0 0 .5em 0;
 }
 
-/* line 488, ../sass/global.scss */
+/* line 492, ../sass/global.scss */
 #numcomments {
   margin: 0 0 .5em;
 }
 
-/* line 491, ../sass/global.scss */
+/* line 495, ../sass/global.scss */
 #respond {
   margin: 0 0 1em;
   clear: left;
 }
 
-/* line 495, ../sass/global.scss */
+/* line 499, ../sass/global.scss */
 textarea {
   border: 1px #ccc solid;
   width: 97.5%;
@@ -422,55 +426,55 @@ textarea {
   padding: .5em !important;
 }
 
-/* line 501, ../sass/global.scss */
+/* line 505, ../sass/global.scss */
 #header {
   margin: 1em 0;
 }
 
-/* line 504, ../sass/global.scss */
+/* line 508, ../sass/global.scss */
 html.js #site-access {
   display: none;
 }
 
-/* line 506, ../sass/global.scss */
+/* line 510, ../sass/global.scss */
 #site-access {
   position: absolute;
   left: -9999px;
 }
-/* line 509, ../sass/global.scss */
+/* line 513, ../sass/global.scss */
 #site-access ul {
   list-style: none;
   margin: 0 0 30px;
 }
-/* line 512, ../sass/global.scss */
+/* line 516, ../sass/global.scss */
 #site-access li {
   margin: 0;
 }
-/* line 514, ../sass/global.scss */
+/* line 518, ../sass/global.scss */
 #site-access a {
   text-decoration: none;
   border-bottom: 1px #ccc solid;
 }
-/* line 517, ../sass/global.scss */
+/* line 521, ../sass/global.scss */
 #site-access.show {
   position: relative;
   left: 0;
 }
-/* line 519, ../sass/global.scss */
+/* line 523, ../sass/global.scss */
 #site-access.sticky {
   position: fixed;
   width: 150px;
   left: inherit !important;
   right: 0 !important;
 }
-/* line 522, ../sass/global.scss */
+/* line 526, ../sass/global.scss */
 #site-access.sticky ul {
   list-style: none;
   position: absolute;
   right: 20px;
   top: 75px;
 }
-/* line 523, ../sass/global.scss */
+/* line 527, ../sass/global.scss */
 #site-access.sticky li {
   -webkit-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
   -moz-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
@@ -481,33 +485,33 @@ html.js #site-access {
   padding: 5px 10px;
   text-align: right;
 }
-/* line 532, ../sass/global.scss */
+/* line 536, ../sass/global.scss */
 #site-access.sticky li:hover {
   -webkit-box-shadow: 0 0 0.5em #d2d2d2;
   -moz-box-shadow: 0 0 0.5em #d2d2d2;
   box-shadow: 0 0 0.5em #d2d2d2;
 }
 
-/* line 538, ../sass/global.scss */
+/* line 542, ../sass/global.scss */
 #site-header {
   margin: 0 0 1.5em 0;
 }
-/* line 540, ../sass/global.scss */
+/* line 544, ../sass/global.scss */
 #site-header .site-name {
   font-family: "Eulexia", "Philosopher", Georgia, serif;
 }
-/* line 543, ../sass/global.scss */
+/* line 547, ../sass/global.scss */
 #site-header .site-name .logo {
   position: relative;
   top: 5px;
   text-shadow: 0 -2px 3px white, 0 -2px 3px white, 0 2px 3px white, 2px 0 3px white;
 }
-/* line 545, ../sass/global.scss */
+/* line 549, ../sass/global.scss */
 #site-header .site-name .author-tag a {
   font-family: "Eulexia", "Pigeon", "Philosopher", Georgia, serif !important;
   font-size: .9em;
 }
-/* line 548, ../sass/global.scss */
+/* line 552, ../sass/global.scss */
 #site-header .site-name a {
   font-size: 26px;
   line-height: 1.1;
@@ -515,85 +519,85 @@ html.js #site-access {
   display: block;
   color: #222;
 }
-/* line 554, ../sass/global.scss */
+/* line 558, ../sass/global.scss */
 #site-header .site-description {
   font-family: "Eulexia", "Philosopher", Georgia, serif;
 }
 
-/* line 557, ../sass/global.scss */
+/* line 561, ../sass/global.scss */
 #site-navigation {
   clear: left;
 }
-/* line 559, ../sass/global.scss */
+/* line 563, ../sass/global.scss */
 #site-navigation ul {
   display: inline-block;
   margin: 0;
 }
-/* line 562, ../sass/global.scss */
+/* line 566, ../sass/global.scss */
 #site-navigation li {
   display: inline-block;
 }
-/* line 564, ../sass/global.scss */
+/* line 568, ../sass/global.scss */
 #site-navigation a {
   opacity: .5;
   text-align: center;
   color: #222;
 }
-/* line 568, ../sass/global.scss */
+/* line 572, ../sass/global.scss */
 #site-navigation a:visited {
   color: #222;
 }
-/* line 570, ../sass/global.scss */
+/* line 574, ../sass/global.scss */
 #site-navigation a.drop-shadow:hover {
   background: #f6fcea;
 }
-/* line 572, ../sass/global.scss */
+/* line 576, ../sass/global.scss */
 #site-navigation a:hover {
   opacity: 1;
 }
 
-/* line 575, ../sass/global.scss */
+/* line 579, ../sass/global.scss */
 #menu-item-2218 {
   text-indent: -0.15em;
 }
 
-/* line 578, ../sass/global.scss */
+/* line 582, ../sass/global.scss */
 #menu-item-2219 {
   text-indent: -0.35em;
 }
 
-/* line 581, ../sass/global.scss */
+/* line 585, ../sass/global.scss */
 .menu-jininmi {
   display: block;
 }
 
-/* line 585, ../sass/global.scss */
+/* line 589, ../sass/global.scss */
 #site-admin ul {
   display: inline-block;
   margin: 0;
 }
-/* line 588, ../sass/global.scss */
+/* line 592, ../sass/global.scss */
 #site-admin li {
   display: inline-block;
 }
-/* line 590, ../sass/global.scss */
+/* line 594, ../sass/global.scss */
 #site-admin a {
   opacity: .5;
   text-align: center;
 }
-/* line 593, ../sass/global.scss */
+/* line 597, ../sass/global.scss */
 #site-admin a:hover {
   opacity: 1;
 }
 
-/* line 596, ../sass/global.scss */
+/* line 600, ../sass/global.scss */
 #site-search {
   opacity: .4;
   clear: left;
   padding: 1em 0;
   text-align: center;
 }
-/* line 602, ../sass/global.scss */
+/* line 606, ../sass/global.scss */
 #site-search.sticky {
   z-index: 9001;
   background: #F7F7F7;
@@ -606,11 +610,11 @@ html.js #site-access {
   -webkit-box-shadow: 0 0 1em #ccc;
   box-shadow: 0 0 1em #ccc;
 }
-/* line 614, ../sass/global.scss */
+/* line 618, ../sass/global.scss */
 #site-search:hover {
   opacity: 7;
 }
-/* line 616, ../sass/global.scss */
+/* line 620, ../sass/global.scss */
 #site-search label {
   font-family: "Eulexia", "Philosopher", Georgia, serif;
   cursor: help;
@@ -621,12 +625,12 @@ html.js #site-access {
   position: relative;
   right: 10px;
 }
-/* line 625, ../sass/global.scss */
+/* line 629, ../sass/global.scss */
 #site-search input {
   font-family: "Eulexia", "Philosopher", Georgia, serif;
   cursor: pointer;
 }
-/* line 628, ../sass/global.scss */
+/* line 632, ../sass/global.scss */
 #site-search input[type="text"] {
   font-style: italic;
   color: #777;
@@ -637,7 +641,7 @@ html.js #site-access {
   width: 700px;
   display: inline !important;
 }
-/* line 638, ../sass/global.scss */
+/* line 642, ../sass/global.scss */
 #site-search input[type="submit"] {
   font-size: 1.4em;
   border: none;
@@ -648,120 +652,120 @@ html.js #site-access {
   vertical-align: middle;
 }
 
-/* line 648, ../sass/global.scss */
+/* line 652, ../sass/global.scss */
 section {
   display: block;
 }
 
-/* line 652, ../sass/global.scss */
+/* line 656, ../sass/global.scss */
 div.hfeed {
   clear: left;
 }
-/* line 654, ../sass/global.scss */
+/* line 658, ../sass/global.scss */
 div.hfeed.sticky {
   padding-top: 3em;
 }
-/* line 655, ../sass/global.scss */
+/* line 659, ../sass/global.scss */
 div.entry-meta {
   clear: left;
   margin: 0 0 1.5em;
 }
 
-/* line 660, ../sass/global.scss */
+/* line 664, ../sass/global.scss */
 html.page .entry-title, html.single .entry-title {
   font-size: 2em;
   clear: left;
 }
-/* line 663, ../sass/global.scss */
+/* line 667, ../sass/global.scss */
 html.page .entry-title a, html.single .entry-title a {
   color: #5c5c5c;
   text-decoration: none;
 }
-/* line 666, ../sass/global.scss */
+/* line 670, ../sass/global.scss */
 html.page .entry-content, html.single .entry-content {
   font-size: 1em;
 }
-/* line 669, ../sass/global.scss */
+/* line 673, ../sass/global.scss */
 html.search .entry-title {
   font-size: 1em;
 }
-/* line 671, ../sass/global.scss */
+/* line 675, ../sass/global.scss */
 html.search .entry-title a {
   color: #222;
   text-decoration: none;
 }
-/* line 674, ../sass/global.scss */
+/* line 678, ../sass/global.scss */
 html.search .hentry {
   width: 220px;
   float: left;
   margin: 0 10px;
 }
-/* line 678, ../sass/global.scss */
+/* line 682, ../sass/global.scss */
 html.search .hentry:nth-child(4n) {
   margin-right: 0;
 }
-/* line 680, ../sass/global.scss */
+/* line 684, ../sass/global.scss */
 html.search .hentry:nth-child(4n+1) {
   clear: left;
   margin-left: 0;
 }
-/* line 683, ../sass/global.scss */
+/* line 687, ../sass/global.scss */
 html.search .results-none {
   width: 100%;
 }
-/* line 685, ../sass/global.scss */
+/* line 689, ../sass/global.scss */
 html.search .p1 {
   margin-left: 0;
 }
-/* line 687, ../sass/global.scss */
+/* line 691, ../sass/global.scss */
 html.search .entry-meta {
   font-size: .8em;
   color: #999;
 }
-/* line 690, ../sass/global.scss */
+/* line 694, ../sass/global.scss */
 html.search .entry-content {
   margin-bottom: 1em;
 }
-/* line 692, ../sass/global.scss */
+/* line 696, ../sass/global.scss */
 html.search .navigation {
   clear: left;
 }
 
-/* line 695, ../sass/global.scss */
+/* line 699, ../sass/global.scss */
 .pagenavi-container {
   padding-bottom: 2em;
 }
 
-/* line 698, ../sass/global.scss */
+/* line 702, ../sass/global.scss */
 .footer-pagenavi {
   padding-bottom: 3em;
 }
 
-/* line 701, ../sass/global.scss */
+/* line 705, ../sass/global.scss */
 .site-name {
   position: relative;
 }
-/* line 703, ../sass/global.scss */
+/* line 707, ../sass/global.scss */
 .site-name span {
   font-size: 1.5em;
   letter-spacing: .2em;
 }
-/* line 706, ../sass/global.scss */
+/* line 710, ../sass/global.scss */
 .site-name a {
   text-decoration: none;
 }
 
-/* line 709, ../sass/global.scss */
+/* line 713, ../sass/global.scss */
 .a, .weedy {
   display: inline;
 }
 
-/* line 712, ../sass/global.scss */
+/* line 716, ../sass/global.scss */
 .florilegium {
   display: block;
 }
 
-/* line 715, ../sass/global.scss */
+/* line 719, ../sass/global.scss */
 .site-name .author-tag {
   display: block;
   position: absolute;
@@ -772,26 +776,26 @@ html.search .navigation {
   text-align: right;
   width: 80px;
 }
-/* line 724, ../sass/global.scss */
+/* line 728, ../sass/global.scss */
 .site-name .author-tag a {
   display: inline !important;
   height: auto;
 }
 
-/* line 728, ../sass/global.scss */
+/* line 732, ../sass/global.scss */
 #latest {
   height: 57px;
 }
-/* line 730, ../sass/global.scss */
+/* line 734, ../sass/global.scss */
 #latest header {
   display: inline-block;
 }
-/* line 732, ../sass/global.scss */
+/* line 736, ../sass/global.scss */
 #latest h1 a, #latest h2 a {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
-/* line 735, ../sass/global.scss */
+/* line 739, ../sass/global.scss */
 #latest .time {
   color: #777;
   border-bottom: 1px #ccc solid;
@@ -802,14 +806,14 @@ html.search .navigation {
   font-size: 16px;
   font-family: "Eulexia", "Philosopher", Georgia, serif;
 }
-/* line 747, ../sass/global.scss */
+/* line 751, ../sass/global.scss */
 #latest h1 {
   line-height: 1;
   font-size: 1em;
   margin: 0 5px 0 0;
   display: inline-block;
 }
-/* line 752, ../sass/global.scss */
+/* line 756, ../sass/global.scss */
 #latest h2 {
   opacity: .7;
   line-height: 1;
@@ -817,7 +821,7 @@ html.search .navigation {
   margin: 0;
   display: inline-block;
 }
-/* line 753, ../sass/global.scss */
+/* line 757, ../sass/global.scss */
 #latest h2:hover {
   opacity: 1;
 }
@@ -825,69 +829,69 @@ html.search .navigation {
 /**
  * Home
  */
-/* line 765, ../sass/global.scss */
+/* line 769, ../sass/global.scss */
 h1, h2, h3 {
   font-family: "OpenDyslexic", "Eulexia", "Pigeon", "Philosopher", Georgia, serif;
 }
 
-/* line 768, ../sass/global.scss */
+/* line 772, ../sass/global.scss */
 #home {
   margin-bottom: 2em;
 }
-/* line 770, ../sass/global.scss */
+/* line 774, ../sass/global.scss */
 #home h1 {
   display: none;
 }
-/* line 772, ../sass/global.scss */
+/* line 776, ../sass/global.scss */
 #home h2 {
   font-size: 1.5em;
   margin-bottom: .5em;
   color: #acbf87;
 }
-/* line 776, ../sass/global.scss */
+/* line 780, ../sass/global.scss */
 #home h3 {
   font-size: 1.2em;
   margin-bottom: .5em;
 }
-/* line 779, ../sass/global.scss */
+/* line 783, ../sass/global.scss */
 #home .grid_4 img {
   width: 220px;
 }
-/* line 781, ../sass/global.scss */
+/* line 785, ../sass/global.scss */
 #home footer {
   font-size: 10px;
   opacity: 0.4;
   text-align: center;
 }
-/* line 785, ../sass/global.scss */
+/* line 789, ../sass/global.scss */
 #home footer .meta-sep {
   padding: 3px 0 0 0;
 }
-/* line 789, ../sass/global.scss */
+/* line 793, ../sass/global.scss */
 #home article {
   margin: 1em 0 1.5em 0;
 }
-/* line 791, ../sass/global.scss */
+/* line 795, ../sass/global.scss */
 #home article p {
   margin: 1em 0 .7em;
 }
-/* line 793, ../sass/global.scss */
+/* line 797, ../sass/global.scss */
 #home .more a {
   display: block;
   padding: .5em 0;
 }
-/* line 796, ../sass/global.scss */
+/* line 800, ../sass/global.scss */
 #home .time {
   margin: .5em 0;
   font-size: .9em;
   color: #777;
 }
-/* line 797, ../sass/global.scss */
+/* line 801, ../sass/global.scss */
 #home .time a {
   text-decoration: none;
   color: #787878;
 }
-/* line 804, ../sass/global.scss */
+/* line 808, ../sass/global.scss */
 #home time {
   border-bottom: 1px #ccc solid;
 }
@@ -900,7 +904,7 @@ h1, h2, h3 {
        -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }*/
-/* line 816, ../sass/global.scss */
+/* line 820, ../sass/global.scss */
 .raised {
   -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -908,7 +912,7 @@ h1, h2, h3 {
 }
 
 /* Shared styles */
-/* line 823, ../sass/global.scss */
+/* line 827, ../sass/global.scss */
 html.single textarea, #site-search input[type="text"], .drop-shadow {
   display: block;
   /* Shouldn't this be the case by default? */
@@ -920,21 +924,21 @@ html.single textarea, #site-search input[type="text"], .drop-shadow {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-/* line 834, ../sass/global.scss */
+/* line 838, ../sass/global.scss */
 html.single textarea:before, html.single textarea:after {
   content: "";
   position: absolute;
   z-index: -2;
 }
 
-/* line 840, ../sass/global.scss */
+/* line 844, ../sass/global.scss */
 #site-search input[type="text"]:before, #site-search input[type="text"]:after {
   content: "";
   position: absolute;
   z-index: -2;
 }
 
-/* line 846, ../sass/global.scss */
+/* line 850, ../sass/global.scss */
 .drop-shadow:before, .drop-shadow:after {
   content: "";
   position: absolute;
@@ -944,18 +948,18 @@ html.single textarea:before, html.single textarea:after {
 /**
  * Single
  */
-/* line 856, ../sass/global.scss */
+/* line 860, ../sass/global.scss */
 body.page div.page h1 {
   margin-top: .5em;
   text-align: center;
   font-size: 4em;
   text-shadow: -0.5em -0.5em 0.1em rgba(200, 200, 200, 0.3);
 }
-/* line 861, ../sass/global.scss */
+/* line 865, ../sass/global.scss */
 body.single div.post .entry-content {
   font-size: 16px;
 }
-/* line 864, ../sass/global.scss */
+/* line 868, ../sass/global.scss */
 body.page div.page .entry-content {
   font-size: 16px;
   -webkit-column-count: 2;
@@ -969,16 +973,16 @@ body.page div.page .entry-content {
   column-rule: 1px dotted #bbb;
 }
 
-/* line 876, ../sass/global.scss */
+/* line 880, ../sass/global.scss */
 .clear-fix {
   zoom: 1;
 }
-/* line 877, ../sass/global.scss */
+/* line 881, ../sass/global.scss */
 .clear-fix:before {
   content: "";
   display: table;
 }
-/* line 880, ../sass/global.scss */
+/* line 884, ../sass/global.scss */
 .clear-fix:after {
   content: "";
   display: table;
@@ -986,7 +990,7 @@ body.page div.page .entry-content {
 }
 
 /* (hasLayout trigger) */
-/* line 888, ../sass/global.scss */
+/* line 892, ../sass/global.scss */
 #footer {
   padding: 5px 10px 15px;
   background: #fff;
@@ -1003,23 +1007,23 @@ body.page div.page .entry-content {
   opacity: .6;
   width: 100%;
 }
-/* line 904, ../sass/global.scss */
+/* line 908, ../sass/global.scss */
 #footer .footer-inner {
   width: 960px;
   margin: 0 auto;
 }
-/* line 906, ../sass/global.scss */
+/* line 910, ../sass/global.scss */
 #footer:hover {
   opacity: 1;
 }
-/* line 908, ../sass/global.scss */
+/* line 912, ../sass/global.scss */
 #footer p {
   margin: 0;
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
-/* line 910, ../sass/global.scss */
+/* line 914, ../sass/global.scss */
 #footer .twitter {
   position: relative;
   top: .5em;
@@ -1028,12 +1032,12 @@ body.page div.page .entry-content {
   *display: inline;
   margin: 0 0 0 1em;
 }
-/* line 912, ../sass/global.scss */
+/* line 916, ../sass/global.scss */
 #footer .twitter iframe {
   display: inline;
   width: auto !important;
 }
-/* line 914, ../sass/global.scss */
+/* line 918, ../sass/global.scss */
 #footer .googleplus {
   position: relative;
   top: .65em;
@@ -1043,7 +1047,7 @@ body.page div.page .entry-content {
   margin: 0 0 0 1em;
 }
 
-/* line 916, ../sass/global.scss */
+/* line 920, ../sass/global.scss */
 #gfc_profile {
   margin: -20px 0 0 !important;
   padding: 0;
@@ -1052,7 +1056,7 @@ body.page div.page .entry-content {
   top: -15px;
   font-size: 1em;
 }
-/* line 923, ../sass/global.scss */
+/* line 927, ../sass/global.scss */
 #gfc_profile ul {
   margin: 0;
   padding: 0;
@@ -1060,21 +1064,21 @@ body.page div.page .entry-content {
   top: 0px;
   left: 75px;
 }
-/* line 929, ../sass/global.scss */
+/* line 933, ../sass/global.scss */
 #gfc_profile li {
   margin: 0;
   padding: 0;
   display: inline;
   border: none;
 }
-/* line 934, ../sass/global.scss */
+/* line 938, ../sass/global.scss */
 #gfc_profile img {
   margin: 0;
   padding: 0;
   float: none !important;
 }
 
-/* line 940, ../sass/global.scss */
+/* line 944, ../sass/global.scss */
 body.page-template-template-single-column-php div.post .entry-content, body.page-template-template-single-column-php div.page .entry-content {
   -webkit-column-count: 1;
   -webkit-column-gap: 40px;
@@ -1087,24 +1091,24 @@ body.page-template-template-single-column-php div.post .entry-content, body.page
   column-rule: 1px dotted #BBB;
 }
 
-/* line 953, ../sass/global.scss */
+/* line 957, ../sass/global.scss */
 body.page-template-archives-php ul.xoxo img {
   float: left;
   margin: 2px 10px 0 0;
 }
-/* line 954, ../sass/global.scss */
+/* line 958, ../sass/global.scss */
 body.page-template-archives-php ul.xoxo ul {
   margin: 0;
   list-style: none;
 }
-/* line 955, ../sass/global.scss */
+/* line 959, ../sass/global.scss */
 body.page-template-archives-php ul.xoxo li {
   margin: 0;
   list-style: none;
   float: left;
   width: 225px;
 }
-/* line 956, ../sass/global.scss */
+/* line 960, ../sass/global.scss */
 body.page-template-archives-php ul.xoxo li li {
   float: none;
   width: auto;
@@ -1116,12 +1120,12 @@ Default style for WP-PageNavi plugin
 
 http://wordpress.org/extend/plugins/wp-pagenavi/
 */
-/* line 965, ../sass/global.scss */
+/* line 969, ../sass/global.scss */
 div.pagenavi-container {
   padding-bottom: 1em;
 }
 
-/* line 968, ../sass/global.scss */
+/* line 972, ../sass/global.scss */
 .wp-pagenavi {
   clear: both;
   padding: .5em 0;
@@ -1130,74 +1134,74 @@ div.pagenavi-container {
   font-size: 1.4em;
   line-height: 1;
 }
-/* line 978, ../sass/global.scss */
+/* line 982, ../sass/global.scss */
 .wp-pagenavi a, .wp-pagenavi span {
   text-decoration: none;
   padding: 3px 5px;
   margin: 2px;
 }
-/* line 982, ../sass/global.scss */
+/* line 986, ../sass/global.scss */
 .wp-pagenavi .last {
   position: relative;
   top: 1px;
 }
-/* line 984, ../sass/global.scss */
+/* line 988, ../sass/global.scss */
 .wp-pagenavi a:hover, .wp-pagenavi span.current {
   border-color: #000;
 }
-/* line 986, ../sass/global.scss */
+/* line 990, ../sass/global.scss */
 .wp-pagenavi span.current {
   font-weight: bold;
 }
 
-/* line 988, ../sass/global.scss */
+/* line 992, ../sass/global.scss */
 #site-social {
   position: relative;
 }
 
-/* line 989, ../sass/global.scss */
+/* line 993, ../sass/global.scss */
 .addthis_default_style {
   position: absolute;
   right: -1em;
   top: 268px;
 }
 
-/* line 992, ../sass/global.scss */
+/* line 996, ../sass/global.scss */
 img.alignleft {
   float: left;
   margin: 0 1em 1em 0;
   line-height: 1;
 }
 
-/* line 995, ../sass/global.scss */
+/* line 999, ../sass/global.scss */
 body.single div.post .entry-content,
 body.page div.page .entry-content {
   margin-bottom: 3em;
 }
 
-/* line 997, ../sass/global.scss */
+/* line 1001, ../sass/global.scss */
 .byline {
   margin: 0 0 1em 0;
   color: #999;
 }
-/* line 1001, ../sass/global.scss */
+/* line 1005, ../sass/global.scss */
 .byline em {
   display: block;
 }
 
-/* line 1003, ../sass/global.scss */
+/* line 1007, ../sass/global.scss */
 .poem {
   margin: 0 0 1em;
 }
 
-/* line 1012, ../sass/global.scss */
+/* line 1016, ../sass/global.scss */
 blockquote {
   margin: 1.5em 1em;
   padding: 1em;
   position: relative;
 }
 
-/* line 1013, ../sass/global.scss */
+/* line 1017, ../sass/global.scss */
 blockquote:before {
   content: "❝";
   position: absolute;
@@ -1207,7 +1211,7 @@ blockquote:before {
   opacity: .4;
 }
 
-/* line 1014, ../sass/global.scss */
+/* line 1018, ../sass/global.scss */
 blockquote cite {
   /*
   display: block; 
@@ -1219,46 +1223,46 @@ blockquote cite {
   margin: 0 1em;*/
 }
 
-/* line 1024, ../sass/global.scss */
+/* line 1028, ../sass/global.scss */
 blockquote em {
   display: inline;
 }
 
-/* line 1027, ../sass/global.scss */
+/* line 1031, ../sass/global.scss */
 body div.entry-meta {
   color: #777;
   line-height: 2.3;
   margin: 30px 30px;
 }
-/* line 1029, ../sass/global.scss */
+/* line 1033, ../sass/global.scss */
 body div.entry-meta a {
   text-decoration: none;
   color: #777;
   border-bottom: 1px #CCC solid;
 }
-/* line 1039, ../sass/global.scss */
+/* line 1043, ../sass/global.scss */
 body.search .hentry {
   margin-bottom: 40px;
 }
-/* line 1045, ../sass/global.scss */
+/* line 1049, ../sass/global.scss */
 body.home #home section article {
   margin-bottom: 40px;
 }
-/* line 1049, ../sass/global.scss */
+/* line 1053, ../sass/global.scss */
 body.home div.entry-meta {
   margin: 0 0;
 }
-/* line 1052, ../sass/global.scss */
+/* line 1056, ../sass/global.scss */
 body.search div.entry-meta {
   margin: 0 0;
 }
-/* line 1056, ../sass/global.scss */
+/* line 1060, ../sass/global.scss */
 body.single div.entry-meta {
   line-height: 2.3;
   margin: 30px 30px 50px;
 }
 
-/* line 1060, ../sass/global.scss */
+/* line 1064, ../sass/global.scss */
 .mouse-thinkers-beware {
   opacity: .75;
   width: 42%;
@@ -1269,66 +1273,66 @@ body.single div.entry-meta {
   text-align: right;
 }
 
-/* line 1071, ../sass/global.scss */
+/* line 1075, ../sass/global.scss */
 .sticky .mouse-thinkers-beware {
   display: none;
 }
 
-/* line 1077, ../sass/global.scss */
+/* line 1081, ../sass/global.scss */
 body.archive .page-title {
   text-align: center;
   color: #e0e0e0;
   font-size: 30px;
 }
 
-/* line 1087, ../sass/global.scss */
+/* line 1091, ../sass/global.scss */
 #site-breadcrumb {
   margin-top: 15px;
   text-align: center;
   color: #e0e0e0;
 }
 
-/* line 1088, ../sass/global.scss */
+/* line 1092, ../sass/global.scss */
 #site-breadcrumb ul {
   margin: 0;
   list-style: none;
 }
 
-/* line 1089, ../sass/global.scss */
+/* line 1093, ../sass/global.scss */
 #site-breadcrumb li {
   display: inline;
   margin: 0 0 0 5px;
 }
 
-/* line 1090, ../sass/global.scss */
+/* line 1094, ../sass/global.scss */
 #site-breadcrumb a {
   text-decoration: none;
 }
 
-/* line 1095, ../sass/global.scss */
+/* line 1099, ../sass/global.scss */
 #site-breadcrumb ul a:hover {
   text-decoration: underline;
 }
-/* line 1097, ../sass/global.scss */
+/* line 1101, ../sass/global.scss */
 #site-breadcrumb ul li {
   margin: 0;
 }
-/* line 1100, ../sass/global.scss */
+/* line 1104, ../sass/global.scss */
 #site-breadcrumb ul li:first-child:before {
   content: "";
 }
-/* line 1103, ../sass/global.scss */
+/* line 1107, ../sass/global.scss */
 #site-breadcrumb ul li:last-child:after {
   color: #999;
   content: " /";
 }
-/* line 1106, ../sass/global.scss */
+/* line 1110, ../sass/global.scss */
 #site-breadcrumb ul li:before {
   color: #999;
   content: "/ ";
 }
 
-/* line 1110, ../sass/global.scss */
+/* line 1114, ../sass/global.scss */
 .call-access-menu {
   background: #F7F7F7 !important;
   padding: 3px 6px 1px;
@@ -1343,7 +1347,7 @@ body.archive .page-title {
   cursor: pointer;
 }
 
-/* line 1124, ../sass/global.scss */
+/* line 1128, ../sass/global.scss */
 .author-callout ul {
   opacity: .6;
   border-top: 1px #e9e9e9 solid;
@@ -1354,23 +1358,23 @@ body.archive .page-title {
   overflow: hidden;
   list-style: none;
 }
-/* line 1133, ../sass/global.scss */
+/* line 1137, ../sass/global.scss */
 .author-callout ul:empty {
   border-bottom: none !important;
 }
-/* line 1137, ../sass/global.scss */
+/* line 1141, ../sass/global.scss */
 .author-callout li {
   float: left;
   font-size: 24px;
   margin: 0;
   width: 100%;
 }
-/* line 1143, ../sass/global.scss */
+/* line 1147, ../sass/global.scss */
 .author-callout li:last-child {
   text-align: right;
 }
 
-/* line 1155, ../sass/global.scss */
+/* line 1159, ../sass/global.scss */
 #primary li.widget {
   display: inline;
   float: left;
@@ -1378,18 +1382,18 @@ body.archive .page-title {
   margin-right: 10px;
   width: 460px;
 }
-/* line 1157, ../sass/global.scss */
+/* line 1161, ../sass/global.scss */
 #primary li.widget:first-child {
   margin-left: 0;
 }
-/* line 1160, ../sass/global.scss */
+/* line 1164, ../sass/global.scss */
 #primary li.widget:last-child {
   margin-right: 0;
 }
 
 @media screen and (max-device-width: 480px) {
   /* iphone only */
-  /* line 1175, ../sass/global.scss */
+  /* line 1179, ../sass/global.scss */
   #footer {
     position: relative;
     bottom: 0;
@@ -1399,30 +1403,30 @@ body.archive .page-title {
   }
 }
 @media print {
-  /* line 1186, ../sass/global.scss */
+  /* line 1190, ../sass/global.scss */
   body div#blog-description, body div.sidebar, body div.access, body div#globalnav, body span.archive-meta, body div.cat-meta, body div#footer, body div.navigation, body div.comments form#commentform, body h3#respond {
     display: none;
   }
 
-  /* line 1187, ../sass/global.scss */
+  /* line 1191, ../sass/global.scss */
   body div#wrapper div#header {
     background-color: #fff;
     background-image: none;
     color: #000;
   }
 
-  /* line 1188, ../sass/global.scss */
+  /* line 1192, ../sass/global.scss */
   body div#wrapper div#header h1 a, html body div#wrapper div#header h1 a:link, html body div#wrapper div#header h1 a:visited, html body div#wrapper div#header h1 a:hover, html body div#wrapper div#header h1 a:active {
     color: #000;
   }
 
-  /* line 1189, ../sass/global.scss */
+  /* line 1193, ../sass/global.scss */
   body.single div.entry-meta {
     line-height: 200%;
     margin: 0 20%;
   }
 
-  /* line 1190, ../sass/global.scss */
+  /* line 1194, ../sass/global.scss */
   body.home div.entry-meta, body.archive div.entry-meta, body.search div.entry-meta {
     text-align: center;
     margin: 0 5%;
