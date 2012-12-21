@@ -22,7 +22,12 @@
   src: url('../../../../_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
 }
 
-body {}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
 
 body {  overflow-y: scroll }
 ::-webkit-scrollbar-track-piece {
