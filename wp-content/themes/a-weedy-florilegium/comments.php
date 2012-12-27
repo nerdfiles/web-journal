@@ -5,8 +5,6 @@
 comments.php 
 
 == -->
-<!--
-
 
 <?php if ( !is_front_page() && 'open' == $post->comment_status ) { ?>
 
@@ -136,5 +134,3 @@ get_option('siteurl') . '/wp-login.php?action=logout&amp;redirect_to=' . get_per
 </section><!-- .comments -->
 
 <?php } ?>
-
--->

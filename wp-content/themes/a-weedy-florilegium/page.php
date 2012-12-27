@@ -35,7 +35,7 @@
 
 </div><!-- .post -->
 
-<?php comments_template() // Add a key/value of "comments" to load comments on a page ?>
+<?php //comments_template() // Add a key/value of "comments" to load comments on a page ?>
 
 </div><!-- .hfeed -->
 </div><!-- #content -->
