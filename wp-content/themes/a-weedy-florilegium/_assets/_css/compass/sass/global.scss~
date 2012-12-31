@@ -864,6 +864,7 @@ body {
     text-shadow: -.5em -.5em .1em rgba(200,200,200,.3); }
   &.single div.post .entry-content {
     font-size: 16px;
+    line-height: 1.85;
   }
   &.page div.page .entry-content {
     font-size: 16px;
