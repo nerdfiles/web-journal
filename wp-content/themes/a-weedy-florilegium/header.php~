@@ -123,9 +123,6 @@ $cat_slug = $the_cat[0]->slug; ?>
 
   <?php
 
-  $content = (is_front_page()) ? "#site-search" : ;
-  $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
-
   if ( current_user_can('administrator') ) { ?>
 
   <!-- admin access hooks -->
