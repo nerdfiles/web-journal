@@ -89,7 +89,14 @@ $(document).ready(function() {
       		target = this.hash,
       		$target = $(target),
       		padding = 10,
-      		offset = -60;
+      		offset = -60,
+          $s = $('#s');
+
+      // It's implied that the user is curious, and has touch'd the UI at all.
+      //
+      // @nerdfiles
+      // 01 2013 01 22:41:19
+      $s.val('/Hm..');
   		
   		if ( $self.filter('a[href^="#post"]').length ) {
   		  offset = -170;
