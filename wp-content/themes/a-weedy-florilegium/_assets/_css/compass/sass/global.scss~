@@ -211,6 +211,9 @@ div.entry-content {
 
   a[rel*="attachment"] { 
     border-bottom: none;
+    &:hover {
+      border-bottom: none;
+    }
   }
   div {
     &.entry-attachment, &.entry-caption {} }
@@ -1183,6 +1186,20 @@ body.archive {
   }
 }
 
+
+.yarpp-related { 
+  p { }
+  ol {
+    li {
+      a { 
+        padding: 30px 30px 30px 0;
+      }
+      small { 
+        padding: 30px 30px 30px 0;
+        dislay: block;
+      }
+    } }
+}
 
 
 
