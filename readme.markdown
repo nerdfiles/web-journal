@@ -1,4 +1,4 @@
-#webjournal
+#[webjournal](https://github.com/nerdfiles/web-journal) | [parent](http://nerdfiles.net) [dash](http://webjournal.nerdfiles.net/wp-admin/) [stats](http://webjournal.nerdfiles.net/wp-admin/admin.php?page=stats) [cache](http://webjournal.nerdfiles.net/wp-admin/options-general.php?page=wpsupercache&tab=contents) | [new](http://webjournal.nerdfiles.net/wp-admin/post-new.php) 
 
 A cryptic web journal with a very misleading user interface.
 
