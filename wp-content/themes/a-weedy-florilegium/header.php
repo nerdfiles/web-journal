@@ -133,7 +133,10 @@ if ( current_user_can('administrator') ) { ?>
   <li>
     <a href="<?php bloginfo('url'); ?>/wp-admin/">Dashboardly</a>
   </li>
-  <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
+
+  <?php if (is_single()) { ?>
+  <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit this entry</a></li>
+  <?php } ?>
 
 <?php } ?>
 
@@ -141,7 +144,7 @@ if ( current_user_can('administrator') ) { ?>
   <li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
   <li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span></li>
 
-<?php if(is_front_page()) { ?>
+<?php if (is_front_page()) { ?>
   <!-- front page access hooks -->
   <li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'webjournal'); ?>"><?php _e('Skip to #art posts', 'webjournal'); ?></a></span></li>
   <li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'webjournal'); ?>"><?php _e('Skip to #philosophy posts', 'webjournal'); ?></a></span></li>

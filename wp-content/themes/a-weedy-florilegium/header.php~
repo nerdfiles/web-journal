@@ -45,6 +45,8 @@
   rel="stylesheet" 
   media="all" 
   href="<?php bloginfo('template_directory'); ?>/_assets/_css/compass/stylesheets/global.css" />
+
+<link rel="bookmark icon" href="<?php bloginfo('template_directory'); ?>/_assets/_img-ui/favicon.png" />
   
 <?php wp_head() // Do not remove; helps plugins work ?>
 <!-- End wp_head -->
@@ -131,7 +133,9 @@ if ( current_user_can('administrator') ) { ?>
   <li>
     <a href="<?php bloginfo('url'); ?>/wp-admin/">Dashboardly</a>
   </li>
-  <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
+
+  <
+  <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit this entry</a></li>
 
 <?php } ?>
 
