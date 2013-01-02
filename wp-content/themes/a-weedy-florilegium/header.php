@@ -137,7 +137,7 @@ $cat_slug = $the_cat[0]->slug; ?>
   <?php } ?>
 
   <!-- primary content access hooks -->
-  <?php if (is_single()) { ?>
+  <?php if (is_single() || is_page()) { ?>
   <li>
     <span class="content-access"><a href="<?php echo "#post-" . get_the_ID(); ?>" title="<?php _e('Skip to #content', 'webjournal'); ?>"><?php _e('Skip to #content', 'webjournal'); ?></a></span>
   </li>
