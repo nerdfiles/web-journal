@@ -1188,19 +1188,21 @@ body.archive {
 
 
 .yarpp-related { 
-  p { }
+  p { 
+    margin: 1em 0 1em
+  }
   ol {
     list-style: none;
     li {
       margin: 0;
       @include inline-block;
-      width: 200px;
+      width: 233px;
       a { 
-        padding: 30px 30px 30px 0;
+        padding: 30px 30px 10px 0;
         display: block;
       }
       small { 
-        padding: 30px 30px 30px 0;
+        padding: 10px 30px 30px 0;
         display: block;
       }
     } }

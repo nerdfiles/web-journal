@@ -1188,7 +1188,11 @@ body.archive {
 
 
 .yarpp-related { 
-  p { }
+  p { 
+    margin: 1em 0 .3em 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
   ol {
     list-style: none;
     li {
@@ -1196,11 +1200,11 @@ body.archive {
       @include inline-block;
       width: 233px;
       a { 
-        padding: 30px 30px 30px 0;
+        padding: 30px 30px 10px 0;
         display: block;
       }
       small { 
-        padding: 30px 30px 30px 0;
+        padding: 10px 30px 30px 0;
         display: block;
       }
     } }
