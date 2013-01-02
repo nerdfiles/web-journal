@@ -16,9 +16,6 @@
 <link rel="dns-prefetch" href="//fonts.googleapis.com/" />
 <link rel="dns-prefetch" href="//code.jquery.com/" />
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/" />
-<link rel="dns-prefetch" href="//ajax.googleapis.com/" />
-<link rel="dns-prefetch" href="//google.com/jsapi" />
-<link rel="dns-prefetch" href="//platform.twitter.com/" />
 
 <!-- Stylesheets -->
 
@@ -308,8 +305,8 @@ if ('open' == $post->comment_status && !is_front_page()) {
 
 <?php //the_post() ?><!-- the_post() -->
 
+<!--
 <?php if ( is_day() ) : ?>
-
 <div class="archive-description archive-description-daily"><?php _e('You are currently viewing the daily archives for', 'webjournal') ?> <?php the_time(__('l, F Y', 'webjournal')) ?></div>
 <?php elseif ( is_month() ) : ?>
 <div class="archive-description archive-description-monthly"><?php _e('You are currently viewing the monthly archives for', 'webjournal') ?> <?php the_time(__('F Y', 'webjournal')) ?></div>
@@ -319,8 +316,8 @@ if ('open' == $post->comment_status && !is_front_page()) {
 <div class="archive-description archive-description-author"><?php _e('You are currently viewing the author archives of ', 'webjournal') ?> <?php the_author(); ?></div>
 <?php elseif ( is_category() ) : ?>
 <div class="archive-description archive-description-category"><?php if ( !('' == category_description()) ) : echo single_cat_title(); _e(' &mdash; ', 'webjournal'); echo category_description(); else : echo 'You are currently viewing the category archives of '; echo single_cat_title(); endif; ?></div>
-
 <?php endif; ?>
+-->
 
 </div><!-- #header -->
 
