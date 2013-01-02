@@ -1063,6 +1063,11 @@ body {
     div.entry-meta { 
       margin: 0 0; } }
       
+  &.post {
+    div.entry-meta {
+      line-height: 2.3;
+      margin: 30px 30px 50px; } }
+
   &.single {
     div.entry-meta { 
       line-height: 2.3;

@@ -875,6 +875,9 @@ body {
     text-align: center;
     font-size: 4em;
     text-shadow: -.5em -.5em .1em rgba(200,200,200,.3); }
+  &.single div.post {
+    @include inline-block;
+  }
   &.single div.post .entry-content {
     font-size: 16px;
     line-height: 1.8;
@@ -1060,6 +1063,12 @@ body {
     div.entry-meta { 
       margin: 0 0; } }
       
+  &.post {
+    div.entry-meta {
+      line-height: 2.3;
+      margin: 30px 30px 50px;
+    } }
+
   &.single {
     div.entry-meta { 
       line-height: 2.3;
