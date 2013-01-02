@@ -97,6 +97,7 @@ $cat_slug = $the_cat[0]->slug; ?>
 <div id="top"></div><!-- hackish? fuck you.-->
 
 <div id="wrapper" dir="ltr">
+
 <div id="container" class="container_16 clearfix">
 <div id="content" class="grid_16">
 
@@ -163,75 +164,56 @@ if ('open' == $post->comment_status && !is_front_page()) {
 </div><!-- End #site-access -->
 
 
-<!-- == SITE ACCESS ======================================== --> 
+<!-- == SITE HEADER ======================================== --> 
 
 <div id="site-header" class="grid_16 alpha">
-<div class="grid_4 alpha site-name">
-<div class="drop-shadow">
-<span class="call-access-menu drop-shadow">&uarr; esc</span>
-<a href="<?php echo get_settings('home') ?>/" title="A weedy florilegium" class="logo">
-A weedy florilegium
-</a>
-<span class="author-tag">web journal of <a href="http://nerdfiles.net" title="Go to nerdfiles.net">nerdfiles</a></span>
-</div>
-</div><!-- End .site-name -->
+
+  <div class="grid_4 alpha site-name">
+  <div class="drop-shadow">
+    <span class="call-access-menu drop-shadow">&uarr; esc</span>
+    <a href="<?php echo get_settings('home') ?>/" title="A weedy florilegium" class="logo">
+    A weedy florilegium
+    </a>
+    <span class="author-tag">web journal of <a href="http://nerdfiles.net" title="Go to nerdfiles.net">nerdfiles</a></span>
+  </div>
+  </div><!-- End .site-name -->
 
 
 <!-- == LATEST ============================================= --> 
 
-<div class="grid_12 omega site-description">
-<div class="drop-shadow">
-<div id="latest" class="latest">
-<aside>
-<header>
-<h1>Latest</h1>
-</header>
-<?php $my_query = new WP_Query('posts_per_page=1&orderby=date&order=DESC'); ?>
-<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+  <div class="grid_12 omega site-description">
+    <div class="drop-shadow">
 
-<h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <div id="latest" class="latest">
+    <aside>
+    <header>
+    <h1>Latest</h1>
+    </header>
+    <?php $my_query = new WP_Query('posts_per_page=1&orderby=date&order=DESC'); ?>
+    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-<div class="time">
-<time><?php the_date(); ?></time>
-</div>
-<?php endwhile; ?>
-<?php wp_reset_query(); ?>
-<?php $my_query = new WP_Query('p='+get_the_ID()); ?>
-</aside>
-</div>
-</div>
-</div><!-- End .site-description -->
+    <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+    <div class="time">
+    <time><?php the_date(); ?></time>
+    </div>
+    <?php endwhile; ?>
+    <?php wp_reset_query(); ?>
+    <?php $my_query = new WP_Query('p='+get_the_ID()); ?>
+    </aside>
+    </div><!-- .latest -->
+
+    </div>
+  </div><!-- End .site-description -->
 
 </div><!-- End #site-header -->
 
 <!-- == END SITE HEADER ==================================== --> 
 
-
-<!-- == SITE NAV ============================================= > 
-
-
-
-
-
-
-
-
-< ========================================================== -->
-
 <!-- == MAIN NAV =========================================== --> 
 
 <div id="site-navigation" class="grid_12 alpha">
-<?php // @copyof wp_nav_menu(); ?>
-<div class="menu-jininmi-container">
-<ul id="menu-jininmi" class="menu">
-<li id="menu-item-2218" class="grid_1 alpha menu-item menu-item-type-post_type menu-item-object-page menu-item-2218"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/the-semantic-web/">sw</a></li>
-<li id="menu-item-2219" class="grid_1 menu-item menu-item-type-post_type menu-item-object-page menu-item-2219"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/content-is-king/">cok</a></li>
-<li id="menu-item-2220" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/recipes/">recipes</a></li>
-<li id="menu-item-2221" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2221"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/poems/">poems</a></li>
-<li id="menu-item-2222" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2222"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/claims/">claims</a></li>
-<li id="menu-item-2223" class="grid_2 menu-item menu-item-type-post_type menu-item-object-page menu-item-2223"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/quotes/">quotes</a></li>
-<li id="menu-item-2224" class="grid_2 omega menu-item menu-item-type-post_type menu-item-object-page menu-item-2224"><a class="drop-shadow" href="<?php bloginfo('url'); ?>/about/">about</a></li>
-</ul>
+<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 </div>
 
 </div><!-- End #site-navigation -->

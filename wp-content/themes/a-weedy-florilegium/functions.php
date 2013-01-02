@@ -660,4 +660,6 @@ load_theme_textdomain('webjournal');
 
 // add_filter( 'show_admin_bar', '__return_false' );
 
+register_nav_menu( 'primary', 'Primary Menu' );
+
 ?>

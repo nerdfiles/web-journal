@@ -8,8 +8,6 @@
 == -->
 
 
-
-
 <div class="hfeed">
 
 <?php the_post() ?>
