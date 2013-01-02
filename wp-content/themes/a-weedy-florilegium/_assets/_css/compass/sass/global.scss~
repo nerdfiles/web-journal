@@ -208,6 +208,10 @@ div.entry-content div {
 body.attachment h3.entry-title {}
 
 div.entry-content {
+
+  a[rel="attachment"] { 
+    &
+  }
   div {
     &.entry-attachment, &.entry-caption {} }
   .wp-caption-text {}
@@ -1066,8 +1070,7 @@ body {
   &.post {
     div.entry-meta {
       line-height: 2.3;
-      margin: 30px 30px 50px;
-    } }
+      margin: 30px 30px 50px; } }
 
   &.single {
     div.entry-meta { 

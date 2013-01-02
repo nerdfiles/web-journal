@@ -208,6 +208,12 @@ div.entry-content div {
 body.attachment h3.entry-title {}
 
 div.entry-content {
+
+  a[rel="attachment"] { 
+    &:hover {
+      border-bottom: none;
+    }
+  }
   div {
     &.entry-attachment, &.entry-caption {} }
   .wp-caption-text {}
