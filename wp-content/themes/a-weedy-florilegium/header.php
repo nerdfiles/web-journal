@@ -123,10 +123,6 @@ $cat_slug = $the_cat[0]->slug; ?>
 
 <?php
 
-global $post; 
-$content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
-$contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
-
 if ( current_user_can('administrator') ) { ?>
 
   <!-- admin access hooks -->
@@ -141,7 +137,6 @@ if ( current_user_can('administrator') ) { ?>
 <?php } ?>
 
   <!-- primary content access hooks -->
-  <li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
   <li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span></li>
 
 <?php if (is_front_page()) { ?>
