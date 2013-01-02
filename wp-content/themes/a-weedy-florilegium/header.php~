@@ -148,11 +148,13 @@ $cat_slug = $the_cat[0]->slug; ?>
   </li>
 
   <?php if (is_front_page()) { ?>
+
   <!-- front page access hooks -->
   <li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'webjournal'); ?>"><?php _e('Skip to #art posts', 'webjournal'); ?></a></span></li>
   <li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'webjournal'); ?>"><?php _e('Skip to #philosophy posts', 'webjournal'); ?></a></span></li>
   <li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'webjournal'); ?>"><?php _e('Skip to #life posts', 'webjournal'); ?></a></span></li>
   <li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'webjournal'); ?>"><?php _e('Skip to #web posts', 'webjournal'); ?></a></span></li>
+
   <?php } ?>
 
   <!-- navigation access hooks -->
