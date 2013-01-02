@@ -121,13 +121,12 @@ $cat_slug = $the_cat[0]->slug; ?>
 
   <li><span class="content-access">Back to <a href="#top">top</a></span></li>
 
-<?php
+  <?php
 
-global $post; 
-$content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
-$contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
+  $content = (is_front_page()) ? "#site-search" : ;
+  $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
 
-if ( current_user_can('administrator') ) { ?>
+  if ( current_user_can('administrator') ) { ?>
 
   <!-- admin access hooks -->
   <li>
@@ -138,19 +137,23 @@ if ( current_user_can('administrator') ) { ?>
   <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit this entry</a></li>
   <?php } ?>
 
-<?php } ?>
+  <?php } ?>
 
   <!-- primary content access hooks -->
-  <li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
-  <li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span></li>
+  <li>
+    <span class="content-access"><a href="<?php echo "#post-" . get_the_ID(); ?>" title="<?php _e('Skip to #content', 'webjournal'); ?>"><?php _e('Skip to #content', 'webjournal'); ?></a></span>
+  </li>
+  <li>
+    <span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span>
+  </li>
 
-<?php if (is_front_page()) { ?>
+  <?php if (is_front_page()) { ?>
   <!-- front page access hooks -->
   <li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'webjournal'); ?>"><?php _e('Skip to #art posts', 'webjournal'); ?></a></span></li>
   <li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'webjournal'); ?>"><?php _e('Skip to #philosophy posts', 'webjournal'); ?></a></span></li>
   <li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'webjournal'); ?>"><?php _e('Skip to #life posts', 'webjournal'); ?></a></span></li>
   <li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'webjournal'); ?>"><?php _e('Skip to #web posts', 'webjournal'); ?></a></span></li>
-<?php } ?>
+  <?php } ?>
 
   <!-- navigation access hooks -->
   <li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to nav', 'webjournal'); ?>"><?php _e('Skip to nav', 'webjournal'); ?></a></span></li>
