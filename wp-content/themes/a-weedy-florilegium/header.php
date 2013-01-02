@@ -116,47 +116,41 @@ $cat_slug = $the_cat[0]->slug; ?>
 <div id="site-access">
 <p class="mouse-thinkers-beware" title="An analysis of modalities, link strategy, and tacticle experience, oh my!"><small>Design's heavily influenced by my practices in unlearning the Mouse and the variegrated habits of Mouse-think (theism, restroom banter, the politico-historical moorings of cr&ecirc;pe cuisine, et cetera), with a touch of not having gone to finishing school.</small></p>
 <ul>
-<li><span class="content-access">Back to <a href="#top">top</a></span></li>
+
+  <li><span class="content-access">Back to <a href="#top">top</a></span></li>
+
 <?php
+
 global $post; 
 $content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
 $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
-?>
 
-<?php if ( current_user_can('administrator') ) { ?>
-<li>
-  <a href="<?php bloginfo('url'); ?>/wp-admin/">Dashboardly</a>
-</li>
-<li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
+if ( current_user_can('administrator') ) { ?>
+
+  <!-- admin access hooks -->
+  <li>
+    <a href="<?php bloginfo('url'); ?>/wp-admin/">Dashboardly</a>
+  </li>
+  <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit post</a></li>
+
 <?php } ?>
 
-<li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
-<?php 
-if ( $post->comment_count != 0 ) { ?>
-<!--li><span class="content-access"><a href="#comments" title="Read post comments">Read comments</a></span></li-->
-<?php } ?>
-<?php
-if ('open' == $post->comment_status && !is_front_page()) {
-?>
-<li><span class="content-access"><a href="#disqus_thread" title"Go to comments">Go to comments</a></li>
-<?php } ?>
-<?php
-if ('open' == $post->comment_status && !is_front_page()) {
-?>
-<!--li><span class="content-access"><a href="#respond" title="Respond to post">Respond to post</a></span></li-->
-<?php } ?>
-<li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span></li>
+  <!-- primary content access hooks -->
+  <li><span class="content-access"><a href="<?php echo $content; ?>" title="<?php echo $contentText; ?>"><?php echo $contentText; ?></a></span></li>
+  <li><span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span></li>
+
 <?php if(is_front_page()) { ?>
-<li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'webjournal'); ?>"><?php _e('Skip to #art posts', 'webjournal'); ?></a></span></li>
-<li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'webjournal'); ?>"><?php _e('Skip to #philosophy posts', 'webjournal'); ?></a></span></li>
-<li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'webjournal'); ?>"><?php _e('Skip to #life posts', 'webjournal'); ?></a></span></li>
-<li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'webjournal'); ?>"><?php _e('Skip to #web posts', 'webjournal'); ?></a></span></li>
+  <!-- front page access hooks -->
+  <li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'webjournal'); ?>"><?php _e('Skip to #art posts', 'webjournal'); ?></a></span></li>
+  <li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'webjournal'); ?>"><?php _e('Skip to #philosophy posts', 'webjournal'); ?></a></span></li>
+  <li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'webjournal'); ?>"><?php _e('Skip to #life posts', 'webjournal'); ?></a></span></li>
+  <li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'webjournal'); ?>"><?php _e('Skip to #web posts', 'webjournal'); ?></a></span></li>
 <?php } ?>
-<li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to nav', 'webjournal'); ?>"><?php _e('Skip to nav', 'webjournal'); ?></a></span></li>
-<li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'webjournal'); ?>"><?php _e('Skip to search', 'webjournal'); ?></a></span></li>
-<!--li><span class="content-access"><a href="#site-social">Skip to g+</a></li-->
-<noscript><li><span class="content-access"><a href="#footer">Skip to #footer</a></li></noscript>
-<li><span class="content-access"><a href="#site-admin" title="<?php _e('Skip to #meta', 'webjournal'); ?>"><?php _e('Skip to #meta', 'webjournal'); ?></a></span></li>
+
+  <!-- navigation access hooks -->
+  <li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to nav', 'webjournal'); ?>"><?php _e('Skip to nav', 'webjournal'); ?></a></span></li>
+  <li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'webjournal'); ?>"><?php _e('Skip to search', 'webjournal'); ?></a></span></li>
+
 </ul>
 </div><!-- End #site-access -->
 
