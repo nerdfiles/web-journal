@@ -2,6 +2,7 @@
 // fucks up on my windows box
 
 @import "960/grid";
+@import "compass/css3";
  
 @font-face {
   font-family: 'Pidgeon';
@@ -21,6 +22,16 @@
   font-family: 'OpenDyslexic';
   src: url('../../../../_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
 }
+
+.clear-fix {
+  zoom: 1;
+  &:before {
+    content: "";
+    display: table; }
+  &:after {
+    content: "";
+    display: table;
+    clear: both; } }
 
 body,
 input,
@@ -240,6 +251,8 @@ body.single {
   .entry-title, .page-title {
     text-shadow: 0 .1em .2em #ccc;
   }
+
+  .entry-meta { }
 }
 
 div {
@@ -862,6 +875,9 @@ body {
     text-align: center;
     font-size: 4em;
     text-shadow: -.5em -.5em .1em rgba(200,200,200,.3); }
+  &.single div.post {
+    @include inline-block;
+  }
   &.single div.post .entry-content {
     font-size: 16px;
     line-height: 1.8;
@@ -877,16 +893,6 @@ body {
     column-count: 2;
     column-gap: 20px;
     column-rule: 1px dotted #bbb; } }
-
-.clear-fix {
-  &:before {
-    content: "";
-    display: table; }
-  &:after {
-    content: "";
-    display: table;
-    clear: both; }
-  zoom: 1; }
 
 /* (hasLayout trigger) */
 
