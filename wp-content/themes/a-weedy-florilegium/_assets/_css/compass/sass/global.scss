@@ -209,7 +209,7 @@ body.attachment h3.entry-title {}
 
 div.entry-content {
 
-  a[rel="attachment"] { 
+  a[rel*="attachment"] { 
     &:hover {
       border-bottom: none;
     }

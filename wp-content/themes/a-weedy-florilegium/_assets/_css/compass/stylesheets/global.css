@@ -188,7 +188,7 @@ div#header div#blog-description, div#header div.archive-description, div#header 
 }
 
 /* line 213, ../sass/global.scss */
-div.entry-content a[rel="attachment"]:hover {
+div.entry-content a[rel*="attachment"]:hover {
   border-bottom: none;
 }
 
