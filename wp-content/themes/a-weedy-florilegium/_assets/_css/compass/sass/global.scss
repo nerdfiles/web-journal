@@ -1192,6 +1192,7 @@ body.archive {
   ol {
     list-style: none;
     li {
+      margin: 0;
       @include inline-block;
       a { 
         padding: 30px 30px 30px 0;
@@ -1199,7 +1200,7 @@ body.archive {
       }
       small { 
         padding: 30px 30px 30px 0;
-        dislay: block;
+        display: block;
       }
     } }
 }
