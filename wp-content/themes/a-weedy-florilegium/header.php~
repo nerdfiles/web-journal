@@ -119,13 +119,13 @@ $cat_slug = $the_cat[0]->slug; ?>
 
   <li><span class="content-access">Back to <a href="#top">top</a></span></li>
 
-  <?php
+<?php
 
-  global $post; 
-  $content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
-  $contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
+global $post; 
+$content = (is_front_page()) ? "#site-search" : "#post-" . get_the_ID();
+$contentText = (is_front_page()) ? 'Search from home' : 'Skip to content';
 
-  if ( current_user_can('administrator') ) { ?>
+if ( current_user_can('administrator') ) { ?>
 
   <!-- admin access hooks -->
   <li>

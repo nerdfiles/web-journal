@@ -45,6 +45,8 @@
   rel="stylesheet" 
   media="all" 
   href="<?php bloginfo('template_directory'); ?>/_assets/_css/compass/stylesheets/global.css" />
+
+<link rel="bookmark icon" href="<?php bloginfo('template_directory'); ?>/_assets/_img-ui/favicon.png" />
   
 <?php wp_head() // Do not remove; helps plugins work ?>
 <!-- End wp_head -->
