@@ -1189,14 +1189,15 @@ body.archive {
 
 .yarpp-related { 
   p { 
-    margin: 1em 0 1em
+    margin: 1em 0 .3em 0;
+    font-size: 24px;
+    font-weight: 700;
   }
   ol {
     list-style: none;
     li {
       margin: 0;
-      @include inline-block;
-      width: 233px;
+      @include grid(3);
       a { 
         padding: 30px 30px 10px 0;
         display: block;

@@ -1428,20 +1428,26 @@ body.archive .page-title {
 /* line 1198, ../sass/global.scss */
 .yarpp-related ol li {
   margin: 0;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  width: 233px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
 }
-/* line 1202, ../sass/global.scss */
+/* line 1201, ../sass/global.scss */
+.yarpp-related ol li:first-child {
+  margin-left: 0;
+}
+/* line 1205, ../sass/global.scss */
+.yarpp-related ol li:last-child {
+  margin-right: 0;
+}
+/* line 1208, ../sass/global.scss */
 .yarpp-related ol li a {
   padding: 30px 30px 10px 0;
   display: block;
 }
-/* line 1206, ../sass/global.scss */
+/* line 1212, ../sass/global.scss */
 .yarpp-related ol li small {
   padding: 10px 30px 30px 0;
   display: block;
@@ -1449,7 +1455,7 @@ body.archive .page-title {
 
 @media screen and (max-device-width: 480px) {
   /* iphone only */
-  /* line 1221, ../sass/global.scss */
+  /* line 1227, ../sass/global.scss */
   #footer {
     position: relative;
     bottom: 0;
@@ -1459,30 +1465,30 @@ body.archive .page-title {
   }
 }
 @media print {
-  /* line 1232, ../sass/global.scss */
+  /* line 1238, ../sass/global.scss */
   body div#blog-description, body div.sidebar, body div.access, body div#globalnav, body span.archive-meta, body div.cat-meta, body div#footer, body div.navigation, body div.comments form#commentform, body h3#respond {
     display: none;
   }
 
-  /* line 1233, ../sass/global.scss */
+  /* line 1239, ../sass/global.scss */
   body div#wrapper div#header {
     background-color: #fff;
     background-image: none;
     color: #000;
   }
 
-  /* line 1234, ../sass/global.scss */
+  /* line 1240, ../sass/global.scss */
   body div#wrapper div#header h1 a, html body div#wrapper div#header h1 a:link, html body div#wrapper div#header h1 a:visited, html body div#wrapper div#header h1 a:hover, html body div#wrapper div#header h1 a:active {
     color: #000;
   }
 
-  /* line 1235, ../sass/global.scss */
+  /* line 1241, ../sass/global.scss */
   body.single div.entry-meta {
     line-height: 200%;
     margin: 0 20%;
   }
 
-  /* line 1236, ../sass/global.scss */
+  /* line 1242, ../sass/global.scss */
   body.home div.entry-meta, body.archive div.entry-meta, body.search div.entry-meta {
     text-align: center;
     margin: 0 5%;

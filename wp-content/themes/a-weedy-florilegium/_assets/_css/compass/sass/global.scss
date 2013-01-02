@@ -1197,8 +1197,14 @@ body.archive {
     list-style: none;
     li {
       margin: 0;
-      @include inline-block;
-      width: 233px;
+      @include grid(3);
+      &:first-child {
+        @include alpha;
+      }
+
+      &:last-child {
+        @include omega;
+      }
       a { 
         padding: 30px 30px 10px 0;
         display: block;
