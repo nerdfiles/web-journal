@@ -1198,6 +1198,13 @@ body.archive {
     li {
       margin: 0;
       @include grid(3);
+      &:first-child {
+        @include alpha;
+      }
+
+      &:last-child {
+        @include omega;
+      }
       a { 
         padding: 30px 30px 10px 0;
         display: block;
