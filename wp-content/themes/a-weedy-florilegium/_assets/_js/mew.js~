@@ -96,7 +96,8 @@ $(document).ready(function() {
       //
       // @nerdfiles
       // 01 2013 01 22:41:19
-      $s.val('/Hm..');
+
+      $s.attr('placeholder', '/Hm..');
   		
   		if ( $self.filter('a[href^="#post"]').length ) {
   		  offset = -170;
