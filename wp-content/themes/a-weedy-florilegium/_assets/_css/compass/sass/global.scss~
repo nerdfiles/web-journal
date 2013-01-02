@@ -1190,9 +1190,12 @@ body.archive {
 .yarpp-related { 
   p { }
   ol {
+    list-style: none;
     li {
+      @include inline-block;
       a { 
         padding: 30px 30px 30px 0;
+        
       }
       small { 
         padding: 30px 30px 30px 0;

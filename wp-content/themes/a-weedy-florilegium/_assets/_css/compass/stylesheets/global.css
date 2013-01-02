@@ -1431,8 +1431,9 @@ body.archive .page-title {
 /* line 1196, ../sass/global.scss */
 .yarpp-related ol li a {
   padding: 30px 30px 30px 0;
+  display: block;
 }
-/* line 1199, ../sass/global.scss */
+/* line 1200, ../sass/global.scss */
 .yarpp-related ol li small {
   padding: 30px 30px 30px 0;
   dislay: block;
@@ -1440,7 +1441,7 @@ body.archive .page-title {
 
 @media screen and (max-device-width: 480px) {
   /* iphone only */
-  /* line 1214, ../sass/global.scss */
+  /* line 1215, ../sass/global.scss */
   #footer {
     position: relative;
     bottom: 0;
@@ -1450,30 +1451,30 @@ body.archive .page-title {
   }
 }
 @media print {
-  /* line 1225, ../sass/global.scss */
+  /* line 1226, ../sass/global.scss */
   body div#blog-description, body div.sidebar, body div.access, body div#globalnav, body span.archive-meta, body div.cat-meta, body div#footer, body div.navigation, body div.comments form#commentform, body h3#respond {
     display: none;
   }
 
-  /* line 1226, ../sass/global.scss */
+  /* line 1227, ../sass/global.scss */
   body div#wrapper div#header {
     background-color: #fff;
     background-image: none;
     color: #000;
   }
 
-  /* line 1227, ../sass/global.scss */
+  /* line 1228, ../sass/global.scss */
   body div#wrapper div#header h1 a, html body div#wrapper div#header h1 a:link, html body div#wrapper div#header h1 a:visited, html body div#wrapper div#header h1 a:hover, html body div#wrapper div#header h1 a:active {
     color: #000;
   }
 
-  /* line 1228, ../sass/global.scss */
+  /* line 1229, ../sass/global.scss */
   body.single div.entry-meta {
     line-height: 200%;
     margin: 0 20%;
   }
 
-  /* line 1229, ../sass/global.scss */
+  /* line 1230, ../sass/global.scss */
   body.home div.entry-meta, body.archive div.entry-meta, body.search div.entry-meta {
     text-align: center;
     margin: 0 5%;
