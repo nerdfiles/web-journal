@@ -19,7 +19,7 @@
       </h3>
 
       <div class="entry-content">
-        <p><?php _e('I have five fingers."', 'webjournal') ?></p>
+        <p><?php _e('I have five fingers.', 'webjournal') ?></p>
       </div>
 
       <!--form id="error404-searchform" method="get" action="<?php bloginfo('home') ?>">
