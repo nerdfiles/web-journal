@@ -211,6 +211,9 @@ div.entry-content {
 
   a[rel*="attachment"] { 
     border-bottom: none;
+    &:hover {
+      border-bottom: none;
+    }
   }
   div {
     &.entry-attachment, &.entry-caption {} }
