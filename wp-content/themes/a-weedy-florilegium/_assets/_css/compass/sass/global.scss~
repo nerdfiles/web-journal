@@ -8,6 +8,10 @@
   font-family: 'Eulexia';
   src: url('../../../../_assets/_fonts/_eulexia/ttf-stable/eulexia.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../../../../_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf') format('truetype');
+}
 
 .clear-fix {
   zoom: 1;
