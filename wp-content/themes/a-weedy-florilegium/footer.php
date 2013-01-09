@@ -13,6 +13,8 @@
       <div class="twitter">
       <a href="http://twitter.com/filesofnerds" class="twitter-follow-button">Follow @filesofnerds</a>
       </div>
+
+      <span class="u">#using <a href="http://dyslexicfonts.com/">OpenDyslexic</a> <a href="http://antijingoist.github.com/Eulexia/">Eulexia</a></span>
     </div>
   </div><!-- #footer -->
 
