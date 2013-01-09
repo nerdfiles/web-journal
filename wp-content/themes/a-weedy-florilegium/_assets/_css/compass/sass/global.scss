@@ -5,16 +5,6 @@
 @import "compass/css3";
  
 @font-face {
-  font-family: 'Pidgeon';
-  src: url('../../../../_assets/_fonts/pigeon/pigeon.otf')  format('opentype');
-  //src: url('../../../../_assets/_fonts/pigeon/pigeon.eot'); /* IE9 Compatibility Modes */
-  //src: url('../../../../_assets/_fonts/pigeon/pigeon.eot?') format('eot'),  /* IE6-IE8 */
-  //url('../../../../_assets/_fonts/pigeon/pigeon.woff') format('woff'), /* Modern Browsers */
-  src: url('../../../../_assets/_fonts/pigeon/pigeon.TTF')  format('truetype'); /* Safari, Android, iOS */
-  //url('../../../../_assets/_fonts/pigeon/pigeon.svg#svgGraublauweb') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
   font-family: 'Eulexia';
   src: url('../../../../_assets/_fonts/_eulexia/ttf-stable/eulexia.ttf') format('truetype');
 }
