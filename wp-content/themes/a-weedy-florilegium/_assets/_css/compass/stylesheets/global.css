@@ -111,7 +111,7 @@ a:link {
   *display: inline;
   padding: 0 !important;
   letter-spacing: 1px;
-  font-family: "Eulexia", "Pigeon", "Philosopher";
+  font-family: "Eulexia", Georgia, serif;
   text-decoration: none;
   border-bottom: 1px #cccccc solid;
 }
@@ -144,7 +144,7 @@ body.page-template-archives-php .hfeed a {
   *display: inline;
   line-height: 1.2;
   letter-spacing: 1px;
-  font-family: "Eulexia", "Pigeon", "Philosopher";
+  font-family: "Eulexia", Georgia, serif;
   text-decoration: none;
   border-bottom: 1px #cccccc solid;
 }
@@ -272,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   color: #222;
   background: #f7f7f7;
-  font-family: "Eulexia", "Philosopher", Georgia, serif;
+  font-family: "Eulexia", Georgia, serif;
 }
 
 /* line 395, ../sass/global.scss */
@@ -407,13 +407,13 @@ p.this { opacity: 1; }
 }
 /* line 488, ../sass/global.scss */
 .comments label {
-  font: 2em/1 "Eulexia", "Philosopher", Georgia, serif;
+  font: 2em/1 "Eulexia", Georgia, serif;
 }
 /* line 490, ../sass/global.scss */
 .comments input[type="submit"] {
   border: none;
   font-size: 3em;
-  font-family: "Eulexia", "Philosopher", Georgia, serif;
+  font-family: "Eulexia", Georgia, serif;
   background: transparent;
 }
 
@@ -440,7 +440,7 @@ p.this { opacity: 1; }
 textarea {
   border: 1px #cccccc solid;
   width: 97.5%;
-  font: 1.3em/1.3 "Eulexia", "Philosopher", Georgia, serif;
+  font: 1.3em/1.3 "Eulexia", Georgia, serif;
   padding: 0.5em !important;
 }
 
@@ -516,7 +516,7 @@ html.js #site-access {
 }
 /* line 554, ../sass/global.scss */
 #site-header .site-name {
-  font-family: "Eulexia", "Philosopher", Georgia, serif;
+  font-family: "Eulexia", Georgia, serif;
 }
 /* line 557, ../sass/global.scss */
 #site-header .site-name .logo {
@@ -526,7 +526,7 @@ html.js #site-access {
 }
 /* line 559, ../sass/global.scss */
 #site-header .site-name .author-tag a {
-  font-family: "Eulexia", "Pigeon", "Philosopher", Georgia, serif !important;
+  font-family: "Eulexia", serif !important;
   font-size: .9em;
 }
 /* line 562, ../sass/global.scss */
@@ -539,7 +539,7 @@ html.js #site-access {
 }
 /* line 568, ../sass/global.scss */
 #site-header .site-description {
-  font-family: "Eulexia", "Philosopher", Georgia, serif;
+  font-family: "Eulexia", Georgia, serif;
 }
 
 /* line 571, ../sass/global.scss */
@@ -634,7 +634,7 @@ html.js #site-access {
 }
 /* line 630, ../sass/global.scss */
 #site-search label {
-  font-family: "Eulexia", "Philosopher", Georgia, serif;
+  font-family: "Eulexia", Georgia, serif;
   cursor: help;
   width: 80px;
   display: inline;
@@ -645,7 +645,7 @@ html.js #site-access {
 }
 /* line 639, ../sass/global.scss */
 #site-search input {
-  font-family: "Eulexia", "Philosopher", Georgia, serif;
+  font-family: "Eulexia", Georgia, serif;
   cursor: pointer;
 }
 /* line 642, ../sass/global.scss */
@@ -822,7 +822,7 @@ html.search .navigation {
   display: inline-block;
   padding: 0 0 0 45px;
   font-size: 16px;
-  font-family: "Eulexia", "Philosopher", Georgia, serif;
+  font-family: "Eulexia", Georgia, serif;
 }
 /* line 761, ../sass/global.scss */
 #latest h1 {
@@ -849,7 +849,7 @@ html.search .navigation {
  */
 /* line 779, ../sass/global.scss */
 h1, h2, h3 {
-  font-family: "OpenDyslexic", "Eulexia", "Pigeon", "Philosopher", Georgia, serif;
+  font-family: "OpenDyslexic", Georgia, serif;
 }
 
 /* line 782, ../sass/global.scss */
@@ -1285,7 +1285,7 @@ body.single div.entry-meta {
   width: 42%;
   color: #999;
   font-size: 18px;
-  font-family: 'Eulexia';
+  font-family: "Eulexia", Georgia, serif;
   float: right;
   text-align: right;
 }
