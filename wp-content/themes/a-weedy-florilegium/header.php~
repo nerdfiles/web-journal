@@ -51,8 +51,6 @@
 <?php wp_head() // Do not remove; helps plugins work ?>
 <!-- End wp_head -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
-
 <!-- RDF Feeds -->
   
 <link 
