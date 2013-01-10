@@ -37,6 +37,18 @@ textarea {
   font-family: 'Eulexia';
 }
 
+body.call-alphasymbolic { 
+  input,
+  select,
+  textarea,
+  a {
+    font-family: 'AlphaSymbolic' !important;
+  }
+  blockquote {
+    font-family: 'Eulexia' !important;
+  }
+}
+
 body {  overflow-y: scroll }
 ::-webkit-scrollbar-track-piece {
   background-color: #fff;
