@@ -792,10 +792,13 @@ h1, h2, h3 {
   .grid_4 img {
     width: 220px; }
   footer {
+
     font-size: 10px;
     opacity: 0.4;
     text-align: center;
-    .meta-sep {
+    a, .meta-sep {
+      display: block;
+      text-align: left;
       padding: 3px 0 0 0;
     }
   }//footer Thu Aug 23 21:22:54 CDT 2012

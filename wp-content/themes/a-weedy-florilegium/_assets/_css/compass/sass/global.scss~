@@ -792,10 +792,14 @@ h1, h2, h3 {
   .grid_4 img {
     width: 220px; }
   footer {
+
     font-size: 10px;
     opacity: 0.4;
     text-align: center;
+    a,
     .meta-sep {
+      display: block;
+      text-align: left;
       padding: 3px 0 0 0;
     }
   }//footer Thu Aug 23 21:22:54 CDT 2012
@@ -1231,3 +1235,6 @@ body.archive {
   body.home div.entry-meta,body.archive div.entry-meta,body.search div.entry-meta{text-align:center;margin:0 5%;padding:0 2em;}
 
 } 
+
+.shoe { background: orange; }
+
