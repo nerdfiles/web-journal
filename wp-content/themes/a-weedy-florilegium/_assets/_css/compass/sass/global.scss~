@@ -795,9 +795,8 @@ h1, h2, h3 {
 
     font-size: 10px;
     opacity: 0.4;
-    text-align: center;
-    a,
-    .meta-sep {
+    text-align: left;
+    a, .meta-sep {
       display: block;
       text-align: left;
       padding: 3px 0 0 0;
