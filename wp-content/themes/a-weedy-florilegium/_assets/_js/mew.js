@@ -1,5 +1,4 @@
 var DEBUG = false;
-;(function
 $(document).ready(function() {
 
     $('#site-search label').attr('title', 'Search for anything you can dream of!'); 
