@@ -371,21 +371,19 @@ html.js #site-access {
 
 #site-header {
   margin: 0 0 1.5em 0; }
-  #site-header .site-name {
-    font-family: "Eulexia", Georgia, serif; }
-    #site-header .site-name .logo {
-      position: relative;
-      top: 5px;
-      text-shadow: 0 -2px 3px white, 0 -2px 3px white, 0 2px 3px white, 2px 0 3px white; }
-    #site-header .site-name .author-tag a {
-      font-family: "Eulexia", serif !important;
-      font-size: .9em; }
-    #site-header .site-name a {
-      font-size: 26px;
-      line-height: 1.1;
-      height: 57px;
-      display: block;
-      color: #222; }
+  #site-header .site-name .logo {
+    position: relative;
+    top: 5px;
+    text-shadow: 0 -2px 3px white, 0 -2px 3px white, 0 2px 3px white, 2px 0 3px white; }
+  #site-header .site-name .author-tag a {
+    font-family: "Eulexia", serif !important;
+    font-size: .9em; }
+  #site-header .site-name a {
+    font-size: 26px;
+    line-height: 1.1;
+    height: 57px;
+    display: block;
+    color: #222; }
   #site-header .site-description {
     font-family: "Eulexia", Georgia, serif; }
 

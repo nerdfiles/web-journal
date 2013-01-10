@@ -571,8 +571,6 @@ html.js #site-access { display: none; }
 #site-header {
   margin: 0 0 1.5em 0;
   .site-name {
-    font-family: "Eulexia", Georgia, serif;
-    
     .logo { position: relative; top: 5px; 
       text-shadow: 0 -2px 3px #FFFFFF, 0 -2px 3px #FFFFFF, 0 2px 3px #FFFFFF, 2px 0 3px #FFFFFF; }
     .author-tag a {
