@@ -1,4 +1,4 @@
-# Django settings for fuck_you project.
+#thetwilightgraveyard #ideas
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
