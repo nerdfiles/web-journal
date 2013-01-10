@@ -592,7 +592,7 @@ h1, h2, h3 {
     opacity: 0.4;
     text-align: left; }
     #home footer a, #home footer .meta-sep {
-      display: block;
+      display: inline-block;
       text-align: left;
       padding: 3px 0 0 0; }
   #home article {
