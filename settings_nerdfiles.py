@@ -1,4 +1,4 @@
-# Django settings for fuck_you project.
+#code monkeein'
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
