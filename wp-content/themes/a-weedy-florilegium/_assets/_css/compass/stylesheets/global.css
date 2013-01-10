@@ -31,13 +31,15 @@ textarea {
   font-smoothing: antialiased;
   font-family: 'Eulexia'; }
 
-body.call-alphasymbolic input,
-body.call-alphasymbolic select,
-body.call-alphasymbolic textarea,
-body.call-alphasymbolic a {
+body.call-alphasymbolic {
   font-family: "AlphaSymbolic" !important; }
-body.call-alphasymbolic blockquote {
-  font-family: "Eulexia" !important; }
+  body.call-alphasymbolic input,
+  body.call-alphasymbolic select,
+  body.call-alphasymbolic textarea,
+  body.call-alphasymbolic a {
+    font-family: "AlphaSymbolic" !important; }
+  body.call-alphasymbolic blockquote {
+    font-family: "Eulexia" !important; }
 
 body {
   overflow-y: scroll; }
