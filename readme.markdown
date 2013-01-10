@@ -2,17 +2,27 @@
 
 A cryptic web journal with a very misleading user interface.
 
+                  On 
+
+      the other h and: I    have fi
+      
+      
+      
+        ve fin  gers               .
+
+
 ##TEAM
 
 1. nerdfiles (nerdfiles@gmail.com)
 
 ##STACK
 
-- MAMP
+- MAMP 
 - Wordpress 3.x
 - Compass
 - SASS
 - JavaScript, jQuery
+- An app.
 
 ##TODO
 
