@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Eulexia';
+  font-family: 'AlphaSymbolic';
   src: url("../../../../_assets/_fonts/_alphasymbolic/compiled/AlphaSymbolic-Regular.ttf") format("truetype"), url("../../../../_assets/_fonts/_alphasymbolic/compiled/AlphaSymbolic-Regular.ptf") format("opentype"); }
 
 @font-face {
@@ -30,6 +30,14 @@ textarea {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-family: 'Eulexia'; }
+
+body.call-alphasymbolic input,
+body.call-alphasymbolic select,
+body.call-alphasymbolic textarea,
+body.call-alphasymbolic a {
+  font-family: "AlphaSymbolic" !important; }
+body.call-alphasymbolic blockquote {
+  font-family: "Eulexia" !important; }
 
 body {
   overflow-y: scroll; }
@@ -720,7 +728,7 @@ body.page div.page .entry-content {
     margin: 0 0 0 1em; }
   #footer .twitter iframe {
     display: inline;
-    width: auto !important; }
+    width: 270px !important; }
   #footer .googleplus {
     position: relative;
     top: .65em;

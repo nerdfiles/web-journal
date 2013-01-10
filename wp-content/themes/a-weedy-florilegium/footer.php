@@ -14,7 +14,7 @@
       <a href="http://twitter.com/filesofnerds" class="twitter-follow-button">Follow @filesofnerds</a>
       </div>
 
-      <span class="u">#using <a href="http://dyslexicfonts.com/">OpenDyslexic</a> <a href="http://antijingoist.github.com/Eulexia/">Eulexia</a></span>
+      <span class="u">#using <a href="http://dyslexicfonts.com/">OpenDyslexic</a>, <a href="http://antijingoist.github.com/Eulexia/">Eulexia</a></span> <span class="sep">|</span> <a class="call-alphasymbolic" href="https://github.com/antijingoist/AlphaSymbolic">AS</a>
     </div>
   </div><!-- #footer -->
 

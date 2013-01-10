@@ -1,14 +1,18 @@
 var DEBUG = false;
+
 $(document).ready(function() {
 
-    $('#site-search label').attr('title', 'Search for anything you can dream of!'); 
-  
     $('a[href^="#"]').bind('click.hashit', function(e) {
       
       var $this = $(this);
       
       e.preventDefault();
       
+    });
+
+    $('.call-alphasymbolic').bind('click', function(e) {
+      e.preventDefault();
+      $('body').toggleClass('call-alphasymbolic');
     });
 
     // anything!

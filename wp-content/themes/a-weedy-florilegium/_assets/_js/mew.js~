@@ -1,15 +1,28 @@
 var DEBUG = false;
-;(function
+
 $(document).ready(function() {
 
-    $('#site-search label').attr('title', 'Search for anything you can dream of!'); 
-  
     $('a[href^="#"]').bind('click.hashit', function(e) {
       
       var $this = $(this);
       
       e.preventDefault();
       
+    });
+
+    $('.call-alphasymbolic').bind('click', function(e) {
+      e.preventDefault();
+
+      $('body').attr('class', (function() { 
+        var cn;
+        if ($('body').hasClass('call-alphasymbolic') ) {
+          $('
+        } else {
+
+        }
+
+        return ''; })
+      );
     });
 
     // anything!
