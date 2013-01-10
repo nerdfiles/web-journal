@@ -108,3 +108,5 @@ settings.py
 wp-content/w3tc/
 wp-content/w3tc/*
 php53.cgi
+
+bash-it/*
