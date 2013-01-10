@@ -1,6 +1,13 @@
 @import "960/grid";
 @import "compass/css3";
  
+ 
+@font-face {
+  font-family: 'Eulexia';
+  src: url('../../../../_assets/_fonts/_alphasymbolic/compiled/AlphaSymbolic-Regular.ttf') format('truetype'),
+  src: url('../../../../_assets/_fonts/_alphasymbolic/compiled/AlphaSymbolic-Regular.ptf') format('opentype');
+}
+
 @font-face {
   font-family: 'Eulexia';
   src: url('../../../../_assets/_fonts/_eulexia/ttf-stable/eulexia.ttf') format('truetype');
