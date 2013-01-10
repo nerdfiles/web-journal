@@ -1,72 +1,1026 @@
-/*
-Syntax error: Invalid CSS after "  src": expected ";", was ": url('../../....."
-        on line 8 of /Users/nerdfiles/Sites/nerdfiles.net/web-journal/wp-content/themes/a-weedy-florilegium/_assets/_css/compass/sass/global.scss
+@charset "UTF-8";
+@font-face {
+  font-family: 'Eulexia';
+  src: url("../../../../_assets/_fonts/_alphasymbolic/compiled/AlphaSymbolic-Regular.ttf") format("truetype"), url("../../../../_assets/_fonts/_alphasymbolic/compiled/AlphaSymbolic-Regular.ptf") format("opentype"); }
 
-Backtrace:
-/Users/nerdfiles/Sites/nerdfiles.net/web-journal/wp-content/themes/a-weedy-florilegium/_assets/_css/compass/sass/global.scss:8
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:1136:in `expected'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:1072:in `expected'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:1067:in `tok!'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:574:in `block in declaration_or_ruleset'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:1110:in `call'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:1110:in `rethrow'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:580:in `declaration_or_ruleset'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:542:in `block_child'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:534:in `block_contents'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:154:in `directive_body'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:146:in `directive'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:541:in `block_child'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:534:in `block_contents'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:70:in `stylesheet'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/scss/parser.rb:27:in `parse'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/engine.rb:342:in `_to_tree'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/engine.rb:315:in `_render'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.4/lib/sass/engine.rb:262:in `render'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:30:in `block in temporary_multipath_handler'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:27:in `each'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:17:in `block (2 levels) in run'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:16:in `each'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:16:in `block in run'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/rb-fsevent-0.9.3/lib/rb-fsevent/fsevent.rb:43:in `call'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/rb-fsevent-0.9.3/lib/rb-fsevent/fsevent.rb:43:in `run'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:20:in `run'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/bin/compass:19:in `load'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/bin/compass:19:in `<main>'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/bin/ruby_noexec_wrapper:14:in `eval'
-/Users/nerdfiles/.rvm/gems/ruby-1.9.3-p362/bin/ruby_noexec_wrapper:14:in `<main>'
+@font-face {
+  font-family: 'Eulexia';
+  src: url("../../../../_assets/_fonts/_eulexia/ttf-stable/eulexia.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url("../../../../_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf") format("truetype"); }
+
+.clear-fix {
+  zoom: 1; }
+  .clear-fix:before {
+    content: "";
+    display: table; }
+  .clear-fix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+body,
+input,
+select,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-family: 'Eulexia'; }
+
+body {
+  overflow-y: scroll; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+  -webkit-border-radius: 0; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; }
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #999;
+  -webkit-border-radius: 4px;
+  outline: 2px solid white;
+  outline-offset: -2px;
+  border: 2px solid white; }
+
+::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+  background-color: #9f9f9f;
+  -webkit-border-radius: 4px; }
+
+:-webkit-scrollbar {
+  width: 16px; }
+
+#site-navigation {
+  position: absolute;
+  left: -9999px; }
+
+#site-admin {
+  position: absolute;
+  left: -9999px; }
+
+#site-header .site-name a {
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+
+a {
+  color: #acbf87;
+  opacity: 1 !important; }
+  a:link {
+    color: #acbf87;
+    opacity: 1 !important; }
+
+.more a {
+  display: inline-block !important;
+  *zoom: 1;
+  *display: inline;
+  padding: 0 !important;
+  letter-spacing: 1px;
+  font-family: "Eulexia", Georgia, serif;
+  text-decoration: none;
+  border-bottom: 1px #cccccc solid; }
+  .more a:hover {
+    border-bottom: 1px #cccccc dashed;
+    text-decoration: none !important; }
+
+a[title="rdf"] {
+  border-bottom: none !important; }
+
+body.single #site-breadcrumb a,
+body.single .hfeed a,
+body.archive #site-breadcrumb a,
+body.archive .hfeed a,
+body.search #site-breadcrumb a,
+body.search .hfeed a,
+body.page-template-default #site-breadcrumb a,
+body.page-template-default .hfeed a,
+body.page-template-template-single-column-php #site-breadcrumb a,
+body.page-template-template-single-column-php .hfeed a,
+body.page-template-archives-php #site-breadcrumb a,
+body.page-template-archives-php .hfeed a {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-family: "Eulexia", Georgia, serif;
+  text-decoration: none;
+  border-bottom: 1px #cccccc solid; }
+  body.single #site-breadcrumb a:hover,
+  body.single .hfeed a:hover,
+  body.archive #site-breadcrumb a:hover,
+  body.archive .hfeed a:hover,
+  body.search #site-breadcrumb a:hover,
+  body.search .hfeed a:hover,
+  body.page-template-default #site-breadcrumb a:hover,
+  body.page-template-default .hfeed a:hover,
+  body.page-template-template-single-column-php #site-breadcrumb a:hover,
+  body.page-template-template-single-column-php .hfeed a:hover,
+  body.page-template-archives-php #site-breadcrumb a:hover,
+  body.page-template-archives-php .hfeed a:hover {
+    border-bottom: 1px #cccccc dashed;
+    text-decoration: none !important; }
+
+#site-header a {
+  color: #acbf87; }
+
+:focus {
+  outline: none; }
+
+div#header div#blog-description, div#header div.archive-description, div#header div#blog-description {
+  display: none; }
+
+div.entry-content a[rel*="attachment"] {
+  border-bottom: none; }
+  div.entry-content a[rel*="attachment"]:hover {
+    border-bottom: none; }
+
+#s:focus {
+  opacity: 1; }
+#s:active {
+  opacity: 1; }
+
+body.single .entry-title, body.single .page-title {
+  text-shadow: 0 0.1em 0.2em #cccccc; }
+
+div.hfeed .page-title span.page-subtitle {
+  opacity: .6; }
+div.sidebar ul li#search form#searchform:focus, div.sidebar ul li#search input#s:focus {
+  opacity: 1; }
+div.sidebar ul li#search form#searchform:active, div.sidebar ul li#search input#s:active {
+  opacity: 1; }
+
+/* todo */
+body.category h2 .page-subtitle {
+  text-transform: lowercase; }
+
+/* !!header */
+/* wp editor h3 starts here */
+#nav-below {
+  margin-bottom: 55px; }
+
+.menu-jininmi-container a {
+  color: #222;
+  text-decoration: none; }
+
+.admin-meta a {
+  color: #222;
+  text-decoration: none; }
+  .admin-meta a:hover {
+    background-color: #fcf7f4; }
+
+#searchform label {
+  opacity: 0; }
+#searchform input[type="submit"] {
+  opacity: 0; }
+
+div.hfeed {
+  min-height: 550px; }
+
+/**
+ * JavaScript
+ */
+/* hide stuff if enabled */
+h1, h2, h3, h4, h5, h6 {
+  color: #5d5d5d; }
+
+body {
+  color: #222;
+  background: #f7f7f7;
+  font-family: "Eulexia", Georgia, serif; }
+
+.site-name .drop-shadow {
+  background: #f5fbe9; }
+
+.site-description .drop-shadow {
+  background-color: #fcf7f4; }
+
+/*
+ul { opacity: .3; }
+ul.not-this { opacity: .4; }
+ul.near-this { opacity: .8; }
+ul.this { opacity: 1; }
+
+ol { opacity: .3; }
+ol.not-this { opacity: .4; }
+ol.near-this { opacity: .8; }
+ol.this { opacity: 1; }
+
+p { opacity: .3; }
+p.not-this { opacity: .4; }
+p.near-this { opacity: .8; }
+p.this { opacity: 1; }
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  src\": expected \";\", was \": url('../../.....\"\A         on line 8 of /Users/nerdfiles/Sites/nerdfiles.net/web-journal/wp-content/themes/a-weedy-florilegium/_assets/_css/compass/sass/global.scss"; }
+#content {
+  margin-bottom: 3em; }
+
+.form-textarea-label {
+  margin: 0 0 1em 0; }
+
+.form-textarea {
+  margin: 0 0 1em; }
+
+.form-submit {
+  text-align: center; }
+
+.comments {
+  margin: 3em 0 0 0;
+  padding-top: 2em;
+  border-top: 3px #cccccc double; }
+  .comments .comment-author {
+    text-align: center;
+    padding: 0 0 0 20px;
+    margin: 1em 0 0 0;
+    float: left;
+    display: block;
+    width: 110px;
+    height: 150px; }
+  .comments div.avatar {
+    display: inline-block;
+    float: left;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    margin: 0 0 0.6em 0; }
+  .comments li .fn {
+    margin: 0 0 0 -20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    clear: left;
+    float: left; }
+  .comments .comment-meta {
+    margin: 1em 0 0 0;
+    float: left;
+    font-size: 11px;
+    width: 190px;
+    opacity: .6;
+    display: block; }
+  .comments li {
+    margin: 0 auto;
+    clear: left; }
+    .comments li:hover .comment-meta {
+      opacity: 1; }
+  .comments .comment-entry {
+    width: 600px;
+    margin: 0 20px 0 0;
+    float: left; }
+    .comments .comment-entry ul {
+      margin-left: 20px; }
+    .comments .comment-entry li {
+      border-top: none;
+      padding: 0; }
+  .comments ol {
+    border-bottom: 3px #cccccc double;
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0 0 2em;
+    padding: 0 0 1em; }
+  .comments li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px #cccccc solid;
+    padding: 1em 0; }
+    .comments li.c1 {
+      border-top: none; }
+  .comments label {
+    font: 2em/1 "Eulexia", Georgia, serif; }
+  .comments input[type="submit"] {
+    border: none;
+    font-size: 3em;
+    font-family: "Eulexia", Georgia, serif;
+    background: transparent; }
+
+.unapproved {
+  background: #ffdd77;
+  display: inline-block;
+  padding: 5px 10px 2px;
+  margin: 0 0 0.5em 0; }
+
+#numcomments {
+  margin: 0 0 0.5em; }
+
+#respond {
+  margin: 0 0 1em;
+  clear: left; }
+
+textarea {
+  border: 1px #cccccc solid;
+  width: 97.5%;
+  font: 1.3em/1.3 "Eulexia", Georgia, serif;
+  padding: 0.5em !important; }
+
+#header {
+  margin: 1em 0; }
+
+html.js #site-access {
+  display: none; }
+
+#site-access {
+  position: absolute;
+  left: -9999px; }
+  #site-access ul {
+    list-style: none;
+    margin: 0 0 30px; }
+  #site-access li {
+    margin: 0; }
+  #site-access a {
+    text-decoration: none;
+    border-bottom: 1px #cccccc solid; }
+  #site-access.show {
+    position: relative;
+    left: 0; }
+  #site-access.sticky {
+    position: fixed;
+    width: 150px;
+    left: inherit !important;
+    right: 0 !important; }
+  #site-access.sticky ul {
+    list-style: none;
+    position: absolute;
+    right: 20px;
+    top: 75px; }
+  #site-access.sticky li {
+    -webkit-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    -moz-box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    box-shadow: 0 0 0.5em rgba(230, 230, 230, 0.8);
+    display: block;
+    list-style: none outside none;
+    margin: 0 0 1px;
+    padding: 5px 10px;
+    text-align: right; }
+  #site-access.sticky li:hover {
+    -webkit-box-shadow: 0 0 0.5em #d2d2d2;
+    -moz-box-shadow: 0 0 0.5em #d2d2d2;
+    box-shadow: 0 0 0.5em #d2d2d2; }
+
+#site-header {
+  margin: 0 0 1.5em 0; }
+  #site-header .site-name {
+    font-family: "Eulexia", Georgia, serif; }
+    #site-header .site-name .logo {
+      position: relative;
+      top: 5px;
+      text-shadow: 0 -2px 3px white, 0 -2px 3px white, 0 2px 3px white, 2px 0 3px white; }
+    #site-header .site-name .author-tag a {
+      font-family: "Eulexia", serif !important;
+      font-size: .9em; }
+    #site-header .site-name a {
+      font-size: 26px;
+      line-height: 1.1;
+      height: 57px;
+      display: block;
+      color: #222; }
+  #site-header .site-description {
+    font-family: "Eulexia", Georgia, serif; }
+
+#site-navigation {
+  clear: left; }
+  #site-navigation ul {
+    display: inline-block;
+    margin: 0; }
+  #site-navigation li {
+    display: inline-block; }
+  #site-navigation a {
+    opacity: .5;
+    text-align: center;
+    color: #222; }
+    #site-navigation a:visited {
+      color: #222; }
+    #site-navigation a.drop-shadow:hover {
+      background: #f6fcea; }
+    #site-navigation a:hover {
+      opacity: 1; }
+
+#menu-item-2218 {
+  text-indent: -0.15em; }
+
+#menu-item-2219 {
+  text-indent: -0.35em; }
+
+.menu-jininmi {
+  display: block; }
+
+#site-admin ul {
+  display: inline-block;
+  margin: 0; }
+#site-admin li {
+  display: inline-block; }
+#site-admin a {
+  opacity: .5;
+  text-align: center; }
+  #site-admin a:hover {
+    opacity: 1; }
+
+#site-search {
+  opacity: .4;
+  clear: left;
+  padding: 1em 0;
+  text-align: center; }
+  #site-search.sticky {
+    z-index: 9001;
+    background: #F7F7F7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 3px #cccccc double;
+    width: 100%;
+    -moz-box-shadow: 0 0 1em #cccccc;
+    -webkit-box-shadow: 0 0 1em #cccccc;
+    box-shadow: 0 0 1em #cccccc; }
+  #site-search:hover {
+    opacity: 7; }
+  #site-search label {
+    font-family: "Eulexia", Georgia, serif;
+    cursor: help;
+    width: 80px;
+    display: inline;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    right: 10px; }
+  #site-search input {
+    font-family: "Eulexia", Georgia, serif;
+    cursor: pointer; }
+    #site-search input[type="text"] {
+      font-style: italic;
+      color: #777;
+      padding: 0.3em 0.5em !important;
+      font-size: 1.7em;
+      border: none;
+      border: 1px #cccccc solid;
+      width: 700px;
+      display: inline !important; }
+  #site-search input[type="submit"] {
+    font-size: 1.4em;
+    border: none;
+    display: inline;
+    background: none;
+    line-height: 1;
+    position: relative;
+    vertical-align: middle; }
+
+section {
+  display: block; }
+
+div.hfeed {
+  clear: left; }
+div.hfeed.sticky {
+  padding-top: 3em; }
+div.entry-meta {
+  clear: left;
+  margin: 0 0 1.5em; }
+
+html.page .entry-title, html.single .entry-title {
+  font-size: 2em;
+  clear: left; }
+html.page .entry-title a, html.single .entry-title a {
+  color: #5c5c5c;
+  text-decoration: none; }
+html.page .entry-content, html.single .entry-content {
+  font-size: 1em; }
+html.search .entry-title {
+  font-size: 1em; }
+  html.search .entry-title a {
+    color: #222;
+    text-decoration: none; }
+html.search .hentry {
+  width: 220px;
+  float: left;
+  margin: 0 10px; }
+  html.search .hentry:nth-child(4n) {
+    margin-right: 0; }
+  html.search .hentry:nth-child(4n+1) {
+    clear: left;
+    margin-left: 0; }
+html.search .results-none {
+  width: 100%; }
+html.search .p1 {
+  margin-left: 0; }
+html.search .entry-meta {
+  font-size: .8em;
+  color: #999; }
+html.search .entry-content {
+  margin-bottom: 1em; }
+html.search .navigation {
+  clear: left; }
+
+.pagenavi-container {
+  padding-bottom: 2em; }
+
+.footer-pagenavi {
+  padding-bottom: 3em; }
+
+.site-name {
+  position: relative; }
+  .site-name span {
+    font-size: 1.5em;
+    letter-spacing: .2em; }
+  .site-name a {
+    text-decoration: none; }
+
+.a, .weedy {
+  display: inline; }
+
+.florilegium {
+  display: block; }
+
+.site-name .author-tag {
+  display: block;
+  position: absolute;
+  color: #999;
+  top: 1.5em;
+  right: 1em;
+  font-size: .8em;
+  text-align: right;
+  width: 80px; }
+  .site-name .author-tag a {
+    display: inline !important;
+    height: auto; }
+
+#latest {
+  height: 57px; }
+  #latest header {
+    display: inline-block; }
+  #latest h1 a, #latest h2 a {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    text-decoration: none; }
+  #latest .time {
+    color: #777;
+    border-bottom: 1px #cccccc solid;
+    line-height: 1.7;
+    opacity: .7;
+    display: inline-block;
+    padding: 0 0 0 45px;
+    font-size: 16px;
+    font-family: "Eulexia", Georgia, serif; }
+  #latest h1 {
+    line-height: 1;
+    font-size: 1em;
+    margin: 0 5px 0 0;
+    display: inline-block; }
+  #latest h2 {
+    opacity: .7;
+    line-height: 1;
+    font-size: 1.753em;
+    margin: 0;
+    display: inline-block; }
+    #latest h2:hover {
+      opacity: 1; }
+
+/**
+ * Home
+ */
+h1, h2, h3 {
+  font-family: "OpenDyslexic", Georgia, serif; }
+
+#home {
+  margin-bottom: 2em; }
+  #home h1 {
+    display: none; }
+  #home h2 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    color: #acbf87; }
+  #home h3 {
+    font-size: 1.2em;
+    margin-bottom: .5em; }
+  #home .grid_4 img {
+    width: 220px; }
+  #home footer {
+    font-size: 10px;
+    opacity: 0.4;
+    text-align: left; }
+    #home footer a, #home footer .meta-sep {
+      display: inline-block;
+      text-align: left;
+      padding: 3px 0 0 0; }
+  #home article {
+    margin: 1em 0 1.5em 0; }
+    #home article p {
+      margin: 1em 0 0.7em; }
+  #home .more a {
+    display: block;
+    padding: 0.5em 0; }
+  #home .time {
+    margin: 0.5em 0;
+    font-size: .9em;
+    color: #777; }
+    #home .time a {
+      text-decoration: none;
+      color: #787878; }
+  #home time {
+    border-bottom: 1px #cccccc solid; }
+
+/*#home article:hover {
+    background: #f8f9e8;
+    top: -.2em;
+    left: .2em;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}*/
+.raised {
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+/* Shared styles */
+html.single textarea, #site-search input[type="text"], .drop-shadow {
+  display: block;
+  /* Shouldn't this be the case by default? */
+  position: relative;
+  padding: 1em;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+html.single textarea:before, html.single textarea:after {
+  content: "";
+  position: absolute;
+  z-index: -2; }
+
+#site-search input[type="text"]:before, #site-search input[type="text"]:after {
+  content: "";
+  position: absolute;
+  z-index: -2; }
+
+.drop-shadow:before, .drop-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -2; }
+
+/**
+ * Single
+ */
+body.page div.page h1 {
+  margin-top: .5em;
+  text-align: center;
+  font-size: 4em;
+  text-shadow: -0.5em -0.5em 0.1em rgba(200, 200, 200, 0.3); }
+body.single div.post {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline; }
+body.single div.post .entry-content {
+  font-size: 16px;
+  line-height: 1.8; }
+body.page div.page .entry-content {
+  font-size: 16px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  -webkit-column-rule: 1px dotted #bbbbbb;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -moz-column-rule: 1px dotted #bbbbbb;
+  column-count: 2;
+  column-gap: 20px;
+  column-rule: 1px dotted #bbbbbb; }
+
+/* (hasLayout trigger) */
+#footer {
+  padding: 5px 10px 15px;
+  background: #fff;
+  border-top: 3px #e0e0e0 double;
+  border-bottom: 1px #e0e0e0 solid;
+  -moz-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
+  -webkit-box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
+  box-shadow: 0 0.5em 1em rgba(200, 200, 200, 0.5) inset;
+  z-index: 9001;
+  display: block !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: .6;
+  width: 100%; }
+  #footer .footer-inner {
+    width: 960px;
+    margin: 0 auto; }
+  #footer:hover {
+    opacity: 1; }
+  #footer p {
+    margin: 0;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline; }
+  #footer .twitter {
+    position: relative;
+    top: .5em;
+    display: inline;
+    *zoom: 1;
+    *display: inline;
+    margin: 0 0 0 1em; }
+  #footer .twitter iframe {
+    display: inline;
+    width: auto !important; }
+  #footer .googleplus {
+    position: relative;
+    top: .65em;
+    display: inline;
+    *zoom: 1;
+    *display: inline;
+    margin: 0 0 0 1em; }
+
+#gfc_profile {
+  margin: -20px 0 0 !important;
+  padding: 0;
+  border: none !important;
+  position: relative;
+  top: -15px;
+  font-size: 1em; }
+  #gfc_profile ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    left: 75px; }
+  #gfc_profile li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    border: none; }
+  #gfc_profile img {
+    margin: 0;
+    padding: 0;
+    float: none !important; }
+
+body.page-template-template-single-column-php div.post .entry-content, body.page-template-template-single-column-php div.page .entry-content {
+  -webkit-column-count: 1;
+  -webkit-column-gap: 40px;
+  -webkit-column-rule: 1px dotted #bbbbbb;
+  -moz-column-count: 1;
+  -moz-column-gap: 20px;
+  -moz-column-rule: 1px dotted #bbbbbb;
+  column-count: 1;
+  column-gap: 20px;
+  column-rule: 1px dotted #bbbbbb; }
+
+body.page-template-archives-php ul.xoxo img {
+  float: left;
+  margin: 2px 10px 0 0; }
+body.page-template-archives-php ul.xoxo ul {
+  margin: 0;
+  list-style: none; }
+body.page-template-archives-php ul.xoxo li {
+  margin: 0;
+  list-style: none;
+  float: left;
+  width: 225px; }
+body.page-template-archives-php ul.xoxo li li {
+  float: none;
+  width: auto;
+  padding: 5px 0; }
+
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+div.pagenavi-container {
+  padding-bottom: 1em; }
+
+.wp-pagenavi {
+  clear: both;
+  padding: 0.5em 0;
+  color: #E0E0E0;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1; }
+  .wp-pagenavi a, .wp-pagenavi span {
+    text-decoration: none;
+    padding: 3px 5px;
+    margin: 2px; }
+  .wp-pagenavi .last {
+    position: relative;
+    top: 1px; }
+  .wp-pagenavi a:hover, .wp-pagenavi span.current {
+    border-color: #000; }
+  .wp-pagenavi span.current {
+    font-weight: bold; }
+
+#site-social {
+  position: relative; }
+
+.addthis_default_style {
+  position: absolute;
+  right: -1em;
+  top: 268px; }
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+  line-height: 1; }
+
+body.single div.post .entry-content,
+body.page div.page .entry-content {
+  margin-bottom: 3em; }
+
+.byline {
+  margin: 0 0 1em 0;
+  color: #999; }
+  .byline em {
+    display: block; }
+
+.poem {
+  margin: 0 0 1em; }
+
+blockquote {
+  margin: 1.5em 1em;
+  padding: 1em;
+  position: relative; }
+
+blockquote:before {
+  content: "❝";
+  position: absolute;
+  left: -.1em;
+  top: -.2em;
+  font-size: 28px;
+  opacity: .4; }
+
+blockquote cite {
+  /*
+  display: block; 
+  text-align: right; 
+  font-style: italic; 
+  font-size: 1.3em; 
+  opacity: .7; 
+  padding: 0 1em; 
+  margin: 0 1em;*/ }
+
+blockquote em {
+  display: inline; }
+
+body div.entry-meta {
+  color: #777;
+  line-height: 2.3;
+  margin: 30px 30px; }
+  body div.entry-meta a {
+    text-decoration: none;
+    color: #777;
+    border-bottom: 1px #cccccc solid; }
+body.search .hentry {
+  margin-bottom: 40px; }
+body.home #home section article {
+  margin-bottom: 40px; }
+body.home div.entry-meta {
+  margin: 0 0; }
+body.search div.entry-meta {
+  margin: 0 0; }
+body.post div.entry-meta {
+  line-height: 2.3;
+  margin: 30px 30px 50px; }
+body.single div.entry-meta {
+  line-height: 2.3;
+  margin: 30px 30px 50px; }
+
+.mouse-thinkers-beware {
+  opacity: .75;
+  width: 42%;
+  color: #999;
+  font-size: 18px;
+  font-family: "Eulexia", Georgia, serif;
+  float: right;
+  text-align: right; }
+
+.sticky .mouse-thinkers-beware {
+  display: none; }
+
+body.archive .page-title {
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 30px; }
+
+#site-breadcrumb {
+  margin-top: 15px;
+  text-align: center;
+  color: #e0e0e0; }
+
+#site-breadcrumb ul {
+  margin: 0;
+  list-style: none; }
+
+#site-breadcrumb li {
+  display: inline;
+  margin: 0 0 0 5px; }
+
+#site-breadcrumb a {
+  text-decoration: none; }
+
+#site-breadcrumb ul a:hover {
+  text-decoration: underline; }
+#site-breadcrumb ul li {
+  margin: 0; }
+  #site-breadcrumb ul li:first-child:before {
+    content: ""; }
+  #site-breadcrumb ul li:last-child:after {
+    color: #999;
+    content: " /"; }
+  #site-breadcrumb ul li:before {
+    color: #999;
+    content: "/ "; }
+
+.call-access-menu {
+  background: #f7f7f7 !important;
+  padding: 3px 6px 1px;
+  position: absolute;
+  font-size: 9px !important;
+  color: #999;
+  font-weight: 400;
+  margin-top: -15px;
+  margin-left: 4px;
+  opacity: .4;
+  text-shadow: 0 0 1px rgba(30, 30, 30, 0.5);
+  cursor: pointer; }
+
+.author-callout ul {
+  opacity: .6;
+  border-top: 1px #e9e9e9 solid;
+  border-bottom: 1px #e9e9e9 solid;
+  padding: 30px 0 0px;
+  margin: 30px 0;
+  padding-bottom: 15px;
+  overflow: hidden;
+  list-style: none; }
+  .author-callout ul:empty {
+    border-bottom: none !important; }
+.author-callout li {
+  float: left;
+  font-size: 24px;
+  margin: 0;
+  width: 100%; }
+.author-callout li:last-child {
+  text-align: right; }
+
+#primary li.widget {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px; }
+  #primary li.widget:first-child {
+    margin-left: 0; }
+  #primary li.widget:last-child {
+    margin-right: 0; }
+
+.yarpp-related p {
+  margin: 2em 0 0.3em 0;
+  font-size: 24px;
+  font-weight: 700; }
+.yarpp-related ol {
+  list-style: none; }
+  .yarpp-related ol li {
+    margin: 0;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 220px; }
+    .yarpp-related ol li:first-child {
+      margin-left: 0; }
+    .yarpp-related ol li:last-child {
+      margin-right: 0; }
+    .yarpp-related ol li a {
+      padding: 30px 30px 10px 0;
+      display: block; }
+    .yarpp-related ol li small {
+      padding: 10px 30px 30px 0;
+      display: block; }
+
+@media screen and (max-device-width: 480px) {
+  /* iphone only */
+  #footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%; } }
+@media print {
+  body div#blog-description, body div.sidebar, body div.access, body div#globalnav, body span.archive-meta, body div.cat-meta, body div#footer, body div.navigation, body div.comments form#commentform, body h3#respond {
+    display: none; }
+
+  body div#wrapper div#header {
+    background-color: #fff;
+    background-image: none;
+    color: #000; }
+
+  body div#wrapper div#header h1 a, html body div#wrapper div#header h1 a:link, html body div#wrapper div#header h1 a:visited, html body div#wrapper div#header h1 a:hover, html body div#wrapper div#header h1 a:active {
+    color: #000; }
+
+  body.single div.entry-meta {
+    line-height: 200%;
+    margin: 0 20%; }
+
+  body.home div.entry-meta, body.archive div.entry-meta, body.search div.entry-meta {
+    text-align: center;
+    margin: 0 5%;
+    padding: 0 2em; } }
+.shoe {
+  background: orange; }
