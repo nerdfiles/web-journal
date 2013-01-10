@@ -38,10 +38,11 @@ textarea {
 }
 
 body.call-alphasymbolic { 
-    font-family: 'AlphaSymbolic' !important;
+  font-family: 'AlphaSymbolic' !important;
   input,
   select,
   textarea,
+  h1, h2, h3, h4, h5, h6,
   a {
     font-family: 'AlphaSymbolic' !important;
   }
