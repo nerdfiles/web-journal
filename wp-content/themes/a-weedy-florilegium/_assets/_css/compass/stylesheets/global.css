@@ -36,8 +36,7 @@ body.call-alphasymbolic {
   body.call-alphasymbolic input,
   body.call-alphasymbolic select,
   body.call-alphasymbolic textarea,
-  body.call-alphasymbolic h1, body.call-alphasymbolic h2, body.call-alphasymbolic h3, body.call-alphasymbolic h4, body.call-alphasymbolic h5, body.call-alphasymbolic h6,
-  body.call-alphasymbolic a {
+  body.call-alphasymbolic h1, body.call-alphasymbolic h2, body.call-alphasymbolic h3, body.call-alphasymbolic h4, body.call-alphasymbolic h5, body.call-alphasymbolic h6, body.call-alphasymbolic a {
     font-family: "AlphaSymbolic" !important; }
   body.call-alphasymbolic blockquote {
     font-family: "Eulexia" !important; }
