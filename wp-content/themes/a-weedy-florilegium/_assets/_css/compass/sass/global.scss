@@ -38,6 +38,10 @@ textarea {
 }
 
 body.call-alphasymbolic { 
+  background: none repeat scroll 0 0 #FFFFFF !important;
+  font-family: "AlphaSymbolic" !important;
+  font-weight: normal !important;
+  text-rendering: optimizelegibility !important;
   font-family: 'AlphaSymbolic' !important;
   input,
   select,

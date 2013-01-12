@@ -32,6 +32,10 @@ textarea {
   font-family: 'Eulexia'; }
 
 body.call-alphasymbolic {
+  background: none repeat scroll 0 0 white !important;
+  font-family: "AlphaSymbolic" !important;
+  font-weight: normal !important;
+  text-rendering: optimizelegibility !important;
   font-family: "AlphaSymbolic" !important; }
   body.call-alphasymbolic input,
   body.call-alphasymbolic select,
