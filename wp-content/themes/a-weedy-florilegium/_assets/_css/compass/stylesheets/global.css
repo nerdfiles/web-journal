@@ -1039,6 +1039,6 @@ body.archive .page-title {
 
 .entry-edit {
   display: inline;
-  margin: 0 0 0 5px; }
+  margin: 0 0.5em; }
   .entry-edit::before {
     content: "|"; }
