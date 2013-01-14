@@ -55,7 +55,7 @@
   <div class="entry-content">
   <?php the_excerpt('<span class="more-link">'.__('Continue Reading &raquo;', 'webjournal').'</span>') ?>
 
-  </div>
+  </div><!-- .hfeed -->
 
   <div class="entry-meta">
     <span class="meta-sep">&para;</span>

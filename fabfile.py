@@ -20,7 +20,7 @@ env.site = 'web-journal'
 env.project = '/home/nerdfiles/webapps/webjournal'
 env.venv = '/home/nerdfiles/.virtualenvs/web_journal'
 env.src = 'src'
-env.static = '%s/wp-content/themes/blog.nerdfiles.net/_assets' % env.project 
+env.static = '%s/wp-content/themes/a-weedy-florilegium/_assets' % env.project 
 
 PYTHON_BIN = "python2.7"
 PYTHON_PREFIX = "" # e.g. /usr/local  Use "" for automatic
@@ -28,9 +28,9 @@ PYTHON_FULL_PATH = "%s/bin/%s" % (PYTHON_PREFIX, PYTHON_BIN) if PYTHON_PREFIX el
 
 # for mod_wsgi setups
 
-DJANGO_SERVER_STOP = posixpath.join(env.project, 'apache2', 'bin', 'stop')
-DJANGO_SERVER_START = posixpath.join(env.project, 'apache2', 'bin', 'start')
-DJANGO_SERVER_RESTART = posixpath.join(env.project, 'apache2', 'bin', 'restart')
+#DJANGO_SERVER_STOP = posixpath.join(env.project, 'apache2', 'bin', 'stop')
+#DJANGO_SERVER_START = posixpath.join(env.project, 'apache2', 'bin', 'start')
+#DJANGO_SERVER_RESTART = posixpath.join(env.project, 'apache2', 'bin', 'restart')
 
 # dirs
 
