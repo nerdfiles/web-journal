@@ -1036,3 +1036,6 @@ body.archive .page-title {
     padding: 0 2em; } }
 .shoe {
   background: orange; }
+
+.entry-edit {
+  display: inline; }
