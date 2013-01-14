@@ -26,6 +26,10 @@
     display: table;
     clear: both; } }
 
+@mixin cf() {
+  @extend .clear-fix;
+}
+
 body,
 input,
 select,

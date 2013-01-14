@@ -11,12 +11,12 @@
   font-family: 'OpenDyslexic';
   src: url("../../../../_assets/_fonts/_opendyslexic/ttf/OpenDyslexic-Regular.ttf") format("truetype"); }
 
-.clear-fix {
+.clear-fix, .yarpp-related ol {
   zoom: 1; }
-  .clear-fix:before {
+  .clear-fix:before, .yarpp-related ol:before {
     content: "";
     display: table; }
-  .clear-fix:after {
+  .clear-fix:after, .yarpp-related ol:after {
     content: "";
     display: table;
     clear: both; }

@@ -26,6 +26,10 @@
     display: table;
     clear: both; } }
 
+@mixin cf() {
+  @extend .clear-fix;
+}
+
 body,
 input,
 select,
@@ -1207,6 +1211,7 @@ body.archive {
     font-weight: 700;
   }
   ol {
+    @include cf;
     list-style: none;
     li {
       margin: 0;
