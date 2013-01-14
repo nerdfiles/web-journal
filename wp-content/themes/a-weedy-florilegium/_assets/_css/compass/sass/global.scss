@@ -1263,5 +1263,11 @@ body.archive {
 
 .shoe { background: orange; }
 
-.entry-edit { display: inline; }
+.entry-edit { 
+  display: inline; 
+  margin: 0 0 0 5px;
+  &::before {
+    content: "|";
+  }
+}
 
