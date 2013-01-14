@@ -1038,7 +1038,7 @@ body.archive .page-title {
   background: orange; }
 
 .entry-edit {
-  display: inline;
-  margin: 0 0.5em; }
+  display: inline; }
   .entry-edit::before {
+    margin: 0 0.5em;
     content: "|"; }

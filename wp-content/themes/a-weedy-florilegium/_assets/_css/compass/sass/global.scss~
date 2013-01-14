@@ -1265,7 +1265,7 @@ body.archive {
 
 .entry-edit { 
   display: inline; 
-  margin: 0 5px;
+  margin: 0 .5em;
   &::before {
     content: "|";
   }
