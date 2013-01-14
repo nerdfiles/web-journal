@@ -16,14 +16,6 @@
 <div id="post-<?php the_ID(); ?>" class="<?php webjournal_post_class(); ?>">
 
 <h1 class="entry-title"><?php the_title(); ?></h1>
- 
-<div class="entry-content">
-
-<?php the_content('<span class="more-link">'.__('Continue Reading &raquo;', 'webjournal').'</span>'); ?>
-
-<?php link_pages('<div class="page-link">'.__('Pages: ', 'webjournal'), "</div>\n", 'number'); ?>
-
-</div>
 
 <div class="entry-meta">
 <div class="entry-meta-inner">
@@ -38,6 +30,11 @@
 <?php edit_post_link(__('Edit this entry', 'webjournal'), "<div class='entry-edit'>", "</div>\n"); ?>
 </div>
 </div>
+
+<div class="entry-content">
+  <?php the_content('<span class="more-link">'.__('Continue Reading &raquo;', 'webjournal').'</span>'); ?>
+  <?php link_pages('<div class="page-link">'.__('Pages: ', 'webjournal'), "</div>\n", 'number'); ?>
+</div><!-- .entry-content -->
 
 <?php trackback_rdf(); ?>
 

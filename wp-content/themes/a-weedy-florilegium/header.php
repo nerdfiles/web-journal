@@ -114,58 +114,58 @@ $cat_slug = $the_cat[0]->slug; ?>
 <!-- == SITE ACCESS ======================================== --> 
 
 <div id="site-access">
-<p class="mouse-thinkers-beware" title="An analysis of modalities, link strategy, and tacticle experience, oh my!"><small>Design's heavily influenced by my practices in unlearning the Mouse and the variegrated habits of Mouse-think (theism, restroom banter, the politico-historical moorings of cr&ecirc;pe cuisine, et cetera), with a touch of not having gone to finishing school.</small></p>
-<ul>
+  <p class="mouse-thinkers-beware" title="An analysis of modalities, link strategy, and tacticle experience, oh my!"><small>Design's heavily influenced by my practices in unlearning the Mouse and the variegrated habits of Mouse-think (theism, restroom banter, the politico-historical moorings of cr&ecirc;pe cuisine, et cetera), with a touch of not having gone to finishing school.</small></p>
+  <ul>
 
-  <li><span class="content-access">Back to <a href="#top">top</a></span></li>
+    <li><span class="content-access">Back to <a href="#top">top</a></span></li>
 
-  <?php
+    <?php
 
-  if ( current_user_can('administrator') ) { ?>
+    if ( current_user_can('administrator') ) { ?>
 
-  <!-- admin access hooks -->
-  <li>
-    <a href="<?php bloginfo('url'); ?>/wp-admin/">Dashboardly</a>
-  </li>
-
-  <?php if (is_single()) { ?>
-  <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit this entry</a></li>
-  <?php } ?>
-
-  <?php } ?>
-
-  <!-- primary content access hooks -->
-  <?php if (is_single() || is_page()) { ?>
-    <?php if (is_front_page()) { ?>
+    <!-- admin access hooks -->
     <li>
-      <span class="content-access"><a href="#home" title="<?php _e('Skip to #content', 'webjournal'); ?>"><?php _e('Skip to #content', 'webjournal'); ?></a></span>
+      <a href="<?php bloginfo('url'); ?>/wp-admin/">Dashboardly</a>
     </li>
-    <?php } else { ?>
-    <li>
-      <span class="content-access"><a href="<?php echo "#post-" . get_the_ID(); ?>" title="<?php _e('Skip to #content', 'webjournal'); ?>"><?php _e('Skip to #content', 'webjournal'); ?></a></span>
-    </li>
+
+    <?php if (is_single()) { ?>
+    <li><a href="<?php bloginfo('url'); ?>/wp-admin/post.php?post=<?php echo $post->ID; ?>&action=edit">Edit this entry</a></li>
     <?php } ?>
-  <?php } ?>
 
-  <li>
-    <span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span>
-  </li>
+    <?php } ?>
 
-  <?php if (is_front_page()) { ?>
+    <!-- primary content access hooks -->
+    <?php if (is_single() || is_page()) { ?>
+      <?php if (is_front_page()) { ?>
+      <li>
+        <span class="content-access"><a href="#home" title="<?php _e('Skip to #content', 'webjournal'); ?>"><?php _e('Skip to #content', 'webjournal'); ?></a></span>
+      </li>
+      <?php } else { ?>
+      <li>
+        <span class="content-access"><a href="<?php echo "#post-" . get_the_ID(); ?>" title="<?php _e('Skip to #content', 'webjournal'); ?>"><?php _e('Skip to #content', 'webjournal'); ?></a></span>
+      </li>
+      <?php } ?>
+    <?php } ?>
 
-  <!-- front page access hooks -->
-  <li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'webjournal'); ?>"><?php _e('Skip to #art posts', 'webjournal'); ?></a></span></li>
-  <li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'webjournal'); ?>"><?php _e('Skip to #philosophy posts', 'webjournal'); ?></a></span></li>
-  <li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'webjournal'); ?>"><?php _e('Skip to #life posts', 'webjournal'); ?></a></span></li>
-  <li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'webjournal'); ?>"><?php _e('Skip to #web posts', 'webjournal'); ?></a></span></li>
+    <li>
+      <span class="content-access"><a href="#latest" title="<?php _e('Skip to latest posts', 'webjournal'); ?>"><?php _e('Skip to #latest', 'webjournal'); ?></a></span>
+    </li>
 
-  <?php } ?>
+    <?php if (is_front_page()) { ?>
 
-  <!-- navigation access hooks -->
-  <li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to nav', 'webjournal'); ?>"><?php _e('Skip to nav', 'webjournal'); ?></a></span></li>
-  <li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'webjournal'); ?>"><?php _e('Skip to search', 'webjournal'); ?></a></span></li>
+    <!-- front page access hooks -->
+    <li><span class="content-access"><a href="#art" title="<?php _e('Skip to #art related posts', 'webjournal'); ?>"><?php _e('Skip to #art posts', 'webjournal'); ?></a></span></li>
+    <li><span class="content-access"><a href="#philosophy" title="<?php _e('Skip to #philosophy posts', 'webjournal'); ?>"><?php _e('Skip to #philosophy posts', 'webjournal'); ?></a></span></li>
+    <li><span class="content-access"><a href="#life" title="<?php _e('Skip to #life related posts', 'webjournal'); ?>"><?php _e('Skip to #life posts', 'webjournal'); ?></a></span></li>
+    <li><span class="content-access"><a href="#web" title="<?php _e('Skip to #web related posts', 'webjournal'); ?>"><?php _e('Skip to #web posts', 'webjournal'); ?></a></span></li>
 
-</ul>
+    <?php } ?>
+
+    <!-- navigation access hooks -->
+    <li><span class="content-access"><a href="#site-navigation" title="<?php _e('Skip to nav', 'webjournal'); ?>"><?php _e('Skip to nav', 'webjournal'); ?></a></span></li>
+    <li><span class="content-access"><a href="#s" title="<?php _e('Skip to search', 'webjournal'); ?>"><?php _e('Skip to search', 'webjournal'); ?></a></span></li>
+
+  </ul>
 </div><!-- End #site-access -->
 
 
@@ -219,8 +219,6 @@ $cat_slug = $the_cat[0]->slug; ?>
 
 <div id="site-navigation" class="grid_12 alpha">
 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-</div>
-
 </div><!-- End #site-navigation -->
 
 
