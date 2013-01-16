@@ -72,10 +72,10 @@
 
   <?php endwhile ?>
 
-  <div id="nav-below" class="navigation">
+  <!--div id="nav-below" class="navigation">
     <div class="nav-previous"><?php next_posts_link(__('&laquo; Earlier posts', 'webjournal')) ?></div>
     <div class="nav-next"><?php previous_posts_link(__('Later posts &raquo;', 'webjournal')) ?></div>
-  </div>
+  </div-->
 
   </div><!-- .hfeed -->
 
