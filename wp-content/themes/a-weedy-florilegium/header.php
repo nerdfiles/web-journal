@@ -175,7 +175,7 @@ $cat_slug = $the_cat[0]->slug; ?>
 
   <div class="grid_4 alpha site-name">
   <div class="drop-shadow">
-    <span class="call-access-menu drop-shadow">&uarr; esc</span>
+    <span class="call-access-menu drop-shadow">&#8682; esc</span>
     <a href="<?php echo get_settings('home') ?>/" title="A weedy florilegium" class="logo">
     A weedy florilegium
     </a>

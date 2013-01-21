@@ -67,10 +67,13 @@ body.call-contrast {
 
   .site-name { 
     .drop-shadow {
-
+      background: #AF8088 !important;
+    }
+    .call-access-menu {
+      color: #1840AC !important;
     }
     .author-tag {
-      color: #8ADB0D;
+      color: #8ADB0D !important;
     }
   }
 

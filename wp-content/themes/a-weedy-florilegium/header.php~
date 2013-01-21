@@ -91,7 +91,7 @@ $cat_slug = $the_cat[0]->slug; ?>
 
 <body <?php body_class(); ?>>
   
-<div id="top"></div><!-- hackish? fuck you.-->
+<div id="top"></div>
 
 <div id="wrapper" dir="ltr">
 
