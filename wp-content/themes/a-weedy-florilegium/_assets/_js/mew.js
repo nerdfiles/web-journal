@@ -15,6 +15,11 @@ $(document).ready(function() {
       $('body').toggleClass('call-alphasymbolic');
     });
 
+    $('.call-contrast').bind('click', function(e) {
+      e.preventDefault();
+      $('body').toggleClass('call-contrast');
+    });
+
     // anything!
   	
     $('#site-search label').attr('title', 'Search for anything you can dream of!');

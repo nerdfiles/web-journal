@@ -58,6 +58,31 @@ body.call-alphasymbolic {
   }
 }
 
+body.call-contrast {
+  
+  #wrapper {
+    background: #222 !important; 
+    color: #e9e9e9 !important;
+  }
+
+  .site-name { 
+    .drop-shadow {
+
+    }
+    .author-tag {
+      color: #8ADB0D;
+    }
+  }
+
+  .site-description .drop-shadow {
+    background: #2F1E4B !important;
+  }
+
+  .entry-title {
+    color: #eee !important;
+  }
+}
+
 body {  overflow-y: scroll }
 ::-webkit-scrollbar-track-piece {
   background-color: #fff;
@@ -1265,8 +1290,8 @@ body.archive {
 
 .entry-edit { 
   display: inline; 
-  margin: 0 .5em;
   &::before {
+    margin: 0 .5em;
     content: "|";
   }
 }
