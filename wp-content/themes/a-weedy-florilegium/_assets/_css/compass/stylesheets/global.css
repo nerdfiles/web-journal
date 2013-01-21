@@ -45,6 +45,18 @@ body.call-alphasymbolic {
   body.call-alphasymbolic blockquote {
     font-family: "Eulexia" !important; }
 
+body.call-contrast #wrapper {
+  background: #222222 !important;
+  color: #e9e9e9 !important; }
+body.call-contrast .site-name .drop-shadow {
+  background: #af8088 !important; }
+body.call-contrast .site-name .author-tag {
+  color: #8adb0d !important; }
+body.call-contrast .site-description .drop-shadow {
+  background: #2f1e4b !important; }
+body.call-contrast .entry-title {
+  color: #eeeeee !important; }
+
 body {
   overflow-y: scroll; }
 
