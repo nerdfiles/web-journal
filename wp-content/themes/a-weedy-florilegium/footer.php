@@ -18,7 +18,7 @@
         <a href="http://dyslexicfonts.com/">OpenDyslexic</a>, 
         <a href="http://antijingoist.github.com/Eulexia/">Eulexia</a> 
         <span class="sep">|</span> 
-        <a class="call-alphasymbolic" href="https://github.com/antijingoist/AlphaSymbolic" rel="external">AS</a></span>
+        <a class="call-alphasymbolic" href="https://github.com/antijingoist/AlphaSymbolic" rel="external">AS</a></span>, 
         <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" rel="external" class="call-contrast"></a>
     </div>
   </div><!-- #footer -->
