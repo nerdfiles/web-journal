@@ -10,6 +10,7 @@ $(document).ready(function() {
       
     });
 
+    // were we to set "live" the body itself would become a toggle handler
     $('.call-alphasymbolic').bind('click', function(e) {
       e.preventDefault();
       $('body').toggleClass('call-alphasymbolic');
