@@ -89,6 +89,9 @@ function clear_fe() {
 
 function javascript_res() {
 ?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+
 <!-- Scripts -->
 
 <script>

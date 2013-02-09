@@ -1,5 +1,5 @@
 <?php
-
+/*
 function disqus_embed($disqus_shortname='nerdfilesdotnet') {
   global $post;
   wp_enqueue_script('disqus_embed','http://'.$disqus_shortname.'.disqus.com/embed.js');
@@ -16,7 +16,7 @@ function disqus_embed_js() {
   // so abstract
   disqus_embed();
 }
-
+ */
 
 #add_action('wp_footer', 'disqus_embed');
 
