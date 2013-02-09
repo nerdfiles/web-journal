@@ -477,8 +477,7 @@ p.this { opacity: 1; }
 */
 
 #content {
-  margin-bottom: 3em;
-  transform: skewY(-1deg); }
+  margin-bottom: 3em; }
 
 .form-textarea-label {
   margin: 0 0 1em 0; }
@@ -573,6 +572,7 @@ textarea {
   padding: .5em !important; }
 
 #header {
+  transform: skewY(-1deg);
   margin: 1em 0; }
 
 html.js #site-access { display: none; }
@@ -955,6 +955,7 @@ body {
 /* (hasLayout trigger) */
 
 #footer {
+  transform: skewY(-1deg);
   padding: 5px 10px 15px; 
   background: #fff;
   border-top: 3px #e0e0e0 double;
