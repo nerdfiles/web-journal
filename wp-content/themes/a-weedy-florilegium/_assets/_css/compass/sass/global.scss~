@@ -955,6 +955,7 @@ body {
 /* (hasLayout trigger) */
 
 #footer {
+  transform: skewY(-1deg);
   padding: 5px 10px 15px; 
   background: #fff;
   border-top: 3px #e0e0e0 double;
