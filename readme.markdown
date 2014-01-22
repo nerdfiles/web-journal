@@ -22,7 +22,7 @@ A cryptic web journal with a very misleading user interface.
 - Compass
 - SASS
 - JavaScript, jQuery
-- An app.
+- [wp-cli](http://wp-cli.org/)
 
 ##TODO
 
